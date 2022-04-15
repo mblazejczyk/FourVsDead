@@ -21,5 +21,9 @@ public class MatchController : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "EnemyController"), Vector3.zero, Quaternion.identity);
+        if (PhotonNetwork.IsMasterClient)
+        {
+            StartCoroutine(SpawnNew());
+        }
     }
 }

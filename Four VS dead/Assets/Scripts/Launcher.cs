@@ -85,6 +85,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         MenuManager.Instance.OpenMenu("error");
     }
 
+
     public void LeaveRoom()
     {
         PhotonNetwork.LeaveRoom();

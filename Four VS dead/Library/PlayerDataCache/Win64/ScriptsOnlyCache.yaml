@@ -132,35 +132,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3586}
     - Class: 114
-      Script: {instanceID: 4004}
+      Script: {instanceID: 4006}
     - Class: 114
-      Script: {instanceID: 4024}
+      Script: {instanceID: 4026}
     - Class: 114
-      Script: {instanceID: 4152}
+      Script: {instanceID: 4154}
     - Class: 114
-      Script: {instanceID: 4318}
+      Script: {instanceID: 4320}
     - Class: 114
-      Script: {instanceID: 4842}
+      Script: {instanceID: 4844}
     - Class: 114
-      Script: {instanceID: 4884}
+      Script: {instanceID: 4886}
     - Class: 114
-      Script: {instanceID: 5040}
+      Script: {instanceID: 5042}
     - Class: 114
-      Script: {instanceID: 5068}
+      Script: {instanceID: 5070}
     - Class: 114
-      Script: {instanceID: 5216}
+      Script: {instanceID: 5218}
     - Class: 114
-      Script: {instanceID: 5330}
-    - Class: 114
-      Script: {instanceID: 5488}
+      Script: {instanceID: 5332}
     - Class: 114
       Script: {instanceID: 5490}
     - Class: 114
-      Script: {instanceID: 5660}
+      Script: {instanceID: 5492}
     - Class: 114
-      Script: {instanceID: 5840}
+      Script: {instanceID: 5662}
     - Class: 114
-      Script: {instanceID: 6114}
+      Script: {instanceID: 5842}
+    - Class: 114
+      Script: {instanceID: 6116}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -776,7 +776,7 @@ ScriptsOnlyBuild:
     className: StatesGui
   - hash:
       serializedVersion: 2
-      Hash: 75ffc925e128d8c0e4785fcc42f00851
+      Hash: c3b13aa5f15cc8210d0512716f4d87fd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
