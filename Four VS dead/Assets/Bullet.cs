@@ -5,23 +5,15 @@ using Photon.Pun;
 
 public class Bullet : MonoBehaviour
 {
-    PhotonView PV;
-
-
-    private void Awake()
-    {
-        PV = GetComponent<PhotonView>();
-    }
+    
     private void Update()
     {
-        if (PV.IsMine) { 
-            StartCoroutine(Dest()); 
-        }
+        StartCoroutine(Dest()); 
+        
     }
-
     IEnumerator Dest()
     {
-        yield return new WaitForSeconds(5);
-        PhotonNetwork.Destroy(gameObject);
+        yield return new WaitForSeconds(3);
+        Destroy(gameObject);
     }
 }

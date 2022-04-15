@@ -49,8 +49,16 @@ public class PlayerController : MonoBehaviour
 
     void Shoot()
     {
-        GameObject shotInstance = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Bullet"), transform.position, sprites.transform.rotation);
-        shotInstance.GetComponent<Rigidbody2D>().AddForce(sprites.transform.up * 500);
+        
+
+        RaycastHit2D hit = Physics2D.Raycast(sprites.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f);
+        if (hit)
+        {
+            Debug.Log("hit");
+            hit.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(5f);
+
+        }
+        
     }
 
     void LookAround()
