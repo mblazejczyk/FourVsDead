@@ -3,6 +3,8 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Bullet
     - EnemyController
+    - Gun
+    - GunController
     - Launcher
     - MatchController
     - Menu
@@ -40,6 +42,8 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    Unity.Timeline.Editor.dll:
+    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -161,6 +165,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5842}
     - Class: 114
       Script: {instanceID: 6116}
+    - Class: 114
+      Script: {instanceID: 18178}
+    - Class: 114
+      Script: {instanceID: 18300}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -776,7 +784,7 @@ ScriptsOnlyBuild:
     className: StatesGui
   - hash:
       serializedVersion: 2
-      Hash: c3b13aa5f15cc8210d0512716f4d87fd
+      Hash: f3fb5f2d9818a81f4d73413c6e448cef
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -984,6 +992,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyController
+  - hash:
+      serializedVersion: 2
+      Hash: 4cef2f1da74a820753bb4cc93f8333ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GunController
+  - hash:
+      serializedVersion: 2
+      Hash: 4385ba0bd11e37162f854b000d52e4fd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Gun
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

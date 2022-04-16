@@ -12,9 +12,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
 
     public Vector2 speed = new Vector2(50, 50);
     public GameObject sprites;
-    public GameObject bullet;
 
-    public GameObject FlashObj;
 
     private void Awake()
     {
@@ -27,7 +25,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
         LookAround();
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
-            Shoot();
+            gameObject.GetComponent<GunController>().Shoot(sprites);
         }
     }
 
@@ -50,38 +48,6 @@ public class PlayerController : MonoBehaviourPunCallbacks
         transform.Translate(movement);
     }
 
-    void Shoot()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(sprites.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f);
-        if (hit)
-        {
-            Debug.Log("hit");
-            hit.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(5f);
-        }
-
-        if (PV.IsMine)
-        {
-            Hashtable hash = new Hashtable();
-            hash.Add("NewShoot", 0);
-            PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
-        }
-        
-    }
-
-    public override void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)
-    {
-        if(targetPlayer == PV.Owner && (int)changedProps["NewShoot"] == 0)
-        {
-            StartCoroutine(Flash());
-        }
-    }
-
-    IEnumerator Flash()
-    {
-        FlashObj.SetActive(true);
-        yield return new WaitForSeconds(0.2f);
-        FlashObj.SetActive(false);
-    }
 
     void LookAround()
     {

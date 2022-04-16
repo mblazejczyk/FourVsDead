@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 1391497470712462367}
   - component: {fileID: 8292106990496640251}
   - component: {fileID: 8857785524290247197}
+  - component: {fileID: -4814067657839364787}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Untagged
@@ -160,8 +161,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 10, y: 10}
   sprites: {fileID: 5586236393791298307}
-  bullet: {fileID: 494861032844183079, guid: b9e386b60fb8eb1458da0af5d601c225, type: 3}
-  FlashObj: {fileID: 2973612149575277123}
 --- !u!58 &1391497470712462367
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -215,6 +214,22 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!114 &-4814067657839364787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2287605098792481067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dd9981282796984593930db7e75fddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentGunId: 0
+  Guns:
+  - {fileID: 11400000, guid: 2816662a8a027de49a4a234b218fab52, type: 2}
+  FlashObj: {fileID: 2973612149575277123}
 --- !u!1 &2973612149575277123
 GameObject:
   m_ObjectHideFlags: 0
