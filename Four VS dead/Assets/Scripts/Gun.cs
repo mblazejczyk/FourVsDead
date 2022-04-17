@@ -9,6 +9,6 @@ public class Gun : ScriptableObject
     public string Name;
 
     public int Damage;
-    public int ShootSpeed;
+    public float ShootSpeed;
     public int Cost;
 }

@@ -23,9 +23,24 @@ public class PlayerController : MonoBehaviourPunCallbacks
         if (!PV.IsMine) { return; }
         MoveAround();
         LookAround();
-        if (Input.GetKeyDown(KeyCode.Mouse1))
+        if (Input.GetKey(KeyCode.Mouse0))
         {
             gameObject.GetComponent<GunController>().Shoot(sprites);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha1)){
+            gameObject.GetComponent<GunController>().ChangeGun(0);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            gameObject.GetComponent<GunController>().ChangeGun(1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            gameObject.GetComponent<GunController>().ChangeGun(2);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            gameObject.GetComponent<GunController>().ChangeGun(3);
         }
     }
 

@@ -226,9 +226,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dd9981282796984593930db7e75fddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentGunId: 0
+  CurrentGunId: 2
   Guns:
   - {fileID: 11400000, guid: 2816662a8a027de49a4a234b218fab52, type: 2}
+  - {fileID: 11400000, guid: a727a6482d99f794fae2fec490f7d5d3, type: 2}
+  - {fileID: 11400000, guid: bd642ec1d96319f479f1c7992213b2b9, type: 2}
+  - {fileID: 11400000, guid: f0a6770c6e85c3f46935cc83f3ebc542, type: 2}
+  isOnCooldown: 0
   FlashObj: {fileID: 2973612149575277123}
 --- !u!1 &2973612149575277123
 GameObject:

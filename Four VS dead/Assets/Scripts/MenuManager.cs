@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class MenuManager : MonoBehaviour
 {
@@ -47,6 +48,7 @@ public class MenuManager : MonoBehaviour
 
     public void Quit()
     {
+        PhotonNetwork.Disconnect();
         Application.Quit();
     }
 }

@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Bullet
+    - CursorController
     - EnemyController
     - Gun
     - GunController
@@ -42,8 +43,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -57,6 +56,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.RectMask2D
+    - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
     Assets/Scenes/Game.unity:
@@ -72,6 +72,22 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 2340}
+    - Class: 114
+      Script: {instanceID: 2786}
+    - Class: 114
+      Script: {instanceID: 2964}
+    - Class: 114
+      Script: {instanceID: 3208}
+    - Class: 114
+      Script: {instanceID: 3474}
+    - Class: 114
+      Script: {instanceID: 22840}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
@@ -79,6 +95,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -92,6 +114,8 @@ ScriptsOnlyBuild:
     - Class: 23
       Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
@@ -108,67 +132,67 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1496}
+      Script: {instanceID: 1498}
     - Class: 114
-      Script: {instanceID: 1600}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 1608}
+      Script: {instanceID: 1610}
     - Class: 114
-      Script: {instanceID: 1720}
+      Script: {instanceID: 1722}
     - Class: 114
-      Script: {instanceID: 1902}
+      Script: {instanceID: 1904}
     - Class: 114
-      Script: {instanceID: 2052}
+      Script: {instanceID: 2054}
     - Class: 114
-      Script: {instanceID: 2326}
+      Script: {instanceID: 2292}
     - Class: 114
-      Script: {instanceID: 2782}
+      Script: {instanceID: 2330}
     - Class: 114
-      Script: {instanceID: 2960}
+      Script: {instanceID: 2786}
     - Class: 114
-      Script: {instanceID: 3012}
+      Script: {instanceID: 2964}
     - Class: 114
-      Script: {instanceID: 3204}
+      Script: {instanceID: 3016}
     - Class: 114
-      Script: {instanceID: 3460}
+      Script: {instanceID: 3208}
     - Class: 114
-      Script: {instanceID: 3470}
+      Script: {instanceID: 3464}
     - Class: 114
-      Script: {instanceID: 3586}
+      Script: {instanceID: 3474}
     - Class: 114
-      Script: {instanceID: 4006}
+      Script: {instanceID: 3590}
     - Class: 114
-      Script: {instanceID: 4026}
+      Script: {instanceID: 4010}
     - Class: 114
-      Script: {instanceID: 4154}
+      Script: {instanceID: 4030}
     - Class: 114
-      Script: {instanceID: 4320}
+      Script: {instanceID: 4158}
     - Class: 114
-      Script: {instanceID: 4844}
+      Script: {instanceID: 4324}
     - Class: 114
-      Script: {instanceID: 4886}
+      Script: {instanceID: 4848}
     - Class: 114
-      Script: {instanceID: 5042}
+      Script: {instanceID: 4852}
     - Class: 114
-      Script: {instanceID: 5070}
+      Script: {instanceID: 4892}
     - Class: 114
-      Script: {instanceID: 5218}
+      Script: {instanceID: 5048}
     - Class: 114
-      Script: {instanceID: 5332}
+      Script: {instanceID: 5076}
     - Class: 114
-      Script: {instanceID: 5490}
+      Script: {instanceID: 5224}
     - Class: 114
-      Script: {instanceID: 5492}
+      Script: {instanceID: 5338}
     - Class: 114
-      Script: {instanceID: 5662}
+      Script: {instanceID: 5496}
     - Class: 114
-      Script: {instanceID: 5842}
+      Script: {instanceID: 5498}
     - Class: 114
-      Script: {instanceID: 6116}
+      Script: {instanceID: 5668}
     - Class: 114
-      Script: {instanceID: 18178}
+      Script: {instanceID: 5848}
     - Class: 114
-      Script: {instanceID: 18300}
+      Script: {instanceID: 6122}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -176,6 +200,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
@@ -308,6 +336,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 850e8fd6128a0cff384df8dbb3d86a86
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GunController
   - hash:
       serializedVersion: 2
       Hash: 800c50acba124432abb4cf0d47202e06
@@ -760,6 +794,12 @@ ScriptsOnlyBuild:
     className: PlayerListitem
   - hash:
       serializedVersion: 2
+      Hash: 2fb4f0cfc449fd40fcf15f0edbb54b7a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Gun
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -988,22 +1028,16 @@ ScriptsOnlyBuild:
     className: PhotonTeamsManager
   - hash:
       serializedVersion: 2
-      Hash: 22c6cd513a7a82202a4fdd8c132ceeae
+      Hash: 057cf55a37bffd6ff1bf7a4bb77699db
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyController
   - hash:
       serializedVersion: 2
-      Hash: 4cef2f1da74a820753bb4cc93f8333ae
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: GunController
-  - hash:
-      serializedVersion: 2
-      Hash: 4385ba0bd11e37162f854b000d52e4fd
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Gun
+    className: CursorController
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

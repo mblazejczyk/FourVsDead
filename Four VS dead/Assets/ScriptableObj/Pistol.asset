@@ -15,5 +15,5 @@ MonoBehaviour:
   Id: 0
   Name: Pistol
   Damage: 5
-  ShootSpeed: 2
+  ShootSpeed: 1
   Cost: 0
