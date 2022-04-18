@@ -1,9 +1,10 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using TMPro;
 using Photon.Realtime;
+using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class Launcher : MonoBehaviourPunCallbacks
 {
@@ -12,6 +13,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     [SerializeField] TMP_InputField roomNameIF;
     [SerializeField] TMP_Text errorText;
     [SerializeField] TMP_Text roomNameText;
+    [SerializeField] TMP_InputField roomPassword;
     [SerializeField] Transform roomlistContent;
     [SerializeField] Transform PlayerlistContent;
     [SerializeField] GameObject roomListitemPrefab;
@@ -49,14 +51,34 @@ public class Launcher : MonoBehaviourPunCallbacks
         {
             return;
         }
-        PhotonNetwork.CreateRoom(roomNameIF.text);
+        RoomOptions roomOptions = new RoomOptions();
+        roomOptions.MaxPlayers = 4;
+
+        if (roomPassword.text != "")
+        {
+            roomNameIF.text += "+PRIVATE_PASSWORD:" + roomPassword.text;
+        }
+        
+        PhotonNetwork.CreateRoom(roomNameIF.text, roomOptions);
         MenuManager.Instance.OpenMenu("loading");
+        roomNameIF.text = "";
+        roomPassword.text = "";
     }
 
     public override void OnJoinedRoom()
     {
         MenuManager.Instance.OpenMenu("room");
-        roomNameText.text = PhotonNetwork.CurrentRoom.Name;
+
+        if (PhotonNetwork.CurrentRoom.Name.Contains("+PRIVATE_PASSWORD:"))
+        {
+            string replaced = PhotonNetwork.CurrentRoom.Name.Replace("+PRIVATE_PASSWORD:", "▓");
+            string[] splited = replaced.Split('▓');
+            roomNameText.text = splited[0];
+        }
+        else
+        {
+            roomNameText.text = PhotonNetwork.CurrentRoom.Name;
+        }
 
         foreach (Transform child in PlayerlistContent)
         {
@@ -113,6 +135,13 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     public void JoinRoom(RoomInfo info)
     {
+        if(info.PlayerCount >= info.MaxPlayers)
+        {
+            MenuManager.Instance.OpenMenu("error");
+            errorText.text = "Max players in room";
+            return;
+        }
+        
         PhotonNetwork.JoinRoom(info.Name);
         MenuManager.Instance.OpenMenu("loading");
     }
@@ -125,5 +154,30 @@ public class Launcher : MonoBehaviourPunCallbacks
     public void StartGame()
     {
         PhotonNetwork.LoadLevel(1);
+    }
+
+    public GameObject passwordPrompt;
+    private string correctPassword = "";
+    public void AskForPassword(RoomInfo choosenRoom, string correctPass)
+    {
+        choosenRoomInfo = choosenRoom;
+        correctPassword = correctPass;
+        passwordPrompt.SetActive(true);
+    }
+
+    [HideInInspector] public RoomInfo choosenRoomInfo;
+    public void ConfirmPassword(TMP_InputField password)
+    {
+        passwordPrompt.SetActive(false);
+        if (correctPassword != password.text)
+        {
+            MenuManager.Instance.OpenMenu("error");
+            errorText.text = "Password incorrect";
+            return;
+        }
+        else
+        {
+            JoinRoom(choosenRoomInfo);
+        }
     }
 }
