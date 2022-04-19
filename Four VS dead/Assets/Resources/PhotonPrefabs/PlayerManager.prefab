@@ -66,3 +66,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c66245f738657b44fa7e95d087a999dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HostLeftPanel: {fileID: 0}

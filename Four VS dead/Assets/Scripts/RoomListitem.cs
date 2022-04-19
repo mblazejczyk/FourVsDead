@@ -34,7 +34,7 @@ public class RoomListitem : MonoBehaviourPunCallbacks
 
     public void OnClick()
     {
-        if (password != null)
+        if (password != "")
         {
             Launcher.Instance.AskForPassword(info, password);
         }

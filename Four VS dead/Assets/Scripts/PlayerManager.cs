@@ -3,14 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using System.IO;
+using Photon.Realtime;
+using UnityEngine.SceneManagement;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerManager : MonoBehaviourPunCallbacks
 {
     PhotonView PV;
+    public GameObject HostLeftPanel;
 
     private void Awake()
     {
         PV = GetComponent<PhotonView>();
+        if (PV.IsMine)
+        {
+            HostLeftPanel = GameObject.Find("HostLeftPanel");
+            HostLeftPanel.SetActive(false);
+        }
     }
 
     void CreateController()
@@ -28,5 +36,23 @@ public class PlayerManager : MonoBehaviour
         {
             CreateController();
         }
+    }
+
+    public override void OnMasterClientSwitched(Player newMasterClient)
+    {
+        StartCoroutine(StopGame());
+
+    }
+    IEnumerator StopGame()
+    {
+        HostLeftPanel.SetActive(true);
+        yield return new WaitForSeconds(2);
+        Debug.Log("Disconnecting...");
+        PhotonNetwork.Disconnect();
+        while (PhotonNetwork.IsConnected)
+        {
+            yield return null;
+        }
+        SceneManager.LoadScene(0);
     }
 }

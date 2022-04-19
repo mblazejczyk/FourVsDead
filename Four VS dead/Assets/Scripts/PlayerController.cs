@@ -12,11 +12,26 @@ public class PlayerController : MonoBehaviourPunCallbacks
 
     public Vector2 speed = new Vector2(50, 50);
     public GameObject sprites;
+    public GameObject[] PlayerUis;
+    [Header("PlayerStats")]
+    public float Hp = 100;
+    
 
 
     private void Awake()
     {
         PV = GetComponent<PhotonView>();
+        if (PV.IsMine)
+        {
+            PlayerUis[0] = GameObject.Find("Player1");
+            PlayerUis[1] = GameObject.Find("Player2");
+            PlayerUis[2] = GameObject.Find("Player3");
+            PlayerUis[3] = GameObject.Find("Player4");
+            foreach(GameObject obj in PlayerUis)
+            {
+                obj.SetActive(false);
+            }
+        }
     }
     private void Update()
     {
@@ -49,7 +64,39 @@ public class PlayerController : MonoBehaviourPunCallbacks
         if (!PV.IsMine) {
             Destroy(GetComponentInChildren<Camera>().gameObject);
         }
+        else
+        {
+            Hashtable hash = new Hashtable();
+            hash.Add("UiName", PhotonNetwork.NickName);
+            hash.Add("UiHp", Hp);
+            hash.Add("UiGun", gameObject.GetComponent<GunController>().CurrentGunId);
+            hash.Add("UiHost", PhotonNetwork.IsMasterClient);
+            PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+        }
+    }
 
+    public override void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)
+    {
+        if(changedProps["UiName"] != null && PV.IsMine)
+        {
+            foreach(GameObject obj in PlayerUis)
+            {
+                if (!obj.active && obj.GetComponent<PlayerInfoController>().takenBy == "")
+                {
+                    obj.SetActive(true);
+                    obj.GetComponent<PlayerInfoController>().SetPlayer((string)changedProps["UiName"], (bool)changedProps["UiHost"]);
+                    obj.GetComponent<PlayerInfoController>().SetHp((float)changedProps["UiHp"]);
+                    break;
+                }
+            }
+            foreach (GameObject obj in PlayerUis)
+            { 
+                if(obj.GetComponent<PlayerInfoController>().takenBy == (string)changedProps["UiName"])
+                {
+                    obj.GetComponent<PlayerInfoController>().SetHp((float)changedProps["UiHp"]);
+                }
+            }
+        }
     }
     void MoveAround()
     {

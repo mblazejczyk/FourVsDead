@@ -161,6 +161,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 10, y: 10}
   sprites: {fileID: 5586236393791298307}
+  PlayerUis:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  Hp: 100
 --- !u!58 &1391497470712462367
 CircleCollider2D:
   m_ObjectHideFlags: 0

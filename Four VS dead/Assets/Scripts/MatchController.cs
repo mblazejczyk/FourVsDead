@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using System.IO;
+using Photon.Realtime;
+using UnityEngine.SceneManagement;
 
-public class MatchController : MonoBehaviour
+public class MatchController : MonoBehaviourPunCallbacks
 {
     public Transform[] SpawnPoints;
+    private GameObject HostLeftPanel;
 
-    // Start is called before the first frame update
+    
+
     void Start()
     {
         if (PhotonNetwork.IsMasterClient)
@@ -26,4 +30,6 @@ public class MatchController : MonoBehaviour
             StartCoroutine(SpawnNew());
         }
     }
+
+    
 }

@@ -11,6 +11,7 @@ ScriptsOnlyBuild:
     - Menu
     - MenuManager
     - PlayerController
+    - PlayerInfoController
     - PlayerListitem
     - PlayerManager
     - RoomListitem
@@ -73,6 +74,8 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1496}
+    - Class: 114
       Script: {instanceID: 1710}
     - Class: 114
       Script: {instanceID: 2340}
@@ -84,6 +87,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3208}
     - Class: 114
       Script: {instanceID: 3474}
+    - Class: 114
+      Script: {instanceID: 18348}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -692,7 +697,7 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 91efc84b8e8fc96a3c71147f5e530daa
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerManager
@@ -800,7 +805,7 @@ ScriptsOnlyBuild:
     className: PlayerListitem
   - hash:
       serializedVersion: 2
-      Hash: 2fb4f0cfc449fd40fcf15f0edbb54b7a
+      Hash: b12b121ca8dd0be108f97b259d4a513e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Gun
@@ -830,7 +835,7 @@ ScriptsOnlyBuild:
     className: StatesGui
   - hash:
       serializedVersion: 2
-      Hash: f3fb5f2d9818a81f4d73413c6e448cef
+      Hash: 7617ce8a8aeb8a5e112a34bdf1b35f28
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -1038,6 +1043,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyController
+  - hash:
+      serializedVersion: 2
+      Hash: cdceee49e30b12790b5b8b491328ff90
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerInfoController
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

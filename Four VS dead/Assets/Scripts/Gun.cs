@@ -11,4 +11,6 @@ public class Gun : ScriptableObject
     public int Damage;
     public float ShootSpeed;
     public int Cost;
+
+    public Sprite gunIcon;
 }
