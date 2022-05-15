@@ -16,4 +16,6 @@ MonoBehaviour:
   Name: Shotgun
   Damage: 4
   ShootSpeed: 3
-  Cost: 0
+  Cost: 10
+  CoinReward: 5
+  gunIcon: {fileID: 21300000, guid: 4a2f8a260c98c954685b944331180579, type: 3}

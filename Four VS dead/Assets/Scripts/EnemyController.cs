@@ -36,6 +36,7 @@ public class EnemyController : MonoBehaviour, IDamagable
     {
         if (PhotonNetwork.IsMasterClient)
         {
+            if(Target == null) { FindNewPlayer(); }
             transform.up = Target.transform.position - transform.position;
             gameObject.GetComponent<Rigidbody2D>().velocity = gameObject.transform.up;
         }
@@ -50,7 +51,7 @@ public class EnemyController : MonoBehaviour, IDamagable
     void RPC_TakeDamage(float damage)
     {
         StartCoroutine(bleed());
-        Debug.Log("took gamage: " + damage);
+        //Debug.Log("took gamage: " + damage);
         float temp = MaxHp - damage;
         HpBar.GetComponent<Transform>().localScale = new Vector3(temp / MaxHp, 0.25f, 0f);
         MaxHp = MaxHp - damage;

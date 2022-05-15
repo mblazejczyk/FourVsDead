@@ -45,6 +45,7 @@ public class GunController : MonoBehaviourPunCallbacks
                 if (PistolHit)
                 {
                     PistolHit.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
+                    gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
                 }
                 break;
             case 1:
@@ -58,6 +59,7 @@ public class GunController : MonoBehaviourPunCallbacks
                     if (rc2d)
                     {
                         rc2d.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
+                        gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
                     }
                 }
                 break;
@@ -66,6 +68,7 @@ public class GunController : MonoBehaviourPunCallbacks
                 if (UziHit)
                 {
                     UziHit.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
+                    gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
                 }
                 break;
             case 3:
@@ -73,6 +76,7 @@ public class GunController : MonoBehaviourPunCallbacks
                 if (BFG)
                 {
                     BFG.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
+                    gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
                 }
                 break;
             default:
@@ -113,6 +117,7 @@ public class GunController : MonoBehaviourPunCallbacks
             if(changedProps["GunChange"] != null)
             {
                 CurrentGunId = (int)changedProps["GunChange"];
+                gameObject.GetComponent<PlayerController>().UpdateGunInfo(CurrentGunId);
             }
         }
     }

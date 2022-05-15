@@ -16,4 +16,6 @@ MonoBehaviour:
   Name: UZI
   Damage: 2
   ShootSpeed: 0.2
-  Cost: 0
+  Cost: 10
+  CoinReward: 3
+  gunIcon: {fileID: 21300000, guid: f58ab9de3aa906a4888eeac113928b19, type: 3}

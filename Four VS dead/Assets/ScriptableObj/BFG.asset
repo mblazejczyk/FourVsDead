@@ -16,4 +16,6 @@ MonoBehaviour:
   Name: BFG
   Damage: 20
   ShootSpeed: 5
-  Cost: 0
+  Cost: 10
+  CoinReward: 10
+  gunIcon: {fileID: 21300000, guid: e7af0f9ca36fe4b4f855f5ac723f6957, type: 3}

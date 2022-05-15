@@ -12,7 +12,7 @@ public class PlayerInfoController : MonoBehaviour
     [SerializeField] Text AmmoText;
     [SerializeField] Text PlayerName;
     [SerializeField] Text IsHostText;
-
+    [SerializeField] Text CoinText;
 
     public void SetPlayer(string Name, bool isHost)
     {
@@ -35,5 +35,10 @@ public class PlayerInfoController : MonoBehaviour
     public void SetAmmo(int AmmoAmmount, int MaxAmmo)
     {
         AmmoText.text = AmmoAmmount + "/" + MaxAmmo;
+    }
+
+    public void SetCoin(int CoinAmmount)
+    {
+        CoinText.text = "$" + CoinAmmount;
     }
 }

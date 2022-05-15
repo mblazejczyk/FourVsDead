@@ -11,11 +11,15 @@ public class PlayerController : MonoBehaviourPunCallbacks
     PhotonView PV;
 
     public Vector2 speed = new Vector2(50, 50);
+    public GameObject TriggerAndReferencer;
+
+    [Header("Uis")]
     public GameObject sprites;
     public GameObject[] PlayerUis;
+
     [Header("PlayerStats")]
     public float Hp = 100;
-    
+    public int Coins = 0;
 
 
     private void Awake()
@@ -31,6 +35,10 @@ public class PlayerController : MonoBehaviourPunCallbacks
             {
                 obj.SetActive(false);
             }
+        }
+        else
+        {
+            Destroy(TriggerAndReferencer);
         }
     }
     private void Update()
@@ -69,6 +77,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
             Hashtable hash = new Hashtable();
             hash.Add("UiName", PhotonNetwork.NickName);
             hash.Add("UiHp", Hp);
+            hash.Add("UiCoin", Coins);
             hash.Add("UiGun", gameObject.GetComponent<GunController>().CurrentGunId);
             hash.Add("UiHost", PhotonNetwork.IsMasterClient);
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
@@ -81,11 +90,17 @@ public class PlayerController : MonoBehaviourPunCallbacks
         {
             foreach(GameObject obj in PlayerUis)
             {
+                if(obj.GetComponent<PlayerInfoController>().takenBy == (string)changedProps["UiName"])
+                {
+                    break;
+                }
                 if (!obj.active && obj.GetComponent<PlayerInfoController>().takenBy == "")
                 {
                     obj.SetActive(true);
                     obj.GetComponent<PlayerInfoController>().SetPlayer((string)changedProps["UiName"], (bool)changedProps["UiHost"]);
                     obj.GetComponent<PlayerInfoController>().SetHp((float)changedProps["UiHp"]);
+                    obj.GetComponent<PlayerInfoController>().SetCoin((int)changedProps["UiCoin"]);
+                    obj.GetComponent<PlayerInfoController>().SetGun(gameObject.GetComponent<GunController>().Guns[(int)changedProps["UiGun"]].gunIcon);
                     break;
                 }
             }
@@ -94,6 +109,8 @@ public class PlayerController : MonoBehaviourPunCallbacks
                 if(obj.GetComponent<PlayerInfoController>().takenBy == (string)changedProps["UiName"])
                 {
                     obj.GetComponent<PlayerInfoController>().SetHp((float)changedProps["UiHp"]);
+                    obj.GetComponent<PlayerInfoController>().SetCoin((int)changedProps["UiCoin"]);
+                    obj.GetComponent<PlayerInfoController>().SetGun(gameObject.GetComponent<GunController>().Guns[(int)changedProps["UiGun"]].gunIcon);
                 }
             }
         }
@@ -116,5 +133,41 @@ public class PlayerController : MonoBehaviourPunCallbacks
         Vector2 mouseScreenPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 direction = (mouseScreenPosition - (Vector2) transform.position).normalized;
         sprites.transform.up = direction;
+    }
+
+    public void ModifyCoins(int addOrRemove, int Ammount)
+    {
+        if (PV.IsMine)
+        {
+            if (addOrRemove == 1)
+            {
+                Coins += Ammount;
+            }
+            else
+            {
+                Coins -= Ammount;
+            }
+            Hashtable hash = new Hashtable();
+            hash.Add("UiName", PhotonNetwork.NickName);
+            hash.Add("UiHp", Hp);
+            hash.Add("UiCoin", Coins);
+            hash.Add("UiGun", gameObject.GetComponent<GunController>().CurrentGunId);
+            hash.Add("UiHost", PhotonNetwork.IsMasterClient);
+            PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+        }
+    }
+
+    public void UpdateGunInfo(int GunId)
+    {
+        if (PV.IsMine)
+        {
+            Hashtable hash = new Hashtable();
+            hash.Add("UiName", PhotonNetwork.NickName);
+            hash.Add("UiHp", Hp);
+            hash.Add("UiCoin", Coins);
+            hash.Add("UiGun", GunId);
+            hash.Add("UiHost", PhotonNetwork.IsMasterClient);
+            PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+        }
     }
 }
