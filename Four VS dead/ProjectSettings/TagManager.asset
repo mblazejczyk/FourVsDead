@@ -6,6 +6,9 @@ TagManager:
   tags:
   - OnlinePlayer
   - bullet
+  - InfoBox
+  - SpawnPoint
+  - Enemy
   layers:
   - Default
   - TransparentFX

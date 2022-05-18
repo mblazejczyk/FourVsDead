@@ -8,15 +8,14 @@ using UnityEngine.SceneManagement;
 
 public class MatchController : MonoBehaviourPunCallbacks
 {
-    public Transform[] SpawnPoints;
-    private GameObject HostLeftPanel;
-
+    public GameObject[] SpawnPoints;
     
 
     void Start()
     {
         if (PhotonNetwork.IsMasterClient)
         {
+            SpawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint");
             StartCoroutine(SpawnNew());
         }
     }
@@ -24,7 +23,10 @@ public class MatchController : MonoBehaviourPunCallbacks
     IEnumerator SpawnNew()
     {
         yield return new WaitForSeconds(5);
-        PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "EnemyController"), Vector3.zero, Quaternion.identity);
+
+        Vector3 spawn = SpawnPoints[Random.Range(0, SpawnPoints.Length)].GetComponent<Transform>().position;
+
+        PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "EnemyController"), spawn, Quaternion.identity);
         if (PhotonNetwork.IsMasterClient)
         {
             StartCoroutine(SpawnNew());

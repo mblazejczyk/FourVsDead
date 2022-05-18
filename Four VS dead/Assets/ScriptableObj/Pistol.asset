@@ -16,6 +16,6 @@ MonoBehaviour:
   Name: Pistol
   Damage: 5
   ShootSpeed: 1
-  Cost: 0
+  Cost: 5
   CoinReward: 5
   gunIcon: {fileID: 21300000, guid: bafc952fc08f9e04591d1842c6df2c70, type: 3}

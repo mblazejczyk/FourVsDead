@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class BuyZone : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class BuyZone : MonoBehaviour
         {
             return;
         }
+        GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetTrigger("Open");
+        GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Referencer>().Reference.GetComponent<TMP_Text>().text = "Press E to buy";
         Debug.Log("Triggered");
         isOnTrigger = true;
         c2d = collision;
@@ -24,6 +27,7 @@ public class BuyZone : MonoBehaviour
         {
             return;
         }
+        GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetTrigger("Close");
         isOnTrigger = false;
         c2d = null;
     }
@@ -36,7 +40,7 @@ public class BuyZone : MonoBehaviour
             Debug.Log(c2d.GetComponent<Referencer>().Reference.GetComponent<PlayerController>().Coins);
             if(c2d.GetComponent<Referencer>().Reference.GetComponent<GunController>().Guns[WeaponToBuyId].Cost > c2d.GetComponent<Referencer>().Reference.GetComponent<PlayerController>().Coins)
             {
-                Debug.Log("Not enaugh money");
+                GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Referencer>().Reference.GetComponent<TMP_Text>().text = "Not enaugh coins";
             }
             else
             {

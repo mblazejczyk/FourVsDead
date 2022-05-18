@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BarycadeSystem
     - Bullet
     - BuyZone
     - CursorController
@@ -47,6 +48,12 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshPro
     - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -84,6 +91,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
@@ -93,6 +106,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1904}
     - Class: 114
+      Script: {instanceID: 2040}
+    - Class: 114
       Script: {instanceID: 2254}
     - Class: 114
       Script: {instanceID: 2344}
@@ -101,13 +116,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2968}
     - Class: 114
+      Script: {instanceID: 3020}
+    - Class: 114
       Script: {instanceID: 3072}
     - Class: 114
       Script: {instanceID: 3214}
     - Class: 114
+      Script: {instanceID: 3470}
+    - Class: 114
       Script: {instanceID: 3480}
     - Class: 114
       Script: {instanceID: 4204}
+    - Class: 114
+      Script: {instanceID: 34980}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -694,7 +715,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 7b96dc97c07dac001467356fa506ef46
+      Hash: aee23863253480f608ddc10245f74324
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MatchController
@@ -1082,6 +1103,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyController
+  - hash:
+      serializedVersion: 2
+      Hash: ddc3ddb5e57d8d4b557c2253bd1810c6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BarycadeSystem
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
