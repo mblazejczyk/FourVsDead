@@ -23,11 +23,18 @@ public class BarycadeSystem : MonoBehaviour, IBarycadeDmg
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && collision.GetComponent<PhotonView>().IsMine)
+        {
+            GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetBool("isOpen", true);
+            GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Referencer>().Reference.GetComponent<TMP_Text>().text = "You're repairing barycade";
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player" && collision.GetComponent<PhotonView>().IsMine)
         {
             isRepairing = true;
-            GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetTrigger("Open");
-            GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Referencer>().Reference.GetComponent<TMP_Text>().text = "You're repairing barycade";
             StartCoroutine(RepairTimer());
         }
         else if(collision.tag == "Enemy"){
@@ -42,9 +49,9 @@ public class BarycadeSystem : MonoBehaviour, IBarycadeDmg
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && collision.GetComponent<PhotonView>().IsMine)
         {
-            GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetTrigger("Close");
+            GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetBool("isOpen", false);
             GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Referencer>().Reference.GetComponent<TMP_Text>().text = "---";
             isRepairing = false;
         }

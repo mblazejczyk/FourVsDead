@@ -16,13 +16,13 @@ public class MatchController : MonoBehaviourPunCallbacks
         if (PhotonNetwork.IsMasterClient)
         {
             SpawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint");
-            //StartCoroutine(SpawnNew());
+            StartCoroutine(SpawnNew());
         }
     }
 
     IEnumerator SpawnNew()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(10);
 
         Vector3 spawn = SpawnPoints[Random.Range(0, SpawnPoints.Length)].GetComponent<Transform>().position;
 

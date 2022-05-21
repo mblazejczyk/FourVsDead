@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Photon.Pun;
 
 public class BuyZone : MonoBehaviour
 {
@@ -10,11 +11,11 @@ public class BuyZone : MonoBehaviour
     private Collider2D c2d;
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.tag != "Player")
+        if(collision.tag != "Player" || !collision.GetComponent<PhotonView>().IsMine)
         {
             return;
         }
-        GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetTrigger("Open");
+        GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetBool("isOpen", true);
         GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Referencer>().Reference.GetComponent<TMP_Text>().text = "Press E to buy";
         Debug.Log("Triggered");
         isOnTrigger = true;
@@ -23,13 +24,13 @@ public class BuyZone : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag != "Player")
+        if (collision.tag != "Player" || !collision.GetComponent<PhotonView>().IsMine)
         {
             return;
         }
-        GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetTrigger("Close");
         isOnTrigger = false;
         c2d = null;
+        GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetBool("isOpen", false);
     }
 
     private void Update()

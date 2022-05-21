@@ -3,12 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using System.IO;
+using Pathfinding;
 
 public class EnemyController : MonoBehaviour, IDamagable
 {
     PhotonView PV;
     public float MaxHp;
+
     public GameObject Target;
+    public float speed = 200f;
+    public float nextDistance = 3f;
+
+    Pathfinding.Path path;
+    int currentWaypoint = 0;
+    bool reachedEnd = false;
+
+    Seeker seeker;
+    Rigidbody2D rb;
+
     public GameObject HpBar;
     public GameObject HpText;
     public GameObject bullet;
@@ -17,12 +29,33 @@ public class EnemyController : MonoBehaviour, IDamagable
     private void Awake()
     {
         PV = GetComponent<PhotonView>();
+        seeker = GetComponent<Seeker>();
+        rb = GetComponent<Rigidbody2D>();
     }
     void Start()
     {
         if (PhotonNetwork.IsMasterClient)
         {
             FindNewPlayer();
+
+            InvokeRepeating("UpdatePath", 0f, .5f);
+        }
+    }
+
+    void UpdatePath()
+    {
+        if (seeker.IsDone())
+        {
+            seeker.StartPath(rb.position, Target.transform.position, OnPathCompleate);
+        }
+    }
+
+    void OnPathCompleate(Pathfinding.Path p)
+    {
+        if (!p.error)
+        {
+            path = p;
+            currentWaypoint = 0;
         }
     }
 
@@ -32,13 +65,33 @@ public class EnemyController : MonoBehaviour, IDamagable
         Target = Players[Random.Range(0, Players.Length)];
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (PhotonNetwork.IsMasterClient)
         {
             if(Target == null) { FindNewPlayer(); }
-            transform.up = Target.transform.position - transform.position;
-            gameObject.GetComponent<Rigidbody2D>().velocity = gameObject.transform.up;
+            if(path == null) { return; }
+
+            if(currentWaypoint >= path.vectorPath.Count)
+            {
+                reachedEnd = true;
+                return;
+            }
+            else
+            {
+                reachedEnd = false;
+            }
+
+            Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
+            Vector2 force = direction * speed * Time.deltaTime;
+            transform.up = Target.transform.position - transform.position; 
+            rb.AddForce(force);
+
+            float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
+            if(distance < nextDistance)
+            {
+                currentWaypoint++;
+            }
         }
     }
 
