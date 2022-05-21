@@ -12,8 +12,8 @@ public class BarycadeSystem : MonoBehaviour, IBarycadeDmg
     public bool isDestroing = false;
     public bool isRepairing = false;
 
-    public TMP_Text hpText;
-
+    public Sprite[] DestroyLevel;
+    
     public int Hp = 5;
 
     private void Awake()
@@ -109,13 +109,11 @@ public class BarycadeSystem : MonoBehaviour, IBarycadeDmg
         if(Hp == 0)
         {
             gameObject.GetComponent<Referencer>().Reference.GetComponent<BoxCollider2D>().isTrigger = true;
-            gameObject.GetComponent<Referencer>().Reference.GetComponent<SpriteRenderer>().color = Color.red;
         }
         else
         {
             gameObject.GetComponent<Referencer>().Reference.GetComponent<BoxCollider2D>().isTrigger = false;
-            gameObject.GetComponent<Referencer>().Reference.GetComponent<SpriteRenderer>().color = new Color(0.76f, 0.42f, 0);
         }
-        hpText.text = Hp + "/6";
+        gameObject.GetComponent<Referencer>().Reference.GetComponent<SpriteRenderer>().sprite = DestroyLevel[Hp];
     }
 }
