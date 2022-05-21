@@ -22,8 +22,11 @@ ScriptsOnlyBuild:
     - loginHandler
     - loginSystem
     PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PunSceneSettings
+    - Photon.Pun.PhotonRigidbody2DViewEditor
+    - Photon.Pun.PhotonTransformViewEditor
+    - Photon.Pun.PhotonViewInspector
     PhotonUnityNetworking.dll:
+    - Photon.Pun.PhotonRigidbody2DView
     - Photon.Pun.PhotonTransformView
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
@@ -201,6 +204,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3022}
     - Class: 114
+      Script: {instanceID: 3080}
+    - Class: 114
       Script: {instanceID: 3216}
     - Class: 114
       Script: {instanceID: 3472}
@@ -213,25 +218,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4332}
     - Class: 114
-      Script: {instanceID: 4860}
+      Script: {instanceID: 4594}
     - Class: 114
-      Script: {instanceID: 4900}
+      Script: {instanceID: 4862}
     - Class: 114
-      Script: {instanceID: 5058}
+      Script: {instanceID: 4902}
     - Class: 114
-      Script: {instanceID: 5086}
+      Script: {instanceID: 5060}
     - Class: 114
-      Script: {instanceID: 5506}
+      Script: {instanceID: 5088}
     - Class: 114
       Script: {instanceID: 5508}
     - Class: 114
-      Script: {instanceID: 5678}
+      Script: {instanceID: 5510}
     - Class: 114
-      Script: {instanceID: 6132}
+      Script: {instanceID: 5680}
     - Class: 114
-      Script: {instanceID: 19108}
+      Script: {instanceID: 5726}
     - Class: 114
-      Script: {instanceID: 24316}
+      Script: {instanceID: 6136}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -300,15 +305,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4038}
     - Class: 114
-      Script: {instanceID: 4856}
+      Script: {instanceID: 4858}
     - Class: 114
-      Script: {instanceID: 5058}
+      Script: {instanceID: 5060}
     - Class: 114
-      Script: {instanceID: 5234}
+      Script: {instanceID: 5236}
     - Class: 114
-      Script: {instanceID: 5348}
+      Script: {instanceID: 5350}
     - Class: 114
-      Script: {instanceID: 5858}
+      Script: {instanceID: 5862}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -880,6 +885,12 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: 8e06571f49f908c4522624a85f05360f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: loginSystem
+  - hash:
+      serializedVersion: 2
       Hash: ee1dba1a186ac062d564e9eb73a1c56f
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
@@ -1108,6 +1119,12 @@ ScriptsOnlyBuild:
     className: ServerSettings
   - hash:
       serializedVersion: 2
+      Hash: 2044b9d53db3c9cfaec9706e3fb4b5ac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: loginHandler
+  - hash:
+      serializedVersion: 2
       Hash: e1e615eaf73e560828f53edc8952e615
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
@@ -1172,18 +1189,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyController
-  - hash:
-      serializedVersion: 2
-      Hash: 8e06571f49f908c4522624a85f05360f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: loginSystem
-  - hash:
-      serializedVersion: 2
-      Hash: 2044b9d53db3c9cfaec9706e3fb4b5ac
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: loginHandler
   platform: 19
   scenePathNames:
   - Assets/Scenes/Login.unity
