@@ -10,7 +10,9 @@ public class PlayerController : MonoBehaviourPunCallbacks
 {
     PhotonView PV;
 
-    public Vector2 speed = new Vector2(50, 50);
+    public float speed = 10;
+    public Vector2 movement;
+    public Rigidbody2D rb;
     public GameObject TriggerAndReferencer;
 
     [Header("Uis")]
@@ -24,6 +26,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
 
     private void Awake()
     {
+        rb = gameObject.GetComponent<Rigidbody2D>();
         PV = GetComponent<PhotonView>();
         if (PV.IsMine)
         {
@@ -44,27 +47,18 @@ public class PlayerController : MonoBehaviourPunCallbacks
     private void Update()
     {
         if (!PV.IsMine) { return; }
-        MoveAround();
         LookAround();
         if (Input.GetKey(KeyCode.Mouse0))
         {
             gameObject.GetComponent<GunController>().Shoot(sprites);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha1)){
-            gameObject.GetComponent<GunController>().ChangeGun(0);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            gameObject.GetComponent<GunController>().ChangeGun(1);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            gameObject.GetComponent<GunController>().ChangeGun(2);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            gameObject.GetComponent<GunController>().ChangeGun(3);
-        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (!PV.IsMine) { return; }
+        movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        MoveAround(movement);
     }
 
     private void Start()
@@ -115,16 +109,9 @@ public class PlayerController : MonoBehaviourPunCallbacks
             }
         }
     }
-    void MoveAround()
+    void MoveAround(Vector2 direction)
     {
-        float inputX = Input.GetAxis("Horizontal");
-        float inputY = Input.GetAxis("Vertical");
-
-        Vector3 movement = new Vector3(speed.x * inputX, speed.y * inputY, 0);
-
-        movement *= Time.deltaTime;
-
-        transform.Translate(movement);
+        rb.MovePosition((Vector2)transform.position + (direction * speed * Time.deltaTime));
     }
 
 

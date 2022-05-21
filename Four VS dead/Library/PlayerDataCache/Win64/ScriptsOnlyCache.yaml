@@ -19,6 +19,8 @@ ScriptsOnlyBuild:
     - Referencer
     - RoomListitem
     - RoomManager
+    - loginHandler
+    - loginSystem
     PhotonUnityNetworking.Editor.dll:
     - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
@@ -112,23 +114,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2344}
     - Class: 114
-      Script: {instanceID: 2790}
+      Script: {instanceID: 2402}
     - Class: 114
-      Script: {instanceID: 2968}
+      Script: {instanceID: 2792}
     - Class: 114
-      Script: {instanceID: 3020}
+      Script: {instanceID: 2970}
     - Class: 114
-      Script: {instanceID: 3072}
+      Script: {instanceID: 3022}
     - Class: 114
-      Script: {instanceID: 3214}
+      Script: {instanceID: 3074}
     - Class: 114
-      Script: {instanceID: 3470}
+      Script: {instanceID: 3216}
     - Class: 114
-      Script: {instanceID: 3480}
+      Script: {instanceID: 3472}
     - Class: 114
-      Script: {instanceID: 4204}
+      Script: {instanceID: 3482}
     - Class: 114
-      Script: {instanceID: 34980}
+      Script: {instanceID: 4206}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -147,7 +149,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Login.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -181,8 +183,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 1608}
-    - Class: 114
       Script: {instanceID: 1722}
     - Class: 114
       Script: {instanceID: 1904}
@@ -195,51 +195,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2334}
     - Class: 114
-      Script: {instanceID: 2790}
+      Script: {instanceID: 2792}
     - Class: 114
-      Script: {instanceID: 2968}
+      Script: {instanceID: 2970}
     - Class: 114
-      Script: {instanceID: 3020}
+      Script: {instanceID: 3022}
     - Class: 114
-      Script: {instanceID: 3214}
+      Script: {instanceID: 3216}
     - Class: 114
-      Script: {instanceID: 3470}
+      Script: {instanceID: 3472}
     - Class: 114
-      Script: {instanceID: 3480}
+      Script: {instanceID: 3482}
     - Class: 114
-      Script: {instanceID: 3596}
+      Script: {instanceID: 3598}
     - Class: 114
-      Script: {instanceID: 4016}
+      Script: {instanceID: 4166}
     - Class: 114
-      Script: {instanceID: 4036}
+      Script: {instanceID: 4332}
     - Class: 114
-      Script: {instanceID: 4164}
+      Script: {instanceID: 4860}
     - Class: 114
-      Script: {instanceID: 4330}
+      Script: {instanceID: 4900}
     - Class: 114
-      Script: {instanceID: 4854}
+      Script: {instanceID: 5058}
     - Class: 114
-      Script: {instanceID: 4858}
+      Script: {instanceID: 5086}
     - Class: 114
-      Script: {instanceID: 4898}
+      Script: {instanceID: 5506}
     - Class: 114
-      Script: {instanceID: 5054}
+      Script: {instanceID: 5508}
     - Class: 114
-      Script: {instanceID: 5082}
+      Script: {instanceID: 5678}
     - Class: 114
-      Script: {instanceID: 5230}
+      Script: {instanceID: 6132}
     - Class: 114
-      Script: {instanceID: 5344}
+      Script: {instanceID: 19108}
     - Class: 114
-      Script: {instanceID: 5502}
-    - Class: 114
-      Script: {instanceID: 5504}
-    - Class: 114
-      Script: {instanceID: 5674}
-    - Class: 114
-      Script: {instanceID: 5854}
-    - Class: 114
-      Script: {instanceID: 6128}
+      Script: {instanceID: 24316}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -253,6 +245,77 @@ ScriptsOnlyBuild:
     - Class: 199
       Script: {instanceID: 0}
     - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/SampleScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1496}
+    - Class: 114
+      Script: {instanceID: 1600}
+    - Class: 114
+      Script: {instanceID: 1608}
+    - Class: 114
+      Script: {instanceID: 1722}
+    - Class: 114
+      Script: {instanceID: 1904}
+    - Class: 114
+      Script: {instanceID: 2792}
+    - Class: 114
+      Script: {instanceID: 2970}
+    - Class: 114
+      Script: {instanceID: 3022}
+    - Class: 114
+      Script: {instanceID: 3216}
+    - Class: 114
+      Script: {instanceID: 3472}
+    - Class: 114
+      Script: {instanceID: 3482}
+    - Class: 114
+      Script: {instanceID: 3598}
+    - Class: 114
+      Script: {instanceID: 4018}
+    - Class: 114
+      Script: {instanceID: 4038}
+    - Class: 114
+      Script: {instanceID: 4856}
+    - Class: 114
+      Script: {instanceID: 5058}
+    - Class: 114
+      Script: {instanceID: 5234}
+    - Class: 114
+      Script: {instanceID: 5348}
+    - Class: 114
+      Script: {instanceID: 5858}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -419,6 +482,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: ddc3ddb5e57d8d4b557c2253bd1810c6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BarycadeSystem
   - hash:
       serializedVersion: 2
       Hash: f1d735cc1a21c3704ab52568f4fbfcf8
@@ -895,7 +964,7 @@ ScriptsOnlyBuild:
     className: StatesGui
   - hash:
       serializedVersion: 2
-      Hash: 7dd61f90164dec1330a977f7edf1e046
+      Hash: e574454dbe1b6cc7b01e33e24722bea7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -1105,12 +1174,19 @@ ScriptsOnlyBuild:
     className: EnemyController
   - hash:
       serializedVersion: 2
-      Hash: ddc3ddb5e57d8d4b557c2253bd1810c6
+      Hash: 8e06571f49f908c4522624a85f05360f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: BarycadeSystem
+    className: loginSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 2044b9d53db3c9cfaec9706e3fb4b5ac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: loginHandler
   platform: 19
   scenePathNames:
+  - Assets/Scenes/Login.unity
   - Assets/Scenes/SampleScene.unity
   - Assets/Scenes/Game.unity
   playerPath: C:/Users/Mateusz/Four VS dead/Build/Four VS dead.exe

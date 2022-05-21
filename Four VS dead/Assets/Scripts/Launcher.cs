@@ -42,7 +42,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     {
         Debug.Log("Joined lobby");
         MenuManager.Instance.OpenMenu("title");
-        PhotonNetwork.NickName = "Player" + Random.Range(0, 100).ToString("000");
+        PhotonNetwork.NickName = GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login;
     }
 
     public void CreateRoom()
@@ -157,7 +157,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         {
             PhotonNetwork.CurrentRoom.IsVisible = false;
         }
-        PhotonNetwork.LoadLevel(1);
+        PhotonNetwork.LoadLevel(2);
     }
 
     public GameObject passwordPrompt;

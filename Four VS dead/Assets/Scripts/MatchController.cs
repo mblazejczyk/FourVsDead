@@ -16,7 +16,7 @@ public class MatchController : MonoBehaviourPunCallbacks
         if (PhotonNetwork.IsMasterClient)
         {
             SpawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint");
-            StartCoroutine(SpawnNew());
+            //StartCoroutine(SpawnNew());
         }
     }
 
