@@ -20,11 +20,21 @@ public class MatchController : MonoBehaviourPunCallbacks
         }
     }
 
+    GameObject ActiveSpawn()
+    {
+        return SpawnPoints[Random.Range(0, SpawnPoints.Length)];
+    }
     IEnumerator SpawnNew()
     {
         yield return new WaitForSeconds(10);
 
-        Vector3 spawn = SpawnPoints[Random.Range(0, SpawnPoints.Length)].GetComponent<Transform>().position;
+        GameObject obj = ActiveSpawn();
+        while (!obj.GetComponent<Referencer>().Reference.GetComponent<BarycadeSystem>().isActivated)
+        {
+            obj = ActiveSpawn();
+        }
+
+        Vector3 spawn = obj.GetComponent<Transform>().position;
 
         PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "EnemyController"), spawn, Quaternion.identity);
         if (PhotonNetwork.IsMasterClient)

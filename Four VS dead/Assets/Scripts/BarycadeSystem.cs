@@ -11,6 +11,7 @@ public class BarycadeSystem : MonoBehaviour, IBarycadeDmg
 
     public bool isDestroing = false;
     public bool isRepairing = false;
+    public bool isActivated = false;
 
     public Sprite[] DestroyLevel;
     

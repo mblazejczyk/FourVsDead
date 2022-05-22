@@ -37,8 +37,6 @@ public class BuyZone : MonoBehaviour
     {
         if(isOnTrigger == true && Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log(c2d.GetComponent<GunController>().Guns[WeaponToBuyId].Cost);
-            Debug.Log(c2d.GetComponent<PlayerController>().Coins);
             if(c2d.GetComponent<GunController>().Guns[WeaponToBuyId].Cost > c2d.GetComponent<PlayerController>().Coins)
             {
                 GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Referencer>().Reference.GetComponent<TMP_Text>().text = "Not enaugh coins";
