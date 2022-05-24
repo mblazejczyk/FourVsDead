@@ -43,6 +43,8 @@ MonoBehaviour:
   - RPC_PrintBullet
   - RPC_ChangeHp
   - RPC_DoorDestroy
+  - RPC_changePlayerHp
+  - RPC_Revived
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

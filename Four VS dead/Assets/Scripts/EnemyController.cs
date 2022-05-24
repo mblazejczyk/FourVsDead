@@ -121,4 +121,22 @@ public class EnemyController : MonoBehaviour, IDamagable
         yield return new WaitForSeconds(0.2f);
         bloodParticle.Stop();
     }
+
+    private float damageCooldown = 3;
+    private bool canDamage = true;
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player" && canDamage)
+        {
+            collision.gameObject.GetComponent<PlayerController>().ModifyHp(true, 10);
+            StartCoroutine(damageCooldownTimer());
+            canDamage = false;
+        }
+    }
+
+    IEnumerator damageCooldownTimer()
+    {
+        yield return new WaitForSeconds(damageCooldown);
+        canDamage = true;
+    }
 }

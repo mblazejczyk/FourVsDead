@@ -18,6 +18,7 @@ ScriptsOnlyBuild:
     - PlayerListitem
     - PlayerManager
     - Referencer
+    - RescueSystem
     - RoomListitem
     - RoomManager
     - loginHandler
@@ -25,8 +26,6 @@ ScriptsOnlyBuild:
     AstarPathfindingProject.dll:
     - AstarPath
     - Pathfinding.Seeker
-    PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonRigidbody2DView
     - Photon.Pun.PhotonTransformView
@@ -139,9 +138,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3626}
     - Class: 114
-      Script: {instanceID: 4386}
+      Script: {instanceID: 4388}
     - Class: 114
-      Script: {instanceID: 38986}
+      Script: {instanceID: 5292}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -189,6 +188,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 58
       Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 102
@@ -226,33 +227,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3626}
     - Class: 114
-      Script: {instanceID: 3750}
+      Script: {instanceID: 3752}
     - Class: 114
-      Script: {instanceID: 4344}
+      Script: {instanceID: 4346}
     - Class: 114
-      Script: {instanceID: 4516}
+      Script: {instanceID: 4388}
     - Class: 114
-      Script: {instanceID: 4798}
+      Script: {instanceID: 4518}
     - Class: 114
-      Script: {instanceID: 5076}
+      Script: {instanceID: 4800}
     - Class: 114
-      Script: {instanceID: 5118}
+      Script: {instanceID: 5078}
     - Class: 114
-      Script: {instanceID: 5278}
+      Script: {instanceID: 5120}
     - Class: 114
-      Script: {instanceID: 5308}
+      Script: {instanceID: 5280}
     - Class: 114
-      Script: {instanceID: 5742}
+      Script: {instanceID: 5312}
     - Class: 114
-      Script: {instanceID: 5744}
+      Script: {instanceID: 5746}
     - Class: 114
-      Script: {instanceID: 5932}
+      Script: {instanceID: 5748}
     - Class: 114
-      Script: {instanceID: 5970}
+      Script: {instanceID: 5936}
     - Class: 114
-      Script: {instanceID: 6092}
+      Script: {instanceID: 5974}
     - Class: 114
-      Script: {instanceID: 6414}
+      Script: {instanceID: 6096}
+    - Class: 114
+      Script: {instanceID: 6418}
+    - Class: 114
+      Script: {instanceID: 36338}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -315,21 +320,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3626}
     - Class: 114
-      Script: {instanceID: 3750}
+      Script: {instanceID: 3752}
     - Class: 114
-      Script: {instanceID: 4188}
+      Script: {instanceID: 4190}
     - Class: 114
-      Script: {instanceID: 4214}
+      Script: {instanceID: 4216}
     - Class: 114
-      Script: {instanceID: 5072}
+      Script: {instanceID: 5074}
     - Class: 114
-      Script: {instanceID: 5278}
+      Script: {instanceID: 5280}
     - Class: 114
-      Script: {instanceID: 5462}
+      Script: {instanceID: 5466}
     - Class: 114
-      Script: {instanceID: 5582}
+      Script: {instanceID: 5586}
     - Class: 114
-      Script: {instanceID: 6126}
+      Script: {instanceID: 6130}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -841,6 +846,12 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: 31cc7ce7fddca456b1c12092580ad428
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Waves
+  - hash:
+      serializedVersion: 2
       Hash: 8e6ceabfd38a184413d69b7db56c89cc
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
@@ -1135,7 +1146,7 @@ ScriptsOnlyBuild:
     className: StatesGui
   - hash:
       serializedVersion: 2
-      Hash: e574454dbe1b6cc7b01e33e24722bea7
+      Hash: 9de031517c009b1335668dd516749ff6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -1193,6 +1204,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RectMask2D
+  - hash:
+      serializedVersion: 2
+      Hash: 0159ee7b8c766301db4179fc9038387c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DoorSystem
   - hash:
       serializedVersion: 2
       Hash: 57ba1b28f190a91e43977dcf11319678
@@ -1399,10 +1416,10 @@ ScriptsOnlyBuild:
     className: EnemyController
   - hash:
       serializedVersion: 2
-      Hash: 0159ee7b8c766301db4179fc9038387c
+      Hash: 7fd6bd7e5cf38751fd1ff2e4279254cc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: DoorSystem
+    className: RescueSystem
   platform: 19
   scenePathNames:
   - Assets/Scenes/Login.unity

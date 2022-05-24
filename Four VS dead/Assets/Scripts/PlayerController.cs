@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     public Vector2 movement;
     public Rigidbody2D rb;
     public GameObject TriggerAndReferencer;
+    public GameObject deadTrigger;
 
     [Header("Uis")]
     public GameObject sprites;
@@ -156,5 +157,73 @@ public class PlayerController : MonoBehaviourPunCallbacks
             hash.Add("UiHost", PhotonNetwork.IsMasterClient);
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
         }
+    }
+
+    [PunRPC]
+    void RPC_Revived()
+    {
+        if (PV.IsMine)
+        {
+            ModifyHp(false, 50);
+        }
+    }
+
+    public void ModifyHp(bool isDamaging, int hpChanged)
+    {
+        if (PV.IsMine)
+        {
+            if (isDamaging)
+            {
+                Hp -= hpChanged;
+            }
+            else
+            {
+                Hp += hpChanged;
+            }
+            if(Hp < 0) { Hp = 0; }
+
+            if (Hp <= 0)
+            {
+                deadTrigger.SetActive(true);
+            }
+            else
+            {
+                deadTrigger.SetActive(false);
+            }
+
+            Hashtable hash = new Hashtable();
+            hash.Add("UiName", PhotonNetwork.NickName);
+            hash.Add("UiHp", Hp);
+            hash.Add("UiCoin", Coins);
+            hash.Add("UiGun", gameObject.GetComponent<GunController>().CurrentGunId);
+            hash.Add("UiHost", PhotonNetwork.IsMasterClient);
+            PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+
+            PV.RPC("RPC_changePlayerHp", RpcTarget.All, isDamaging, hpChanged);
+        }
+    }
+
+    [PunRPC]
+    void RPC_changePlayerHp(bool isTaking, int dmg)
+    {
+        if (Hp <= 0)
+        {
+            deadTrigger.SetActive(true);
+        }
+        else
+        {
+            deadTrigger.SetActive(false);
+        }
+
+        if (PV.IsMine) { return; }
+        if (isTaking)
+        {
+            Hp -= dmg;
+        }
+        else
+        {
+            Hp += dmg;
+        }
+        
     }
 }
