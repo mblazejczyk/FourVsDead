@@ -72,6 +72,11 @@ public class EnemyController : MonoBehaviour, IDamagable
             if(Target == null) { FindNewPlayer(); }
             if(path == null) { return; }
 
+            while(Target.GetComponent<Referencer>().Reference.GetComponent<PlayerController>().isDead)
+            {
+                FindNewPlayer();
+            }
+
             if(currentWaypoint >= path.vectorPath.Count)
             {
                 reachedEnd = true;
@@ -128,7 +133,7 @@ public class EnemyController : MonoBehaviour, IDamagable
     {
         if (collision.gameObject.tag == "Player" && canDamage)
         {
-            collision.gameObject.GetComponent<PlayerController>().ModifyHp(true, 10);
+            collision.gameObject.GetComponent<PlayerController>().ModifyHp(true, 25);
             StartCoroutine(damageCooldownTimer());
             canDamage = false;
         }

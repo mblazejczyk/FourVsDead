@@ -173,6 +173,7 @@ MonoBehaviour:
   - {fileID: 0}
   Hp: 100
   Coins: 0
+  isDead: 0
 --- !u!58 &1391497470712462367
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -519,6 +520,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8478241779196906107}
   - component: {fileID: 5625403710224593895}
+  - component: {fileID: 957654002682526652}
   m_Layer: 0
   m_Name: Sprites
   m_TagString: OnlinePlayer
@@ -559,6 +561,19 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!114 &957654002682526652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5586236393791298307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70069b8fa77e00448a657f8cda5eebd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Reference: {fileID: 2287605098792481067}
 --- !u!1 &6031427317639427000
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,7 +903,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.70664304, g: 1, b: 0.5990566, a: 0.23921569}
+  m_Color: {r: 0.7, g: 1, b: 0.6, a: 0.23921569}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -939,6 +954,15 @@ MonoBehaviour:
   isOnTrigger: 0
   playerConnected: {fileID: 2287605098792481067}
   col: {fileID: 0}
+  toTurnOff:
+  - {fileID: 6984671793526691043}
+  - {fileID: 3027636810044259191}
+  - {fileID: 7150518767762717173}
+  disable:
+  - {fileID: 6031427317639427000}
+  - {fileID: 7342039856964796172}
+  timeText: {fileID: 6622081724743367791}
+  timeLeft: 20
 --- !u!1 &7342039856964796172
 GameObject:
   m_ObjectHideFlags: 0

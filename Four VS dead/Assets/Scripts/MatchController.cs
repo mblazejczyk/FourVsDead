@@ -42,6 +42,4 @@ public class MatchController : MonoBehaviourPunCallbacks
             StartCoroutine(SpawnNew());
         }
     }
-
-    
 }

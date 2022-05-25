@@ -26,6 +26,8 @@ ScriptsOnlyBuild:
     AstarPathfindingProject.dll:
     - AstarPath
     - Pathfinding.Seeker
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonRigidbody2DView
     - Photon.Pun.PhotonTransformView
@@ -124,23 +126,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2468}
     - Class: 114
-      Script: {instanceID: 2880}
+      Script: {instanceID: 2882}
     - Class: 114
-      Script: {instanceID: 3068}
+      Script: {instanceID: 3070}
     - Class: 114
-      Script: {instanceID: 3124}
+      Script: {instanceID: 3126}
     - Class: 114
-      Script: {instanceID: 3180}
+      Script: {instanceID: 3182}
     - Class: 114
-      Script: {instanceID: 3334}
+      Script: {instanceID: 3336}
     - Class: 114
-      Script: {instanceID: 3616}
+      Script: {instanceID: 3618}
     - Class: 114
-      Script: {instanceID: 3626}
+      Script: {instanceID: 3628}
     - Class: 114
-      Script: {instanceID: 4388}
+      Script: {instanceID: 4390}
     - Class: 114
-      Script: {instanceID: 5292}
+      Script: {instanceID: 5294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -213,51 +215,51 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2398}
     - Class: 114
-      Script: {instanceID: 2880}
+      Script: {instanceID: 2536}
     - Class: 114
-      Script: {instanceID: 3068}
+      Script: {instanceID: 2882}
     - Class: 114
-      Script: {instanceID: 3124}
+      Script: {instanceID: 3070}
     - Class: 114
-      Script: {instanceID: 3186}
+      Script: {instanceID: 3126}
     - Class: 114
-      Script: {instanceID: 3334}
+      Script: {instanceID: 3188}
     - Class: 114
-      Script: {instanceID: 3616}
+      Script: {instanceID: 3336}
     - Class: 114
-      Script: {instanceID: 3626}
+      Script: {instanceID: 3618}
     - Class: 114
-      Script: {instanceID: 3752}
+      Script: {instanceID: 3628}
     - Class: 114
-      Script: {instanceID: 4346}
+      Script: {instanceID: 3754}
     - Class: 114
-      Script: {instanceID: 4388}
+      Script: {instanceID: 4348}
     - Class: 114
-      Script: {instanceID: 4518}
+      Script: {instanceID: 4390}
     - Class: 114
-      Script: {instanceID: 4800}
+      Script: {instanceID: 4520}
     - Class: 114
-      Script: {instanceID: 5078}
+      Script: {instanceID: 4802}
     - Class: 114
-      Script: {instanceID: 5120}
+      Script: {instanceID: 5080}
     - Class: 114
-      Script: {instanceID: 5280}
+      Script: {instanceID: 5122}
     - Class: 114
-      Script: {instanceID: 5312}
+      Script: {instanceID: 5282}
     - Class: 114
-      Script: {instanceID: 5746}
+      Script: {instanceID: 5314}
     - Class: 114
-      Script: {instanceID: 5748}
+      Script: {instanceID: 5750}
     - Class: 114
-      Script: {instanceID: 5936}
+      Script: {instanceID: 5752}
     - Class: 114
-      Script: {instanceID: 5974}
+      Script: {instanceID: 5940}
     - Class: 114
-      Script: {instanceID: 6096}
+      Script: {instanceID: 5978}
     - Class: 114
-      Script: {instanceID: 6418}
+      Script: {instanceID: 6100}
     - Class: 114
-      Script: {instanceID: 36338}
+      Script: {instanceID: 6422}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -308,33 +310,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1938}
     - Class: 114
-      Script: {instanceID: 2880}
+      Script: {instanceID: 2882}
     - Class: 114
-      Script: {instanceID: 3068}
+      Script: {instanceID: 3070}
     - Class: 114
-      Script: {instanceID: 3124}
+      Script: {instanceID: 3126}
     - Class: 114
-      Script: {instanceID: 3334}
+      Script: {instanceID: 3336}
     - Class: 114
-      Script: {instanceID: 3616}
+      Script: {instanceID: 3618}
     - Class: 114
-      Script: {instanceID: 3626}
+      Script: {instanceID: 3628}
     - Class: 114
-      Script: {instanceID: 3752}
+      Script: {instanceID: 3754}
     - Class: 114
-      Script: {instanceID: 4190}
+      Script: {instanceID: 4192}
     - Class: 114
-      Script: {instanceID: 4216}
+      Script: {instanceID: 4218}
     - Class: 114
-      Script: {instanceID: 5074}
+      Script: {instanceID: 5076}
     - Class: 114
-      Script: {instanceID: 5280}
+      Script: {instanceID: 5282}
     - Class: 114
-      Script: {instanceID: 5466}
+      Script: {instanceID: 5468}
     - Class: 114
-      Script: {instanceID: 5586}
+      Script: {instanceID: 5588}
     - Class: 114
-      Script: {instanceID: 6130}
+      Script: {instanceID: 6134}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -516,7 +518,7 @@ ScriptsOnlyBuild:
     className: ProceduralWorld
   - hash:
       serializedVersion: 2
-      Hash: fd2213297512ed300331f7827ca04427
+      Hash: 047a82743c98a91fd3ab4c6f0d6ec190
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerInfoController
@@ -580,6 +582,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.PixelPerfect.dll
     namespaceName: UnityEngine.U2D
     className: CinemachinePixelPerfect
+  - hash:
+      serializedVersion: 2
+      Hash: 5f53da4f72b4da1841830ca4a6e5e3a4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RescueSystem
   - hash:
       serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
@@ -1146,7 +1154,7 @@ ScriptsOnlyBuild:
     className: StatesGui
   - hash:
       serializedVersion: 2
-      Hash: 9de031517c009b1335668dd516749ff6
+      Hash: 050acb019048d46c6be7d49fda9b1a25
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -1414,12 +1422,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyController
-  - hash:
-      serializedVersion: 2
-      Hash: 7fd6bd7e5cf38751fd1ff2e4279254cc
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RescueSystem
   platform: 19
   scenePathNames:
   - Assets/Scenes/Login.unity

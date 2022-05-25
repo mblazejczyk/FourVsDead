@@ -8,6 +8,8 @@ public class PlayerInfoController : MonoBehaviour
     public string takenBy = "";
     [SerializeField] Image HpImg;
     [SerializeField] Text HpText;
+    [SerializeField] GameObject KnockedImg;
+    [SerializeField] GameObject DeadImg;
     [SerializeField] Image GunIcon;
     [SerializeField] Text AmmoText;
     [SerializeField] Text PlayerName;
@@ -25,6 +27,14 @@ public class PlayerInfoController : MonoBehaviour
     {
         HpText.text = hp + "/100";
         HpImg.fillAmount = hp / 100;
+        if(hp == 0)
+        {
+            setKnocked(true);
+        }
+        else
+        {
+            setKnocked(false);
+        }
     }
 
     public void SetGun(Sprite gunIcon)
@@ -40,5 +50,30 @@ public class PlayerInfoController : MonoBehaviour
     public void SetCoin(int CoinAmmount)
     {
         CoinText.text = "$" + CoinAmmount;
+    }
+
+    public void setDeath(bool isDead)
+    {
+        if (isDead)
+        {
+            DeadImg.SetActive(true);
+            setKnocked(false);
+        }
+        else
+        {
+            DeadImg.SetActive(false);
+        }
+    }
+
+    public void setKnocked(bool isKnocked)
+    {
+        if (isKnocked)
+        {
+            KnockedImg.SetActive(true);
+        }
+        else
+        {
+            KnockedImg.SetActive(false);
+        }
     }
 }

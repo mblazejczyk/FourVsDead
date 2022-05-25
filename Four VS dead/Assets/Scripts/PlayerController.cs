@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     [Header("PlayerStats")]
     public float Hp = 100;
     public int Coins = 0;
+    public bool isDead = false;
 
 
     private void Awake()
@@ -47,6 +48,15 @@ public class PlayerController : MonoBehaviourPunCallbacks
     }
     private void Update()
     {
+        if (Hp <= 0)
+        {
+            deadTrigger.SetActive(true);
+        }
+        else
+        {
+            deadTrigger.SetActive(false);
+        }
+
         if (!PV.IsMine) { return; }
         LookAround();
         if (Input.GetKey(KeyCode.Mouse0))
@@ -58,6 +68,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     private void FixedUpdate()
     {
         if (!PV.IsMine) { return; }
+        if(Hp == 0) { return; }
         movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         MoveAround(movement);
     }
@@ -75,6 +86,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
             hash.Add("UiCoin", Coins);
             hash.Add("UiGun", gameObject.GetComponent<GunController>().CurrentGunId);
             hash.Add("UiHost", PhotonNetwork.IsMasterClient);
+            hash.Add("isDead", isDead);
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
         }
     }
@@ -96,6 +108,14 @@ public class PlayerController : MonoBehaviourPunCallbacks
                     obj.GetComponent<PlayerInfoController>().SetHp((float)changedProps["UiHp"]);
                     obj.GetComponent<PlayerInfoController>().SetCoin((int)changedProps["UiCoin"]);
                     obj.GetComponent<PlayerInfoController>().SetGun(gameObject.GetComponent<GunController>().Guns[(int)changedProps["UiGun"]].gunIcon);
+                    if ((bool)changedProps["isDead"])
+                    {
+                        obj.GetComponent<PlayerInfoController>().setDeath(true);
+                    }
+                    else
+                    {
+                        obj.GetComponent<PlayerInfoController>().setDeath(false);
+                    }
                     break;
                 }
             }
@@ -105,6 +125,14 @@ public class PlayerController : MonoBehaviourPunCallbacks
                 {
                     obj.GetComponent<PlayerInfoController>().SetHp((float)changedProps["UiHp"]);
                     obj.GetComponent<PlayerInfoController>().SetCoin((int)changedProps["UiCoin"]);
+                    if ((bool)changedProps["isDead"])
+                    {
+                        obj.GetComponent<PlayerInfoController>().setDeath(true);
+                    }
+                    else
+                    {
+                        obj.GetComponent<PlayerInfoController>().setDeath(false);
+                    }
                     obj.GetComponent<PlayerInfoController>().SetGun(gameObject.GetComponent<GunController>().Guns[(int)changedProps["UiGun"]].gunIcon);
                 }
             }
@@ -141,6 +169,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
             hash.Add("UiCoin", Coins);
             hash.Add("UiGun", gameObject.GetComponent<GunController>().CurrentGunId);
             hash.Add("UiHost", PhotonNetwork.IsMasterClient);
+            hash.Add("isDead", isDead);
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
         }
     }
@@ -155,6 +184,22 @@ public class PlayerController : MonoBehaviourPunCallbacks
             hash.Add("UiCoin", Coins);
             hash.Add("UiGun", GunId);
             hash.Add("UiHost", PhotonNetwork.IsMasterClient);
+            hash.Add("isDead", isDead);
+            PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+        }
+    }
+
+    public void SetDeath()
+    {
+        if (PV.IsMine)
+        {
+            Hashtable hash = new Hashtable();
+            hash.Add("UiName", PhotonNetwork.NickName);
+            hash.Add("UiHp", Hp);
+            hash.Add("UiCoin", Coins);
+            hash.Add("UiGun", gameObject.GetComponent<GunController>().CurrentGunId);
+            hash.Add("UiHost", PhotonNetwork.IsMasterClient);
+            hash.Add("isDead", isDead);
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
         }
     }
@@ -182,21 +227,13 @@ public class PlayerController : MonoBehaviourPunCallbacks
             }
             if(Hp < 0) { Hp = 0; }
 
-            if (Hp <= 0)
-            {
-                deadTrigger.SetActive(true);
-            }
-            else
-            {
-                deadTrigger.SetActive(false);
-            }
-
             Hashtable hash = new Hashtable();
             hash.Add("UiName", PhotonNetwork.NickName);
             hash.Add("UiHp", Hp);
             hash.Add("UiCoin", Coins);
             hash.Add("UiGun", gameObject.GetComponent<GunController>().CurrentGunId);
             hash.Add("UiHost", PhotonNetwork.IsMasterClient);
+            hash.Add("isDead", isDead);
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
 
             PV.RPC("RPC_changePlayerHp", RpcTarget.All, isDamaging, hpChanged);
@@ -206,15 +243,6 @@ public class PlayerController : MonoBehaviourPunCallbacks
     [PunRPC]
     void RPC_changePlayerHp(bool isTaking, int dmg)
     {
-        if (Hp <= 0)
-        {
-            deadTrigger.SetActive(true);
-        }
-        else
-        {
-            deadTrigger.SetActive(false);
-        }
-
         if (PV.IsMine) { return; }
         if (isTaking)
         {
@@ -224,6 +252,5 @@ public class PlayerController : MonoBehaviourPunCallbacks
         {
             Hp += dmg;
         }
-        
     }
 }
