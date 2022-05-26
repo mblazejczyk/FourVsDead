@@ -26,7 +26,7 @@ public class MatchController : MonoBehaviourPunCallbacks
     }
     IEnumerator SpawnNew()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(25);
 
         GameObject obj = ActiveSpawn();
         while (!obj.GetComponent<Referencer>().Reference.GetComponent<BarycadeSystem>().isActivated)

@@ -48,18 +48,9 @@ public class PlayerController : MonoBehaviourPunCallbacks
     }
     private void Update()
     {
-        if (Hp <= 0)
-        {
-            deadTrigger.SetActive(true);
-        }
-        else
-        {
-            deadTrigger.SetActive(false);
-        }
-
         if (!PV.IsMine) { return; }
         LookAround();
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (Input.GetKey(KeyCode.Mouse0) && !isDead)
         {
             gameObject.GetComponent<GunController>().Shoot(sprites);
         }
@@ -237,6 +228,10 @@ public class PlayerController : MonoBehaviourPunCallbacks
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
 
             PV.RPC("RPC_changePlayerHp", RpcTarget.All, isDamaging, hpChanged);
+            if(Hp == 0)
+            {
+                PV.RPC("RPC_KnockOut", RpcTarget.All);
+            }
         }
     }
 
@@ -252,5 +247,12 @@ public class PlayerController : MonoBehaviourPunCallbacks
         {
             Hp += dmg;
         }
+    }
+
+    [PunRPC]
+    void RPC_KnockOut()
+    {
+        if(deadTrigger.GetComponent<RescueSystem>().knockedOut || isDead) { return; }
+        deadTrigger.GetComponent<RescueSystem>().KnockOut();
     }
 }

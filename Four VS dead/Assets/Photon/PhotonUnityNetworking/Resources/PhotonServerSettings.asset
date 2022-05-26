@@ -45,6 +45,7 @@ MonoBehaviour:
   - RPC_DoorDestroy
   - RPC_changePlayerHp
   - RPC_Revived
+  - RPC_KnockOut
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

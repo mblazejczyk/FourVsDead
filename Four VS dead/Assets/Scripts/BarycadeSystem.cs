@@ -107,6 +107,8 @@ public class BarycadeSystem : MonoBehaviour, IBarycadeDmg
 
     void HpChecker()
     {
+        if(Hp < 0) { Hp = 0; }
+        if(Hp > 6) { Hp = 6; }
         if(Hp == 0)
         {
             gameObject.GetComponent<Referencer>().Reference.GetComponent<BoxCollider2D>().isTrigger = true;
