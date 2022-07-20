@@ -9,6 +9,8 @@ public class EnemyController : MonoBehaviour, IDamagable
 {
     PhotonView PV;
     public float MaxHp;
+    public float dodge;
+    public int damage;
 
     public GameObject Target;
     public float speed = 200f;
@@ -36,10 +38,35 @@ public class EnemyController : MonoBehaviour, IDamagable
     {
         if (PhotonNetwork.IsMasterClient)
         {
+            SetUp();
             FindNewPlayer();
 
             InvokeRepeating("UpdatePath", 0f, .5f);
+            
         }
+    }
+
+    public void SetUp()
+    {
+        MaxHp = GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().wave[
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().WaveNow-1].Hp;
+        dodge = GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().wave[
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().WaveNow-1].Dodge;
+        damage = GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().wave[
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().WaveNow-1].Dmg;
+        speed = GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().wave[
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().WaveNow-1].Speed;
+
+        PV.RPC("RPC_Setup", RpcTarget.All, MaxHp, damage, dodge, speed);
+    }
+
+    [PunRPC]
+    void RPC_Setup(float HpSet, int dmgSet, float dodgeSet, float speedSet)
+    {
+        MaxHp = HpSet;
+        dodge = dodgeSet;
+        damage = dmgSet;
+        speed = speedSet;
     }
 
     void UpdatePath()
@@ -126,6 +153,7 @@ public class EnemyController : MonoBehaviour, IDamagable
         if(MaxHp <= 0 && PhotonNetwork.IsMasterClient)
         {
             PhotonNetwork.Destroy(gameObject);
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().SubstractEnemiesLeft();
         }
     }
 
@@ -142,7 +170,7 @@ public class EnemyController : MonoBehaviour, IDamagable
     {
         if (collision.gameObject.tag == "Player" && canDamage)
         {
-            collision.gameObject.GetComponent<PlayerController>().ModifyHp(true, 10);
+            collision.gameObject.GetComponent<PlayerController>().ModifyHp(true, damage);
             StartCoroutine(damageCooldownTimer());
             canDamage = false;
         }

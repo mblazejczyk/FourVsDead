@@ -163,6 +163,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHp: 25
+  dodge: 0
+  damage: 0
   Target: {fileID: 0}
   speed: 200
   nextDistance: 3

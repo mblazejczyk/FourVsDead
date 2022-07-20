@@ -17,6 +17,23 @@ public class loginSystem : MonoBehaviour
         StartCoroutine(Upload());
     }
 
+    public void LoginTest(int whichOne)
+    {
+        if(whichOne == 1)
+        {
+            login.text = "test1";
+            password.text = "test1";
+        }
+        else
+        {
+            login.text = "test2";
+            password.text = "test2";
+        }
+        login.interactable = false;
+        password.interactable = false;
+        StartCoroutine(Upload());
+    }
+
     IEnumerator Upload()
     {
         WWWForm form = new WWWForm();

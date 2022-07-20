@@ -10,6 +10,8 @@ TagManager:
   - SpawnPoint
   - Enemy
   - LoginHandler
+  - WaveText_info
+  - EnemiesLeft_info
   layers:
   - Default
   - TransparentFX
