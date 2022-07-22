@@ -27,6 +27,11 @@ public class Launcher : MonoBehaviourPunCallbacks
     }
     void Start()
     {
+        
+    }
+
+    public void ConnectToPhoton()
+    {
         Debug.Log("Connecting...");
         PhotonNetwork.ConnectUsingSettings();
     }

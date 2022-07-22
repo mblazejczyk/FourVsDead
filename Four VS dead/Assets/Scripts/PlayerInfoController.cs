@@ -11,6 +11,7 @@ public class PlayerInfoController : MonoBehaviour
     [SerializeField] GameObject KnockedImg;
     [SerializeField] GameObject DeadImg;
     [SerializeField] Image GunIcon;
+    [SerializeField] Image ArmorIcon;
     [SerializeField] Text AmmoText;
     [SerializeField] Text PlayerName;
     [SerializeField] Text IsHostText;
@@ -23,10 +24,10 @@ public class PlayerInfoController : MonoBehaviour
         if (!isHost) { IsHostText.text = ""; }
     }
 
-    public void SetHp(float hp)
+    public void SetHp(float hp, float maxHp)
     {
-        HpText.text = hp + "/100";
-        HpImg.fillAmount = hp / 100;
+        HpText.text = hp + "/" + maxHp;
+        HpImg.fillAmount = hp / maxHp;
         if(hp == 0)
         {
             setKnocked(true);
@@ -40,6 +41,11 @@ public class PlayerInfoController : MonoBehaviour
     public void SetGun(Sprite gunIcon)
     {
         GunIcon.sprite = gunIcon;
+    }
+
+    public void SetArmor(Sprite armorIcon)
+    {
+        ArmorIcon.sprite = armorIcon;
     }
 
     public void SetAmmo(int AmmoAmmount, int MaxAmmo)

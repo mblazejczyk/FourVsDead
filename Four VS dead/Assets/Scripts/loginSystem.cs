@@ -31,6 +31,7 @@ public class loginSystem : MonoBehaviour
         }
         login.interactable = false;
         password.interactable = false;
+        error.text = "Connecting...";
         StartCoroutine(Upload());
     }
 
@@ -39,7 +40,6 @@ public class loginSystem : MonoBehaviour
         WWWForm form = new WWWForm();
         form.AddField("login", login.text);
         form.AddField("password", password.text);
-
         using (UnityWebRequest www = UnityWebRequest.Post("https://yellowsink.pl/fourvsdead/sql.php", form))
         {
             yield return www.SendWebRequest();
@@ -53,7 +53,7 @@ public class loginSystem : MonoBehaviour
             }
             else
             {
-                if(www.downloadHandler.text == "error")
+                if(www.downloadHandler.text == "error" || www.downloadHandler.text == "")
                 {
                     error.text = "Login failed";
                     login.interactable = true;

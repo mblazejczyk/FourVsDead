@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 8292106990496640251}
   - component: {fileID: 8857785524290247197}
   - component: {fileID: -4814067657839364787}
+  - component: {fileID: 906491790915007687}
   - component: {fileID: -6452340644532701795}
   m_Layer: 2
   m_Name: PlayerController
@@ -172,8 +173,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   Hp: 100
+  MaxHp: 100
   Coins: 0
   isDead: 0
+  dmgReductionProc: 0
+  dodgeChance: 0
 --- !u!58 &1391497470712462367
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -247,6 +251,26 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f0a6770c6e85c3f46935cc83f3ebc542, type: 2}
   isOnCooldown: 0
   FlashObj: {fileID: 2973612149575277123}
+--- !u!114 &906491790915007687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2287605098792481067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b2af466e000db4ea0526fbd1ceb443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armors:
+  - {fileID: 11400000, guid: 28b9206f8d006284299159657f9b089a, type: 2}
+  - {fileID: 11400000, guid: 8d40314463f4d704180c2d7d6001122c, type: 2}
+  - {fileID: 11400000, guid: 03c4d0f5642a15244a8fd62984cf4758, type: 2}
+  - {fileID: 11400000, guid: 01f458cc310e00e4b8c480687d7ab18c, type: 2}
+  - {fileID: 11400000, guid: 878ba8b04d4989e42b8d4cedbada007d, type: 2}
+  - {fileID: 11400000, guid: 4cb7ea9e1819753409bff8e7b8182b75, type: 2}
+  currentArmor: 0
 --- !u!114 &-6452340644532701795
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -22,8 +22,11 @@ public class PlayerController : MonoBehaviourPunCallbacks
 
     [Header("PlayerStats")]
     public float Hp = 100;
+    public float MaxHp = 100;
     public int Coins = 0;
     public bool isDead = false;
+    public float dmgReductionProc = 0;
+    public float dodgeChance = 0;
 
 
     private void Awake()
@@ -74,8 +77,10 @@ public class PlayerController : MonoBehaviourPunCallbacks
             Hashtable hash = new Hashtable();
             hash.Add("UiName", PhotonNetwork.NickName);
             hash.Add("UiHp", Hp);
+            hash.Add("UiMaxHp", MaxHp);
             hash.Add("UiCoin", Coins);
             hash.Add("UiGun", gameObject.GetComponent<GunController>().CurrentGunId);
+            hash.Add("UiArmor", gameObject.GetComponent<ArmorController>().currentArmor);
             hash.Add("UiHost", PhotonNetwork.IsMasterClient);
             hash.Add("isDead", isDead);
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
@@ -96,8 +101,9 @@ public class PlayerController : MonoBehaviourPunCallbacks
                 {
                     obj.SetActive(true);
                     obj.GetComponent<PlayerInfoController>().SetPlayer((string)changedProps["UiName"], (bool)changedProps["UiHost"]);
-                    obj.GetComponent<PlayerInfoController>().SetHp((float)changedProps["UiHp"]);
+                    obj.GetComponent<PlayerInfoController>().SetHp((float)changedProps["UiHp"], (float)changedProps["UiMaxHp"]);
                     obj.GetComponent<PlayerInfoController>().SetCoin((int)changedProps["UiCoin"]);
+                    obj.GetComponent<PlayerInfoController>().SetArmor(gameObject.GetComponent<ArmorController>().armors[(int)changedProps["UiArmor"]].armorIcon);
                     obj.GetComponent<PlayerInfoController>().SetGun(gameObject.GetComponent<GunController>().Guns[(int)changedProps["UiGun"]].gunIcon);
                     if ((bool)changedProps["isDead"])
                     {
@@ -114,7 +120,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
             { 
                 if(obj.GetComponent<PlayerInfoController>().takenBy == (string)changedProps["UiName"])
                 {
-                    obj.GetComponent<PlayerInfoController>().SetHp((float)changedProps["UiHp"]);
+                    obj.GetComponent<PlayerInfoController>().SetHp((float)changedProps["UiHp"], (float)changedProps["UiMaxHp"]);
                     obj.GetComponent<PlayerInfoController>().SetCoin((int)changedProps["UiCoin"]);
                     if ((bool)changedProps["isDead"])
                     {
@@ -125,6 +131,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
                         obj.GetComponent<PlayerInfoController>().setDeath(false);
                     }
                     obj.GetComponent<PlayerInfoController>().SetGun(gameObject.GetComponent<GunController>().Guns[(int)changedProps["UiGun"]].gunIcon);
+                    obj.GetComponent<PlayerInfoController>().SetArmor(gameObject.GetComponent<ArmorController>().armors[(int)changedProps["UiArmor"]].armorIcon);
                 }
             }
         }
@@ -157,8 +164,10 @@ public class PlayerController : MonoBehaviourPunCallbacks
             Hashtable hash = new Hashtable();
             hash.Add("UiName", PhotonNetwork.NickName);
             hash.Add("UiHp", Hp);
+            hash.Add("UiMaxHp", MaxHp);
             hash.Add("UiCoin", Coins);
             hash.Add("UiGun", gameObject.GetComponent<GunController>().CurrentGunId);
+            hash.Add("UiArmor", gameObject.GetComponent<ArmorController>().currentArmor);
             hash.Add("UiHost", PhotonNetwork.IsMasterClient);
             hash.Add("isDead", isDead);
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
@@ -172,8 +181,27 @@ public class PlayerController : MonoBehaviourPunCallbacks
             Hashtable hash = new Hashtable();
             hash.Add("UiName", PhotonNetwork.NickName);
             hash.Add("UiHp", Hp);
+            hash.Add("UiMaxHp", MaxHp);
             hash.Add("UiCoin", Coins);
             hash.Add("UiGun", GunId);
+            hash.Add("UiArmor", gameObject.GetComponent<ArmorController>().currentArmor);
+            hash.Add("UiHost", PhotonNetwork.IsMasterClient);
+            hash.Add("isDead", isDead);
+            PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+        }
+    }
+
+    public void UpdateArmorInfo(int ArmorId)
+    {
+        if (PV.IsMine)
+        {
+            Hashtable hash = new Hashtable();
+            hash.Add("UiName", PhotonNetwork.NickName);
+            hash.Add("UiHp", Hp);
+            hash.Add("UiMaxHp", MaxHp);
+            hash.Add("UiCoin", Coins);
+            hash.Add("UiGun", gameObject.GetComponent<GunController>().CurrentGunId);
+            hash.Add("UiArmor", ArmorId);
             hash.Add("UiHost", PhotonNetwork.IsMasterClient);
             hash.Add("isDead", isDead);
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
@@ -187,8 +215,10 @@ public class PlayerController : MonoBehaviourPunCallbacks
             Hashtable hash = new Hashtable();
             hash.Add("UiName", PhotonNetwork.NickName);
             hash.Add("UiHp", Hp);
+            hash.Add("UiMaxHp", MaxHp);
             hash.Add("UiCoin", Coins);
             hash.Add("UiGun", gameObject.GetComponent<GunController>().CurrentGunId);
+            hash.Add("UiArmor", gameObject.GetComponent<ArmorController>().currentArmor);
             hash.Add("UiHost", PhotonNetwork.IsMasterClient);
             hash.Add("isDead", isDead);
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
@@ -210,7 +240,15 @@ public class PlayerController : MonoBehaviourPunCallbacks
         {
             if (isDamaging)
             {
-                Hp -= hpChanged;
+                if (Random.value > dodgeChance)
+                {
+                    hpChanged -= (int)(hpChanged * dmgReductionProc);
+                    Hp -= hpChanged;
+                }
+                else
+                {
+                    Debug.Log("dodged");
+                }
             }
             else
             {
@@ -221,8 +259,10 @@ public class PlayerController : MonoBehaviourPunCallbacks
             Hashtable hash = new Hashtable();
             hash.Add("UiName", PhotonNetwork.NickName);
             hash.Add("UiHp", Hp);
+            hash.Add("UiMaxHp", MaxHp);
             hash.Add("UiCoin", Coins);
             hash.Add("UiGun", gameObject.GetComponent<GunController>().CurrentGunId);
+            hash.Add("UiArmor", gameObject.GetComponent<ArmorController>().currentArmor);
             hash.Add("UiHost", PhotonNetwork.IsMasterClient);
             hash.Add("isDead", isDead);
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
