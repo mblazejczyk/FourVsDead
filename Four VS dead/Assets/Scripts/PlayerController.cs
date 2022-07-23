@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     public Rigidbody2D rb;
     public GameObject TriggerAndReferencer;
     public GameObject deadTrigger;
+    public GameObject player_ani_sprite;
 
     [Header("Uis")]
     public GameObject sprites;
@@ -63,6 +64,10 @@ public class PlayerController : MonoBehaviourPunCallbacks
     {
         if (!PV.IsMine) { return; }
         if(Hp == 0) { return; }
+        if(Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0) {
+            player_ani_sprite.GetComponent<Animator>().SetBool("isWalking", false);
+            return;
+        }
         movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         MoveAround(movement);
     }
@@ -138,6 +143,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     }
     void MoveAround(Vector2 direction)
     {
+        player_ani_sprite.GetComponent<Animator>().SetBool("isWalking", true);
         rb.MovePosition((Vector2)transform.position + (direction * speed * Time.deltaTime));
     }
 

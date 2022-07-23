@@ -19,7 +19,7 @@ public class GunController : MonoBehaviourPunCallbacks
     public Gun[] Guns;
     public bool isOnCooldown = false;
 
-    public GameObject FlashObj;
+    public GameObject Player_ani_sprite;
 
     
     public void Shoot(GameObject sprites)
@@ -98,27 +98,14 @@ public class GunController : MonoBehaviourPunCallbacks
         if (targetPlayer == PV.Owner)
         {
             if (changedProps["NewShoot"] != null) {
-                switch ((int)changedProps["NewShoot"])
-                {
-                    case 0:
-                        StartCoroutine(Flash(0.2f));
-                        break;
-                    case 1:
-                        StartCoroutine(Flash(0.2f));
-                        break;
-                    case 2:
-                        StartCoroutine(Flash(0.1f));
-                        break;
-                    case 3:
-                        StartCoroutine(Flash(0.1f));
-                        break;
-                }
+                StartCoroutine(ShootAni());
             }
             if(changedProps["GunChange"] != null)
             {
                 CurrentGunId = (int)changedProps["GunChange"];
                 gameObject.GetComponent<PlayerController>().UpdateGunInfo(CurrentGunId);
             }
+            
         }
     }
 
@@ -129,11 +116,11 @@ public class GunController : MonoBehaviourPunCallbacks
         isOnCooldown = false;
     }
 
-    IEnumerator Flash(float speed)
+    IEnumerator ShootAni()
     {
-        FlashObj.SetActive(true);
-        yield return new WaitForSeconds(speed);
-        FlashObj.SetActive(false);
+        Player_ani_sprite.GetComponent<Animator>().SetBool("isShooting", true);
+        yield return new WaitForSeconds(0.4f);
+        Player_ani_sprite.GetComponent<Animator>().SetBool("isShooting", false);
     }
 
     public void ChangeGun(int newGun)
