@@ -40,19 +40,15 @@ public class PlayerManager : MonoBehaviourPunCallbacks
 
     public override void OnMasterClientSwitched(Player newMasterClient)
     {
-        StartCoroutine(StopGame());
-
+        if (PV.IsMine)
+        {
+            StartCoroutine(StopGame());
+        }
     }
     IEnumerator StopGame()
     {
         HostLeftPanel.SetActive(true);
         yield return new WaitForSeconds(2);
-        Debug.Log("Disconnecting...");
-        PhotonNetwork.Disconnect();
-        while (PhotonNetwork.IsConnected)
-        {
-            yield return null;
-        }
-        SceneManager.LoadScene(0);
+        GameObject.FindGameObjectWithTag("CursorController").GetComponent<CursorController>().LeaveGame();
     }
 }

@@ -12,6 +12,9 @@ TagManager:
   - LoginHandler
   - WaveText_info
   - EnemiesLeft_info
+  - RoomManager
+  - CursorController
+  - RewardSaver
   layers:
   - Default
   - TransparentFX

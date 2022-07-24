@@ -162,10 +162,12 @@ public class PlayerController : MonoBehaviourPunCallbacks
             if (addOrRemove == 1)
             {
                 Coins += Ammount;
+                GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted += Ammount;
             }
             else
             {
                 Coins -= Ammount;
+                GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted -= Ammount;
             }
             Hashtable hash = new Hashtable();
             hash.Add("UiName", PhotonNetwork.NickName);

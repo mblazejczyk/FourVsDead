@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class CursorController : MonoBehaviour
 {
-    private bool isLeaving = false;
+    public bool isLeaving = false;
     private void Awake()
     {
         Cursor.visible = false;
@@ -20,6 +20,22 @@ public class CursorController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape)) { StartCoroutine(quitGame()); }
     }
 
+    public void LeaveGame()
+    {
+        StartCoroutine(HostLeftQuit());
+    }
+    IEnumerator HostLeftQuit()
+    {
+        isLeaving = true;
+        PhotonNetwork.Disconnect();
+        while (PhotonNetwork.IsConnected)
+        {
+            yield return null;
+        }
+        Destroy(GameObject.FindGameObjectWithTag("RoomManager"));
+        SceneManager.LoadScene(1);
+    }
+
     IEnumerator quitGame()
     {
         yield return new WaitForSeconds(3);
@@ -30,7 +46,9 @@ public class CursorController : MonoBehaviour
             {
                 yield return null;
             }
-            SceneManager.LoadScene(0);
+            Destroy(GameObject.FindGameObjectWithTag("RoomManager"));
+            SceneManager.LoadScene(1);
         }
     }
+
 }

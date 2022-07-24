@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
@@ -50,5 +51,11 @@ public class MenuManager : MonoBehaviour
     {
         PhotonNetwork.Disconnect();
         Application.Quit();
+    }
+
+    public void LogOut()
+    {
+        Destroy(GameObject.FindGameObjectWithTag("RoomManager"));
+        SceneManager.LoadScene(0);
     }
 }
