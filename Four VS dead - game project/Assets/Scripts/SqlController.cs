@@ -33,6 +33,8 @@ public class SqlController : MonoBehaviour
                 if(toPrint == "totalXp")
                 {
                     gameObject.GetComponent<LoginProfileManager>().XpOwned.text = "Xp owned: " + restults;
+                    gameObject.GetComponent<LoginProfileManager>().Xp = int.Parse(restults);
+                    gameObject.GetComponent<LoginProfileManager>().UpdateRank();
                 }
             }
         }

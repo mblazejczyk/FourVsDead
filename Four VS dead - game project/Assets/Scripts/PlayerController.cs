@@ -250,8 +250,9 @@ public class PlayerController : MonoBehaviourPunCallbacks
             {
                 if (Random.value > dodgeChance)
                 {
-                    hpChanged -= (int)(hpChanged * dmgReductionProc);
+                    hpChanged -= (int)(hpChanged * (dmgReductionProc * 0.01f));
                     Hp -= hpChanged;
+                    Debug.Log(hpChanged);
                 }
                 else
                 {
@@ -263,7 +264,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
                 Hp += hpChanged;
             }
             if(Hp < 0) { Hp = 0; }
-
+            if(Hp > MaxHp) { Hp = MaxHp; }
             Hashtable hash = new Hashtable();
             hash.Add("UiName", PhotonNetwork.NickName);
             hash.Add("UiHp", Hp);

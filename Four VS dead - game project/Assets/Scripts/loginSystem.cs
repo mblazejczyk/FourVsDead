@@ -4,12 +4,23 @@ using UnityEngine;
 using UnityEngine.Networking;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class loginSystem : MonoBehaviour
 {
     public TMP_InputField login;
     public TMP_InputField password;
+    public Toggle rememberToggle;
     public TMP_Text error;
+
+    private void Start()
+    {
+        if(PlayerPrefs.GetString("isSaved") == "true")
+        {
+            login.text = PlayerPrefs.GetString("loginStr");
+            password.text = PlayerPrefs.GetString("passStr");
+        }
+    }
     public void Login()
     {
         login.interactable = false;
@@ -63,6 +74,16 @@ public class loginSystem : MonoBehaviour
                 {
                     GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().loginId = www.downloadHandler.text;
                     GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login = login.text;
+                    if(rememberToggle.isOn)
+                    {
+                        PlayerPrefs.SetString("loginStr", login.text);
+                        PlayerPrefs.SetString("passStr", password.text);
+                        PlayerPrefs.SetString("isSaved", "true");
+                    }
+                    else
+                    {
+                        PlayerPrefs.SetString("isSaved", "false");
+                    }
                     SceneManager.LoadScene(1);
                 }
             }

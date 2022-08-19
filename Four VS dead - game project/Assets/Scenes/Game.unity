@@ -33108,7 +33108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buyType: 0
-  TypeId: 0
+  TypeId: 1
 --- !u!61 &879449888
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34637,7 +34637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buyType: 0
-  TypeId: 0
+  TypeId: 2
 --- !u!61 &988593807
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39547,7 +39547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buyType: 0
-  TypeId: 0
+  TypeId: 3
 --- !u!61 &1419685083
 BoxCollider2D:
   m_ObjectHideFlags: 0

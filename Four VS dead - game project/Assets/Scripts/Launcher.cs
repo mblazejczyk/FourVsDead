@@ -24,6 +24,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     private void Awake()
     {
         Instance = this;
+        Cursor.visible = true;
     }
     void Start()
     {
