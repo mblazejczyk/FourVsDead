@@ -17,6 +17,11 @@ public class CursorController : MonoBehaviour
         if (isLeaving) { return; }
         Vector2 mouseCursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = mouseCursorPos;
+
+        if (Input.GetKeyDown(KeyCode.T)) {
+            Cursor.visible = false;
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape)) { StartCoroutine(quitGame()); }
     }
 
