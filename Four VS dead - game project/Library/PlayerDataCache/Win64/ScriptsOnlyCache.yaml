@@ -36,6 +36,9 @@ ScriptsOnlyBuild:
     AstarPathfindingProject.dll:
     - AstarPath
     - Pathfinding.Seeker
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
+    - Photon.Pun.ServerSettingsInspector
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbody2DView
