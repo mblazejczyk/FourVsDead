@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using TMPro;
 
 public class SettingsMenu : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class SettingsMenu : MonoBehaviour
     public Dropdown textureDropdown;
     public Dropdown aaDropdown;
     public Slider volumeSlider;
+    public Launcher serverSideLaunch;
 
     float currentVolume;
     Resolution[] resolutions;
@@ -150,5 +152,53 @@ public class SettingsMenu : MonoBehaviour
             volumeSlider.value = PlayerPrefs.GetFloat("VolumePreference");
         else
             volumeSlider.value = PlayerPrefs.GetFloat("VolumePreference");
+    }
+
+    public void ChangeServer(TMP_Dropdown drop)
+    {
+        string s = "";
+        switch (drop.value)
+        {
+            case 0:
+                s = "best";
+                break;
+            case 1:
+                s = "asia";
+                break;
+            case 2:
+                s = "au";
+                break;
+            case 3:
+                s = "cae";
+                break;
+            case 4:
+                s = "eu";
+                break;
+            case 5:
+                s = "in";
+                break;
+            case 6:
+                s = "jp";
+                break;
+            case 7:
+                s = "ru";
+                break;
+            case 8:
+                s = "za";
+                break;
+            case 9:
+                s = "sa";
+                break;
+            case 10:
+                s = "tr";
+                break;
+            case 11:
+                s = "us";
+                break;
+            case 12:
+                s = "usw";
+                break;
+        }
+        serverSideLaunch.ChangeServer(s);
     }
 }

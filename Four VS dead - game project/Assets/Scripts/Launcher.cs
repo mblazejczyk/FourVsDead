@@ -190,4 +190,18 @@ public class Launcher : MonoBehaviourPunCallbacks
             JoinRoom(choosenRoomInfo);
         }
     }
+
+    public void ChangeServer(string server)
+    {
+        MenuManager.Instance.OpenMenu("loading");
+        PhotonNetwork.Disconnect();
+        if(server == "best")
+        {
+            PhotonNetwork.ConnectToBestCloudServer();
+        }
+        else
+        {
+            PhotonNetwork.ConnectToRegion(server);
+        }
+    }
 }

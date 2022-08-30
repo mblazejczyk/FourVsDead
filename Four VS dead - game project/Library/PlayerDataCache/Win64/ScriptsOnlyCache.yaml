@@ -18,6 +18,7 @@ ScriptsOnlyBuild:
     - MatchController
     - Menu
     - MenuManager
+    - PingAndFps
     - PlayerController
     - PlayerInfoController
     - PlayerListitem
@@ -38,7 +39,6 @@ ScriptsOnlyBuild:
     - Pathfinding.Seeker
     PhotonUnityNetworking.Editor.dll:
     - Photon.Pun.PunSceneSettings
-    - Photon.Pun.ServerSettingsInspector
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbody2DView
@@ -61,6 +61,7 @@ ScriptsOnlyBuild:
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
+    - TMPro.TMP_Dropdown
     - TMPro.TMP_FontAsset
     - TMPro.TMP_InputField
     - TMPro.TMP_Settings
@@ -131,9 +132,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1502}
     - Class: 114
+      Script: {instanceID: 1612}
+    - Class: 114
       Script: {instanceID: 1660}
     - Class: 114
       Script: {instanceID: 1726}
+    - Class: 114
+      Script: {instanceID: 1738}
     - Class: 114
       Script: {instanceID: 1836}
     - Class: 114
@@ -163,9 +168,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3652}
     - Class: 114
+      Script: {instanceID: 3658}
+    - Class: 114
+      Script: {instanceID: 3778}
+    - Class: 114
+      Script: {instanceID: 4026}
+    - Class: 114
+      Script: {instanceID: 4218}
+    - Class: 114
       Script: {instanceID: 4416}
     - Class: 114
+      Script: {instanceID: 4960}
+    - Class: 114
+      Script: {instanceID: 5200}
+    - Class: 114
+      Script: {instanceID: 5252}
+    - Class: 114
+      Script: {instanceID: 5320}
+    - Class: 114
       Script: {instanceID: 5332}
+    - Class: 114
+      Script: {instanceID: 76784}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -360,6 +383,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2900}
     - Class: 114
       Script: {instanceID: 3090}
+    - Class: 114
+      Script: {instanceID: 3106}
     - Class: 114
       Script: {instanceID: 3146}
     - Class: 114
@@ -589,7 +614,7 @@ ScriptsOnlyBuild:
     className: Bullet
   - hash:
       serializedVersion: 2
-      Hash: 7d8e243ed3f4228c740ea09eec842cd9
+      Hash: af17d4a73d7a114897933c52cefa5a0b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SettingsMenu
@@ -1309,7 +1334,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 08f322963817745d321fa60d86385d19
+      Hash: 01ac81052024cf6d891c5ec55f37b4ba
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ChatSystem
@@ -1553,6 +1578,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyController
+  - hash:
+      serializedVersion: 2
+      Hash: 5242e6650dd4458998551d4b4b33cfdb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PingAndFps
   platform: 19
   scenePathNames:
   - Assets/Scenes/Login.unity
