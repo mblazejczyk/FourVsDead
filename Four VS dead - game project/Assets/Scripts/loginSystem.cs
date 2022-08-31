@@ -28,6 +28,11 @@ public class loginSystem : MonoBehaviour
         StartCoroutine(Upload());
     }
 
+    public void Register()
+    {
+        Application.OpenURL("https://yellowsink.pl/fourvsdead/register.html");
+    }
+
     public void LoginTest(int whichOne)
     {
         if(whichOne == 1)
