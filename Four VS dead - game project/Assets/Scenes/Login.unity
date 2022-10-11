@@ -1526,7 +1526,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Version: Prototype 3(.2.1)
+  m_text: 'Version: Prototype 3(.3)
 
     <color=yellow>Yellow</color>Sink 2022'
   m_isRightToLeft: 0
@@ -2972,6 +2972,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loginId: 
   login: 
+  UpgradePoints: 0
+  HpAdded: 0
+  ArmorAdded: 0
+  DodgeAdded: 0
+  hpForWave: 0
+  coinsAdded: 0
+  XpForWin: 0
+  XpGame: 0
+  startCoint: 0
+  startHp: 0
+  startSpeed: 0
+  startDodge: 0
+  goldenNick: 0
 --- !u!4 &1866947261
 Transform:
   m_ObjectHideFlags: 0

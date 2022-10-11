@@ -36,6 +36,16 @@ public class SqlController : MonoBehaviour
                     gameObject.GetComponent<LoginProfileManager>().Xp = int.Parse(restults);
                     gameObject.GetComponent<LoginProfileManager>().UpdateRank();
                 }
+                if(toPrint == "UpgradesSave")
+                {
+                    gameObject.GetComponent<UpgradeMenager>().UpgradeSave = restults;
+                    gameObject.GetComponent<UpgradeMenager>().SaveUpdated();
+                }
+                if(toPrint == "UpgradePoints")
+                {
+                    GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().UpgradePoints = int.Parse(restults);
+                    gameObject.GetComponent<UpgradeMenager>().PointsUpdate();
+                }
             }
         }
     }
