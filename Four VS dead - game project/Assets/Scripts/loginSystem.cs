@@ -77,7 +77,8 @@ public class loginSystem : MonoBehaviour
                 }
                 else
                 {
-                    GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().loginId = www.downloadHandler.text;
+                    GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().loginId = www.downloadHandler.text.Split('|')[0];
+                    GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().SetSave(www.downloadHandler.text.Split('|')[1]);
                     GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login = login.text;
                     if(rememberToggle.isOn)
                     {
@@ -93,5 +94,10 @@ public class loginSystem : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void LeaveGame()
+    {
+        Application.Quit();
     }
 }

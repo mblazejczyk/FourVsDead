@@ -83,6 +83,7 @@ public class UpgradeMenager : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         Awake();
+        GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().SetSave(UpgradeSave);
         yield return new WaitForSeconds(2);
         purchaseInProgress.SetActive(false);
     }
@@ -322,6 +323,41 @@ public class UpgradeMenager : MonoBehaviour
         else
         {
             return true;
+        }
+    }
+    [Space(20)]
+    public RectTransform UpgradeContent;
+    private int scaleLevel = 3;
+    public Button scaleUpButton;
+    public Button scaleDownButton;
+    public void ScaleMenu(bool isScalingUp)
+    {
+        if (!isScalingUp)
+        {
+            UpgradeContent.transform.localScale = new Vector3(UpgradeContent.transform.localScale.x - 0.25f,
+                UpgradeContent.transform.localScale.y - 0.25f, UpgradeContent.transform.localScale.z - 0.25f);
+            scaleLevel--;
+        }
+        else
+        {
+            UpgradeContent.transform.localScale = new Vector3(UpgradeContent.transform.localScale.x + 0.25f,
+                UpgradeContent.transform.localScale.y + 0.25f, UpgradeContent.transform.localScale.z + 0.25f);
+            scaleLevel++;
+        }
+        if(scaleLevel >= 3)
+        {
+            scaleUpButton.interactable = false;
+        }else
+        {
+            scaleUpButton.interactable = true;
+        }
+        if(scaleLevel <= 0)
+        {
+            scaleDownButton.interactable = false;
+        }
+        else
+        {
+            scaleDownButton.interactable = true;
         }
     }
 }

@@ -46,6 +46,10 @@ public class GunController : MonoBehaviourPunCallbacks
                 {
                     PistolHit.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
                     gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
+                    if(PistolHit.collider.gameObject.tag == "Enemy")
+                    {
+                        AddXpForHit(5);
+                    }
                 }
                 break;
             case 1:
@@ -60,6 +64,10 @@ public class GunController : MonoBehaviourPunCallbacks
                     {
                         rc2d.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
                         gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
+                        if (rc2d.collider.gameObject.tag == "Enemy")
+                        {
+                            AddXpForHit(3);
+                        }
                     }
                 }
                 break;
@@ -69,6 +77,10 @@ public class GunController : MonoBehaviourPunCallbacks
                 {
                     UziHit.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
                     gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
+                    if (UziHit.collider.gameObject.tag == "Enemy")
+                    {
+                        AddXpForHit(1);
+                    }
                 }
                 break;
             case 3:
@@ -77,6 +89,10 @@ public class GunController : MonoBehaviourPunCallbacks
                 {
                     BFG.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
                     gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
+                    if (BFG.collider.gameObject.tag == "Enemy")
+                    {
+                        AddXpForHit(15);
+                    }
                 }
                 break;
             default:
@@ -91,6 +107,19 @@ public class GunController : MonoBehaviourPunCallbacks
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
         }
 
+    }
+
+    void AddXpForHit(int ammount)
+    {
+        if (GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().XpGame > 0)
+        {
+            GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted += ammount +
+                (int)((float)ammount * ((float)GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().XpGame / 100));
+        }
+        else
+        {
+            GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted += ammount;
+        }
     }
 
     public override void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)

@@ -57,7 +57,20 @@ public class ChatSystem : MonoBehaviourPunCallbacks
     public void Send()
     {
         if(input.text == "") { return; }
-        string s = GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login + ": " + input.text;
+        string s = "";
+        if (input.text.Contains("<color="))
+        {
+            input.text = "***";
+        }
+        if(GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().goldenNick == 1)
+        {
+            s = "<color=yellow>" + 
+                GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login + "</color>: " + input.text;
+        }
+        else
+        {
+            s = GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login + ": " + input.text;
+        }
         PV.RPC("RPC_SendChat", RpcTarget.All, s);
         Debug.Log("Sent");
         input.text = "";

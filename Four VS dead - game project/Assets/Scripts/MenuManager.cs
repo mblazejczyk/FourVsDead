@@ -55,6 +55,7 @@ public class MenuManager : MonoBehaviour
 
     public void LogOut()
     {
+        PhotonNetwork.Disconnect();
         Destroy(GameObject.FindGameObjectWithTag("RoomManager"));
         SceneManager.LoadScene(0);
     }

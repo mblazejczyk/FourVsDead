@@ -39,12 +39,13 @@ public class MatchController : MonoBehaviourPunCallbacks
             EnemiesToSpawn = EnemiesLeft;
             waveText.text = "Wave " + WaveNow;
             TimeBetweenSpawns = wave[WaveNow - 1].TimeBetweenSpawns;
-            UpdateText(WaveNow, EnemiesLeft);
+            UpdateText(WaveNow, EnemiesLeft, true);
             StartCoroutine(SpawnNew());
         }
         else
         {
             waveText.text = "Game ended";
+            UpdateText(WaveNow, EnemiesLeft, false);
             Debug.Log("GameEnded");
         }
     }
@@ -52,19 +53,42 @@ public class MatchController : MonoBehaviourPunCallbacks
     public void SubstractEnemiesLeft()
     {
         EnemiesLeft--;
-        UpdateText(WaveNow, EnemiesLeft);
+        UpdateText(WaveNow, EnemiesLeft, false);
     }
 
-    public void UpdateText(int CurrentWave, int EnemiesToKill)
+    public void UpdateText(int CurrentWave, int EnemiesToKill, bool isNewWave)
     {
-        gameObject.GetComponent<PhotonView>().RPC("RPC_UpdateText", RpcTarget.All, CurrentWave, EnemiesToKill);
+        gameObject.GetComponent<PhotonView>().RPC("RPC_UpdateText", RpcTarget.All, CurrentWave, EnemiesToKill, isNewWave);
     }
 
     [PunRPC]
-    void RPC_UpdateText(int CurrentWave, int EnemiesToKill)
+    void RPC_UpdateText(int CurrentWave, int EnemiesToKill, bool isNewWave)
     {
         waveText.text = "Wave " + CurrentWave;
         enemiesLeftText.text = "Enemies left: " + EnemiesToKill;
+
+        if(waveText.text == "Game ended")
+        {
+            GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted += 
+                (int)((float)GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted * 
+                ((float)GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().XpForWin / 100));
+
+            GameObject.FindGameObjectWithTag("CursorController").GetComponent<CursorController>().LeaveGame();
+        }
+
+        if (GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().hpForWave > 0 && isNewWave)
+        {
+            Debug.Log("End wave heal");
+            foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Player"))
+            {
+                if (obj.GetComponent<PhotonView>().IsMine)
+                {
+                    float multiplaier = (float)GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().hpForWave / 100;
+                    float inalHp = obj.GetComponent<PlayerController>().MaxHp * multiplaier;
+                    obj.GetComponent<PlayerController>().ModifyHp(false, (int)inalHp);
+                }
+            }
+        }
     }
 
     GameObject ActiveSpawn()

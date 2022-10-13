@@ -79,6 +79,24 @@ public class PlayerController : MonoBehaviourPunCallbacks
         }
         else
         {
+            if(GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().startCoins > 0)
+            {
+                Coins = GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().startCoins;
+            }
+            if (GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().startHp > 0)
+            {
+                Hp += GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().startHp;
+                MaxHp += GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().startHp;
+            }
+            if (GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().startSpeed > 0)
+            {
+                speed += speed * GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().startSpeed / 100;
+            }
+            if (GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().startDodge > 0)
+            {
+                dodgeChance *= GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().startDodge / 100;
+            }
+
             Hashtable hash = new Hashtable();
             hash.Add("UiName", PhotonNetwork.NickName);
             hash.Add("UiHp", Hp);
@@ -161,13 +179,15 @@ public class PlayerController : MonoBehaviourPunCallbacks
         {
             if (addOrRemove == 1)
             {
+                if (GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().coinsAdded > 0)
+                {
+                    Ammount += Ammount * GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().coinsAdded / 100;
+                }
                 Coins += Ammount;
-                GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted += Ammount;
             }
             else
             {
                 Coins -= Ammount;
-                GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted -= Ammount;
             }
             Hashtable hash = new Hashtable();
             hash.Add("UiName", PhotonNetwork.NickName);
@@ -252,7 +272,6 @@ public class PlayerController : MonoBehaviourPunCallbacks
                 {
                     hpChanged -= (int)(hpChanged * (dmgReductionProc * 0.01f));
                     Hp -= hpChanged;
-                    Debug.Log(hpChanged);
                 }
                 else
                 {
