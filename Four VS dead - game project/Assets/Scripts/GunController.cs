@@ -45,10 +45,11 @@ public class GunController : MonoBehaviourPunCallbacks
                 if (PistolHit)
                 {
                     PistolHit.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
-                    gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
+                    
                     if(PistolHit.collider.gameObject.tag == "Enemy")
                     {
                         AddXpForHit(5);
+                        gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
                     }
                 }
                 break;
@@ -63,10 +64,11 @@ public class GunController : MonoBehaviourPunCallbacks
                     if (rc2d)
                     {
                         rc2d.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
-                        gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
+                        
                         if (rc2d.collider.gameObject.tag == "Enemy")
                         {
                             AddXpForHit(3);
+                            gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
                         }
                     }
                 }
@@ -76,10 +78,11 @@ public class GunController : MonoBehaviourPunCallbacks
                 if (UziHit)
                 {
                     UziHit.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
-                    gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
+                    
                     if (UziHit.collider.gameObject.tag == "Enemy")
                     {
                         AddXpForHit(1);
+                        gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
                     }
                 }
                 break;
@@ -88,10 +91,11 @@ public class GunController : MonoBehaviourPunCallbacks
                 if (BFG)
                 {
                     BFG.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
-                    gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
+                    
                     if (BFG.collider.gameObject.tag == "Enemy")
                     {
                         AddXpForHit(15);
+                        gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
                     }
                 }
                 break;

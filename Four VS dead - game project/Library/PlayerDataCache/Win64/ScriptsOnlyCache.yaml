@@ -30,6 +30,7 @@ ScriptsOnlyBuild:
     - RoomListitem
     - RoomManager
     - SettingsMenu
+    - SmoothCamMovement
     - SqlController
     - UpgradeMenager
     - Waves
@@ -323,6 +324,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6148}
     - Class: 114
       Script: {instanceID: 6474}
+    - Class: 114
+      Script: {instanceID: 18756}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1615,6 +1618,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyController
+  - hash:
+      serializedVersion: 2
+      Hash: 46739a39deb5456ac26661135bbe6c98
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SmoothCamMovement
   platform: 19
   scenePathNames:
   - Assets/Scenes/Login.unity
