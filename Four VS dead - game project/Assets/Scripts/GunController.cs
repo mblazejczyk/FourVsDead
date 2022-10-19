@@ -20,14 +20,15 @@ public class GunController : MonoBehaviourPunCallbacks
     public bool isOnCooldown = false;
 
     public GameObject Player_ani_sprite;
+    public GameObject ShootOb;
 
-    
+
     public void Shoot(GameObject sprites)
     {
-        if(isOnCooldown == true) { return; } else { isOnCooldown = true; }
+        if (isOnCooldown == true) { return; } else { isOnCooldown = true; }
         RaycastHit2D PistolHit;
         RaycastHit2D UziHit;
-        
+
         RaycastHit2D BFG;
         int CurrentGun = 0;
         for (int i = 0; i < Guns.Length; i++)
@@ -38,6 +39,7 @@ public class GunController : MonoBehaviourPunCallbacks
                 break;
             }
         }
+        ShootInfo(CurrentGun);
         switch (CurrentGunId)
         {
             case 0:
@@ -45,8 +47,8 @@ public class GunController : MonoBehaviourPunCallbacks
                 if (PistolHit)
                 {
                     PistolHit.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
-                    
-                    if(PistolHit.collider.gameObject.tag == "Enemy")
+
+                    if (PistolHit.collider.gameObject.tag == "Enemy")
                     {
                         AddXpForHit(5);
                         gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
@@ -59,12 +61,12 @@ public class GunController : MonoBehaviourPunCallbacks
                     Physics2D.Raycast(sprites.transform.position, sprites.transform.TransformDirection(new Vector2(-0.1f, 1)) * 5f),
                     Physics2D.Raycast(sprites.transform.position, sprites.transform.TransformDirection(new Vector2(0.2f, 1)) * 5f),
                     Physics2D.Raycast(sprites.transform.position, sprites.transform.TransformDirection(new Vector2(-0.2f, 1)) * 5f) };
-                foreach(RaycastHit2D rc2d in ShotgunHit)
+                foreach (RaycastHit2D rc2d in ShotgunHit)
                 {
                     if (rc2d)
                     {
                         rc2d.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
-                        
+
                         if (rc2d.collider.gameObject.tag == "Enemy")
                         {
                             AddXpForHit(3);
@@ -78,7 +80,7 @@ public class GunController : MonoBehaviourPunCallbacks
                 if (UziHit)
                 {
                     UziHit.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
-                    
+
                     if (UziHit.collider.gameObject.tag == "Enemy")
                     {
                         AddXpForHit(1);
@@ -91,7 +93,7 @@ public class GunController : MonoBehaviourPunCallbacks
                 if (BFG)
                 {
                     BFG.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
-                    
+
                     if (BFG.collider.gameObject.tag == "Enemy")
                     {
                         AddXpForHit(15);
@@ -130,15 +132,16 @@ public class GunController : MonoBehaviourPunCallbacks
     {
         if (targetPlayer == PV.Owner)
         {
-            if (changedProps["NewShoot"] != null) {
+            if (changedProps["NewShoot"] != null)
+            {
                 StartCoroutine(ShootAni());
             }
-            if(changedProps["GunChange"] != null)
+            if (changedProps["GunChange"] != null)
             {
                 CurrentGunId = (int)changedProps["GunChange"];
                 gameObject.GetComponent<PlayerController>().UpdateGunInfo(CurrentGunId);
             }
-            
+
         }
     }
 
@@ -165,5 +168,24 @@ public class GunController : MonoBehaviourPunCallbacks
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
         }
         //CurrentGunId = newGun;
+    }
+    public GameObject spr;
+    public void ShootInfo(int currentGun)
+    {
+        gameObject.GetComponent<PhotonView>().RPC("RPC_ShootInfo", RpcTarget.All, currentGun);
+    }
+
+    [PunRPC]
+    void RPC_ShootInfo(int currentGun)
+    {
+        GameObject g = Instantiate(ShootOb);
+        g.GetComponent<DestroyMe>().toDestroy = true;
+        g.GetComponent<DestroyMe>().Start();
+        g.transform.SetParent(spr.transform);
+        g.transform.position = ShootOb.transform.position;
+        g.transform.localScale = ShootOb.transform.localScale;
+        g.transform.rotation = ShootOb.transform.rotation;
+        g.GetComponent<AudioSource>().clip = Guns[currentGun].shootSound;
+        g.GetComponent<AudioSource>().Play();
     }
 }

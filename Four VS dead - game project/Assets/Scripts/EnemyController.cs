@@ -27,6 +27,8 @@ public class EnemyController : MonoBehaviour, IDamagable
     public GameObject HpText;
     public GameObject bullet;
     public ParticleSystem bloodParticle;
+    [Space(20)]
+    public AudioClip[] idleSounds;
 
     private void Awake()
     {
@@ -36,13 +38,13 @@ public class EnemyController : MonoBehaviour, IDamagable
     }
     void Start()
     {
+        StartCoroutine(soundLoop());
         if (PhotonNetwork.IsMasterClient)
         {
             SetUp();
             FindNewPlayer();
 
             InvokeRepeating("UpdatePath", 0f, .5f);
-            
         }
     }
 
@@ -180,5 +182,13 @@ public class EnemyController : MonoBehaviour, IDamagable
     {
         yield return new WaitForSeconds(damageCooldown);
         canDamage = true;
+    }
+
+    IEnumerator soundLoop()
+    {
+        yield return new WaitForSeconds(Random.Range(5, 15));
+        gameObject.GetComponent<AudioSource>().clip = idleSounds[Random.Range(0, idleSounds.Length)];
+        gameObject.GetComponent<AudioSource>().Play();
+        StartCoroutine(soundLoop());
     }
 }

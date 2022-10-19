@@ -28,6 +28,7 @@ public class DoorSystem : MonoBehaviour
                 {
                     Debug.Log("Bought");
                     collision.GetComponent<PlayerController>().ModifyCoins(0, 100);
+                    GameObject.FindGameObjectWithTag("UiInfoBg").GetComponent<Animator>().SetTrigger("buy");
                     DestroyDoors();
                 }
                 else
@@ -58,6 +59,9 @@ public class DoorSystem : MonoBehaviour
         {
             obj.GetComponent<BarycadeSystem>().isActivated = true;
         }
+        GameObject.FindGameObjectWithTag("MidScreenText").GetComponent<TMP_Text>().text = "New area <color=red>unlocked</color>";
+        GameObject.FindGameObjectWithTag("MidScreenText").GetComponent<Animator>().SetTrigger("Open");
+        GameObject.FindGameObjectWithTag("GameSoundSource").GetComponent<MatchAudioController>().PlaySound(1);
         Destroy(doors);
     }
 }

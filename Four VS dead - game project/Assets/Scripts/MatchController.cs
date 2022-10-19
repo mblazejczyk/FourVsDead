@@ -19,6 +19,7 @@ public class MatchController : MonoBehaviourPunCallbacks
     public TMP_Text waveText;
     public TMP_Text enemiesLeftText;
 
+    
     void Start()
     {
         waveText = GameObject.FindGameObjectWithTag("WaveText_info").GetComponent<TMP_Text>();
@@ -67,7 +68,14 @@ public class MatchController : MonoBehaviourPunCallbacks
         waveText.text = "Wave " + CurrentWave;
         enemiesLeftText.text = "Enemies left: " + EnemiesToKill;
 
-        if(waveText.text == "Game ended")
+        if (isNewWave)
+        {
+            GameObject.FindGameObjectWithTag("MidScreenText").GetComponent<TMP_Text>().text = "Wave <color=red>" + CurrentWave + "</color>";
+            GameObject.FindGameObjectWithTag("MidScreenText").GetComponent<Animator>().SetTrigger("Open");
+            GameObject.FindGameObjectWithTag("GameSoundSource").GetComponent<MatchAudioController>().PlaySound(0);
+        }
+
+        if (waveText.text == "Game ended")
         {
             GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted += 
                 (int)((float)GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted * 

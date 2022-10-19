@@ -1050,7 +1050,7 @@ RectTransform:
   m_Children:
   - {fileID: 1751317697}
   m_Father: {fileID: 1141007531}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -1360,7 +1360,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1141007531}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1516,10 +1516,10 @@ RectTransform:
   - {fileID: 1767483131}
   - {fileID: 692516911}
   - {fileID: 685081887}
+  - {fileID: 967851062}
   - {fileID: 869202313}
   - {fileID: 1313075406}
   - {fileID: 1501259040}
-  - {fileID: 967851062}
   - {fileID: 1149531998}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1602,7 +1602,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Version: Prototype 3(.6)
+  m_text: 'Version: Prototype 3(.6.1)
 
     <color=yellow>Yellow</color>Sink 2022'
   m_isRightToLeft: 0
@@ -1877,7 +1877,7 @@ RectTransform:
   m_Children:
   - {fileID: 1729186015}
   m_Father: {fileID: 1141007531}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -2262,7 +2262,7 @@ RectTransform:
   m_Children:
   - {fileID: 254595689}
   m_Father: {fileID: 1141007531}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -3413,7 +3413,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: 0.0015258789}
+  m_AnchoredPosition: {x: 0.00012207031, y: 0.0015869141}
   m_SizeDelta: {x: 0, y: -0.52001953}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1993658877

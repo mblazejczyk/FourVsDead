@@ -15,6 +15,9 @@ TagManager:
   - RoomManager
   - CursorController
   - RewardSaver
+  - UiInfoBg
+  - MidScreenText
+  - GameSoundSource
   layers:
   - Default
   - TransparentFX

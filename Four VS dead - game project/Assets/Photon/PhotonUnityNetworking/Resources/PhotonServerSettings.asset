@@ -49,6 +49,7 @@ MonoBehaviour:
   - RPC_UpdateText
   - RPC_Setup
   - RPC_SendChat
+  - RPC_ShootInfo
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

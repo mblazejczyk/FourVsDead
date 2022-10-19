@@ -19,3 +19,4 @@ MonoBehaviour:
   Cost: 5
   CoinReward: 5
   gunIcon: {fileID: 21300000, guid: bafc952fc08f9e04591d1842c6df2c70, type: 3}
+  shootSound: {fileID: 8300000, guid: e8c0fd707556ca54abd32995e17cbffe, type: 3}

@@ -14,4 +14,5 @@ public class Gun : ScriptableObject
     public int CoinReward;
 
     public Sprite gunIcon;
+    public AudioClip shootSound;
 }

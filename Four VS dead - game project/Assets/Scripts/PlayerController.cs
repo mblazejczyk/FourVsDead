@@ -272,6 +272,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
                 {
                     hpChanged -= (int)(hpChanged * (dmgReductionProc * 0.01f));
                     Hp -= hpChanged;
+                    GameObject.FindGameObjectWithTag("UiInfoBg").GetComponent<Animator>().SetTrigger("dmg");
                 }
                 else
                 {

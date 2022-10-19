@@ -50,6 +50,8 @@ public class BuyZone : MonoBehaviour
                 {
                     c2d.GetComponent<ArmorController>().SetNewArmor(TypeId);
                     c2d.GetComponent<PlayerController>().ModifyCoins(0, c2d.GetComponent<ArmorController>().armors[TypeId].Cost);
+                    GameObject.FindGameObjectWithTag("UiInfoBg").GetComponent<Animator>().SetTrigger("buy");
+                    gameObject.GetComponent<AudioSource>().Play();
                 }
             }
             else if (buyType == typeToBuy.Gun)
@@ -62,6 +64,8 @@ public class BuyZone : MonoBehaviour
                 {
                     c2d.GetComponent<GunController>().ChangeGun(TypeId);
                     c2d.GetComponent<PlayerController>().ModifyCoins(0, c2d.GetComponent<GunController>().Guns[TypeId].Cost);
+                    GameObject.FindGameObjectWithTag("UiInfoBg").GetComponent<Animator>().SetTrigger("buy");
+                    gameObject.GetComponent<AudioSource>().Play();
                 }
             }
         }
