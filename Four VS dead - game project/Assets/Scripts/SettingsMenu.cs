@@ -7,15 +7,18 @@ using TMPro;
 
 public class SettingsMenu : MonoBehaviour
 {
-    public AudioMixer audioMixer;
+    public AudioMixer sfxaudioMixer;
+    public AudioMixer musicaudioMixer;
     public Dropdown resolutionDropdown;
     public Dropdown qualityDropdown;
     public Dropdown textureDropdown;
     public Dropdown aaDropdown;
-    public Slider volumeSlider;
+    public Slider musicVolumeSlider;
+    public Slider SfxVolumeSlider;
     public Launcher serverSideLaunch;
 
-    float currentVolume;
+    float currentMusicVolume;
+    float currentSfxVolume;
     Resolution[] resolutions;
 
     // Start is called before the first frame update
@@ -40,10 +43,16 @@ public class SettingsMenu : MonoBehaviour
         LoadSettings(currentResolutionIndex);
     }
 
-    public void SetVolume(float volume)
+    public void SetMusicVolume()
     {
-        audioMixer.SetFloat("Volume", volume);
-        currentVolume = volume;
+        musicaudioMixer.SetFloat("MusicVolume", musicVolumeSlider.value);
+        currentMusicVolume = musicVolumeSlider.value;
+    }
+
+    public void SetSfxVolume()
+    {
+        sfxaudioMixer.SetFloat("SfxVolume", SfxVolumeSlider.value);
+        currentSfxVolume = SfxVolumeSlider.value;
     }
 
     public void SetFullscreen(bool isFullscreen)
@@ -117,7 +126,8 @@ public class SettingsMenu : MonoBehaviour
         PlayerPrefs.SetInt("TextureQualityPreference", textureDropdown.value);
         PlayerPrefs.SetInt("AntiAliasingPreference", aaDropdown.value);
         PlayerPrefs.SetInt("FullscreenPreference", Convert.ToInt32(Screen.fullScreen));
-        PlayerPrefs.SetFloat("VolumePreference", currentVolume);
+        PlayerPrefs.SetFloat("MusicVolumePreference", currentMusicVolume);
+        PlayerPrefs.SetFloat("SfxVolumePreference", currentSfxVolume);
         PlayerPrefs.Save();
     }
 
@@ -148,10 +158,15 @@ public class SettingsMenu : MonoBehaviour
         else
             Screen.fullScreen = true;
 
-        if (PlayerPrefs.HasKey("VolumePreference"))
-            volumeSlider.value = PlayerPrefs.GetFloat("VolumePreference");
+        if (PlayerPrefs.HasKey("SfxVolumePreference"))
+            SfxVolumeSlider.value = PlayerPrefs.GetFloat("SfxVolumePreference");
         else
-            volumeSlider.value = PlayerPrefs.GetFloat("VolumePreference");
+            SfxVolumeSlider.value = PlayerPrefs.GetFloat("SfxVolumePreference");
+
+        if (PlayerPrefs.HasKey("MusicVolumePreference"))
+            musicVolumeSlider.value = PlayerPrefs.GetFloat("MusicVolumePreference");
+        else
+            musicVolumeSlider.value = PlayerPrefs.GetFloat("MusicVolumePreference");
     }
 
     public void ChangeServer(TMP_Dropdown drop)

@@ -16,6 +16,8 @@ public class BarycadeSystem : MonoBehaviour, IBarycadeDmg
     public Sprite[] DestroyLevel;
     
     public int Hp = 5;
+    public AudioClip[] destroySfx;
+    public AudioClip[] repairSfx;
 
     private void Awake()
     {
@@ -97,10 +99,14 @@ public class BarycadeSystem : MonoBehaviour, IBarycadeDmg
         if (isLoosing)
         {
             Hp -= dmg;
+            gameObject.GetComponent<AudioSource>().clip = destroySfx[Random.Range(0, destroySfx.Length)];
+            gameObject.GetComponent<AudioSource>().Play();
         }
         else
         {
             Hp += dmg;
+            gameObject.GetComponent<AudioSource>().clip = repairSfx[Random.Range(0, repairSfx.Length)];
+            gameObject.GetComponent<AudioSource>().Play();
         }
         HpChecker();
     }

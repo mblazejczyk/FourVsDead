@@ -29,6 +29,8 @@ public class EnemyController : MonoBehaviour, IDamagable
     public ParticleSystem bloodParticle;
     [Space(20)]
     public AudioClip[] idleSounds;
+    public AudioClip[] dmgSfx;
+    public GameObject damageObj;
 
     private void Awake()
     {
@@ -152,7 +154,9 @@ public class EnemyController : MonoBehaviour, IDamagable
         HpBar.GetComponent<Transform>().localScale = new Vector3(temp / MaxHp, 0.25f, 0f);
         MaxHp = MaxHp - damage;
         HpText.GetComponent<TextMesh>().text = MaxHp.ToString();
-        if(MaxHp <= 0 && PhotonNetwork.IsMasterClient)
+        damageObj.GetComponent<AudioSource>().clip = dmgSfx[4]; //for now lock for best
+        damageObj.GetComponent<AudioSource>().Play();
+        if (MaxHp <= 0 && PhotonNetwork.IsMasterClient)
         {
             PhotonNetwork.Destroy(gameObject);
             GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().SubstractEnemiesLeft();
@@ -186,7 +190,7 @@ public class EnemyController : MonoBehaviour, IDamagable
 
     IEnumerator soundLoop()
     {
-        yield return new WaitForSeconds(Random.Range(5, 15));
+        yield return new WaitForSeconds(Random.Range(15, 35));
         gameObject.GetComponent<AudioSource>().clip = idleSounds[Random.Range(0, idleSounds.Length)];
         gameObject.GetComponent<AudioSource>().Play();
         StartCoroutine(soundLoop());

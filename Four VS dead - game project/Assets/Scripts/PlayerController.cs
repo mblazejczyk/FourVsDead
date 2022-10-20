@@ -29,6 +29,9 @@ public class PlayerController : MonoBehaviourPunCallbacks
     public float dmgReductionProc = 0;
     public float dodgeChance = 0;
 
+    [Header("sounds")]
+    public AudioClip[] playerDmg;
+
 
     private void Awake()
     {
@@ -273,6 +276,8 @@ public class PlayerController : MonoBehaviourPunCallbacks
                     hpChanged -= (int)(hpChanged * (dmgReductionProc * 0.01f));
                     Hp -= hpChanged;
                     GameObject.FindGameObjectWithTag("UiInfoBg").GetComponent<Animator>().SetTrigger("dmg");
+                    player_ani_sprite.GetComponent<AudioSource>().clip = playerDmg[Random.Range(0, playerDmg.Length)];
+                    player_ani_sprite.GetComponent<AudioSource>().Play();
                 }
                 else
                 {

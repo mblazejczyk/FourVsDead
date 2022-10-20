@@ -163,6 +163,7 @@ public class GunController : MonoBehaviourPunCallbacks
     {
         if (PV.IsMine)
         {
+            gameObject.GetComponent<AudioSource>().Play();
             Hashtable hash = new Hashtable();
             hash.Add("GunChange", newGun);
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
