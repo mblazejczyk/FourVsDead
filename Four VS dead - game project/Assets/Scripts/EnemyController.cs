@@ -70,7 +70,14 @@ public class EnemyController : MonoBehaviour, IDamagable
         MaxHp = HpSet;
         dodge = dodgeSet;
         damage = dmgSet;
-        speed = speedSet;
+        if (GameObject.FindGameObjectWithTag("GameController").GetComponent<GameUpgradesController>().freezingAmm)
+        {
+            speed = speedSet * 0.6f;
+        }
+        else
+        {
+            speed = speedSet;
+        }
     }
 
     void UpdatePath()

@@ -1742,7 +1742,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Version: Prototype 3(.6.2)
+  m_text: 'Version: Prototype 3(.6.3)
 
     <color=yellow>Yellow</color>Sink 2022'
   m_isRightToLeft: 0

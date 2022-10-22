@@ -46,7 +46,14 @@ public class GunController : MonoBehaviourPunCallbacks
                 PistolHit = Physics2D.Raycast(sprites.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f);
                 if (PistolHit)
                 {
-                    PistolHit.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
+                    if (GameObject.FindGameObjectWithTag("GameController").GetComponent<GameUpgradesController>().fasterRate)
+                    {
+                        PistolHit.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage * 1.5f);
+                    }
+                    else
+                    {
+                        PistolHit.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
+                    }
 
                     if (PistolHit.collider.gameObject.tag == "Enemy")
                     {
@@ -65,7 +72,15 @@ public class GunController : MonoBehaviourPunCallbacks
                 {
                     if (rc2d)
                     {
-                        rc2d.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
+                        if (GameObject.FindGameObjectWithTag("GameController").GetComponent<GameUpgradesController>().fasterRate)
+                        {
+                            rc2d.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage * 1.5f);
+                        }
+                        else
+                        {
+                            rc2d.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
+                        }
+
 
                         if (rc2d.collider.gameObject.tag == "Enemy")
                         {
@@ -79,7 +94,15 @@ public class GunController : MonoBehaviourPunCallbacks
                 UziHit = Physics2D.Raycast(sprites.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f);
                 if (UziHit)
                 {
-                    UziHit.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
+                    if (GameObject.FindGameObjectWithTag("GameController").GetComponent<GameUpgradesController>().fasterRate)
+                    {
+                        UziHit.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage * 1.5f);
+                    }
+                    else
+                    {
+                        UziHit.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
+                    }
+
 
                     if (UziHit.collider.gameObject.tag == "Enemy")
                     {
@@ -92,7 +115,15 @@ public class GunController : MonoBehaviourPunCallbacks
                 BFG = Physics2D.Raycast(sprites.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f);
                 if (BFG)
                 {
-                    BFG.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
+                    if (GameObject.FindGameObjectWithTag("GameController").GetComponent<GameUpgradesController>().fasterRate)
+                    {
+                        BFG.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage * 1.5f);
+                    }
+                    else
+                    {
+                        BFG.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
+                    }
+
 
                     if (BFG.collider.gameObject.tag == "Enemy")
                     {
@@ -148,7 +179,14 @@ public class GunController : MonoBehaviourPunCallbacks
     IEnumerator Cooldown(float time)
     {
         isOnCooldown = true;
-        yield return new WaitForSeconds(time);
+        if (GameObject.FindGameObjectWithTag("GameController").GetComponent<GameUpgradesController>().fasterRate)
+        {
+            yield return new WaitForSeconds(time * 0.75f);
+        }
+        else
+        {
+            yield return new WaitForSeconds(time);
+        }
         isOnCooldown = false;
     }
 

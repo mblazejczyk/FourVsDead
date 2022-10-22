@@ -6,7 +6,7 @@ using Photon.Pun;
 
 public class BuyZone : MonoBehaviour
 {
-    public enum typeToBuy { Gun, Armor}
+    public enum typeToBuy { Gun, Armor, Upgrade}
     public typeToBuy buyType;
 
     public int TypeId = 0;
@@ -64,6 +64,20 @@ public class BuyZone : MonoBehaviour
                 {
                     c2d.GetComponent<GunController>().ChangeGun(TypeId);
                     c2d.GetComponent<PlayerController>().ModifyCoins(0, c2d.GetComponent<GunController>().Guns[TypeId].Cost);
+                    GameObject.FindGameObjectWithTag("UiInfoBg").GetComponent<Animator>().SetTrigger("buy");
+                    gameObject.GetComponent<AudioSource>().Play();
+                }
+            }else if(buyType == typeToBuy.Upgrade)
+            {
+                int currentCost = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameUpgradesController>().CostsById[TypeId];
+                if (currentCost > c2d.GetComponent<PlayerController>().Coins)
+                {
+                    GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Referencer>().Reference.GetComponent<TMP_Text>().text = "Not enaugh coins";
+                }
+                else
+                {
+                    GameObject.FindGameObjectWithTag("GameController").GetComponent<GameUpgradesController>().BuyUpgrade(TypeId);
+                    c2d.GetComponent<PlayerController>().ModifyCoins(0, currentCost);
                     GameObject.FindGameObjectWithTag("UiInfoBg").GetComponent<Animator>().SetTrigger("buy");
                     gameObject.GetComponent<AudioSource>().Play();
                 }

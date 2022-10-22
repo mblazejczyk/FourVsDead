@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     public GameObject TriggerAndReferencer;
     public GameObject deadTrigger;
     public GameObject player_ani_sprite;
+    public GameObject tracker;
 
     [Header("Uis")]
     public GameObject sprites;

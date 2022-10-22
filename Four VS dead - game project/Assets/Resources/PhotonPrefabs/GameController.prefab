@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6382773035458504891}
   - component: {fileID: 3717183975179589436}
   - component: {fileID: 2520136347399251131}
+  - component: {fileID: -4675172866699206044}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -81,3 +82,22 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &-4675172866699206044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887474835783316483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2584554e5f765154e8b0b747a29d82c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buyUpgradesPoints: []
+  fasterRate: 0
+  hpRegain: 0
+  freezingAmm: 0
+  zombieTrack: 0
+  upgradesBought: 0
+  CostsById: 000000000000000000000000000000000000000000000000
