@@ -36,8 +36,10 @@ ScriptsOnlyBuild:
     - RoomManager
     - SettingsMenu
     - SmoothCamMovement
+    - SpawnerColider
     - SqlController
     - UpgradeMenager
+    - UpgradeUiController
     - Waves
     - loginHandler
     - loginSystem
@@ -91,6 +93,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.UI.DebugUIHandlerVector4
     - UnityEngine.Rendering.UI.UIFoldout
     Unity.RenderPipelines.Universal.Editor.dll:
+    - UnityEditor.Experimental.Rendering.Universal.Path2D.ScriptablePathInspector
     - UnityEditor.Rendering.Universal.UniversalProjectSettings
     Unity.RenderPipelines.Universal.Runtime.dll:
     - UnityEngine.Experimental.Rendering.Universal.Light2D
@@ -224,23 +227,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5788}
     - Class: 114
-      Script: {instanceID: 6130}
+      Script: {instanceID: 6132}
     - Class: 114
-      Script: {instanceID: 6192}
+      Script: {instanceID: 6194}
     - Class: 114
-      Script: {instanceID: 6348}
+      Script: {instanceID: 6350}
     - Class: 114
-      Script: {instanceID: 6696}
+      Script: {instanceID: 6698}
     - Class: 114
-      Script: {instanceID: 6708}
+      Script: {instanceID: 6710}
     - Class: 114
-      Script: {instanceID: 7138}
+      Script: {instanceID: 7140}
     - Class: 114
-      Script: {instanceID: 7532}
+      Script: {instanceID: 7534}
     - Class: 114
-      Script: {instanceID: 7830}
+      Script: {instanceID: 7832}
     - Class: 114
-      Script: {instanceID: 7878}
+      Script: {instanceID: 7880}
+    - Class: 114
+      Script: {instanceID: 8138}
+    - Class: 114
+      Script: {instanceID: 116148}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -411,61 +418,61 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6060}
     - Class: 114
-      Script: {instanceID: 6192}
+      Script: {instanceID: 6078}
     - Class: 114
-      Script: {instanceID: 6340}
+      Script: {instanceID: 6194}
     - Class: 114
-      Script: {instanceID: 6348}
+      Script: {instanceID: 6342}
     - Class: 114
-      Script: {instanceID: 6418}
+      Script: {instanceID: 6350}
     - Class: 114
-      Script: {instanceID: 6424}
+      Script: {instanceID: 6420}
     - Class: 114
-      Script: {instanceID: 6534}
+      Script: {instanceID: 6426}
     - Class: 114
-      Script: {instanceID: 6578}
+      Script: {instanceID: 6536}
     - Class: 114
-      Script: {instanceID: 6626}
+      Script: {instanceID: 6580}
     - Class: 114
-      Script: {instanceID: 6696}
+      Script: {instanceID: 6628}
     - Class: 114
-      Script: {instanceID: 6704}
+      Script: {instanceID: 6698}
     - Class: 114
-      Script: {instanceID: 6708}
+      Script: {instanceID: 6706}
     - Class: 114
-      Script: {instanceID: 6808}
+      Script: {instanceID: 6710}
     - Class: 114
-      Script: {instanceID: 6954}
+      Script: {instanceID: 6810}
     - Class: 114
-      Script: {instanceID: 7078}
+      Script: {instanceID: 6956}
     - Class: 114
-      Script: {instanceID: 7138}
+      Script: {instanceID: 7080}
     - Class: 114
-      Script: {instanceID: 7252}
+      Script: {instanceID: 7140}
     - Class: 114
-      Script: {instanceID: 7500}
+      Script: {instanceID: 7254}
     - Class: 114
-      Script: {instanceID: 7582}
+      Script: {instanceID: 7502}
     - Class: 114
-      Script: {instanceID: 7784}
+      Script: {instanceID: 7584}
     - Class: 114
-      Script: {instanceID: 7810}
+      Script: {instanceID: 7786}
     - Class: 114
-      Script: {instanceID: 7830}
+      Script: {instanceID: 7812}
     - Class: 114
-      Script: {instanceID: 8174}
+      Script: {instanceID: 7832}
     - Class: 114
-      Script: {instanceID: 8264}
+      Script: {instanceID: 8178}
     - Class: 114
-      Script: {instanceID: 8380}
+      Script: {instanceID: 8268}
     - Class: 114
-      Script: {instanceID: 8430}
+      Script: {instanceID: 8384}
     - Class: 114
-      Script: {instanceID: 8712}
+      Script: {instanceID: 8434}
     - Class: 114
-      Script: {instanceID: 25980}
+      Script: {instanceID: 8520}
     - Class: 114
-      Script: {instanceID: 119844}
+      Script: {instanceID: 8718}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -574,27 +581,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5680}
     - Class: 114
-      Script: {instanceID: 6192}
+      Script: {instanceID: 6194}
     - Class: 114
-      Script: {instanceID: 6348}
+      Script: {instanceID: 6350}
     - Class: 114
-      Script: {instanceID: 6494}
+      Script: {instanceID: 6496}
     - Class: 114
-      Script: {instanceID: 6696}
+      Script: {instanceID: 6698}
     - Class: 114
-      Script: {instanceID: 6708}
+      Script: {instanceID: 6710}
     - Class: 114
-      Script: {instanceID: 7138}
+      Script: {instanceID: 7140}
     - Class: 114
-      Script: {instanceID: 7502}
+      Script: {instanceID: 7504}
     - Class: 114
-      Script: {instanceID: 7830}
+      Script: {instanceID: 7832}
     - Class: 114
-      Script: {instanceID: 7878}
+      Script: {instanceID: 7880}
     - Class: 114
-      Script: {instanceID: 8234}
+      Script: {instanceID: 8238}
     - Class: 114
-      Script: {instanceID: 8524}
+      Script: {instanceID: 8530}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -920,7 +927,7 @@ ScriptsOnlyBuild:
     className: ObjectPlacer
   - hash:
       serializedVersion: 2
-      Hash: 7f70bef5e48f025e357dba853135001d
+      Hash: b2f6ed3438bb819dfa9a857c7d1375c7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BuyZone
@@ -1544,7 +1551,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerPanel
   - hash:
       serializedVersion: 2
-      Hash: 9d7b80de849ab3a70bb6168a8c61731b
+      Hash: 953578f4f3b03db42dbbe201e3f75148
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerInfoController
@@ -1568,7 +1575,7 @@ ScriptsOnlyBuild:
     className: ColorCurves
   - hash:
       serializedVersion: 2
-      Hash: 4b31bf151e7fca5f34c789c38e46fa5d
+      Hash: 3e20f1e1376b3e46b85eac4b32947838
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GunController
@@ -1602,6 +1609,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: UIFoldout
+  - hash:
+      serializedVersion: 2
+      Hash: 290308e1bd00462e2fb76571559158c6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameUpgradesController
   - hash:
       serializedVersion: 2
       Hash: c0e1b0d604911159b3b950ff47976845
@@ -1982,7 +1995,7 @@ ScriptsOnlyBuild:
     className: SpriteResolver
   - hash:
       serializedVersion: 2
-      Hash: f572f51abbd751fffbdebcba3e89745e
+      Hash: fa54d3ef81f553745b9c9fc2aa7b8a2f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Gun
@@ -1994,7 +2007,7 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
-      Hash: 8b4ffba9f62f2b1fa3209da553faeb3b
+      Hash: bbb7ecb0219565cbebf84b61928f4fbe
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -2084,6 +2097,12 @@ ScriptsOnlyBuild:
     className: EventSystemSpawner
   - hash:
       serializedVersion: 2
+      Hash: bd1260ec78cf76fff38b3f939b4ce0bd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UpgradeUiController
+  - hash:
+      serializedVersion: 2
       Hash: 0a3fa1a367fddc65eb32515029503334
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
@@ -2150,6 +2169,12 @@ ScriptsOnlyBuild:
     className: FunnelModifier
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyTracker
+  - hash:
+      serializedVersion: 2
       Hash: 6f51c7b3a651b2494223b61cc2e3b6fd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -2192,16 +2217,10 @@ ScriptsOnlyBuild:
     className: EnemyController
   - hash:
       serializedVersion: 2
-      Hash: 290308e1bd00462e2fb76571559158c6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameUpgradesController
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: EnemyTracker
+    className: SpawnerColider
   platform: 19
   scenePathNames:
   - Assets/Scenes/Login.unity

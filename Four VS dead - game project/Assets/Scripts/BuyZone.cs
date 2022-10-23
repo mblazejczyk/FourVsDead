@@ -12,6 +12,8 @@ public class BuyZone : MonoBehaviour
     public int TypeId = 0;
     private bool isOnTrigger = false;
     private Collider2D c2d;
+    [Space(20)]
+    public bool ShouldUpgradeBeDestroyed = false;
     private void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.tag != "Player" || !collision.GetComponent<PhotonView>().IsMine)

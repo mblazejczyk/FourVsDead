@@ -34,6 +34,7 @@ public class EnemyController : MonoBehaviour, IDamagable
 
     private void Awake()
     {
+        if (reachedEnd) { }
         PV = GetComponent<PhotonView>();
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();

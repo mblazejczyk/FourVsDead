@@ -18,10 +18,15 @@ public class GunController : MonoBehaviourPunCallbacks
     public int CurrentGunId = 0;
     public Gun[] Guns;
     public bool isOnCooldown = false;
+    public int CurrentAmmo = 0;
 
     public GameObject Player_ani_sprite;
     public GameObject ShootOb;
 
+    private void Start()
+    {
+        CurrentAmmo = Guns[CurrentGunId].maxAmmo;
+    }
 
     public void Shoot(GameObject sprites)
     {
@@ -39,6 +44,8 @@ public class GunController : MonoBehaviourPunCallbacks
                 break;
             }
         }
+        if(CurrentAmmo <= 0){ return; } //no ammo
+        CurrentAmmo--;
         ShootInfo(CurrentGun);
         switch (CurrentGunId)
         {
@@ -136,6 +143,7 @@ public class GunController : MonoBehaviourPunCallbacks
                 //hit = Physics2D.Raycast(sprites.transform.position, sprites.transform.TransformDirection(Vector2.up) * 0f);
                 break;
         }
+        gameObject.GetComponent<PlayerController>().UpdateGunInfo(CurrentGunId);
         StartCoroutine(Cooldown(Guns[CurrentGun].ShootSpeed));
         if (PV.IsMine)
         {
@@ -201,10 +209,18 @@ public class GunController : MonoBehaviourPunCallbacks
     {
         if (PV.IsMine)
         {
-            gameObject.GetComponent<AudioSource>().Play();
-            Hashtable hash = new Hashtable();
-            hash.Add("GunChange", newGun);
-            PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+            if(CurrentGunId == newGun)
+            {
+                CurrentAmmo = Guns[newGun].maxAmmo;
+                gameObject.GetComponent<PlayerController>().UpdateGunInfo(CurrentGunId);
+            }
+            else
+            {
+                gameObject.GetComponent<AudioSource>().Play();
+                Hashtable hash = new Hashtable();
+                hash.Add("GunChange", newGun);
+                PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+            }
         }
         //CurrentGunId = newGun;
     }

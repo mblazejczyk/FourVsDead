@@ -18,6 +18,8 @@ TagManager:
   - UiInfoBg
   - MidScreenText
   - GameSoundSource
+  - BuyZones
+  - UpgradeUi
   layers:
   - Default
   - TransparentFX

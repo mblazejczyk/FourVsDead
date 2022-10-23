@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     public GameObject deadTrigger;
     public GameObject player_ani_sprite;
     public GameObject tracker;
+    public bool canMove = true;
 
     [Header("Uis")]
     public GameObject sprites;
@@ -32,6 +33,11 @@ public class PlayerController : MonoBehaviourPunCallbacks
 
     [Header("sounds")]
     public AudioClip[] playerDmg;
+
+    [Header("Hair control")]
+    public Color[] hairColors;
+    public SpriteRenderer hair;
+    public int hairChosen = 0;
 
 
     private void Awake()
@@ -68,8 +74,10 @@ public class PlayerController : MonoBehaviourPunCallbacks
     {
         if (!PV.IsMine) { return; }
         if(Hp == 0) { return; }
+        if(!canMove) { return; }
         if(Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0) {
             player_ani_sprite.GetComponent<Animator>().SetBool("isWalking", false);
+            rb.velocity = Vector3.zero;
             return;
         }
         movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
@@ -100,6 +108,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
             {
                 dodgeChance *= GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().startDodge / 100;
             }
+            hairChosen = Random.Range(0, hairColors.Length);
 
             Hashtable hash = new Hashtable();
             hash.Add("UiName", PhotonNetwork.NickName);
@@ -110,7 +119,10 @@ public class PlayerController : MonoBehaviourPunCallbacks
             hash.Add("UiArmor", gameObject.GetComponent<ArmorController>().currentArmor);
             hash.Add("UiHost", PhotonNetwork.IsMasterClient);
             hash.Add("isDead", isDead);
+            hash.Add("hairColor", hairChosen);
+            hash.Add("curAmmo", gameObject.GetComponent<GunController>().CurrentAmmo);
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+            SetColor();
         }
     }
 
@@ -124,14 +136,17 @@ public class PlayerController : MonoBehaviourPunCallbacks
                 {
                     break;
                 }
-                if (!obj.active && obj.GetComponent<PlayerInfoController>().takenBy == "")
+                if (!obj.activeSelf && obj.GetComponent<PlayerInfoController>().takenBy == "")
                 {
                     obj.SetActive(true);
                     obj.GetComponent<PlayerInfoController>().SetPlayer((string)changedProps["UiName"], (bool)changedProps["UiHost"]);
                     obj.GetComponent<PlayerInfoController>().SetHp((float)changedProps["UiHp"], (float)changedProps["UiMaxHp"]);
                     obj.GetComponent<PlayerInfoController>().SetCoin((int)changedProps["UiCoin"]);
+                    obj.GetComponent<PlayerInfoController>().setColor(hairColors[(int)changedProps["hairColor"]]);
                     obj.GetComponent<PlayerInfoController>().SetArmor(gameObject.GetComponent<ArmorController>().armors[(int)changedProps["UiArmor"]].armorIcon);
                     obj.GetComponent<PlayerInfoController>().SetGun(gameObject.GetComponent<GunController>().Guns[(int)changedProps["UiGun"]].gunIcon);
+                    obj.GetComponent<PlayerInfoController>().SetAmmo((int)changedProps["curAmmo"], gameObject.GetComponent<GunController>().Guns[gameObject.GetComponent<GunController>().CurrentGunId].maxAmmo);
+
                     if ((bool)changedProps["isDead"])
                     {
                         obj.GetComponent<PlayerInfoController>().setDeath(true);
@@ -149,6 +164,9 @@ public class PlayerController : MonoBehaviourPunCallbacks
                 {
                     obj.GetComponent<PlayerInfoController>().SetHp((float)changedProps["UiHp"], (float)changedProps["UiMaxHp"]);
                     obj.GetComponent<PlayerInfoController>().SetCoin((int)changedProps["UiCoin"]);
+                    obj.GetComponent<PlayerInfoController>().setColor(hairColors[(int)changedProps["hairColor"]]);
+                    obj.GetComponent<PlayerInfoController>().SetAmmo((int)changedProps["curAmmo"], gameObject.GetComponent<GunController>().Guns[gameObject.GetComponent<GunController>().CurrentGunId].maxAmmo);
+
                     if ((bool)changedProps["isDead"])
                     {
                         obj.GetComponent<PlayerInfoController>().setDeath(true);
@@ -202,6 +220,8 @@ public class PlayerController : MonoBehaviourPunCallbacks
             hash.Add("UiArmor", gameObject.GetComponent<ArmorController>().currentArmor);
             hash.Add("UiHost", PhotonNetwork.IsMasterClient);
             hash.Add("isDead", isDead);
+            hash.Add("hairColor", hairChosen);
+            hash.Add("curAmmo", gameObject.GetComponent<GunController>().CurrentAmmo);
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
         }
     }
@@ -219,6 +239,8 @@ public class PlayerController : MonoBehaviourPunCallbacks
             hash.Add("UiArmor", gameObject.GetComponent<ArmorController>().currentArmor);
             hash.Add("UiHost", PhotonNetwork.IsMasterClient);
             hash.Add("isDead", isDead);
+            hash.Add("hairColor", hairChosen);
+            hash.Add("curAmmo", gameObject.GetComponent<GunController>().CurrentAmmo);
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
         }
     }
@@ -236,6 +258,8 @@ public class PlayerController : MonoBehaviourPunCallbacks
             hash.Add("UiArmor", ArmorId);
             hash.Add("UiHost", PhotonNetwork.IsMasterClient);
             hash.Add("isDead", isDead);
+            hash.Add("hairColor", hairChosen);
+            hash.Add("curAmmo", gameObject.GetComponent<GunController>().CurrentAmmo);
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
         }
     }
@@ -253,6 +277,8 @@ public class PlayerController : MonoBehaviourPunCallbacks
             hash.Add("UiArmor", gameObject.GetComponent<ArmorController>().currentArmor);
             hash.Add("UiHost", PhotonNetwork.IsMasterClient);
             hash.Add("isDead", isDead);
+            hash.Add("hairColor", hairChosen);
+            hash.Add("curAmmo", gameObject.GetComponent<GunController>().CurrentAmmo);
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
         }
     }
@@ -300,6 +326,8 @@ public class PlayerController : MonoBehaviourPunCallbacks
             hash.Add("UiArmor", gameObject.GetComponent<ArmorController>().currentArmor);
             hash.Add("UiHost", PhotonNetwork.IsMasterClient);
             hash.Add("isDead", isDead);
+            hash.Add("hairColor", hairChosen);
+            hash.Add("curAmmo", gameObject.GetComponent<GunController>().CurrentAmmo);
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
 
             PV.RPC("RPC_changePlayerHp", RpcTarget.All, isDamaging, hpChanged);
@@ -329,5 +357,17 @@ public class PlayerController : MonoBehaviourPunCallbacks
     {
         if(deadTrigger.GetComponent<RescueSystem>().knockedOut || isDead) { return; }
         deadTrigger.GetComponent<RescueSystem>().KnockOut();
+    }
+
+    void SetColor()
+    {
+        Debug.Log("Send set color: " + hairChosen);
+        PV.RPC("RPC_setColor", RpcTarget.All, hairChosen);
+    }
+
+    [PunRPC]
+    void RPC_setColor(int co)
+    {
+        hair.color = hairColors[co];
     }
 }

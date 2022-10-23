@@ -28,6 +28,14 @@ public class ChatSystem : MonoBehaviourPunCallbacks
             {
                 isChatOpen = false;
                 Cursor.visible = false;
+                foreach (GameObject pl in GameObject.FindGameObjectsWithTag("Player"))
+                {
+                    if (pl.GetComponent<PhotonView>().IsMine)
+                    {
+                        pl.GetComponent<PlayerController>().canMove = true;
+                        break;
+                    }
+                }
                 foreach (GameObject obj in toActive)
                 {
                     obj.SetActive(false);
@@ -37,6 +45,14 @@ public class ChatSystem : MonoBehaviourPunCallbacks
             {
                 isChatOpen = true;
                 Cursor.visible = true;
+                foreach(GameObject pl in GameObject.FindGameObjectsWithTag("Player"))
+                {
+                    if (pl.GetComponent<PhotonView>().IsMine)
+                    {
+                        pl.GetComponent<PlayerController>().canMove = false;
+                        break;
+                    }
+                }
                 foreach (GameObject obj in toActive)
                 {
                     obj.SetActive(true);

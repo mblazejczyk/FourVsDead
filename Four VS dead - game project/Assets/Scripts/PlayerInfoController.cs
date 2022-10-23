@@ -16,6 +16,7 @@ public class PlayerInfoController : MonoBehaviour
     [SerializeField] Text PlayerName;
     [SerializeField] Text IsHostText;
     [SerializeField] Text CoinText;
+    [SerializeField] Image Col;
 
     public void SetPlayer(string Name, bool isHost)
     {
@@ -81,5 +82,10 @@ public class PlayerInfoController : MonoBehaviour
         {
             KnockedImg.SetActive(false);
         }
+    }
+
+    public void setColor(Color co)
+    {
+        Col.color = co;
     }
 }

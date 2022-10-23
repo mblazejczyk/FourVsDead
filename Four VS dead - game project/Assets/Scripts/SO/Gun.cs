@@ -12,6 +12,7 @@ public class Gun : ScriptableObject
     public float ShootSpeed;
     public int Cost;
     public int CoinReward;
+    public int maxAmmo;
 
     public Sprite gunIcon;
     public AudioClip shootSound;

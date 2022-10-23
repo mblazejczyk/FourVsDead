@@ -45,7 +45,7 @@ public class LoginProfileManager : MonoBehaviour
         }
         else
         {
-            int y = Xp;
+            int y = Xp - TotalXpRequired[maxed];
             int x = TotalXpRequired[maxed + 1];
             XpBar.fillAmount = (float)y / (float)x;
         }
