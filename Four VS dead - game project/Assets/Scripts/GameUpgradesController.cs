@@ -59,6 +59,7 @@ public class GameUpgradesController : MonoBehaviourPunCallbacks
             case 4:
                 foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Player"))
                 {
+                    obj.GetComponent<GunController>().CurrentAmmo = obj.GetComponent<GunController>().Guns[obj.GetComponent<GunController>().CurrentGunId].maxAmmo;
                     obj.GetComponent<PlayerController>().ModifyHp(false, 9999999);
                 }
                 break;

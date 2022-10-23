@@ -216,6 +216,7 @@ public class GunController : MonoBehaviourPunCallbacks
             }
             else
             {
+                CurrentAmmo = Guns[newGun].maxAmmo;
                 gameObject.GetComponent<AudioSource>().Play();
                 Hashtable hash = new Hashtable();
                 hash.Add("GunChange", newGun);
