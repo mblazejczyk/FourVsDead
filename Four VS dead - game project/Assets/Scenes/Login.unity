@@ -1824,7 +1824,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Version: Pre=alfa 0.1(p)a
+  m_text: 'Version: Pre=alfa 0.2(p)a
 
     <color=yellow>Yellow</color>Sink 2022'
   m_isRightToLeft: 0

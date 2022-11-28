@@ -115,8 +115,11 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateMachineNode
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -552,6 +555,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3316}
     - Class: 114
+      Script: {instanceID: 3386}
+    - Class: 114
       Script: {instanceID: 3482}
     - Class: 114
       Script: {instanceID: 3618}
@@ -573,6 +578,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5298}
     - Class: 114
       Script: {instanceID: 5438}
+    - Class: 114
+      Script: {instanceID: 5450}
     - Class: 114
       Script: {instanceID: 5532}
     - Class: 114
@@ -680,7 +687,7 @@ ScriptsOnlyBuild:
     className: FreeCamera
   - hash:
       serializedVersion: 2
-      Hash: 861952eb5588d5e2a9502f930757a405
+      Hash: 5fd5ba8c1db84fe184dbc794b2812ca6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Launcher
@@ -1334,7 +1341,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerEnumHistory
   - hash:
       serializedVersion: 2
-      Hash: 1fe1944c83853aceb615156976f31470
+      Hash: 1501f248a3804a6252cde7b21051dc95
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuManager

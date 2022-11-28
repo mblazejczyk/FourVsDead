@@ -19,6 +19,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     [SerializeField] GameObject roomListitemPrefab;
     [SerializeField] GameObject PlayerListitemPrefab;
     [SerializeField] GameObject StartGameButton;
+    public GameObject menuButtons;
 
 
     private void Awake()
@@ -40,6 +41,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         Debug.Log("Connected");
+        menuButtons.SetActive(true);
         PhotonNetwork.JoinLobby();
         PhotonNetwork.AutomaticallySyncScene = true;
     }
@@ -74,7 +76,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         MenuManager.Instance.OpenMenu("room");
-
+        menuButtons.SetActive(false);
         if (PhotonNetwork.CurrentRoom.Name.Contains("+PRIVATE_PASSWORD:"))
         {
             string replaced = PhotonNetwork.CurrentRoom.Name.Replace("+PRIVATE_PASSWORD:", "▓");

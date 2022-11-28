@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
     public static MenuManager Instance;
-
+    public Animator PlayButtons;
     [SerializeField] Menu[] menus;
 
     private void Awake()
@@ -28,6 +28,7 @@ public class MenuManager : MonoBehaviour
                 CloseMenu(menus[i]);
             }
         }
+        PlayButtons.SetTrigger("close");
     }
 
     public void OpenMenu(Menu menu)
@@ -39,6 +40,7 @@ public class MenuManager : MonoBehaviour
                 CloseMenu(menus[i]);
             }
         }
+        PlayButtons.SetTrigger("close");
         menu.Open();
     }
 
@@ -58,5 +60,10 @@ public class MenuManager : MonoBehaviour
         PhotonNetwork.Disconnect();
         Destroy(GameObject.FindGameObjectWithTag("RoomManager"));
         SceneManager.LoadScene(0);
+    }
+
+    public void OpenButtons()
+    {
+        PlayButtons.SetTrigger("open");
     }
 }
