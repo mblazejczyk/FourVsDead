@@ -14,16 +14,43 @@ public class CursorController : MonoBehaviour
 
     private void Update()
     {
-        if (isLeaving) { return; }
+        if (isPaused) { return; }
         Vector2 mouseCursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = mouseCursorPos;
-        if (Input.GetKeyDown(KeyCode.Escape)) { StartCoroutine(quitGame()); }
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            PauseMenu();
+        }
     }
 
     public void LeaveGame()
     {
         StartCoroutine(HostLeftQuit());
     }
+
+    public GameObject pausemenuobj;
+    private bool isPaused = false;
+    public void PauseMenu()
+    {
+        if (isPaused)
+        {
+            Cursor.visible = false;
+            isPaused = false;
+            pausemenuobj.SetActive(false);
+        }
+        else
+        {
+            Cursor.visible = true;
+            isPaused = true;
+            pausemenuobj.SetActive(true);
+        }
+    }
+
+    public void Quit()
+    {
+        StartCoroutine(quitGame());
+    }
+
+
     IEnumerator HostLeftQuit()
     {
         isLeaving = true;
@@ -38,17 +65,12 @@ public class CursorController : MonoBehaviour
 
     IEnumerator quitGame()
     {
-        yield return new WaitForSeconds(3);
-        if (Input.GetKey(KeyCode.Escape)) {
-            isLeaving = true;
-            PhotonNetwork.Disconnect();
-            while (PhotonNetwork.IsConnected)
-            {
-                yield return null;
-            }
-            Destroy(GameObject.FindGameObjectWithTag("RoomManager"));
-            SceneManager.LoadScene(1);
+        PhotonNetwork.Disconnect();
+        while (PhotonNetwork.IsConnected)
+        {
+            yield return null;
         }
+        Destroy(GameObject.FindGameObjectWithTag("RoomManager"));
+        SceneManager.LoadScene(1);
     }
-
 }

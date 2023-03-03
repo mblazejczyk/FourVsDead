@@ -31,6 +31,28 @@ public class MenuManager : MonoBehaviour
         PlayButtons.SetTrigger("close");
     }
 
+    public void StartGame()
+    {
+        string menuName = "loading";
+        for (int i = 0; i < menus.Length; i++)
+        {
+            if (menus[i].menuName == menuName)
+            {
+                menus[i].Open();
+            }
+            else if (menus[i].open)
+            {
+                CloseMenu(menus[i]);
+            }
+        }
+    }
+
+    public void ResetTrigger()
+    {
+        PlayButtons.SetTrigger("close");
+        
+    }
+
     public void OpenMenu(Menu menu)
     {
         for (int i = 0; i < menus.Length; i++)
