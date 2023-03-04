@@ -64,6 +64,10 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+<<<<<<< HEAD
+find . -size +100M
+find * -size +100M
+=======
 # Packed Addressables
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
@@ -72,3 +76,4 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 find . -size +100M
+>>>>>>> parent of 00b73ec0 (dmg ui, dynamic pathfinding scan)

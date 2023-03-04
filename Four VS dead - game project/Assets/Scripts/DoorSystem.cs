@@ -62,6 +62,8 @@ public class DoorSystem : MonoBehaviour
         GameObject.FindGameObjectWithTag("MidScreenText").GetComponent<TMP_Text>().text = "New area <color=red>unlocked</color>";
         GameObject.FindGameObjectWithTag("MidScreenText").GetComponent<Animator>().SetTrigger("Open");
         GameObject.FindGameObjectWithTag("GameSoundSource").GetComponent<MatchAudioController>().PlaySound(1);
+        doors.layer = LayerMask.NameToLayer("Default");
+        GameObject.FindGameObjectWithTag("PathAi").GetComponent<AstarPath>().Scan();
         Destroy(doors);
     }
 }

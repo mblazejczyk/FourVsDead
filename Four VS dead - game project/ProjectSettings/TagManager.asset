@@ -20,6 +20,8 @@ TagManager:
   - GameSoundSource
   - BuyZones
   - UpgradeUi
+  - PathAi
+  - damageUi
   layers:
   - Default
   - TransparentFX

@@ -305,6 +305,8 @@ public class PlayerController : MonoBehaviourPunCallbacks
                     GameObject.FindGameObjectWithTag("UiInfoBg").GetComponent<Animator>().SetTrigger("dmg");
                     player_ani_sprite.GetComponent<AudioSource>().clip = playerDmg[Random.Range(0, playerDmg.Length)];
                     player_ani_sprite.GetComponent<AudioSource>().Play();
+                    GameObject dmgUi = GameObject.FindGameObjectsWithTag("damageUi")[Random.Range(0, GameObject.FindGameObjectsWithTag("damageUi").Length)];
+                    dmgUi.GetComponent<Animator>().SetTrigger("Dmg");
                 }
                 else
                 {

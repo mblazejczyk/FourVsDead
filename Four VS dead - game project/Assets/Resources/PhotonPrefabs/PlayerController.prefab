@@ -5163,6 +5163,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2287605098792481067
 GameObject:
   m_ObjectHideFlags: 0
@@ -5679,6 +5680,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &8576490715442100725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6135,6 +6137,9 @@ MonoBehaviour:
   m_ShapePathHash: 1495158331
   m_Mesh: {fileID: 0}
   m_InstanceId: 183778
+  m_LocalBounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
 --- !u!1 &6031427317639427000
 GameObject:
   m_ObjectHideFlags: 0
