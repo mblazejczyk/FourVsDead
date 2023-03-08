@@ -10,8 +10,10 @@ public class DiscordController : MonoBehaviour
     public string details = "inroom";
     public string state = "Current velocity: ";
     [Space]
-    public string largeImage = "inroom";
+    public string largeImage = "logo";
     public string largeText = "Four vs Dead";
+    public string smallImage = "";
+    public string smallText = "";
 
     private long time;
 
@@ -89,7 +91,6 @@ public class DiscordController : MonoBehaviour
         // Update Status every frame
         try
         {
-            Debug.Log(time);
             var activityManager = discord.GetActivityManager();
             var activity = new Discord.Activity
             {
@@ -98,7 +99,9 @@ public class DiscordController : MonoBehaviour
                 Assets =
                 {
                     LargeImage = largeImage,
-                    LargeText = largeText
+                    LargeText = largeText,
+                    SmallImage = smallImage,
+                    SmallText = smallText
                 },
                 Timestamps =
                 {
@@ -123,9 +126,10 @@ public class DiscordController : MonoBehaviour
         }
     }
 
-    public void Change(string img, string st, string det)
+    public void Change(string img, string sTxt, string det, string st)
     {
-        largeImage = img;
+        smallImage = img;
+        smallText = sTxt;
         details = det;
         state = st;
         UpdateStatus();
