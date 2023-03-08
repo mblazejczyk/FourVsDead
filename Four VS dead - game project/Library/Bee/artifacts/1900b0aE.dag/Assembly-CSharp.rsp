@@ -333,6 +333,7 @@
 -r:"C:/Users/nibek/Documents/GitHub/FourVsDead/Four VS dead - game project/Library/PackageCache/com.unity.burst@1.8.2/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll"
 -r:"C:/Users/nibek/Documents/GitHub/FourVsDead/Four VS dead - game project/Library/PackageCache/com.unity.burst@1.8.2/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll"
 -r:"C:/Users/nibek/Documents/GitHub/FourVsDead/Four VS dead - game project/Library/PackageCache/com.unity.burst@1.8.2/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-firstpass.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/AstarPathfindingProject.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/AstarPathfindingProjectEditor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/PackageToolsEditor.ref.dll"
@@ -398,6 +399,7 @@
 "Assets/Scripts/ChatSystem.cs"
 "Assets/Scripts/CursorController.cs"
 "Assets/Scripts/DestroyMe.cs"
+"Assets/Scripts/DiscordController.cs"
 "Assets/Scripts/DoorSystem.cs"
 "Assets/Scripts/EnemyController.cs"
 "Assets/Scripts/EnemyTracker.cs"
@@ -435,7 +437,6 @@
 "Assets/Scripts/SqlController.cs"
 "Assets/Scripts/UpgradeMenager.cs"
 "Assets/Scripts/UpgradeUiController.cs"
-"Assets/TabControl.cs"
 -langversion:9.0
 
 /deterministic

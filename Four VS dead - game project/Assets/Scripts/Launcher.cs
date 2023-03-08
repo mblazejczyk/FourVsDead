@@ -29,7 +29,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     }
     void Start()
     {
-        
+        GameObject.FindGameObjectWithTag("DiscordController").GetComponent<DiscordController>().Change("inroom", "Main menu", "starring at main menu screen");
     }
 
     public void ConnectToPhoton()
@@ -50,6 +50,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     {
         Debug.Log("Joined lobby");
         MenuManager.Instance.OpenMenu("title");
+        GameObject.FindGameObjectWithTag("DiscordController").GetComponent<DiscordController>().Change("inroom", "Main menu", "looking around menu");
         PhotonNetwork.NickName = GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login;
     }
 
@@ -101,7 +102,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         }
 
         StartGameButton.SetActive(PhotonNetwork.IsMasterClient);
-
+        GameObject.FindGameObjectWithTag("DiscordController").GetComponent<DiscordController>().Change("inroom", "In room: " + roomNameText.text, "preparing for battle");
     }
 
     public override void OnMasterClientSwitched(Player newMasterClient)

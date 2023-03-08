@@ -41,6 +41,7 @@ public class MatchController : MonoBehaviourPunCallbacks
             waveText.text = "Wave " + WaveNow;
             TimeBetweenSpawns = wave[WaveNow - 1].TimeBetweenSpawns;
             UpdateText(WaveNow, EnemiesLeft, true);
+            GameObject.FindGameObjectWithTag("DiscordController").GetComponent<DiscordController>().Change("ingame", "In game", "wave: " + WaveNow);
             StartCoroutine(SpawnNew());
         }
         else
