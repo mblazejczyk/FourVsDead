@@ -11,6 +11,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     public static Launcher Instance;
 
     [SerializeField] TMP_InputField roomNameIF;
+    [SerializeField] TMP_InputField roomSpaceIF;
     [SerializeField] TMP_Text errorText;
     [SerializeField] TMP_Text roomNameText;
     [SerializeField] TMP_InputField roomPassword;
@@ -56,12 +57,20 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     public void CreateRoom()
     {
-        if (string.IsNullOrEmpty(roomNameIF.text))
+        int number;
+        if (string.IsNullOrEmpty(roomNameIF.text) || int.TryParse(roomSpaceIF.text, out number))
         {
             return;
         }
         RoomOptions roomOptions = new RoomOptions();
-        roomOptions.MaxPlayers = 4;
+        if(int.Parse(roomSpaceIF.text) > 4)
+        {
+            roomSpaceIF.text = "4";
+        }else if (int.Parse(roomSpaceIF.text) < 1)
+        {
+            roomSpaceIF.text = "1";
+        }
+        roomOptions.MaxPlayers = byte.Parse(roomSpaceIF.text);
 
         if (roomPassword.text != "")
         {
