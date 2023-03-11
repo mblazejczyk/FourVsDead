@@ -15,7 +15,7 @@ public class ChatSystem : MonoBehaviourPunCallbacks
 
     public bool isChatOpen = false;
     public bool isInGame = false;
-    private void Start()
+    private void Awake()
     {
         PV = gameObject.GetComponent<PhotonView>();
     }
@@ -90,6 +90,15 @@ public class ChatSystem : MonoBehaviourPunCallbacks
         PV.RPC("RPC_SendChat", RpcTarget.All, s);
         Debug.Log("Sent");
         input.text = "";
+    }
+
+    public void SendSystemMessage(string msg)
+    {
+        string s = "<color=green><i>" + msg + "</color></i>";
+        Debug.Log(s);
+        PV = gameObject.GetComponent<PhotonView>();
+        PV.RPC("RPC_SendChat", RpcTarget.All, s);
+        Debug.Log("Sent system");
     }
 
     [PunRPC]

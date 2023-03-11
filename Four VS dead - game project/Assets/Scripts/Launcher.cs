@@ -21,6 +21,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     [SerializeField] GameObject PlayerListitemPrefab;
     [SerializeField] GameObject StartGameButton;
     public GameObject menuButtons;
+    public ChatSystem chat;
 
 
     private void Awake()
@@ -57,27 +58,28 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     public void CreateRoom()
     {
-        int number;
-        if (string.IsNullOrEmpty(roomNameIF.text) || int.TryParse(roomSpaceIF.text, out number))
+        if (string.IsNullOrEmpty(roomNameIF.text))
         {
             return;
         }
         RoomOptions roomOptions = new RoomOptions();
-        if(int.Parse(roomSpaceIF.text) > 4)
+        if (int.Parse(roomSpaceIF.text) > 4)
         {
             roomSpaceIF.text = "4";
         }else if (int.Parse(roomSpaceIF.text) < 1)
         {
             roomSpaceIF.text = "1";
         }
-        roomOptions.MaxPlayers = byte.Parse(roomSpaceIF.text);
+        byte mxp = byte.Parse(roomSpaceIF.text);
+        Debug.Log(mxp);
+        roomOptions.MaxPlayers = mxp;
 
         if (roomPassword.text != "")
         {
             roomNameIF.text += "+PRIVATE_PASSWORD:" + roomPassword.text;
         }
         
-        PhotonNetwork.CreateRoom(roomNameIF.text, roomOptions);
+        PhotonNetwork.CreateRoom(roomNameIF.text, roomOptions, null);
         MenuManager.Instance.OpenMenu("loading");
         roomNameIF.text = "";
         roomPassword.text = "";
@@ -111,7 +113,8 @@ public class Launcher : MonoBehaviourPunCallbacks
         }
 
         StartGameButton.SetActive(PhotonNetwork.IsMasterClient);
-        GameObject.FindGameObjectWithTag("DiscordController").GetComponent<DiscordController>().Change("in_room", "In room",  "In room: " + roomNameText.text, "preparing for battle");
+        chat.SendSystemMessage("New player joined: " + PhotonNetwork.NickName);
+        GameObject.FindGameObjectWithTag("DiscordController").GetComponent<DiscordController>().Change("in_room", "In room",  "In room: " + roomNameText.text + "(" + PhotonNetwork.CurrentRoom.PlayerCount + "/" + PhotonNetwork.CurrentRoom.MaxPlayers + ")", "preparing for battle");
     }
 
     public override void OnMasterClientSwitched(Player newMasterClient)
@@ -167,6 +170,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         Instantiate(PlayerListitemPrefab, PlayerlistContent).GetComponent<PlayerListitem>().SetUp(newPlayer);
+        
     }
 
     public void StartGame()
@@ -175,6 +179,20 @@ public class Launcher : MonoBehaviourPunCallbacks
         {
             PhotonNetwork.CurrentRoom.IsVisible = false;
         }
+        StartCoroutine(StartGameCountdown());
+    }
+
+    IEnumerator StartGameCountdown()
+    {
+        for(int i = 5; i > 0; i--)
+        {
+            if (PhotonNetwork.IsMasterClient)
+            {
+                chat.SendSystemMessage("Game starting in " + i + "...");
+            }
+            yield return new WaitForSeconds(1);
+        }
+        chat.SendSystemMessage("Game starts now...");
         PhotonNetwork.LoadLevel(2);
     }
 

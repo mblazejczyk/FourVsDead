@@ -22,6 +22,7 @@ ScriptsOnlyBuild:
     - LoginProfileManager
     - MatchAudioController
     - MatchController
+    - MaxPlayerCheck
     - Menu
     - MenuManager
     - PingAndFps
@@ -47,6 +48,8 @@ ScriptsOnlyBuild:
     AstarPathfindingProject.dll:
     - AstarPath
     - Pathfinding.Seeker
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbody2DView
@@ -394,6 +397,12 @@ ScriptsOnlyBuild:
     fullTypeName: ButtonSfxController
     methodName: PlaySound
   - assembly: Assembly-CSharp
+    fullTypeName: MaxPlayerCheck
+    methodName: Check
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonSfxController
+    methodName: PlaySound
+  - assembly: Assembly-CSharp
     fullTypeName: ButtonSfxController
     methodName: PlaySound
   - assembly: Assembly-CSharp
@@ -642,6 +651,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ButtonSfxController
     methodName: PlaySound
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Selectable
+    methodName: set_interactable
   - assembly: Assembly-CSharp
     fullTypeName: Launcher
     methodName: CreateRoom
@@ -842,21 +854,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6802}
     - Class: 114
-      Script: {instanceID: 7196}
+      Script: {instanceID: 7198}
     - Class: 114
-      Script: {instanceID: 7208}
+      Script: {instanceID: 7210}
     - Class: 114
-      Script: {instanceID: 7676}
+      Script: {instanceID: 7678}
     - Class: 114
-      Script: {instanceID: 8038}
+      Script: {instanceID: 8040}
     - Class: 114
-      Script: {instanceID: 8054}
+      Script: {instanceID: 8056}
     - Class: 114
-      Script: {instanceID: 8086}
+      Script: {instanceID: 8088}
     - Class: 114
-      Script: {instanceID: 8460}
+      Script: {instanceID: 8462}
     - Class: 114
-      Script: {instanceID: 8744}
+      Script: {instanceID: 8746}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1045,47 +1057,47 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7028}
     - Class: 114
-      Script: {instanceID: 7074}
+      Script: {instanceID: 7076}
     - Class: 114
-      Script: {instanceID: 7132}
+      Script: {instanceID: 7134}
     - Class: 114
-      Script: {instanceID: 7196}
-    - Class: 114
-      Script: {instanceID: 7206}
+      Script: {instanceID: 7198}
     - Class: 114
       Script: {instanceID: 7208}
     - Class: 114
-      Script: {instanceID: 7324}
+      Script: {instanceID: 7210}
     - Class: 114
-      Script: {instanceID: 7468}
+      Script: {instanceID: 7326}
     - Class: 114
-      Script: {instanceID: 7598}
+      Script: {instanceID: 7470}
     - Class: 114
-      Script: {instanceID: 7676}
+      Script: {instanceID: 7600}
     - Class: 114
-      Script: {instanceID: 7788}
+      Script: {instanceID: 7678}
     - Class: 114
-      Script: {instanceID: 7992}
+      Script: {instanceID: 7790}
     - Class: 114
-      Script: {instanceID: 8052}
+      Script: {instanceID: 7994}
     - Class: 114
-      Script: {instanceID: 8138}
+      Script: {instanceID: 8054}
     - Class: 114
-      Script: {instanceID: 8358}
+      Script: {instanceID: 8140}
     - Class: 114
-      Script: {instanceID: 8384}
+      Script: {instanceID: 8360}
     - Class: 114
-      Script: {instanceID: 8778}
+      Script: {instanceID: 8386}
     - Class: 114
-      Script: {instanceID: 8870}
+      Script: {instanceID: 8780}
     - Class: 114
-      Script: {instanceID: 9006}
+      Script: {instanceID: 8872}
     - Class: 114
-      Script: {instanceID: 9076}
+      Script: {instanceID: 9008}
     - Class: 114
-      Script: {instanceID: 9156}
+      Script: {instanceID: 9078}
     - Class: 114
-      Script: {instanceID: 9358}
+      Script: {instanceID: 9158}
+    - Class: 114
+      Script: {instanceID: 9360}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1206,21 +1218,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6980}
     - Class: 114
-      Script: {instanceID: 7196}
+      Script: {instanceID: 7060}
     - Class: 114
-      Script: {instanceID: 7208}
+      Script: {instanceID: 7198}
     - Class: 114
-      Script: {instanceID: 7676}
+      Script: {instanceID: 7210}
     - Class: 114
-      Script: {instanceID: 8054}
+      Script: {instanceID: 7678}
     - Class: 114
-      Script: {instanceID: 8460}
+      Script: {instanceID: 8056}
     - Class: 114
-      Script: {instanceID: 8712}
+      Script: {instanceID: 8462}
     - Class: 114
-      Script: {instanceID: 8840}
+      Script: {instanceID: 8714}
     - Class: 114
-      Script: {instanceID: 9164}
+      Script: {instanceID: 8842}
+    - Class: 114
+      Script: {instanceID: 9166}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1318,7 +1332,7 @@ ScriptsOnlyBuild:
     className: FreeCamera
   - hash:
       serializedVersion: 2
-      Hash: 5fd5ba8c1db84fe184dbc794b2812ca6
+      Hash: 2ac1013aa51243bfff831d361b0cf044
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Launcher
@@ -2426,6 +2440,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonRealtime.dll
     namespaceName: Photon.Realtime
     className: SupportLogger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MaxPlayerCheck
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
