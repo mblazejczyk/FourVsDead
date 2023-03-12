@@ -63,12 +63,20 @@ public class Launcher : MonoBehaviourPunCallbacks
             return;
         }
         RoomOptions roomOptions = new RoomOptions();
-        if (int.Parse(roomSpaceIF.text) > 4)
+        if (roomSpaceIF.text == "")
         {
             roomSpaceIF.text = "4";
-        }else if (int.Parse(roomSpaceIF.text) < 1)
+        }
+        else
         {
-            roomSpaceIF.text = "1";
+            if (int.Parse(roomSpaceIF.text) > 4)
+            {
+                roomSpaceIF.text = "4";
+            }
+            else if (int.Parse(roomSpaceIF.text) < 1)
+            {
+                roomSpaceIF.text = "1";
+            }
         }
         byte mxp = byte.Parse(roomSpaceIF.text);
         Debug.Log(mxp);
