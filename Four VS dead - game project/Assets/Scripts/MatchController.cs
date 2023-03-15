@@ -41,7 +41,10 @@ public class MatchController : MonoBehaviourPunCallbacks
             waveText.text = "Wave " + WaveNow;
             TimeBetweenSpawns = wave[WaveNow - 1].TimeBetweenSpawns;
             UpdateText(WaveNow, EnemiesLeft, true);
-            GameObject.FindGameObjectWithTag("DiscordController").GetComponent<DiscordController>().Change("map_1", "Playing on Map 1", "In game " + PhotonNetwork.CurrentRoom.Name + " (" + PhotonNetwork.CurrentRoom.PlayerCount + "/" + PhotonNetwork.CurrentRoom.MaxPlayers + ")", "wave: " + WaveNow);
+            if(GameObject.FindGameObjectWithTag("DiscordController") != null)
+            {
+                GameObject.FindGameObjectWithTag("DiscordController").GetComponent<DiscordController>().Change("map_1", "Playing on Map 1", "In game " + PhotonNetwork.CurrentRoom.Name + " (" + PhotonNetwork.CurrentRoom.PlayerCount + "/" + PhotonNetwork.CurrentRoom.MaxPlayers + ")", "wave: " + WaveNow);
+            }
             StartCoroutine(SpawnNew());
         }
         else

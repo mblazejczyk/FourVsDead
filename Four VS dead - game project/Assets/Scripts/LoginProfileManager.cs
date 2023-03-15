@@ -14,6 +14,8 @@ public class LoginProfileManager : MonoBehaviour
     public Image XpBar;
     public int[] TotalXpRequired;
     public Sprite[] Ranks;
+    public TMP_Text[] accountInfo;
+
     void Start()
     {
         LoginAsText.text = "Logged in as: " + GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login;
@@ -22,6 +24,25 @@ public class LoginProfileManager : MonoBehaviour
             GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().loginId;
 
         gameObject.GetComponent<SqlController>().Send(sql, "totalXp");
+
+        sql = "SELECT GROUP_CONCAT(`zombieKilled`, ';', `coinsCollected`,';', `dmgTaken`,';', `dmgGiven`,';'" +
+            ", `deaths`,';', `knockouts`,';', `buys`,';', `shots`,';', `firstGame`) AS 'save_res' FROM `saves` WHERE `playerId` = " + 
+            GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().loginId;
+        gameObject.GetComponent<SqlController>().Send(sql, "save_res");
+
+    }
+
+    public void UpdateProfileDetails(string res)
+    {
+        string[] saved = res.Split(';');
+        if(saved[saved.Length -1] == "0000-00-00")
+        {
+            saved[saved.Length - 1] = "never played yet";
+        }
+        for (int i = 0; i < saved.Length; i++)
+        {
+            accountInfo[i].text = saved[i];
+        }
     }
     public void UpdateRank()
     {

@@ -46,6 +46,10 @@ public class SqlController : MonoBehaviour
                     GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().UpgradePoints = int.Parse(restults);
                     gameObject.GetComponent<UpgradeMenager>().PointsUpdate();
                 }
+                if(toPrint == "save_res")
+                {
+                    gameObject.GetComponent<LoginProfileManager>().UpdateProfileDetails(restults);
+                }
             }
         }
     }

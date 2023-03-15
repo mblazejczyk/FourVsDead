@@ -206,6 +206,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
                     Ammount += Ammount * GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().coinsAdded / 100;
                 }
                 Coins += Ammount;
+                GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().coinsCollected += Ammount;
             }
             else
             {
@@ -268,6 +269,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     {
         if (PV.IsMine)
         {
+            GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().deaths += 1;
             Hashtable hash = new Hashtable();
             hash.Add("UiName", PhotonNetwork.NickName);
             hash.Add("UiHp", Hp);
@@ -307,6 +309,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
                     player_ani_sprite.GetComponent<AudioSource>().Play();
                     GameObject dmgUi = GameObject.FindGameObjectsWithTag("damageUi")[Random.Range(0, GameObject.FindGameObjectsWithTag("damageUi").Length)];
                     dmgUi.GetComponent<Animator>().SetTrigger("Dmg");
+                    GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().dmgTaken += hpChanged;
                 }
                 else
                 {
@@ -335,6 +338,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
             PV.RPC("RPC_changePlayerHp", RpcTarget.All, isDamaging, hpChanged);
             if(Hp == 0)
             {
+                GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().knockouts += 1;
                 PV.RPC("RPC_KnockOut", RpcTarget.All);
             }
         }

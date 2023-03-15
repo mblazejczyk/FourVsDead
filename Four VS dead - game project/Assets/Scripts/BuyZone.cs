@@ -51,6 +51,7 @@ public class BuyZone : MonoBehaviour
                 else
                 {
                     c2d.GetComponent<ArmorController>().SetNewArmor(TypeId);
+                    GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().buys += 1;
                     c2d.GetComponent<PlayerController>().ModifyCoins(0, c2d.GetComponent<ArmorController>().armors[TypeId].Cost);
                     GameObject.FindGameObjectWithTag("UiInfoBg").GetComponent<Animator>().SetTrigger("buy");
                     gameObject.GetComponent<AudioSource>().Play();
@@ -65,6 +66,7 @@ public class BuyZone : MonoBehaviour
                 else
                 {
                     c2d.GetComponent<GunController>().ChangeGun(TypeId);
+                    GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().buys += 1;
                     c2d.GetComponent<PlayerController>().ModifyCoins(0, c2d.GetComponent<GunController>().Guns[TypeId].Cost);
                     GameObject.FindGameObjectWithTag("UiInfoBg").GetComponent<Animator>().SetTrigger("buy");
                     gameObject.GetComponent<AudioSource>().Play();
@@ -80,6 +82,7 @@ public class BuyZone : MonoBehaviour
                 {
                     GameObject.FindGameObjectWithTag("GameController").GetComponent<GameUpgradesController>().BuyUpgrade(TypeId);
                     c2d.GetComponent<PlayerController>().ModifyCoins(0, currentCost);
+                    GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().buys += 1;
                     GameObject.FindGameObjectWithTag("UiInfoBg").GetComponent<Animator>().SetTrigger("buy");
                     gameObject.GetComponent<AudioSource>().Play();
                 }

@@ -166,8 +166,9 @@ public class EnemyController : MonoBehaviour, IDamagable
         damageObj.GetComponent<AudioSource>().Play();
         if (MaxHp <= 0 && PhotonNetwork.IsMasterClient)
         {
-            PhotonNetwork.Destroy(gameObject);
             GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().SubstractEnemiesLeft();
+            GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().zombieKilled += 1;
+            PhotonNetwork.Destroy(gameObject);
         }
     }
 

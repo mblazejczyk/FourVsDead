@@ -31,6 +31,7 @@ public class GunController : MonoBehaviourPunCallbacks
     public void Shoot(GameObject sprites)
     {
         if (isOnCooldown == true) { return; } else { isOnCooldown = true; }
+        GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().shots += 1;
         RaycastHit2D PistolHit;
         RaycastHit2D UziHit;
 
@@ -65,6 +66,7 @@ public class GunController : MonoBehaviourPunCallbacks
                     if (PistolHit.collider.gameObject.tag == "Enemy")
                     {
                         AddXpForHit(5);
+                        GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().dmgGiven += Guns[CurrentGun].Damage;
                         gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
                     }
                 }
@@ -92,6 +94,7 @@ public class GunController : MonoBehaviourPunCallbacks
                         if (rc2d.collider.gameObject.tag == "Enemy")
                         {
                             AddXpForHit(3);
+                            GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().dmgGiven += Guns[CurrentGun].Damage;
                             gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
                         }
                     }
@@ -114,6 +117,7 @@ public class GunController : MonoBehaviourPunCallbacks
                     if (UziHit.collider.gameObject.tag == "Enemy")
                     {
                         AddXpForHit(1);
+                        GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().dmgGiven += Guns[CurrentGun].Damage;
                         gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
                     }
                 }
@@ -135,6 +139,7 @@ public class GunController : MonoBehaviourPunCallbacks
                     if (BFG.collider.gameObject.tag == "Enemy")
                     {
                         AddXpForHit(15);
+                        GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().dmgGiven += Guns[CurrentGun].Damage;
                         gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
                     }
                 }
