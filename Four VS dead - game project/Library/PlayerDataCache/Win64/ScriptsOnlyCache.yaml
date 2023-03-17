@@ -43,11 +43,15 @@ ScriptsOnlyBuild:
     - UpgradeMenager
     - UpgradeUiController
     - Waves
+    - bl_PhotonFriendList
+    - bl_PhotonFriendUI
     - loginHandler
     - loginSystem
     AstarPathfindingProject.dll:
     - AstarPath
     - Pathfinding.Seeker
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbody2DView
@@ -122,8 +126,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -140,8 +146,10 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
@@ -150,6 +158,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
+    Assembly-CSharp:
+    - bl_PhotonFriendList/FriendUIStatus
     AstarPathfindingProject:
     - Pathfinding.AstarColor
     - Pathfinding.AstarData
@@ -212,6 +222,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Dropdown/OptionData
     - UnityEngine.UI.Dropdown/OptionDataList
     - UnityEngine.UI.FontData
+    - UnityEngine.UI.InputField/EndEditEvent
+    - UnityEngine.UI.InputField/OnChangeEvent
+    - UnityEngine.UI.InputField/SubmitEvent
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.ScrollRect/ScrollRectEvent
@@ -278,6 +291,9 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: ResetDebugManager
   - assembly: Assembly-CSharp
+    fullTypeName: bl_PhotonFriendList
+    methodName: AddFriend
+  - assembly: Assembly-CSharp
     fullTypeName: ChatSystem
     methodName: Send
   - assembly: Assembly-CSharp
@@ -289,6 +305,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: RoomListitem
     methodName: OnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: PlayerListitem
+    methodName: AddFriend
+  - assembly: Assembly-CSharp
+    fullTypeName: PlayerListitem
+    methodName: KickPlayer
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
     methodName: OpenMenu
@@ -385,6 +407,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ButtonSfxController
     methodName: PlaySound
+  - assembly: Assembly-CSharp
+    fullTypeName: Launcher
+    methodName: AcceptFriendRequest
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
     methodName: Quit
@@ -530,6 +558,9 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   - assembly: Assembly-CSharp
+    fullTypeName: bl_PhotonFriendList
+    methodName: ChangeOpenPanel
+  - assembly: Assembly-CSharp
     fullTypeName: UpgradeMenager
     methodName: BuyUpgrade
   - assembly: Assembly-CSharp
@@ -625,6 +656,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ButtonSfxController
     methodName: PlaySound
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: UpgradeMenager
     methodName: BuyUpgrade
@@ -1172,11 +1206,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2028}
     - Class: 114
+      Script: {instanceID: 2690}
+    - Class: 114
       Script: {instanceID: 3074}
     - Class: 114
       Script: {instanceID: 3086}
     - Class: 114
       Script: {instanceID: 3296}
+    - Class: 114
+      Script: {instanceID: 3340}
     - Class: 114
       Script: {instanceID: 3526}
     - Class: 114
@@ -1233,6 +1271,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 8878}
     - Class: 114
       Script: {instanceID: 9202}
+    - Class: 114
+      Script: {instanceID: 26098}
+    - Class: 114
+      Script: {instanceID: 26102}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1254,6 +1296,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
       Script: {instanceID: 0}
     - Class: 241
       Script: {instanceID: 0}
@@ -1330,7 +1374,7 @@ ScriptsOnlyBuild:
     className: FreeCamera
   - hash:
       serializedVersion: 2
-      Hash: 2ac1013aa51243bfff831d361b0cf044
+      Hash: 6f8eccef77ef580659b00a04b046d9b1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Launcher
@@ -1894,7 +1938,7 @@ ScriptsOnlyBuild:
     className: PunTeams
   - hash:
       serializedVersion: 2
-      Hash: e0766a0e8938b34dbdc572ce4b274d5c
+      Hash: ecfc32ab37413a94a68d3f0f9ccf71c6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerListitem
@@ -2966,6 +3010,24 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyController
+  - hash:
+      serializedVersion: 2
+      Hash: d2594c672fdea0c8654773cc23ae91d4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: bl_PhotonFriendList
+  - hash:
+      serializedVersion: 2
+      Hash: b773a1c7e96ce0e95dfa33d9238f849a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: bl_AutoJoin
+  - hash:
+      serializedVersion: 2
+      Hash: eb3b48ca5e645a4897982554f681510c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: bl_PhotonFriendUI
   platform: 19
   scenePathNames:
   - Assets/Scenes/Login.unity

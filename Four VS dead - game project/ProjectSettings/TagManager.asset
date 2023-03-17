@@ -23,6 +23,8 @@ TagManager:
   - PathAi
   - damageUi
   - DiscordController
+  - FriendUiElement
+  - Canvas
   layers:
   - Default
   - TransparentFX

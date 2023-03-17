@@ -52,6 +52,9 @@ MonoBehaviour:
   - RPC_ShootInfo
   - RPC_BuyUpgrade
   - RPC_setColor
+  - RPC_KickPlayer
+  - RPC_FriendAccept
+  - RPC_FriendRequest
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
