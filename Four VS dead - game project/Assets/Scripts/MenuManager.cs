@@ -28,7 +28,10 @@ public class MenuManager : MonoBehaviour
                 CloseMenu(menus[i]);
             }
         }
-        PlayButtons.SetTrigger("close");
+        if(PlayButtons.GetCurrentAnimatorStateInfo(0).IsName("idle_open_btn"))
+        {
+            PlayButtons.SetTrigger("close");
+        }
     }
 
     public void StartGame()
@@ -62,7 +65,10 @@ public class MenuManager : MonoBehaviour
                 CloseMenu(menus[i]);
             }
         }
-        PlayButtons.SetTrigger("close");
+        if (PlayButtons.GetCurrentAnimatorStateInfo(0).IsName("idle_open_btn"))
+        {
+            PlayButtons.SetTrigger("close");
+        }
         menu.Open();
     }
 

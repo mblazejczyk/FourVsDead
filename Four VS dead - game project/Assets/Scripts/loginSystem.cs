@@ -12,6 +12,7 @@ public class loginSystem : MonoBehaviour
     public TMP_InputField password;
     public Toggle rememberToggle;
     public TMP_Text error;
+    public GameObject bannedMsgBox;
 
     private void Start()
     {
@@ -77,20 +78,28 @@ public class loginSystem : MonoBehaviour
                 }
                 else
                 {
-                    GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().loginId = www.downloadHandler.text.Split('|')[0];
-                    GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().SetSave(www.downloadHandler.text.Split('|')[1]);
-                    GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login = login.text;
-                    if(rememberToggle.isOn)
+                    if(www.downloadHandler.text.Split('|')[0] == "banned")
                     {
-                        PlayerPrefs.SetString("loginStr", login.text);
-                        PlayerPrefs.SetString("passStr", password.text);
-                        PlayerPrefs.SetString("isSaved", "true");
+                        bannedMsgBox.SetActive(true);
+                        bannedMsgBox.GetComponent<Referencer>().Reference.GetComponent<TMP_Text>().text = "<color=white>This account has been banned</color>\nYou have been banned for:<color=red>\n" + www.downloadHandler.text.Split('|')[1] + "</color>\nand will be unable to play till:<color=red>\n" + www.downloadHandler.text.Split('|')[2]+"</color>";
                     }
                     else
                     {
-                        PlayerPrefs.SetString("isSaved", "false");
+                        GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().loginId = www.downloadHandler.text.Split('|')[0];
+                        GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().SetSave(www.downloadHandler.text.Split('|')[1]);
+                        GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login = login.text;
+                        if (rememberToggle.isOn)
+                        {
+                            PlayerPrefs.SetString("loginStr", login.text);
+                            PlayerPrefs.SetString("passStr", password.text);
+                            PlayerPrefs.SetString("isSaved", "true");
+                        }
+                        else
+                        {
+                            PlayerPrefs.SetString("isSaved", "false");
+                        }
+                        SceneManager.LoadScene(1);
                     }
-                    SceneManager.LoadScene(1);
                 }
             }
         }
