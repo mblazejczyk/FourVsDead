@@ -6575,7 +6575,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 160020236}
   m_HandleRect: {fileID: 160020235}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -40291,6 +40291,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allItems:
   - {fileID: 11400000, guid: 0bd35e233c6d9f645afc9b5d5ac8c1d2, type: 2}
+  - {fileID: 11400000, guid: bcd07e3f907f24946837f12f34304899, type: 2}
+  - {fileID: 11400000, guid: 776ed628879d3c74e906eed8c2296d0c, type: 2}
   itemPrefab: {fileID: 5781416552717069074, guid: e5f2d9fd7f283374f93b889a61f21963, type: 3}
   ContentSV: {fileID: 253792619}
   selectedMenu: {fileID: 1342514318}
@@ -40298,6 +40300,7 @@ MonoBehaviour:
   selectedName: {fileID: 1440730195}
   selectedDes: {fileID: 1610947049}
   selectedItem: 0
+  BadgeSelectedItemId: 0
 --- !u!1 &1997459458
 GameObject:
   m_ObjectHideFlags: 0

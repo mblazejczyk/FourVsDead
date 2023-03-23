@@ -66,11 +66,23 @@ public class Launcher : MonoBehaviourPunCallbacks
         {
             GameObject.FindGameObjectWithTag("DiscordController").GetComponent<DiscordController>().Change("in_mainmenu", "In main menu", "Main menu", "looking around menu");
         }
+    }
+
+    private ExitGames.Client.Photon.Hashtable _playerInfo = new ExitGames.Client.Photon.Hashtable();
+    public void SetPlayerHash()
+    {
+        _playerInfo["Level"] = GameObject.FindGameObjectWithTag("Canvas").GetComponent<LoginProfileManager>().Xp;
+        if(GameObject.FindGameObjectWithTag("Canvas").GetComponent<EqSystem>().BadgeSelectedItemId != 0)
+        {
+            _playerInfo["Badge"] = GameObject.FindGameObjectWithTag("Canvas").GetComponent<EqSystem>().BadgeSelectedItemId;
+        }
         
+        PhotonNetwork.LocalPlayer.CustomProperties = _playerInfo;
     }
 
     public void CreateRoom()
     {
+        SetPlayerHash();
         if (string.IsNullOrEmpty(roomNameIF.text))
         {
             return;
@@ -186,7 +198,7 @@ public class Launcher : MonoBehaviourPunCallbacks
             errorText.text = "Max players in room";
             return;
         }
-        
+        SetPlayerHash();
         PhotonNetwork.JoinRoom(info.Name);
         MenuManager.Instance.OpenMenu("loading");
     }
@@ -194,7 +206,6 @@ public class Launcher : MonoBehaviourPunCallbacks
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         Instantiate(PlayerListitemPrefab, PlayerlistContent).GetComponent<PlayerListitem>().SetUp(newPlayer);
-        
     }
 
     public void StartGame()
@@ -241,6 +252,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         }
         else
         {
+            SetPlayerHash();
             JoinRoom(choosenRoomInfo);
         }
     }
@@ -265,9 +277,16 @@ public class Launcher : MonoBehaviourPunCallbacks
         if (PhotonNetwork.NickName == nick)
         {
             LeaveRoom();
-            MenuManager.Instance.OpenMenu("error");
-            errorText.text = "You have been kicked from the room";
+            StartCoroutine(Infobox());
         }
+    }
+
+    IEnumerator Infobox()
+    {
+        GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Referencer>().Reference.GetComponent<TMPro.TMP_Text>().text = "<color=red>You have been kicked from room</color>";
+        GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetBool("isOpen", true);
+        yield return new WaitForSeconds(3);
+        GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetBool("isOpen", false);
     }
 
     private string tempnick = "";

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: PreDev badge
   m_EditorClassIdentifier: 
   TypeOfItem: 0
-  id: 0
-  ItemImg: {fileID: 21300000, guid: cb658af776556e84090170aab8846852, type: 3}
+  id: 1
+  ItemImg: {fileID: 21300000, guid: 2be38b48d2b48564b85c18a0da034caa, type: 3}
   ItemName: PreDev tester badge
   ItemDescription: Badge is given to all testers that helped develop game from very
     begining

@@ -4,6 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
+using UnityEngine.UI;
 
 
 public class PlayerListitem : MonoBehaviourPunCallbacks
@@ -11,12 +12,40 @@ public class PlayerListitem : MonoBehaviourPunCallbacks
     [SerializeField] TMP_Text text;
     public GameObject kickButton;
     public GameObject addFriendButton;
+    public Image level;
+    public Image badge;
 
     Player player;
     public void SetUp(Player _player)
     {
         player = _player;
         text.text = _player.NickName;
+        int _playerXp = (int)_player.CustomProperties["Level"];
+
+        LoginProfileManager lpm = GameObject.FindGameObjectWithTag("Canvas").GetComponent<LoginProfileManager>();
+        for (int i = 0; i < lpm.Ranks.Length; i++)
+        {
+            if (lpm.TotalXpRequired[i] <= _playerXp)
+            {
+                level.sprite = lpm.Ranks[i];
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        EqSystem es = GameObject.FindGameObjectWithTag("Canvas").GetComponent<EqSystem>();
+        for (int i = 0; i < es.allItems.Length; i++)
+        {
+            if(es.allItems[i].id == (int)_player.CustomProperties["Badge"])
+            {
+                badge.sprite = es.allItems[i].ItemImg;
+                badge.gameObject.GetComponent<Referencer>().Reference.GetComponent<TMP_Text>().text = es.allItems[i].ItemName;
+                break;
+            }
+        }
+
         if (!PhotonNetwork.IsMasterClient || PhotonNetwork.NickName == _player.NickName)
         {
             Destroy(kickButton);

@@ -50,6 +50,14 @@ public class SqlController : MonoBehaviour
                 {
                     gameObject.GetComponent<LoginProfileManager>().UpdateProfileDetails(restults);
                 }
+                if(toPrint == "PlayerItems")
+                {
+                    string[] items = restults.Split(',');
+                    foreach (string x in items)
+                    {
+                        gameObject.GetComponent<EqSystem>().AddItemToEq(int.Parse(x));
+                    }
+                }
             }
         }
     }

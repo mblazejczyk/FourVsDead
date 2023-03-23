@@ -14,10 +14,14 @@ public class EqSystem : MonoBehaviour
     public TMP_Text selectedName;
     public TMP_Text selectedDes;
     public int selectedItem;
+    [Space(20)]
+    public int BadgeSelectedItemId;
 
     private void Start()
     {
-        AddItemToEq(0);
+        string sql = "SELECT GROUP_CONCAT(`itemId`) AS 'PlayerItems' FROM `itemsOwned` WHERE `playerId` = " +
+            GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().loginId;
+        gameObject.GetComponent<SqlController>().Send(sql, "PlayerItems");
     }
     public void Select(int itemId)
     {
@@ -40,7 +44,19 @@ public class EqSystem : MonoBehaviour
         {
             case 0:
                 break;
+            case 1: case 2: case 3:
+                BadgeSelectedItemId = selectedItem;
+                break;
         }
+        StartCoroutine(Infobox());
+    }
+
+    IEnumerator Infobox()
+    {
+        GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Referencer>().Reference.GetComponent<TMPro.TMP_Text>().text = "<color=green>Equipped</color>";
+        GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetBool("isOpen", true);
+        yield return new WaitForSeconds(2);
+        GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetBool("isOpen", false);
     }
 
     public void AddItemToEq(int id)
