@@ -398,6 +398,7 @@
 "Assets/OnBadgeHover.cs"
 "Assets/Photon/PhotonLibs/WebSocket/SocketWebTcp.cs"
 "Assets/Photon/PhotonLibs/WebSocket/WebSocket.cs"
+"Assets/ReportSystem.cs"
 "Assets/Scripts/ArmorController.cs"
 "Assets/Scripts/BarycadeSystem.cs"
 "Assets/Scripts/Bullet.cs"

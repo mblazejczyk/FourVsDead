@@ -12,16 +12,17 @@ public class PlayerListitem : MonoBehaviourPunCallbacks
     [SerializeField] TMP_Text text;
     public GameObject kickButton;
     public GameObject addFriendButton;
+    public GameObject reportObj;
     public Image level;
     public Image badge;
-
+    private int ThisPlayerId;
     Player player;
     public void SetUp(Player _player)
     {
         player = _player;
         text.text = _player.NickName;
         int _playerXp = (int)_player.CustomProperties["Level"];
-
+        ThisPlayerId = (int)_player.CustomProperties["pId"];
         LoginProfileManager lpm = GameObject.FindGameObjectWithTag("Canvas").GetComponent<LoginProfileManager>();
         for (int i = 0; i < lpm.Ranks.Length; i++)
         {
@@ -35,15 +36,22 @@ public class PlayerListitem : MonoBehaviourPunCallbacks
             }
         }
 
-        EqSystem es = GameObject.FindGameObjectWithTag("Canvas").GetComponent<EqSystem>();
-        for (int i = 0; i < es.allItems.Length; i++)
+        if (_player.CustomProperties["Badge"] != null)
         {
-            if(es.allItems[i].id == (int)_player.CustomProperties["Badge"])
+            EqSystem es = GameObject.FindGameObjectWithTag("Canvas").GetComponent<EqSystem>();
+            for (int i = 0; i < es.allItems.Length; i++)
             {
-                badge.sprite = es.allItems[i].ItemImg;
-                badge.gameObject.GetComponent<Referencer>().Reference.GetComponent<TMP_Text>().text = es.allItems[i].ItemName;
-                break;
+                if (es.allItems[i].id == (int)_player.CustomProperties["Badge"])
+                {
+                    badge.sprite = es.allItems[i].ItemImg;
+                    badge.gameObject.GetComponent<Referencer>().Reference.GetComponent<TMP_Text>().text = es.allItems[i].ItemName;
+                    break;
+                }
             }
+        }
+        else
+        {
+            Destroy(badge.gameObject);
         }
 
         if (!PhotonNetwork.IsMasterClient || PhotonNetwork.NickName == _player.NickName)
@@ -53,6 +61,7 @@ public class PlayerListitem : MonoBehaviourPunCallbacks
         if(PhotonNetwork.NickName == _player.NickName)
         {
             Destroy(addFriendButton);
+            Destroy(reportObj);
         }
     }
 
@@ -79,5 +88,10 @@ public class PlayerListitem : MonoBehaviourPunCallbacks
     public void AddFriend()
     {
         GameObject.FindGameObjectWithTag("Canvas").GetComponent<PhotonView>().RPC("RPC_FriendRequest", RpcTarget.All, player.NickName, PhotonNetwork.NickName);
+    }
+
+    public void Report()
+    {
+        GameObject.Find("Report").GetComponent<ReportSystem>().OpenReport(ThisPlayerId);
     }
 }

@@ -72,6 +72,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     public void SetPlayerHash()
     {
         _playerInfo["Level"] = GameObject.FindGameObjectWithTag("Canvas").GetComponent<LoginProfileManager>().Xp;
+        _playerInfo["pId"] = int.Parse(GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().loginId);
         if(GameObject.FindGameObjectWithTag("Canvas").GetComponent<EqSystem>().BadgeSelectedItemId != 0)
         {
             _playerInfo["Badge"] = GameObject.FindGameObjectWithTag("Canvas").GetComponent<EqSystem>().BadgeSelectedItemId;
