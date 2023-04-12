@@ -25,6 +25,7 @@ TagManager:
   - DiscordController
   - FriendUiElement
   - Canvas
+  - Chat
   layers:
   - Default
   - TransparentFX

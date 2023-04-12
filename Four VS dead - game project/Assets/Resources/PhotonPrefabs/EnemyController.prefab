@@ -129,7 +129,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 50
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -748,10 +748,10 @@ MonoBehaviour:
   - {x: -0.19855791, y: -0.28931117, z: 0}
   m_ShapePathHash: -633639444
   m_Mesh: {fileID: 0}
-  m_InstanceId: 40298
+  m_InstanceId: 152786
   m_LocalBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: 0.0959847, y: 0.035168827, z: 0}
+    m_Extent: {x: 0.38169336, y: 0.56751233, z: 0}
 --- !u!1 &6984671793526691043
 GameObject:
   m_ObjectHideFlags: 0

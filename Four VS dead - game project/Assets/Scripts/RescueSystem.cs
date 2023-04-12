@@ -12,6 +12,7 @@ public class RescueSystem : MonoBehaviour
     public GameObject[] toTurnOff;
     public GameObject[] disable;
     public TMP_Text timeText;
+    public GameObject upperText;
     public int timeLeft = 20;
 
     public bool knockedOut = false;
@@ -20,12 +21,14 @@ public class RescueSystem : MonoBehaviour
         gameObject.GetComponent<SpriteRenderer>().color = new Color(0.7f, 1f, 0.6f, 0.24f);
         foreach(GameObject obj in disable)
         {
-            obj.SetActive(true);
+            obj.SetActive(false);
         }
         foreach(GameObject obj in toTurnOff)
         {
             obj.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1);
         }
+        upperText.SetActive(true);
+        timeText.gameObject.SetActive(true);
         timeLeft = 20;
         knockedOut = true;
         StartCoroutine(knockoutTimer());
@@ -64,8 +67,10 @@ public class RescueSystem : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().color = new Color(0.7f, 1f, 0.6f, 0f);
             foreach (GameObject obj in disable)
             {
-                obj.SetActive(false);
+                obj.SetActive(true);
             }
+            upperText.SetActive(false);
+            timeText.gameObject.SetActive(false);
             isHelping = false;
             knockedOut = false;
             timeLeft = 20;
@@ -101,7 +106,29 @@ public class RescueSystem : MonoBehaviour
         {
             obj.SetActive(false);
         }
+        upperText.SetActive(false);
+        timeText.gameObject.SetActive(false);
         gameObject.GetComponent<SpriteRenderer>().color = new Color(0.7f, 1f, 0.6f, 0f);
         playerConnected.GetComponent<PlayerController>().SetDeath();
+    }
+
+    public void Ressurect()
+    {
+        playerConnected.GetComponent<PlayerController>().isDead = false;
+        //playerConnected.GetComponent<PlayerController>().ModifyHp(false, 20);
+        foreach (GameObject obj in toTurnOff)
+        {
+            obj.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
+        }
+        foreach (GameObject obj in disable)
+        {
+            obj.SetActive(true);
+        }
+        upperText.SetActive(false);
+        timeText.gameObject.SetActive(false);
+        isHelping = false;
+        knockedOut = false;
+        timeLeft = 20;
+        gameObject.GetComponent<SpriteRenderer>().color = new Color(0.7f, 1f, 0.6f, 0f);
     }
 }

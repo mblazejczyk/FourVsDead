@@ -23,6 +23,9 @@ public class GunController : MonoBehaviourPunCallbacks
     public GameObject Player_ani_sprite;
     public GameObject ShootOb;
 
+    public GameObject ShootLine;
+    public GameObject shootPoint;
+
     private void Start()
     {
         CurrentAmmo = Guns[CurrentGunId].maxAmmo;
@@ -30,6 +33,7 @@ public class GunController : MonoBehaviourPunCallbacks
 
     public void Shoot(GameObject sprites)
     {
+        if (GetComponent<PlayerController>().Hp == 0) { return; }
         if (isOnCooldown == true) { return; } else { isOnCooldown = true; }
         GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().shots += 1;
         RaycastHit2D PistolHit;
@@ -45,15 +49,17 @@ public class GunController : MonoBehaviourPunCallbacks
                 break;
             }
         }
-        if(CurrentAmmo <= 0){ return; } //no ammo
+        if(CurrentAmmo <= 0){ isOnCooldown = false; return; } //no ammo
         CurrentAmmo--;
         ShootInfo(CurrentGun);
         switch (CurrentGunId)
         {
             case 0:
-                PistolHit = Physics2D.Raycast(sprites.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f);
+                PistolHit = Physics2D.Raycast(shootPoint.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f);
                 if (PistolHit)
                 {
+                    Debug.DrawRay(gameObject.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f);
+
                     if (GameObject.FindGameObjectWithTag("GameController").GetComponent<GameUpgradesController>().fasterRate)
                     {
                         PistolHit.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage * 1.5f);
@@ -62,21 +68,25 @@ public class GunController : MonoBehaviourPunCallbacks
                     {
                         PistolHit.collider.gameObject.GetComponent<IDamagable>()?.TakeDamage(Guns[CurrentGun].Damage);
                     }
-
                     if (PistolHit.collider.gameObject.tag == "Enemy")
                     {
                         AddXpForHit(5);
                         GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().dmgGiven += Guns[CurrentGun].Damage;
                         gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
+                        DrawShoot(shootPoint.transform.position, PistolHit.collider.gameObject.transform.position, false);
+                    }
+                    else
+                    {
+                        DrawShoot(shootPoint.transform.position, GameObject.FindGameObjectWithTag("CursorController").transform.position, true);
                     }
                 }
                 break;
             case 1:
-                RaycastHit2D[] ShotgunHit = { Physics2D.Raycast(sprites.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f),
-                    Physics2D.Raycast(sprites.transform.position, sprites.transform.TransformDirection(new Vector2(0.1f, 1)) * 5f),
-                    Physics2D.Raycast(sprites.transform.position, sprites.transform.TransformDirection(new Vector2(-0.1f, 1)) * 5f),
-                    Physics2D.Raycast(sprites.transform.position, sprites.transform.TransformDirection(new Vector2(0.2f, 1)) * 5f),
-                    Physics2D.Raycast(sprites.transform.position, sprites.transform.TransformDirection(new Vector2(-0.2f, 1)) * 5f) };
+                RaycastHit2D[] ShotgunHit = { Physics2D.Raycast(shootPoint.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f),
+                    Physics2D.Raycast(shootPoint.transform.position, sprites.transform.TransformDirection(new Vector2(0.1f, 1)) * 5f),
+                    Physics2D.Raycast(shootPoint.transform.position, sprites.transform.TransformDirection(new Vector2(-0.1f, 1)) * 5f),
+                    Physics2D.Raycast(shootPoint.transform.position, sprites.transform.TransformDirection(new Vector2(0.2f, 1)) * 5f),
+                    Physics2D.Raycast(shootPoint.transform.position, sprites.transform.TransformDirection(new Vector2(-0.2f, 1)) * 5f) };
                 foreach (RaycastHit2D rc2d in ShotgunHit)
                 {
                     if (rc2d)
@@ -96,12 +106,17 @@ public class GunController : MonoBehaviourPunCallbacks
                             AddXpForHit(3);
                             GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().dmgGiven += Guns[CurrentGun].Damage;
                             gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
+                            DrawShoot(shootPoint.transform.position, rc2d.collider.gameObject.transform.position, false);
+                        }
+                        else
+                        {
+                            DrawShoot(shootPoint.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f, true);
                         }
                     }
                 }
                 break;
             case 2:
-                UziHit = Physics2D.Raycast(sprites.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f);
+                UziHit = Physics2D.Raycast(shootPoint.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f);
                 if (UziHit)
                 {
                     if (GameObject.FindGameObjectWithTag("GameController").GetComponent<GameUpgradesController>().fasterRate)
@@ -119,11 +134,16 @@ public class GunController : MonoBehaviourPunCallbacks
                         AddXpForHit(1);
                         GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().dmgGiven += Guns[CurrentGun].Damage;
                         gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
+                        DrawShoot(shootPoint.transform.position, UziHit.collider.gameObject.transform.position, false);
+                    }
+                    else
+                    {
+                        DrawShoot(shootPoint.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f, true);
                     }
                 }
                 break;
             case 3:
-                BFG = Physics2D.Raycast(sprites.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f);
+                BFG = Physics2D.Raycast(shootPoint.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f);
                 if (BFG)
                 {
                     if (GameObject.FindGameObjectWithTag("GameController").GetComponent<GameUpgradesController>().fasterRate)
@@ -141,6 +161,11 @@ public class GunController : MonoBehaviourPunCallbacks
                         AddXpForHit(15);
                         GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().dmgGiven += Guns[CurrentGun].Damage;
                         gameObject.GetComponent<PlayerController>().ModifyCoins(1, Guns[CurrentGun].CoinReward);
+                        DrawShoot(shootPoint.transform.position, BFG.collider.gameObject.transform.position, false);
+                    }
+                    else
+                    {
+                        DrawShoot(shootPoint.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f, true);
                     }
                 }
                 break;
@@ -157,6 +182,17 @@ public class GunController : MonoBehaviourPunCallbacks
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
         }
 
+    }
+
+    void DrawShoot(Vector3 startPos, Vector3 endPos, bool isMissed)
+    {
+        PV.RPC("RPC_DrawShoot", RpcTarget.All, startPos, endPos, isMissed);
+    }
+
+    [PunRPC]
+    void RPC_DrawShoot(Vector3 startPos, Vector3 endPos, bool isMissed)
+    {
+        Instantiate(ShootLine).GetComponent<ShootLineController>().SetupLine(startPos, endPos, isMissed);
     }
 
     void AddXpForHit(int ammount)

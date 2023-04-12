@@ -55,6 +55,8 @@ MonoBehaviour:
   - RPC_KickPlayer
   - RPC_FriendAccept
   - RPC_FriendRequest
+  - RPC_DrawShoot
+  - RPC_ShotMade
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

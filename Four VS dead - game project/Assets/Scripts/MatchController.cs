@@ -41,6 +41,7 @@ public class MatchController : MonoBehaviourPunCallbacks
             waveText.text = "Wave " + WaveNow;
             TimeBetweenSpawns = wave[WaveNow - 1].TimeBetweenSpawns;
             UpdateText(WaveNow, EnemiesLeft, true);
+
             if(GameObject.FindGameObjectWithTag("DiscordController") != null)
             {
                 GameObject.FindGameObjectWithTag("DiscordController").GetComponent<DiscordController>().Change("map_1", "Playing on Map 1", "In game " + PhotonNetwork.CurrentRoom.Name + " (" + PhotonNetwork.CurrentRoom.PlayerCount + "/" + PhotonNetwork.CurrentRoom.MaxPlayers + ")", "wave: " + WaveNow);
@@ -69,6 +70,11 @@ public class MatchController : MonoBehaviourPunCallbacks
     [PunRPC]
     void RPC_UpdateText(int CurrentWave, int EnemiesToKill, bool isNewWave)
     {
+        if(waveText == null)
+        {
+            waveText = GameObject.FindGameObjectWithTag("WaveText_info").GetComponent<TMP_Text>();
+            enemiesLeftText = GameObject.FindGameObjectWithTag("EnemiesLeft_info").GetComponent<TMP_Text>();
+        }
         waveText.text = "Wave " + CurrentWave;
         enemiesLeftText.text = "Enemies left: " + EnemiesToKill;
 
@@ -99,6 +105,10 @@ public class MatchController : MonoBehaviourPunCallbacks
                     float inalHp = obj.GetComponent<PlayerController>().MaxHp * multiplaier;
                     obj.GetComponent<PlayerController>().ModifyHp(false, (int)inalHp);
                 }
+                if(obj.GetComponent<PlayerController>().isDead || obj.GetComponent<PlayerController>().Hp == 0)
+                {
+                    obj.GetComponent<Referencer>().Reference.GetComponent<RescueSystem>().Ressurect();
+                }
             }
         }
     }
@@ -121,7 +131,15 @@ public class MatchController : MonoBehaviourPunCallbacks
 
         if (PhotonNetwork.IsMasterClient && EnemiesToSpawn != 0)
         {
-            PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "EnemyController"), spawn, Quaternion.identity);
+            if (Random.value < .5)
+            {
+                PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Enemy_archer"), spawn, Quaternion.identity);
+            }
+            else
+            {
+                PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "EnemyController"), spawn, Quaternion.identity);
+
+            }
             EnemiesToSpawn--;
         }
 

@@ -333,6 +333,7 @@
 "Assets/OnBadgeHover.cs"
 "Assets/Photon/PhotonLibs/WebSocket/SocketWebTcp.cs"
 "Assets/Photon/PhotonLibs/WebSocket/WebSocket.cs"
+"Assets/ReportSystem.cs"
 "Assets/Scripts/ArmorController.cs"
 "Assets/Scripts/BarycadeSystem.cs"
 "Assets/Scripts/Bullet.cs"
@@ -343,7 +344,8 @@
 "Assets/Scripts/DestroyMe.cs"
 "Assets/Scripts/DiscordController.cs"
 "Assets/Scripts/DoorSystem.cs"
-"Assets/Scripts/EnemyController.cs"
+"Assets/Scripts/Enemies/EnemyController.cs"
+"Assets/Scripts/Enemies/EnemyController_archer.cs"
 "Assets/Scripts/EnemyTracker.cs"
 "Assets/Scripts/GameTimer.cs"
 "Assets/Scripts/GameUpgradesController.cs"
@@ -380,6 +382,7 @@
 "Assets/Scripts/SqlController.cs"
 "Assets/Scripts/UpgradeMenager.cs"
 "Assets/Scripts/UpgradeUiController.cs"
+"Assets/ShootLineController.cs"
 -langversion:9.0
 
 /deterministic

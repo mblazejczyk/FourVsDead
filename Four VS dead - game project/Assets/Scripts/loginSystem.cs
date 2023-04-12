@@ -20,6 +20,7 @@ public class loginSystem : MonoBehaviour
         {
             login.text = PlayerPrefs.GetString("loginStr");
             password.text = PlayerPrefs.GetString("passStr");
+            rememberToggle.isOn = true;
         }
     }
     public void Login()

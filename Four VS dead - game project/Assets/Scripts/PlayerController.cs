@@ -64,8 +64,10 @@ public class PlayerController : MonoBehaviourPunCallbacks
     {
         if (!PV.IsMine) { return; }
         LookAround();
-        if (Input.GetKey(KeyCode.Mouse0) && !isDead)
+        if (Input.GetKey(KeyCode.Mouse0) && !isDead && Hp != 0)
         {
+            if (GameObject.FindGameObjectWithTag("Chat").GetComponent<ChatSystem>().isChatOpen ||
+                GameObject.FindGameObjectWithTag("CursorController").GetComponent<CursorController>().isPaused) { return; }
             gameObject.GetComponent<GunController>().Shoot(sprites);
         }
     }
@@ -75,6 +77,8 @@ public class PlayerController : MonoBehaviourPunCallbacks
         if (!PV.IsMine) { return; }
         if(Hp == 0) { return; }
         if(!canMove) { return; }
+        if(GameObject.FindGameObjectWithTag("Chat").GetComponent<ChatSystem>().isChatOpen ||
+            GameObject.FindGameObjectWithTag("CursorController").GetComponent<CursorController>().isPaused) { return; }
         if(Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0) {
             player_ani_sprite.GetComponent<Animator>().SetBool("isWalking", false);
             rb.velocity = Vector3.zero;

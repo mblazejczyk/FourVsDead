@@ -28,7 +28,7 @@ public class CursorController : MonoBehaviour
     }
 
     public GameObject pausemenuobj;
-    private bool isPaused = false;
+    public bool isPaused = false;
     public void PauseMenu()
     {
         if (isPaused)

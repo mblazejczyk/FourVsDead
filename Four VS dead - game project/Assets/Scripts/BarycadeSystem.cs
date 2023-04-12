@@ -31,6 +31,11 @@ public class BarycadeSystem : MonoBehaviour, IBarycadeDmg
             GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetBool("isOpen", true);
             GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Referencer>().Reference.GetComponent<TMP_Text>().text = "You're repairing barycade";
         }
+        if (collision.tag == "Enemy" && isDestroing == false)
+        {
+            isDestroing = true;
+            StartCoroutine(DestroyTimer());
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -67,7 +72,6 @@ public class BarycadeSystem : MonoBehaviour, IBarycadeDmg
             return;
         }
     }
-
     IEnumerator RepairTimer()
     {
         yield return new WaitForSeconds(1);
@@ -78,13 +82,17 @@ public class BarycadeSystem : MonoBehaviour, IBarycadeDmg
         StartCoroutine(RepairTimer());
     }
 
+    private bool isAlreadyDes = false;
     IEnumerator DestroyTimer()
     {
+        if (isAlreadyDes) { yield break; }
+        isAlreadyDes = true;
         yield return new WaitForSeconds(1);
         if(isDestroing == true && Hp > 0)
         {
             ChangeHp(true, 1);
         }
+        isAlreadyDes = false;
         StartCoroutine(DestroyTimer());
     }
 
