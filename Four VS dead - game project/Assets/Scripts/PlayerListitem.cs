@@ -5,6 +5,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerListitem : MonoBehaviourPunCallbacks
@@ -23,7 +24,12 @@ public class PlayerListitem : MonoBehaviourPunCallbacks
         text.text = _player.NickName;
         int _playerXp = (int)_player.CustomProperties["Level"];
         ThisPlayerId = (int)_player.CustomProperties["pId"];
-        LoginProfileManager lpm = GameObject.FindGameObjectWithTag("Canvas").GetComponent<LoginProfileManager>();
+        LoginProfileManager lpm;
+        if(GameObject.Find("LPM").GetComponent<LoginProfileManager>().Ranks[0] != null){
+            lpm = GameObject.Find("LPM").GetComponent<LoginProfileManager>();
+        }else{
+            lpm = GameObject.FindGameObjectWithTag("Canvas").GetComponent<LoginProfileManager>();
+        }
         for (int i = 0; i < lpm.Ranks.Length; i++)
         {
             if (lpm.TotalXpRequired[i] <= _playerXp)
@@ -80,7 +86,11 @@ public class PlayerListitem : MonoBehaviourPunCallbacks
 
     public void KickPlayer()
     {
-        GameObject.FindGameObjectWithTag("Canvas").GetComponent<PhotonView>().RPC("RPC_KickPlayer", RpcTarget.All, player.NickName);
+        if(SceneManager.GetActiveScene().buildIndex == 1){
+            GameObject.FindGameObjectWithTag("Canvas").GetComponent<PhotonView>().RPC("RPC_KickPlayer", RpcTarget.All, player.NickName);
+        }else{
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<PhotonView>().RPC("RPC_KickPlayer", RpcTarget.All, player.NickName);
+        }
     }
 
     

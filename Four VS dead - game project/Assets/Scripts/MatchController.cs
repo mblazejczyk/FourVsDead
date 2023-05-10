@@ -155,4 +155,13 @@ public class MatchController : MonoBehaviourPunCallbacks
             }
         }
     }
+
+    [PunRPC]
+    void RPC_KickPlayer(string nick)
+    {
+        if (PhotonNetwork.NickName == nick)
+        {
+            GameObject.FindGameObjectWithTag("CursorController").GetComponent<CursorController>().Quit();
+        }
+    }
 }

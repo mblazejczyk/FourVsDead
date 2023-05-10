@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using UnityEngine.SceneManagement;
+using Photon.Realtime;
 
 public class CursorController : MonoBehaviour
 {
@@ -72,5 +73,16 @@ public class CursorController : MonoBehaviour
         }
         Destroy(GameObject.FindGameObjectWithTag("RoomManager"));
         SceneManager.LoadScene(1);
+    }
+
+    public Transform PlayerListContainter;
+    public GameObject newPlayerListItemObj;
+    public void ShowPlayers(){
+        Player[] players = PhotonNetwork.PlayerList;
+
+        for (int i = 0; i < players.Length; i++)
+        {
+            Instantiate(newPlayerListItemObj, PlayerListContainter).GetComponent<PlayerListitem>().SetUp(players[i]);
+        }
     }
 }

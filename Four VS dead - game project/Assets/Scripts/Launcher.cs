@@ -228,6 +228,17 @@ public class Launcher : MonoBehaviourPunCallbacks
             }
             yield return new WaitForSeconds(1);
         }
+        int x = 0;
+        foreach(Sprite s in GameObject.FindGameObjectWithTag("Canvas").GetComponent<LoginProfileManager>().Ranks){
+            GameObject.Find("LPM").GetComponent<LoginProfileManager>().Ranks[x] = s;
+            x++;
+        }
+        x = 0;
+        foreach(int s in GameObject.FindGameObjectWithTag("Canvas").GetComponent<LoginProfileManager>().TotalXpRequired){
+            GameObject.Find("LPM").GetComponent<LoginProfileManager>().TotalXpRequired[x] = s;
+            x++;
+        }
+        DontDestroyOnLoad(GameObject.Find("LPM"));
         chat.SendSystemMessage("Game starts now...");
         PhotonNetwork.LoadLevel(2);
     }
