@@ -12,12 +12,27 @@ public class RewardSystem : MonoBehaviour
         if(GameObject.FindGameObjectsWithTag("RewardSaver").Length > 0)
         {
             rewardPrompt.SetActive(true);
-            rewardAmmount.text = "You gained " + GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted + " xp from last game!";
-            string sql = "UPDATE `accounts` SET `totalXp` = (`totalXp` + " 
-                + GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted + 
-                ") WHERE `accounts`.`id` = " + 
+            int xp = PlayerPrefs.GetInt("NowXp");
+
+            string sql = "UPDATE `accounts` SET `totalXp` = (`totalXp` + "
+                + GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted +
+                ") WHERE `accounts`.`id` = " +
                 GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().loginId;
+            rewardAmmount.text = "You gained " + GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted + " xp from last game!";
+
+            foreach (int i in GameObject.Find("Canvas").GetComponent<LoginProfileManager>().TotalXpRequired)
+            {
+                if(xp < i && xp + GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted > i)
+                {
+                    sql =   "UPDATE `accounts` SET `totalXp` = (`totalXp` + "
+                            + GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted +
+                            "), `UpgradePoints` = (`UpgradePoints` + 1) WHERE `accounts`.`id` = " +
+                            GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().loginId;
+                    rewardAmmount.text = "You gained " + GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted + " xp from last game <color=green>AND LEVELED UP!</color>";
+                }
+            }
             gameObject.GetComponent<SqlController>().Send(sql, "id");
+            
             Debug.Log("Sent new sql: " + sql);
 
 

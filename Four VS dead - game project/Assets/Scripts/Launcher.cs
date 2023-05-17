@@ -148,6 +148,7 @@ public class Launcher : MonoBehaviourPunCallbacks
 
         StartGameButton.SetActive(PhotonNetwork.IsMasterClient);
         chat.SendSystemMessage("New player joined: " + PhotonNetwork.NickName);
+        PlayerPrefs.SetInt("NowXp", gameObject.GetComponent<LoginProfileManager>().Xp);
         if(GameObject.FindGameObjectWithTag("DiscordController") != null)
         {
             GameObject.FindGameObjectWithTag("DiscordController").GetComponent<DiscordController>().Change("in_room", "In room", "In room: " + roomNameText.text + "(" + PhotonNetwork.CurrentRoom.PlayerCount + "/" + PhotonNetwork.CurrentRoom.MaxPlayers + ")", "preparing for battle");
