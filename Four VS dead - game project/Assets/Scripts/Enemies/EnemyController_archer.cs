@@ -26,6 +26,7 @@ public class EnemyController_archer : MonoBehaviour, IDamagable
     public GameObject HpBar;
     public GameObject HpText;
     public GameObject bullet;
+    public GameObject GunEnd;
     public ParticleSystem bloodParticle;
     [Space(20)]
     public AudioClip[] idleSounds;
@@ -118,11 +119,11 @@ public class EnemyController_archer : MonoBehaviour, IDamagable
                 return;
             }
 
-            RaycastHit2D[] ShotgunHit = { Physics2D.Raycast(gameObject.transform.position * 1.2f, transform.TransformDirection(Vector2.up) * 10f),
-                    Physics2D.Raycast(gameObject.transform.position * 1.2f, transform.TransformDirection(new Vector2(0.1f, 1)) * 5f),
-                    Physics2D.Raycast(gameObject.transform.position * 1.2f, transform.TransformDirection(new Vector2(-0.1f, 1)) * 5f),
-                    Physics2D.Raycast(gameObject.transform.position * 1.2f, transform.TransformDirection(new Vector2(0.2f, 1)) * 5f),
-                    Physics2D.Raycast(gameObject.transform.position * 1.2f, transform.TransformDirection(new Vector2(-0.2f, 1)) * 5f) };
+            RaycastHit2D[] ShotgunHit = { Physics2D.Raycast(GunEnd.transform.position, transform.TransformDirection(Vector2.up) * 10f),
+                    Physics2D.Raycast(GunEnd.transform.position, transform.TransformDirection(new Vector2(0.1f, 1)) * 5f),
+                    Physics2D.Raycast(GunEnd.transform.position, transform.TransformDirection(new Vector2(-0.1f, 1)) * 5f),
+                    Physics2D.Raycast(GunEnd.transform.position, transform.TransformDirection(new Vector2(0.2f, 1)) * 5f),
+                    Physics2D.Raycast(GunEnd.transform.position, transform.TransformDirection(new Vector2(-0.2f, 1)) * 5f) };
             foreach (RaycastHit2D rc2d in ShotgunHit)
             {
                 Debug.DrawRay(gameObject.transform.position, gameObject.transform.TransformDirection(Vector2.up) * 10f);
