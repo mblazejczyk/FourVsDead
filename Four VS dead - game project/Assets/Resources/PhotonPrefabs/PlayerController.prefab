@@ -5313,6 +5313,10 @@ MonoBehaviour:
   - {r: 0.6901961, g: 0.7019608, b: 0, a: 1}
   hair: {fileID: 7585985447235806663}
   hairChosen: 0
+  damageUis:
+  - {fileID: 21300000, guid: 06c79b2fd5e8e6e4589d5ca7c89988fb, type: 3}
+  - {fileID: 21300000, guid: d8b0fd3261cbffe4a8bef0bd761831d7, type: 3}
+  - {fileID: 21300000, guid: d6ba61502e91e4d4293e8701b50e33e9, type: 3}
 --- !u!58 &1391497470712462367
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6209,7 +6213,7 @@ MonoBehaviour:
   - {x: -0.3631171, y: -0.3186249, z: 0}
   m_ShapePathHash: 1495158331
   m_Mesh: {fileID: 0}
-  m_InstanceId: 260104
+  m_InstanceId: 81318
   m_LocalBounds:
     m_Center: {x: 0.0833253, y: 0.034603894, z: 0}
     m_Extent: {x: 0.5380204, y: 0.5265725, z: 0}

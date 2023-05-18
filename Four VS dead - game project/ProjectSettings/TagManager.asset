@@ -26,6 +26,7 @@ TagManager:
   - FriendUiElement
   - Canvas
   - Chat
+  - FireworkSpawn
   layers:
   - Default
   - TransparentFX

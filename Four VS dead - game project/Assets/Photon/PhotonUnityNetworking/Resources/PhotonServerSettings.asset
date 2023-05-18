@@ -57,6 +57,7 @@ MonoBehaviour:
   - RPC_FriendRequest
   - RPC_DrawShoot
   - RPC_ShotMade
+  - RPC_SetFire
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

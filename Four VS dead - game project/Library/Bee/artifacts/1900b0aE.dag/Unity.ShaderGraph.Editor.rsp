@@ -115,6 +115,7 @@
 -define:PUN_2_0_OR_NEWER
 -define:PUN_2_OR_NEWER
 -define:PUN_2_19_OR_NEWER
+-define:VFX_GRAPH_10_0_0_OR_NEWER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll"

@@ -5,6 +5,7 @@ using Photon.Pun;
 using System.IO;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 using Photon.Realtime;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviourPunCallbacks
 {
@@ -294,11 +295,12 @@ public class PlayerController : MonoBehaviourPunCallbacks
     {
         if (PV.IsMine)
         {
-            ModifyHp(false, 50);
+            ModifyHp(false, 50, 0);
         }
     }
 
-    public void ModifyHp(bool isDamaging, int hpChanged)
+    public Sprite[] damageUis;
+    public void ModifyHp(bool isDamaging, int hpChanged, int couse)
     {
         if (PV.IsMine)
         {
@@ -312,6 +314,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
                     player_ani_sprite.GetComponent<AudioSource>().clip = playerDmg[Random.Range(0, playerDmg.Length)];
                     player_ani_sprite.GetComponent<AudioSource>().Play();
                     GameObject dmgUi = GameObject.FindGameObjectsWithTag("damageUi")[Random.Range(0, GameObject.FindGameObjectsWithTag("damageUi").Length)];
+                    dmgUi.GetComponent<Image>().sprite = damageUis[couse];
                     dmgUi.GetComponent<Animator>().SetTrigger("Dmg");
                     GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().dmgTaken += hpChanged;
                 }

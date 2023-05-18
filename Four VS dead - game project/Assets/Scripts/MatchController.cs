@@ -6,6 +6,7 @@ using System.IO;
 using Photon.Realtime;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 
 public class MatchController : MonoBehaviourPunCallbacks
 {
@@ -85,13 +86,14 @@ public class MatchController : MonoBehaviourPunCallbacks
             GameObject.FindGameObjectWithTag("GameSoundSource").GetComponent<MatchAudioController>().PlaySound(0);
         }
 
-        if (waveText.text == "Game ended")
+        if (CurrentWave > wave.Length)
         {
+            waveText.text = "Game ended";
             GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted += 
                 (int)((float)GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted * 
                 ((float)GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().XpForWin / 100));
-
-            GameObject.FindGameObjectWithTag("CursorController").GetComponent<CursorController>().LeaveGame();
+            StartCoroutine(spawnFirework());
+            StartCoroutine(GameEnding());
         }
 
         if (GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().hpForWave > 0 && isNewWave)
@@ -103,7 +105,7 @@ public class MatchController : MonoBehaviourPunCallbacks
                 {
                     float multiplaier = (float)GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().hpForWave / 100;
                     float inalHp = obj.GetComponent<PlayerController>().MaxHp * multiplaier;
-                    obj.GetComponent<PlayerController>().ModifyHp(false, (int)inalHp);
+                    obj.GetComponent<PlayerController>().ModifyHp(false, (int)inalHp, 0);
                 }
                 if(obj.GetComponent<PlayerController>().isDead || obj.GetComponent<PlayerController>().Hp == 0)
                 {
@@ -111,6 +113,22 @@ public class MatchController : MonoBehaviourPunCallbacks
                 }
             }
         }
+    }
+    public GameObject Firework;
+    IEnumerator spawnFirework()
+    {
+        yield return new WaitForSeconds(.5f);
+        for (int i = 0; i < 5; i++)
+        {
+            Instantiate(Firework, GameObject.FindGameObjectsWithTag("FireworkSpawn")[Random.Range(0, GameObject.FindGameObjectsWithTag("FireworkSpawn").Length)].transform);
+        }
+        StartCoroutine(spawnFirework());
+    }
+
+    IEnumerator GameEnding()
+    {
+        yield return new WaitForSeconds(10f);
+        GameObject.FindGameObjectWithTag("CursorController").GetComponent<CursorController>().LeaveGame();
     }
 
     GameObject ActiveSpawn()
@@ -131,14 +149,18 @@ public class MatchController : MonoBehaviourPunCallbacks
 
         if (PhotonNetwork.IsMasterClient && EnemiesToSpawn != 0)
         {
-            if (Random.value < .5)
+            float ran = .5f;
+            if (ran < .33)
             {
                 PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Enemy_archer"), spawn, Quaternion.identity);
             }
-            else
+            else if(ran > .66)
             {
                 PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "EnemyController"), spawn, Quaternion.identity);
-
+            }
+            else
+            {
+                PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Enemy_firerunner"), spawn, Quaternion.identity);
             }
             EnemiesToSpawn--;
         }
