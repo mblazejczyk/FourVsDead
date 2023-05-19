@@ -49,6 +49,14 @@ MonoBehaviour:
   SpawnPoints: []
   wave:
   - {fileID: 11400000, guid: 2d25ef8626716c84192aab354ee08617, type: 2}
+  - {fileID: 11400000, guid: 5bcb094a52597e84585fe772df303753, type: 2}
+  - {fileID: 11400000, guid: 2d3ac486d8bcf6d4989f36732e0e8fe7, type: 2}
+  - {fileID: 11400000, guid: f2291de9c39ebe0428512e245d32fe24, type: 2}
+  - {fileID: 11400000, guid: 8333376c7727a1c469555931b55e7cc5, type: 2}
+  - {fileID: 11400000, guid: 166048f856f6dc14fb4ad57ee461a54b, type: 2}
+  - {fileID: 11400000, guid: b42b6847b474d8d42b6b5e5d3fd660f6, type: 2}
+  - {fileID: 11400000, guid: b7af7c40372df0d4a9872320b882a87f, type: 2}
+  - {fileID: 11400000, guid: c5f5098590c583c4480503adc5afc067, type: 2}
   TimeBetweenSpawns: 0
   WaveNow: 0
   waveText: {fileID: 0}
@@ -94,4 +102,4 @@ MonoBehaviour:
   freezingAmm: 0
   zombieTrack: 0
   upgradesBought: 0
-  CostsById: 000000000000000000000000000000000000000000000000
+  CostsById: af000000c8000000e1000000c201000090010000ee020000

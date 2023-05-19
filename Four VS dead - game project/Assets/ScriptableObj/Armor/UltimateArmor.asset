@@ -15,5 +15,6 @@ MonoBehaviour:
   armorIcon: {fileID: 21300000, guid: d0de8338701f5724883ce932985b646e, type: 3}
   DmgReduction: 65
   DodgeChance: 20
-  SpeedAdded: 1
-  HpAdd: 100
+  SpeedAdded: 1.54
+  HpAdd: 110
+  Cost: 550

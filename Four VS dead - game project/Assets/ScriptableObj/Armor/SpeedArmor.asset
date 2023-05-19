@@ -17,3 +17,4 @@ MonoBehaviour:
   DodgeChance: 15
   SpeedAdded: 8
   HpAdd: 0
+  Cost: 450

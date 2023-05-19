@@ -5330,9 +5330,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.093743026, y: 0.182347}
+  m_Offset: {x: 0.09122132, y: 0.081477225}
   serializedVersion: 2
-  m_Radius: 0.6745351
+  m_Radius: 0.5560131
 --- !u!50 &8292106990496640251
 Rigidbody2D:
   serializedVersion: 4
@@ -6213,7 +6213,7 @@ MonoBehaviour:
   - {x: -0.3631171, y: -0.3186249, z: 0}
   m_ShapePathHash: 1495158331
   m_Mesh: {fileID: 0}
-  m_InstanceId: 81318
+  m_InstanceId: 60710
   m_LocalBounds:
     m_Center: {x: 0.0833253, y: 0.034603894, z: 0}
     m_Extent: {x: 0.5380204, y: 0.5265725, z: 0}

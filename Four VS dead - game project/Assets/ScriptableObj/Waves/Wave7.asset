@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f6ca8f8411d6f543b1d5dea17d36b7f, type: 3}
   m_Name: Wave7
   m_EditorClassIdentifier: 
-  WaveOrder: 0
-  TimeBetweenSpawns: 15
+  WaveOrder: 7
+  TimeBetweenSpawns: 3
   HowManyEnemies: 20
   Hp: 35
-  Dmg: 15
-  Dodge: 0
-  Speed: 90
+  Dmg: 20
+  Dodge: 25
+  Speed: 150

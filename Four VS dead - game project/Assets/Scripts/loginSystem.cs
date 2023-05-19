@@ -87,13 +87,8 @@ public class loginSystem : MonoBehaviour
                     else
                     {
                         GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().loginId = www.downloadHandler.text.Split('|')[0];
-                        Debug.LogError("Got id");
                         GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().SetSave(www.downloadHandler.text.Split('|')[1]);
-                        Debug.LogError("Got save");
-
                         GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login = login.text;
-                        Debug.LogError("Got login");
-
                         if (rememberToggle.isOn)
                         {
                             PlayerPrefs.SetString("loginStr", login.text);
@@ -104,7 +99,7 @@ public class loginSystem : MonoBehaviour
                         {
                             PlayerPrefs.SetString("isSaved", "false");
                         }
-                        Debug.LogError("Saved prefs. Starting game...");
+                        Debug.Log("Saved prefs. Starting game...");
 
                         SceneManager.LoadScene(1);
                     }

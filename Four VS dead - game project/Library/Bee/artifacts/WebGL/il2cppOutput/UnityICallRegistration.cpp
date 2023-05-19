@@ -538,10 +538,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Application_get_absoluteURL();
 		Register_UnityEngine_Application_get_absoluteURL();
 
-		//System.String UnityEngine.Application::get_identifier()
-		void Register_UnityEngine_Application_get_identifier();
-		Register_UnityEngine_Application_get_identifier();
-
 		//System.String UnityEngine.Application::get_unityVersion()
 		void Register_UnityEngine_Application_get_unityVersion();
 		Register_UnityEngine_Application_get_unityVersion();
@@ -6069,10 +6065,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Transform::SetAsFirstSibling()
 		void Register_UnityEngine_Transform_SetAsFirstSibling();
 		Register_UnityEngine_Transform_SetAsFirstSibling();
-
-		//System.Void UnityEngine.Transform::SetAsLastSibling()
-		void Register_UnityEngine_Transform_SetAsLastSibling();
-		Register_UnityEngine_Transform_SetAsLastSibling();
 
 		//System.Void UnityEngine.Transform::SetParent(UnityEngine.Transform,System.Boolean)
 		void Register_UnityEngine_Transform_SetParent();

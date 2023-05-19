@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f6ca8f8411d6f543b1d5dea17d36b7f, type: 3}
   m_Name: Wave2
   m_EditorClassIdentifier: 
-  WaveOrder: 0
+  WaveOrder: 2
   TimeBetweenSpawns: 5
   HowManyEnemies: 5
   Hp: 25

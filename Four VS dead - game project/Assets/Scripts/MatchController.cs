@@ -144,7 +144,7 @@ public class MatchController : MonoBehaviourPunCallbacks
 
         if (PhotonNetwork.IsMasterClient && EnemiesToSpawn != 0)
         {
-            float ran = .5f;
+            float ran = Random.value;
             if (ran < .33)
             {
                 PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Enemy_archer"), spawn, Quaternion.identity);

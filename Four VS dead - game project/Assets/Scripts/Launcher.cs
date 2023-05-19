@@ -22,9 +22,6 @@ public class Launcher : MonoBehaviourPunCallbacks
     [SerializeField] GameObject StartGameButton;
     public GameObject menuButtons;
     public ChatSystem chat;
-    public bl_PhotonFriendList friendList;
-    public GameObject FriendRequest;
-    public GameObject FriendListObj;
 
 
     private void Awake()
@@ -50,7 +47,6 @@ public class Launcher : MonoBehaviourPunCallbacks
     {
         Debug.Log("Connected");
         menuButtons.SetActive(true);
-        FriendListObj.SetActive(true);
         PhotonNetwork.JoinLobby();
         PhotonNetwork.AutomaticallySyncScene = true;
     }
@@ -291,32 +287,5 @@ public class Launcher : MonoBehaviourPunCallbacks
         GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetBool("isOpen", true);
         yield return new WaitForSeconds(3);
         GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetBool("isOpen", false);
-    }
-
-    private string tempnick = "";
-    [PunRPC]
-    void RPC_FriendRequest(string ToWhom, string FromWho)
-    {
-        if (PhotonNetwork.NickName == ToWhom)
-        {
-            tempnick = FromWho;
-            FriendRequest.GetComponent<Referencer>().Reference.GetComponent<TMP_Text>().text = "You recived friend request from: " + FromWho;
-            FriendRequest.SetActive(true);
-        }
-    }
-
-    public void AcceptFriendRequest()
-    {
-        gameObject.GetComponent<PhotonView>().RPC("RPC_FriendAccept", RpcTarget.All, PhotonNetwork.NickName, tempnick);
-    }
-
-    [PunRPC]
-    void RPC_FriendAccept(string nick1, string nick2)
-    {
-        if (PhotonNetwork.NickName == nick1 || PhotonNetwork.NickName == nick2)
-        {
-            friendList.AddFriend(nick1);
-            friendList.AddFriend(nick2);
-        }
     }
 }

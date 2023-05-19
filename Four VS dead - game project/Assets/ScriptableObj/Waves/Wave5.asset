@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f6ca8f8411d6f543b1d5dea17d36b7f, type: 3}
   m_Name: Wave5
   m_EditorClassIdentifier: 
-  WaveOrder: 0
-  TimeBetweenSpawns: 10
+  WaveOrder: 5
+  TimeBetweenSpawns: 5
   HowManyEnemies: 18
   Hp: 33
-  Dmg: 7
-  Dodge: 0
+  Dmg: 10
+  Dodge: 20
   Speed: 200

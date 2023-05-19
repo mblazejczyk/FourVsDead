@@ -22,6 +22,7 @@ public class EqSystem : MonoBehaviour
         string sql = "SELECT GROUP_CONCAT(`itemId`) AS 'PlayerItems' FROM `itemsOwned` WHERE `playerId` = " +
             GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().loginId;
         gameObject.GetComponent<SqlController>().Send(sql, "PlayerItems");
+        BadgeSelectedItemId = PlayerPrefs.GetInt("itemEquipped");
     }
     public void Select(int itemId)
     {
@@ -48,6 +49,7 @@ public class EqSystem : MonoBehaviour
                 BadgeSelectedItemId = selectedItem;
                 break;
         }
+        PlayerPrefs.SetInt("itemEquipped", selectedItem);
         StartCoroutine(Infobox());
     }
 
