@@ -58,7 +58,7 @@ public class loginSystem : MonoBehaviour
         WWWForm form = new WWWForm();
         form.AddField("login", login.text);
         form.AddField("password", password.text);
-        using (UnityWebRequest www = UnityWebRequest.Post("https://yellowsink.pl/fourvsdead/sql.php", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("https://fourvsdead.yellowsink.pl/sql.php", form))
         {
             yield return www.SendWebRequest();
 
@@ -87,8 +87,13 @@ public class loginSystem : MonoBehaviour
                     else
                     {
                         GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().loginId = www.downloadHandler.text.Split('|')[0];
+                        Debug.LogError("Got id");
                         GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().SetSave(www.downloadHandler.text.Split('|')[1]);
+                        Debug.LogError("Got save");
+
                         GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login = login.text;
+                        Debug.LogError("Got login");
+
                         if (rememberToggle.isOn)
                         {
                             PlayerPrefs.SetString("loginStr", login.text);
@@ -99,6 +104,8 @@ public class loginSystem : MonoBehaviour
                         {
                             PlayerPrefs.SetString("isSaved", "false");
                         }
+                        Debug.LogError("Saved prefs. Starting game...");
+
                         SceneManager.LoadScene(1);
                     }
                 }

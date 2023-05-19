@@ -34,10 +34,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     }
     void Start()
     {
-        if(GameObject.FindGameObjectWithTag("DiscordController") != null)
-        {
-            GameObject.FindGameObjectWithTag("DiscordController").GetComponent<DiscordController>().Change("in_mainmenu", "In main menu", "Main menu", "starring at main menu screen");
-        }
+        
     }
 
     public void ConnectToPhoton()
@@ -62,10 +59,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     {
         Debug.Log("Joined lobby");
         MenuManager.Instance.OpenMenu("title");
-        if(GameObject.FindGameObjectWithTag("DiscordController") != null)
-        {
-            GameObject.FindGameObjectWithTag("DiscordController").GetComponent<DiscordController>().Change("in_mainmenu", "In main menu", "Main menu", "looking around menu");
-        }
+        
     }
 
     private ExitGames.Client.Photon.Hashtable _playerInfo = new ExitGames.Client.Photon.Hashtable();
@@ -149,10 +143,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         StartGameButton.SetActive(PhotonNetwork.IsMasterClient);
         chat.SendSystemMessage("New player joined: " + PhotonNetwork.NickName);
         PlayerPrefs.SetInt("NowXp", gameObject.GetComponent<LoginProfileManager>().Xp);
-        if(GameObject.FindGameObjectWithTag("DiscordController") != null)
-        {
-            GameObject.FindGameObjectWithTag("DiscordController").GetComponent<DiscordController>().Change("in_room", "In room", "In room: " + roomNameText.text + "(" + PhotonNetwork.CurrentRoom.PlayerCount + "/" + PhotonNetwork.CurrentRoom.MaxPlayers + ")", "preparing for battle");
-        }
+        
     }
 
     public override void OnMasterClientSwitched(Player newMasterClient)

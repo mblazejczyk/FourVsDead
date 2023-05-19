@@ -884,7 +884,6 @@ GameObject:
   m_Component:
   - component: {fileID: 800941680}
   - component: {fileID: 800941679}
-  - component: {fileID: 800941678}
   - component: {fileID: 800941681}
   m_Layer: 0
   m_Name: Main Camera
@@ -893,14 +892,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &800941678
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800941677}
-  m_Enabled: 1
 --- !u!20 &800941679
 Camera:
   m_ObjectHideFlags: 0
@@ -1973,9 +1964,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Version: Pre=alfa 0.3a
+  m_text: 'Version: Pre-beta 0.3a
 
-    <color=yellow>Yellow</color>Sink 2022'
+    <color=yellow>Yellow</color>Sink 2023'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d0dd1f37ceab4414b84091ea3d766396, type: 2}
   m_sharedMaterial: {fileID: 3986674201043348841, guid: d0dd1f37ceab4414b84091ea3d766396, type: 2}
@@ -2910,7 +2901,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1501259040
 RectTransform:
   m_ObjectHideFlags: 0

@@ -18,6 +18,12 @@ public class LoginProfileManager : MonoBehaviour
 
     void Start()
     {
+        Invoke("LateStart", 3);
+    }
+
+    void LateStart()
+    {
+        if(LoginAsText == null || LoginAsText.text == null || GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login == null) { Invoke("LateStart", 3); return; }
         LoginAsText.text = "Logged in as: " + GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login;
 
         string sql = "SELECT `totalXp` FROM `accounts` WHERE `id` = " +
@@ -26,10 +32,9 @@ public class LoginProfileManager : MonoBehaviour
         gameObject.GetComponent<SqlController>().Send(sql, "totalXp");
 
         sql = "SELECT GROUP_CONCAT(`zombieKilled`, ';', `coinsCollected`,';', `dmgTaken`,';', `dmgGiven`,';'" +
-            ", `deaths`,';', `knockouts`,';', `buys`,';', `shots`,';', `firstGame`) AS 'save_res' FROM `saves` WHERE `playerId` = " + 
+            ", `deaths`,';', `knockouts`,';', `buys`,';', `shots`,';', `firstGame`) AS 'save_res' FROM `saves` WHERE `playerId` = " +
             GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().loginId;
         gameObject.GetComponent<SqlController>().Send(sql, "save_res");
-
     }
 
     public void UpdateProfileDetails(string res)
