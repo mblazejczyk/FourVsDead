@@ -167,6 +167,9 @@ public class SettingsMenu : MonoBehaviour
             musicVolumeSlider.value = PlayerPrefs.GetFloat("MusicVolumePreference");
         else
             musicVolumeSlider.value = PlayerPrefs.GetFloat("MusicVolumePreference");
+        SetMusicVolume();
+        SetSfxVolume();
+        Debug.Log("Settings loaded");
     }
 
     public void ChangeServer(TMP_Dropdown drop)

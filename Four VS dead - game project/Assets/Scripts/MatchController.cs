@@ -79,6 +79,10 @@ public class MatchController : MonoBehaviourPunCallbacks
             GameObject.FindGameObjectWithTag("MidScreenText").GetComponent<TMP_Text>().text = "Wave <color=red>" + CurrentWave + "</color>";
             GameObject.FindGameObjectWithTag("MidScreenText").GetComponent<Animator>().SetTrigger("Open");
             GameObject.FindGameObjectWithTag("GameSoundSource").GetComponent<MatchAudioController>().PlaySound(0);
+            if(WaveNow == 10)
+            {
+                GameObject.FindGameObjectWithTag("MidScreenText").GetComponent<TMP_Text>().text = "BOSS!!! <color=red>GET TO GARDER!</color>";
+            }
         }
 
         if (CurrentWave > wave.Length)
@@ -144,20 +148,28 @@ public class MatchController : MonoBehaviourPunCallbacks
 
         if (PhotonNetwork.IsMasterClient && EnemiesToSpawn != 0)
         {
-            float ran = Random.value;
-            if (ran < .33)
+            if (WaveNow == 10)
             {
-                PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Enemy_archer"), spawn, Quaternion.identity);
-            }
-            else if(ran > .66)
-            {
-                PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "EnemyController"), spawn, Quaternion.identity);
+                PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Enemy_boss"), new Vector3(19, -1, 0), Quaternion.identity);
+                EnemiesToSpawn--;
             }
             else
             {
-                PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Enemy_firerunner"), spawn, Quaternion.identity);
+                float ran = Random.value;
+                if (ran < .33)
+                {
+                    PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Enemy_archer"), spawn, Quaternion.identity);
+                }
+                else if (ran > .66)
+                {
+                    PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "EnemyController"), spawn, Quaternion.identity);
+                }
+                else
+                {
+                    PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Enemy_firerunner"), spawn, Quaternion.identity);
+                }
+                EnemiesToSpawn--;
             }
-            EnemiesToSpawn--;
         }
 
         if (PhotonNetwork.IsMasterClient)

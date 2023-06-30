@@ -58,6 +58,7 @@ MonoBehaviour:
   - RPC_DrawShoot
   - RPC_ShotMade
   - RPC_SetFire
+  - RPC_SetBoundries
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

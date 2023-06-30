@@ -554,6 +554,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral116713AB003071E487021FD71A8DBAB15F891A2C
 IL2CPP_EXTERN_C String_t* _stringLiteral12AC888C669FC6CC814B68B3A3D07525C321B8C0;
 IL2CPP_EXTERN_C String_t* _stringLiteral13962D81026D7A3C59614BEDE36CC0BA9C31D5C4;
 IL2CPP_EXTERN_C String_t* _stringLiteral14B62430EC3FF6AF6C57F10516C6EC5C8D0497F3;
+IL2CPP_EXTERN_C String_t* _stringLiteral14EFE7FE2DC5CA3853B7F9AAE4B37C8B83362713;
 IL2CPP_EXTERN_C String_t* _stringLiteral1724DB0CA50E94017A945DB9933E4150E022D932;
 IL2CPP_EXTERN_C String_t* _stringLiteral1D8DE4CB154AC0296896C7FD3192C85F2FE4730D;
 IL2CPP_EXTERN_C String_t* _stringLiteral1DAB2B731CABAF96C21339FF0A0E75F0FE08E2F4;
@@ -5379,6 +5380,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayerPrefs_HasKey_mCA5C64BBA6BF8B230BC3
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Convert_ToBoolean_mE5E29C04982F778600F57587CD121FEB55A31102 (int32_t ___0_value, const RuntimeMethod* method) ;
 // System.Single UnityEngine.PlayerPrefs::GetFloat(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PlayerPrefs_GetFloat_m81F89D571E11218ED76DC9234CF8FAC2515FA7CB (String_t* ___0_key, const RuntimeMethod* method) ;
+// System.Void SettingsMenu::SetMusicVolume()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SettingsMenu_SetMusicVolume_m8EA263E5F0471E021B09D675232BE92B309702B0 (SettingsMenu_t509117608BBFDCA2FBE0FFBB75E4121164E92EBA* __this, const RuntimeMethod* method) ;
+// System.Void SettingsMenu::SetSfxVolume()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SettingsMenu_SetSfxVolume_m33C73F42EADDD47743AB703052B8B7C0320050EC (SettingsMenu_t509117608BBFDCA2FBE0FFBB75E4121164E92EBA* __this, const RuntimeMethod* method) ;
 // System.Void Launcher::ChangeServer(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Launcher_ChangeServer_mD73EC65624958ABA28B218F2E331C29A6B865648 (Launcher_t09640A8832594BDC3E7A35515EC73E667529E2AC* __this, String_t* ___0_server, const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<UnityEngine.LineRenderer>()
@@ -9008,6 +9013,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SettingsMenu_LoadSettings_m4CDA741793CA9
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral14EFE7FE2DC5CA3853B7F9AAE4B37C8B83362713);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral265FAB9596ED24657200079608D309C26F3FFAC2);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3B0D91B194768215619A9A9DF5CA9C76EED176CC);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral771B17192F25F4442E5951AFC7E0C07C5DDDE2B5);
@@ -9183,7 +9190,7 @@ IL_011c:
 		L_25 = PlayerPrefs_HasKey_mCA5C64BBA6BF8B230BC3BC92B4761DD3B11D4668(_stringLiteralF2793056C0AD5CA5B7E2E9301E40801817895036, NULL);
 		if (!L_25)
 		{
-			goto IL_013e;
+			goto IL_013f;
 		}
 	}
 	{
@@ -9192,16 +9199,27 @@ IL_011c:
 		float L_27;
 		L_27 = PlayerPrefs_GetFloat_m81F89D571E11218ED76DC9234CF8FAC2515FA7CB(_stringLiteralF2793056C0AD5CA5B7E2E9301E40801817895036, NULL);
 		VirtualActionInvoker1< float >::Invoke(47 /* System.Void UnityEngine.UI.Slider::set_value(System.Single) */, L_26, L_27);
-		return;
+		goto IL_0154;
 	}
 
-IL_013e:
+IL_013f:
 	{
 		// musicVolumeSlider.value = PlayerPrefs.GetFloat("MusicVolumePreference");
 		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_28 = __this->___musicVolumeSlider_10;
 		float L_29;
 		L_29 = PlayerPrefs_GetFloat_m81F89D571E11218ED76DC9234CF8FAC2515FA7CB(_stringLiteralF2793056C0AD5CA5B7E2E9301E40801817895036, NULL);
 		VirtualActionInvoker1< float >::Invoke(47 /* System.Void UnityEngine.UI.Slider::set_value(System.Single) */, L_28, L_29);
+	}
+
+IL_0154:
+	{
+		// SetMusicVolume();
+		SettingsMenu_SetMusicVolume_m8EA263E5F0471E021B09D675232BE92B309702B0(__this, NULL);
+		// SetSfxVolume();
+		SettingsMenu_SetSfxVolume_m33C73F42EADDD47743AB703052B8B7C0320050EC(__this, NULL);
+		// Debug.Log("Settings loaded");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral14EFE7FE2DC5CA3853B7F9AAE4B37C8B83362713, NULL);
 		// }
 		return;
 	}

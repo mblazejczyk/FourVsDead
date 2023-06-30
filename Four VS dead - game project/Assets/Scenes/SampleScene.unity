@@ -1776,7 +1776,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1539172046}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: ChangeServer
         m_Mode: 2
@@ -2232,7 +2232,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1539172046}
+      - m_Target: {fileID: 1994910176}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: SetTextureQuality
         m_Mode: 0
@@ -3600,7 +3600,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1539172046}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: SaveSettings
         m_Mode: 1
@@ -17062,7 +17062,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1539172046}
+      - m_Target: {fileID: 1994910176}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: SetFullscreen
         m_Mode: 0
@@ -19028,14 +19028,14 @@ MonoBehaviour:
   m_FillRect: {fileID: 1382226940}
   m_HandleRect: {fileID: 1643959902}
   m_Direction: 0
-  m_MinValue: -80
-  m_MaxValue: 20
-  m_WholeNumbers: 0
+  m_MinValue: -40
+  m_MaxValue: 50
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1539172046}
+      - m_Target: {fileID: 1994910176}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: SetMusicVolume
         m_Mode: 1
@@ -24640,7 +24640,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1539172046}
+      - m_Target: {fileID: 1994910176}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: SetResolution
         m_Mode: 0
@@ -31634,7 +31634,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1539172045}
   - component: {fileID: 1539172047}
-  - component: {fileID: 1539172046}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -31667,27 +31666,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1539172046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539172044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02c49bdd1bf7e424893041063e133bba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sfxaudioMixer: {fileID: 24100000, guid: b5565ec7417ab6b42af228b1bc5e79b0, type: 2}
-  musicaudioMixer: {fileID: 24100000, guid: b4369cdbbee96884e8e599242571cea3, type: 2}
-  resolutionDropdown: {fileID: 1198288878}
-  qualityDropdown: {fileID: 1718706401}
-  textureDropdown: {fileID: 102030830}
-  aaDropdown: {fileID: 1988520826}
-  musicVolumeSlider: {fileID: 852811313}
-  SfxVolumeSlider: {fileID: 2098319573}
-  serverSideLaunch: {fileID: 1994910162}
 --- !u!114 &1539172047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34600,7 +34578,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1539172046}
+      - m_Target: {fileID: 1994910176}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: SetQuality
         m_Mode: 0
@@ -38955,7 +38933,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1539172046}
+      - m_Target: {fileID: 1994910176}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: SetAntiAliasing
         m_Mode: 0
@@ -39324,6 +39302,7 @@ GameObject:
   - component: {fileID: 1994910172}
   - component: {fileID: 1994910174}
   - component: {fileID: 1994910175}
+  - component: {fileID: 1994910176}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Canvas
@@ -39766,6 +39745,27 @@ MonoBehaviour:
   selectedDes: {fileID: 1610947049}
   selectedItem: 0
   BadgeSelectedItemId: 0
+--- !u!114 &1994910176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994910161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02c49bdd1bf7e424893041063e133bba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxaudioMixer: {fileID: 24100000, guid: b5565ec7417ab6b42af228b1bc5e79b0, type: 2}
+  musicaudioMixer: {fileID: 24100000, guid: b4369cdbbee96884e8e599242571cea3, type: 2}
+  resolutionDropdown: {fileID: 1198288878}
+  qualityDropdown: {fileID: 1718706401}
+  textureDropdown: {fileID: 102030830}
+  aaDropdown: {fileID: 1988520826}
+  musicVolumeSlider: {fileID: 852811313}
+  SfxVolumeSlider: {fileID: 2098319573}
+  serverSideLaunch: {fileID: 1994910162}
 --- !u!1 &1997459458
 GameObject:
   m_ObjectHideFlags: 0
@@ -41363,14 +41363,14 @@ MonoBehaviour:
   m_FillRect: {fileID: 849569231}
   m_HandleRect: {fileID: 91719865}
   m_Direction: 0
-  m_MinValue: -80
-  m_MaxValue: 20
-  m_WholeNumbers: 0
+  m_MinValue: -40
+  m_MaxValue: 50
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1539172046}
+      - m_Target: {fileID: 1994910176}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: SetSfxVolume
         m_Mode: 1
