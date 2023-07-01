@@ -17,7 +17,7 @@ MonoBehaviour:
   Damage: 4
   ShootSpeed: 3
   Cost: 250
-  CoinReward: 5
+  CoinReward: 8
   maxAmmo: 75
   gunIcon: {fileID: 21300000, guid: 4a2f8a260c98c954685b944331180579, type: 3}
   shootSound: {fileID: 8300000, guid: c5ac1affd0a80b942861686beed27b5b, type: 3}

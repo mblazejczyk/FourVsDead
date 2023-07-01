@@ -138,7 +138,7 @@ public class GunController : MonoBehaviourPunCallbacks
                     }
                     else
                     {
-                        DrawShoot(shootPoint.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f, true);
+                        DrawShoot(shootPoint.transform.position, GameObject.FindGameObjectWithTag("CursorController").transform.position, true);
                     }
                 }
                 break;
@@ -165,7 +165,7 @@ public class GunController : MonoBehaviourPunCallbacks
                     }
                     else
                     {
-                        DrawShoot(shootPoint.transform.position, sprites.transform.TransformDirection(Vector2.up) * 10f, true);
+                        DrawShoot(shootPoint.transform.position, GameObject.FindGameObjectWithTag("CursorController").transform.position, true);
                     }
                 }
                 break;

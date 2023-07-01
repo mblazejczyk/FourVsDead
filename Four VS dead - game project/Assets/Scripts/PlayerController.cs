@@ -295,12 +295,12 @@ public class PlayerController : MonoBehaviourPunCallbacks
     {
         if (PV.IsMine)
         {
-            ModifyHp(false, 50, 0);
+            ModifyHp(false, 50, 0, true);
         }
     }
 
     public Sprite[] damageUis;
-    public void ModifyHp(bool isDamaging, int hpChanged, int couse)
+    public void ModifyHp(bool isDamaging, int hpChanged, int couse, bool isReviving)
     {
         if (PV.IsMine)
         {
@@ -325,7 +325,10 @@ public class PlayerController : MonoBehaviourPunCallbacks
             }
             else
             {
-                Hp += hpChanged;
+                if (isReviving || Hp > 0)
+                {
+                    Hp += hpChanged;
+                }
             }
             if(Hp < 0) { Hp = 0; }
             if(Hp > MaxHp) { Hp = MaxHp; }

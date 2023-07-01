@@ -16,7 +16,7 @@ public class Fire : MonoBehaviour
         {
             if (other.GetComponent<PhotonView>().IsMine)
             {
-                other.GetComponent<PlayerController>().ModifyHp(true, 3, 2);
+                other.GetComponent<PlayerController>().ModifyHp(true, 3, 2, false);
             }
         }
     }

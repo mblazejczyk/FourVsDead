@@ -43,7 +43,7 @@ public class BarycadeSystem : MonoBehaviour, IBarycadeDmg
         if (collision.tag == "Player" && collision.GetComponent<PhotonView>().IsMine)
         {
             isRepairing = true;
-            StartCoroutine(RepairTimer());
+            StartCoroutine(RepairTimer(collision));
         }
         else if(collision.tag == "Enemy"){
             isDestroing = true;
@@ -72,14 +72,15 @@ public class BarycadeSystem : MonoBehaviour, IBarycadeDmg
             return;
         }
     }
-    IEnumerator RepairTimer()
+    IEnumerator RepairTimer(Collider2D player)
     {
         yield return new WaitForSeconds(1);
         if (isDestroing != true && Hp < 6 && isRepairing == true)
         {
             ChangeHp(false, 1);
+            player.GetComponent<PlayerController>().ModifyCoins(1, 15);
         }
-        StartCoroutine(RepairTimer());
+        StartCoroutine(RepairTimer(player));
     }
 
     private bool isAlreadyDes = false;

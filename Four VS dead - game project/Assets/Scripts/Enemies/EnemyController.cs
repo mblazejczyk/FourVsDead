@@ -185,7 +185,7 @@ public class EnemyController : MonoBehaviour, IDamagable
     {
         if (collision.gameObject.tag == "Player" && canDamage)
         {
-            collision.gameObject.GetComponent<PlayerController>().ModifyHp(true, damage, 0);
+            collision.gameObject.GetComponent<PlayerController>().ModifyHp(true, damage, 0, false);
             StartCoroutine(damageCooldownTimer());
             canDamage = false;
         }

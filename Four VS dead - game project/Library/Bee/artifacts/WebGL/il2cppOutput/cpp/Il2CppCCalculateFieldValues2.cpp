@@ -1943,6 +1943,8 @@ struct U3CRepairTimerU3Ed__12_t556C9F95B36E9D7256E4B5E0B12098BCF86226EE  : publi
 	RuntimeObject* ___U3CU3E2__current_1;
 	// BarycadeSystem BarycadeSystem/<RepairTimer>d__12::<>4__this
 	BarycadeSystem_t88F939CB3F94062A2B32D99E3D3383631EA8EC44* ___U3CU3E4__this_2;
+	// UnityEngine.Collider2D BarycadeSystem/<RepairTimer>d__12::player
+	Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* ___player_3;
 };
 
 // Mono.Math.BigInteger/ModulusRing
@@ -12754,9 +12756,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6203[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6204[2] = 
 {
 	static_cast<int32_t>(offsetof(ArmorController_t98EE8BC16F6FBD9697A49FBC368EB9C1357B0FD7, ___armors_4)),static_cast<int32_t>(offsetof(ArmorController_t98EE8BC16F6FBD9697A49FBC368EB9C1357B0FD7, ___currentArmor_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6205[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6205[4] = 
 {
-	static_cast<int32_t>(offsetof(U3CRepairTimerU3Ed__12_t556C9F95B36E9D7256E4B5E0B12098BCF86226EE, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CRepairTimerU3Ed__12_t556C9F95B36E9D7256E4B5E0B12098BCF86226EE, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CRepairTimerU3Ed__12_t556C9F95B36E9D7256E4B5E0B12098BCF86226EE, ___U3CU3E4__this_2)),};
+	static_cast<int32_t>(offsetof(U3CRepairTimerU3Ed__12_t556C9F95B36E9D7256E4B5E0B12098BCF86226EE, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CRepairTimerU3Ed__12_t556C9F95B36E9D7256E4B5E0B12098BCF86226EE, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CRepairTimerU3Ed__12_t556C9F95B36E9D7256E4B5E0B12098BCF86226EE, ___U3CU3E4__this_2)),static_cast<int32_t>(offsetof(U3CRepairTimerU3Ed__12_t556C9F95B36E9D7256E4B5E0B12098BCF86226EE, ___player_3)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6206[3] = 
 {
 	static_cast<int32_t>(offsetof(U3CDestroyTimerU3Ed__14_t73BCC47F2AE99C2232331D201E2B841ED836581F, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CDestroyTimerU3Ed__14_t73BCC47F2AE99C2232331D201E2B841ED836581F, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CDestroyTimerU3Ed__14_t73BCC47F2AE99C2232331D201E2B841ED836581F, ___U3CU3E4__this_2)),};

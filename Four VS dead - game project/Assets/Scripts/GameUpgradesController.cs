@@ -60,7 +60,7 @@ public class GameUpgradesController : MonoBehaviourPunCallbacks
                 foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Player"))
                 {
                     obj.GetComponent<GunController>().CurrentAmmo = obj.GetComponent<GunController>().Guns[obj.GetComponent<GunController>().CurrentGunId].maxAmmo;
-                    obj.GetComponent<PlayerController>().ModifyHp(false, 9999999, 0);
+                    obj.GetComponent<PlayerController>().ModifyHp(false, 9999999, 0, false);
                 }
                 break;
             case 5:
@@ -99,7 +99,7 @@ public class GameUpgradesController : MonoBehaviourPunCallbacks
         yield return new WaitForSeconds(5);
         foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Player"))
         {
-            obj.GetComponent<PlayerController>().ModifyHp(false, 5, 0);
+            obj.GetComponent<PlayerController>().ModifyHp(false, 5, 0, false);
         }
         StartCoroutine(regainOverTime());
     }

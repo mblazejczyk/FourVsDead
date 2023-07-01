@@ -219,7 +219,7 @@ public class EnemyController_archer : MonoBehaviour, IDamagable
         {
             if(obj.GetComponent<PhotonView>().ViewID == playerShot && obj.GetComponent<PhotonView>().IsMine)
             {
-                obj.GetComponent<PlayerController>().ModifyHp(true, damage, 1);
+                obj.GetComponent<PlayerController>().ModifyHp(true, damage, 1, false);
                 break;
             }
         }

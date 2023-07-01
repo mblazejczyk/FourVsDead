@@ -4730,6 +4730,8 @@ struct U3CRepairTimerU3Ed__12_t556C9F95B36E9D7256E4B5E0B12098BCF86226EE  : publi
 	RuntimeObject* ___U3CU3E2__current_1;
 	// BarycadeSystem BarycadeSystem/<RepairTimer>d__12::<>4__this
 	BarycadeSystem_t88F939CB3F94062A2B32D99E3D3383631EA8EC44* ___U3CU3E4__this_2;
+	// UnityEngine.Collider2D BarycadeSystem/<RepairTimer>d__12::player
+	Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* ___player_3;
 };
 
 // Mono.Math.BigInteger/Kernel

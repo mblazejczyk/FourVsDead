@@ -12,7 +12,7 @@ public class BossBorderControl : MonoBehaviour
         {
             if (collision.GetComponent<PhotonView>().IsMine)
             {
-                collision.GetComponent<PlayerController>().ModifyHp(true, 1, 2);
+                collision.GetComponent<PlayerController>().ModifyHp(true, 1, 2, false);
             }
         }
     }

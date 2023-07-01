@@ -104,7 +104,7 @@ public class MatchController : MonoBehaviourPunCallbacks
                 {
                     float multiplaier = (float)GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().hpForWave / 100;
                     float inalHp = obj.GetComponent<PlayerController>().MaxHp * multiplaier;
-                    obj.GetComponent<PlayerController>().ModifyHp(false, (int)inalHp, 0);
+                    obj.GetComponent<PlayerController>().ModifyHp(false, (int)inalHp, 0, true);
                 }
                 if(obj.GetComponent<PlayerController>().isDead || obj.GetComponent<PlayerController>().Hp == 0)
                 {
@@ -156,7 +156,7 @@ public class MatchController : MonoBehaviourPunCallbacks
             else
             {
                 float ran = Random.value;
-                if (ran < .33)
+                if (ran < 1)
                 {
                     PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Enemy_archer"), spawn, Quaternion.identity);
                 }
