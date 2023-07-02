@@ -156,7 +156,7 @@ public class MatchController : MonoBehaviourPunCallbacks
             else
             {
                 float ran = Random.value;
-                if (ran < 1)
+                if (ran < .33)
                 {
                     PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Enemy_archer"), spawn, Quaternion.identity);
                 }

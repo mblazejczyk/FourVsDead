@@ -189,6 +189,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 331af3efecc1d924a80b894d21fa3cf1, type: 3}
   - {fileID: 8300000, guid: f7a6c3a52ab168441ab824fd17b51501, type: 3}
   damageObj: {fileID: 2494336671317318966}
+  dmgIndicator: {fileID: 558072153031145750, guid: ffc654b5b1a3bbb46a52a1f80bd67bc9, type: 3}
 --- !u!114 &2415625513987722322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,7 +749,7 @@ MonoBehaviour:
   - {x: -0.19855791, y: -0.28931117, z: 0}
   m_ShapePathHash: -633639444
   m_Mesh: {fileID: 0}
-  m_InstanceId: 152786
+  m_InstanceId: 43944
   m_LocalBounds:
     m_Center: {x: 0.0959847, y: 0.035168827, z: 0}
     m_Extent: {x: 0.38169336, y: 0.56751233, z: 0}

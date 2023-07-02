@@ -671,1393 +671,1393 @@ extern void U3CU3Ec__cctor_m8AA3BCC68701513CB6E3652FADB28CB8CF2AD6B1 (void);
 extern void U3CU3Ec__ctor_mB513A0B2A3943261B81EA38A8EBF3687C53D4E98 (void);
 // 0x0000015C System.Int32 Pathfinding.Seeker/<>c::<RegisterModifier>b__25_0(Pathfinding.IPathModifier,Pathfinding.IPathModifier)
 extern void U3CU3Ec_U3CRegisterModifierU3Eb__25_0_m81C3FFA7BB6E72D5CA3F4BFFE2C6FCC47B013487 (void);
-// 0x0000015D System.Int32 Pathfinding.AstarColor::ColorHash()
-extern void AstarColor_ColorHash_m7E7AB1D3ED0F004DDA52B1F83FF46BB14C4E2240 (void);
-// 0x0000015E UnityEngine.Color Pathfinding.AstarColor::GetAreaColor(System.UInt32)
-extern void AstarColor_GetAreaColor_m2BD2DB488CF613210166AFEFC7C92B1136563ED6 (void);
-// 0x0000015F UnityEngine.Color Pathfinding.AstarColor::GetTagColor(System.UInt32)
-extern void AstarColor_GetTagColor_m2A418CA68C79BC1C9A9499C17EF3D4BCD23E5639 (void);
-// 0x00000160 System.Void Pathfinding.AstarColor::PushToStatic(AstarPath)
-extern void AstarColor_PushToStatic_m8700047424E6FC430F9F5AD19A9767BC72D78103 (void);
-// 0x00000161 System.Void Pathfinding.AstarColor::.ctor()
-extern void AstarColor__ctor_m7AAE6F02DBD6138EBA7F5634E9AE5FD477D3107D (void);
-// 0x00000162 System.Void Pathfinding.AstarColor::.cctor()
-extern void AstarColor__cctor_m80E9B8D244ACAE54FBC2B83CC8B424348699B3C6 (void);
-// 0x00000163 System.Single Pathfinding.GraphHitInfo::get_distance()
-extern void GraphHitInfo_get_distance_m4226EFCEB6AFCF460E08812DDC99ABC52DFE8432 (void);
-// 0x00000164 System.Void Pathfinding.GraphHitInfo::.ctor(UnityEngine.Vector3)
-extern void GraphHitInfo__ctor_m3934969A80A0BB8D52DA5B97D9CAFB89390EA7FB (void);
-// 0x00000165 System.Boolean Pathfinding.NNConstraint::SuitableGraph(System.Int32,Pathfinding.NavGraph)
-extern void NNConstraint_SuitableGraph_mA7EB01C59D03F36D8A325A618C34B4A973B7C4E4 (void);
-// 0x00000166 System.Boolean Pathfinding.NNConstraint::Suitable(Pathfinding.GraphNode)
-extern void NNConstraint_Suitable_m78BC193FC7142A1DEB9465336E980909BD75352C (void);
-// 0x00000167 Pathfinding.NNConstraint Pathfinding.NNConstraint::get_Default()
-extern void NNConstraint_get_Default_m410AF35B2BE77A5624592BEF34FC6783F7F9D6EA (void);
-// 0x00000168 Pathfinding.NNConstraint Pathfinding.NNConstraint::get_None()
-extern void NNConstraint_get_None_m64D379ED16BA6D507F7A3837557A44C519FA4811 (void);
-// 0x00000169 System.Void Pathfinding.NNConstraint::.ctor()
-extern void NNConstraint__ctor_m89532DC1D551FE988E139BD5558B16E6A6FFF088 (void);
-// 0x0000016A Pathfinding.PathNNConstraint Pathfinding.PathNNConstraint::get_Default()
-extern void PathNNConstraint_get_Default_m4D87AB0993FC27983CCFD0FF96FC9461F7916874 (void);
-// 0x0000016B System.Void Pathfinding.PathNNConstraint::SetStart(Pathfinding.GraphNode)
-extern void PathNNConstraint_SetStart_m16CA8FFBC338C4CA735571B9E7482123DBE50E28 (void);
-// 0x0000016C System.Void Pathfinding.PathNNConstraint::.ctor()
-extern void PathNNConstraint__ctor_m4F0E20DD29C5CD8B00C9637B48D6488491DBB1C1 (void);
-// 0x0000016D System.Void Pathfinding.NNInfoInternal::.ctor(Pathfinding.GraphNode)
-extern void NNInfoInternal__ctor_mAF15F2D3925A1F1AF14425DAE40F6FD9168258E1 (void);
-// 0x0000016E System.Void Pathfinding.NNInfoInternal::UpdateInfo()
-extern void NNInfoInternal_UpdateInfo_m38114F55F54AF9A11A4C913F1502C2DAAFD3492B (void);
-// 0x0000016F UnityEngine.Vector3 Pathfinding.NNInfo::get_clampedPosition()
-extern void NNInfo_get_clampedPosition_m5AAB5398DD2E6AFE18AA575229DD5EC5F90A6A8B (void);
-// 0x00000170 System.Void Pathfinding.NNInfo::.ctor(Pathfinding.NNInfoInternal)
-extern void NNInfo__ctor_m79C6D21A9B1C006AFB39E0DA9E5B27F722C346B3 (void);
-// 0x00000171 UnityEngine.Vector3 Pathfinding.NNInfo::op_Explicit(Pathfinding.NNInfo)
-extern void NNInfo_op_Explicit_mE06D72597F04F4C7C7A289FF171CD9CD26833A9C (void);
-// 0x00000172 Pathfinding.GraphNode Pathfinding.NNInfo::op_Explicit(Pathfinding.NNInfo)
-extern void NNInfo_op_Explicit_m3239F117A37550323D4A5CFA38FE4D575BC61071 (void);
-// 0x00000173 System.Void Pathfinding.Progress::.ctor(System.Single,System.String)
-extern void Progress__ctor_m8BC684F39818E3E62C1F46D208B3BA661F15A56A (void);
-// 0x00000174 Pathfinding.Progress Pathfinding.Progress::MapTo(System.Single,System.Single,System.String)
-extern void Progress_MapTo_m455B07D01EC1D98BC1D20633899DEF5497D23AD6 (void);
-// 0x00000175 System.String Pathfinding.Progress::ToString()
-extern void Progress_ToString_m0D2EC8B56BA27E93C38E2704C859F6A6964284EA (void);
-// 0x00000176 System.Void Pathfinding.IUpdatableGraph::UpdateArea(Pathfinding.GraphUpdateObject)
-// 0x00000177 System.Void Pathfinding.IUpdatableGraph::UpdateAreaInit(Pathfinding.GraphUpdateObject)
-// 0x00000178 System.Void Pathfinding.IUpdatableGraph::UpdateAreaPost(Pathfinding.GraphUpdateObject)
-// 0x00000179 Pathfinding.GraphUpdateThreading Pathfinding.IUpdatableGraph::CanUpdateAsync(Pathfinding.GraphUpdateObject)
-// 0x0000017A System.Void Pathfinding.GraphUpdateObject::set_requiresFloodFill(System.Boolean)
-extern void GraphUpdateObject_set_requiresFloodFill_mCB2673DA6E262CC56323813425CC4CA056B0A93D (void);
-// 0x0000017B Pathfinding.GraphUpdateStage Pathfinding.GraphUpdateObject::get_stage()
-extern void GraphUpdateObject_get_stage_m9705996F9B5749E9607B48FC99E09C7D34891216 (void);
-// 0x0000017C System.Void Pathfinding.GraphUpdateObject::WillUpdateNode(Pathfinding.GraphNode)
-extern void GraphUpdateObject_WillUpdateNode_m7BF6DA130A6AD2544185BF03246FB0DA705F879E (void);
-// 0x0000017D System.Void Pathfinding.GraphUpdateObject::RevertFromBackup()
-extern void GraphUpdateObject_RevertFromBackup_mD704797508B8A26B1ADE625E82B94E6D33806B91 (void);
-// 0x0000017E System.Void Pathfinding.GraphUpdateObject::Apply(Pathfinding.GraphNode)
-extern void GraphUpdateObject_Apply_m4FF2CF22FEFAA3CF7051AB0EFB490B22BB0E80AC (void);
-// 0x0000017F System.Void Pathfinding.GraphUpdateObject::.ctor()
-extern void GraphUpdateObject__ctor_m34D5AC70D1C226E1D34CE1644579D1E14A084E5E (void);
-// 0x00000180 System.Void Pathfinding.GraphUpdateObject::.ctor(UnityEngine.Bounds)
-extern void GraphUpdateObject__ctor_m40AEC562F18276B374698781F0AFF943AA7460F6 (void);
-// 0x00000181 Pathfinding.Util.GraphTransform Pathfinding.ITransformedGraph::get_transform()
-// 0x00000182 System.Boolean Pathfinding.IRaycastableGraph::Linecast(UnityEngine.Vector3,UnityEngine.Vector3)
-// 0x00000183 System.Boolean Pathfinding.IRaycastableGraph::Linecast(UnityEngine.Vector3,UnityEngine.Vector3,Pathfinding.GraphNode)
-// 0x00000184 System.Boolean Pathfinding.IRaycastableGraph::Linecast(UnityEngine.Vector3,UnityEngine.Vector3,Pathfinding.GraphNode,Pathfinding.GraphHitInfo&)
-// 0x00000185 System.Boolean Pathfinding.IRaycastableGraph::Linecast(UnityEngine.Vector3,UnityEngine.Vector3,Pathfinding.GraphNode,Pathfinding.GraphHitInfo&,System.Collections.Generic.List`1<Pathfinding.GraphNode>)
-// 0x00000186 System.Boolean Pathfinding.IRaycastableGraph::Linecast(UnityEngine.Vector3,UnityEngine.Vector3,Pathfinding.GraphHitInfo&,System.Collections.Generic.List`1<Pathfinding.GraphNode>,System.Func`2<Pathfinding.GraphNode,System.Boolean>)
-// 0x00000187 System.Void Pathfinding.IntRect::.ctor(System.Int32,System.Int32,System.Int32,System.Int32)
-extern void IntRect__ctor_mAD05090D8533AE0675F3A432F713EEA629F47276 (void);
-// 0x00000188 System.Boolean Pathfinding.IntRect::Contains(System.Int32,System.Int32)
-extern void IntRect_Contains_m5E307C7E3F45B01584E41D0A141A3AF5E5D6549D (void);
-// 0x00000189 System.Int32 Pathfinding.IntRect::get_Width()
-extern void IntRect_get_Width_m9EA6709E7015866BC23F2C686A873E772AA1ACA2 (void);
-// 0x0000018A System.Int32 Pathfinding.IntRect::get_Height()
-extern void IntRect_get_Height_m8F1FAE617C491964F4C2E4D873F04C27ACE7EDB6 (void);
-// 0x0000018B System.Int32 Pathfinding.IntRect::get_Area()
-extern void IntRect_get_Area_m67F56F53086CA064945CC39CB7EC43900054F4EE (void);
-// 0x0000018C System.Boolean Pathfinding.IntRect::IsValid()
-extern void IntRect_IsValid_m30D2815DE068E60D2D00FF0D5704EA49CF6265B6 (void);
-// 0x0000018D System.Boolean Pathfinding.IntRect::op_Equality(Pathfinding.IntRect,Pathfinding.IntRect)
-extern void IntRect_op_Equality_mC20C3095A2748AE91D534933C494F5C890BEFD74 (void);
-// 0x0000018E System.Boolean Pathfinding.IntRect::op_Inequality(Pathfinding.IntRect,Pathfinding.IntRect)
-extern void IntRect_op_Inequality_m1FAECD46E6A737808AD3133E87F2DC1113A277FB (void);
-// 0x0000018F System.Boolean Pathfinding.IntRect::Equals(System.Object)
-extern void IntRect_Equals_mA4600D8A17F056792F5F7A706B81D31A80AE622F (void);
-// 0x00000190 System.Int32 Pathfinding.IntRect::GetHashCode()
-extern void IntRect_GetHashCode_mC8E932403819159E1CF07CAA1253C9947270910A (void);
-// 0x00000191 Pathfinding.IntRect Pathfinding.IntRect::Intersection(Pathfinding.IntRect,Pathfinding.IntRect)
-extern void IntRect_Intersection_mC9C9632D62D5CD280EF4ED149BCA8EAE58878CAC (void);
-// 0x00000192 System.Boolean Pathfinding.IntRect::Intersects(Pathfinding.IntRect,Pathfinding.IntRect)
-extern void IntRect_Intersects_mF191C92E733544458A919C640E959BD2D540FAC1 (void);
-// 0x00000193 Pathfinding.IntRect Pathfinding.IntRect::Union(Pathfinding.IntRect,Pathfinding.IntRect)
-extern void IntRect_Union_m0E7D1469F99F79979C07AAC375BF504230415A1B (void);
-// 0x00000194 Pathfinding.IntRect Pathfinding.IntRect::ExpandToContain(System.Int32,System.Int32)
-extern void IntRect_ExpandToContain_m0101C3D2B025AC4F51691FD01565434DCD7FD32F (void);
-// 0x00000195 Pathfinding.IntRect Pathfinding.IntRect::Expand(System.Int32)
-extern void IntRect_Expand_m1C793316AD4030CC25DC01024264FF1C18D9A261 (void);
-// 0x00000196 System.String Pathfinding.IntRect::ToString()
-extern void IntRect_ToString_m4ED582D9AF529226579475E49368E28A54E138B3 (void);
-// 0x00000197 System.Void Pathfinding.IntRect::DebugDraw(Pathfinding.Util.GraphTransform,UnityEngine.Color)
-extern void IntRect_DebugDraw_m3C211EE0DD7C1D53C8E112EF06770774329D9AAA (void);
-// 0x00000198 Pathfinding.GraphMask Pathfinding.GraphMask::get_everything()
-extern void GraphMask_get_everything_m7C96C59E69960A1BD867BBE06880038C2A72EC58 (void);
-// 0x00000199 System.Void Pathfinding.GraphMask::.ctor(System.Int32)
-extern void GraphMask__ctor_m209825C360CF751A78CC88246E6DC06423A45320 (void);
-// 0x0000019A System.Int32 Pathfinding.GraphMask::op_Implicit(Pathfinding.GraphMask)
-extern void GraphMask_op_Implicit_mF59D0E96477D283F1250040023BB2B0E209915C5 (void);
-// 0x0000019B Pathfinding.GraphMask Pathfinding.GraphMask::op_Implicit(System.Int32)
-extern void GraphMask_op_Implicit_m224C3DCB9258487B9BE3AF1AF88BAF9505B1579E (void);
-// 0x0000019C Pathfinding.GraphMask Pathfinding.GraphMask::op_BitwiseAnd(Pathfinding.GraphMask,Pathfinding.GraphMask)
-extern void GraphMask_op_BitwiseAnd_m97DF12BB6A23449423113FA51006406E31730B4A (void);
-// 0x0000019D Pathfinding.GraphMask Pathfinding.GraphMask::op_BitwiseOr(Pathfinding.GraphMask,Pathfinding.GraphMask)
-extern void GraphMask_op_BitwiseOr_mA374D9ABA6E5EA1C3821D73BF19BE5CCDF45188A (void);
-// 0x0000019E Pathfinding.GraphMask Pathfinding.GraphMask::op_OnesComplement(Pathfinding.GraphMask)
-extern void GraphMask_op_OnesComplement_m6DD2A2A1755D805DEBEBE9108B7889DD71CBC530 (void);
-// 0x0000019F System.Boolean Pathfinding.GraphMask::Contains(System.Int32)
-extern void GraphMask_Contains_m95162AF8F373AF9C11623439E9B52B3E3F013EE8 (void);
-// 0x000001A0 Pathfinding.GraphMask Pathfinding.GraphMask::FromGraph(Pathfinding.NavGraph)
-extern void GraphMask_FromGraph_mCCF5DBF710890F395A657C6303FE39D24EBB7A1A (void);
-// 0x000001A1 System.String Pathfinding.GraphMask::ToString()
-extern void GraphMask_ToString_mC984BD27B0A579765BF882DBCD5347597EBC171A (void);
-// 0x000001A2 Pathfinding.GraphMask Pathfinding.GraphMask::FromGraphName(System.String)
-extern void GraphMask_FromGraphName_m6F8CD875FF02B77EFDBD619AD723C56BC5E6EDC7 (void);
-// 0x000001A3 System.Void Pathfinding.GraphMask/<>c__DisplayClass12_0::.ctor()
-extern void U3CU3Ec__DisplayClass12_0__ctor_mB20530C6ABF6B6498DFEA503E9EFDA8FE90C62A3 (void);
-// 0x000001A4 System.Boolean Pathfinding.GraphMask/<>c__DisplayClass12_0::<FromGraphName>b__0(Pathfinding.NavGraph)
-extern void U3CU3Ec__DisplayClass12_0_U3CFromGraphNameU3Eb__0_m452D17A005150603EFAAB68C552FE064161346C6 (void);
-// 0x000001A5 System.Void Pathfinding.OnPathDelegate::.ctor(System.Object,System.IntPtr)
-extern void OnPathDelegate__ctor_mD3FAB4AAEAF5DCAA68A6D1C3C8A7A9F316362C43 (void);
-// 0x000001A6 System.Void Pathfinding.OnPathDelegate::Invoke(Pathfinding.Path)
-extern void OnPathDelegate_Invoke_m17E23601849FDCA5C8558EB78BE36C6202423A80 (void);
-// 0x000001A7 System.IAsyncResult Pathfinding.OnPathDelegate::BeginInvoke(Pathfinding.Path,System.AsyncCallback,System.Object)
-extern void OnPathDelegate_BeginInvoke_mAC6A91395D7EDF06B926063A7D5BA208817C2C92 (void);
-// 0x000001A8 System.Void Pathfinding.OnPathDelegate::EndInvoke(System.IAsyncResult)
-extern void OnPathDelegate_EndInvoke_m27872925AF801F9FF33C1C14EB572EFEEF97A173 (void);
-// 0x000001A9 System.Void Pathfinding.OnGraphDelegate::.ctor(System.Object,System.IntPtr)
-extern void OnGraphDelegate__ctor_m99421FA7BD0A95B64C53165FEC425F4DE0B8C768 (void);
-// 0x000001AA System.Void Pathfinding.OnGraphDelegate::Invoke(Pathfinding.NavGraph)
-extern void OnGraphDelegate_Invoke_mA373F596F6B04C3C44E98792EE88D30C86D7D0C7 (void);
-// 0x000001AB System.IAsyncResult Pathfinding.OnGraphDelegate::BeginInvoke(Pathfinding.NavGraph,System.AsyncCallback,System.Object)
-extern void OnGraphDelegate_BeginInvoke_mD407B9A6ADCCBC5C54A6C0B345649E8A1B10710F (void);
-// 0x000001AC System.Void Pathfinding.OnGraphDelegate::EndInvoke(System.IAsyncResult)
-extern void OnGraphDelegate_EndInvoke_m21B7D967DF667E82669E789BA0C2B0A5565E47C1 (void);
-// 0x000001AD System.Void Pathfinding.OnScanDelegate::.ctor(System.Object,System.IntPtr)
-extern void OnScanDelegate__ctor_m676DC4E4B01150D561792C8DA62789DF6E056D8D (void);
-// 0x000001AE System.Void Pathfinding.OnScanDelegate::Invoke(AstarPath)
-extern void OnScanDelegate_Invoke_mD41A4EA9794D0A8AE8C4A2F5BB61A40046F5335D (void);
-// 0x000001AF System.IAsyncResult Pathfinding.OnScanDelegate::BeginInvoke(AstarPath,System.AsyncCallback,System.Object)
-extern void OnScanDelegate_BeginInvoke_m9AE3947C3969352B5C583F94787999C5CE4D8CC9 (void);
-// 0x000001B0 System.Void Pathfinding.OnScanDelegate::EndInvoke(System.IAsyncResult)
-extern void OnScanDelegate_EndInvoke_m1247908910B8613972E4466CBED5DDEFD4A7D5E5 (void);
-// 0x000001B1 System.Void Pathfinding.OnScanStatus::.ctor(System.Object,System.IntPtr)
-extern void OnScanStatus__ctor_mF58A92138A44B6412D955510F576153BB64F0AA1 (void);
-// 0x000001B2 System.Void Pathfinding.OnScanStatus::Invoke(Pathfinding.Progress)
-extern void OnScanStatus_Invoke_m1DD9AC0079CB25B9E51D6421629C310BA585168F (void);
-// 0x000001B3 System.IAsyncResult Pathfinding.OnScanStatus::BeginInvoke(Pathfinding.Progress,System.AsyncCallback,System.Object)
-extern void OnScanStatus_BeginInvoke_m955C8C2ABB275B4E99E3FA32AC87A1153C7FCC63 (void);
-// 0x000001B4 System.Void Pathfinding.OnScanStatus::EndInvoke(System.IAsyncResult)
-extern void OnScanStatus_EndInvoke_m44D160FE7EC62E44B9E98F4BD4049AB8BFB685C8 (void);
-// 0x000001B5 AstarPath Pathfinding.AstarData::get_active()
+// 0x0000015D AstarPath Pathfinding.AstarData::get_active()
 extern void AstarData_get_active_mB84042E5FB8379EAA9DE36B8E514389225E7BFBD (void);
-// 0x000001B6 Pathfinding.NavMeshGraph Pathfinding.AstarData::get_navmesh()
+// 0x0000015E Pathfinding.NavMeshGraph Pathfinding.AstarData::get_navmesh()
 extern void AstarData_get_navmesh_m39E4AF24FFBC61D8D9A689CF2B48BD95BD37C91E (void);
-// 0x000001B7 System.Void Pathfinding.AstarData::set_navmesh(Pathfinding.NavMeshGraph)
+// 0x0000015F System.Void Pathfinding.AstarData::set_navmesh(Pathfinding.NavMeshGraph)
 extern void AstarData_set_navmesh_mE1221D383F6A8CF5A152BC02424A9B1A48B97855 (void);
-// 0x000001B8 Pathfinding.GridGraph Pathfinding.AstarData::get_gridGraph()
+// 0x00000160 Pathfinding.GridGraph Pathfinding.AstarData::get_gridGraph()
 extern void AstarData_get_gridGraph_m50E5B3A78045D79060DD24D7A498707052DD48B5 (void);
-// 0x000001B9 System.Void Pathfinding.AstarData::set_gridGraph(Pathfinding.GridGraph)
+// 0x00000161 System.Void Pathfinding.AstarData::set_gridGraph(Pathfinding.GridGraph)
 extern void AstarData_set_gridGraph_m70BF5E25C2FD0DCA60B930015B802E219EAE109D (void);
-// 0x000001BA Pathfinding.PointGraph Pathfinding.AstarData::get_pointGraph()
+// 0x00000162 Pathfinding.PointGraph Pathfinding.AstarData::get_pointGraph()
 extern void AstarData_get_pointGraph_m6EDA432704919A39204C703A3D5545FC1B82A21F (void);
-// 0x000001BB System.Void Pathfinding.AstarData::set_pointGraph(Pathfinding.PointGraph)
+// 0x00000163 System.Void Pathfinding.AstarData::set_pointGraph(Pathfinding.PointGraph)
 extern void AstarData_set_pointGraph_m1108E32CF66C933A7B426829DA8F9B4BF101EB60 (void);
-// 0x000001BC System.Type[] Pathfinding.AstarData::get_graphTypes()
+// 0x00000164 System.Type[] Pathfinding.AstarData::get_graphTypes()
 extern void AstarData_get_graphTypes_m1805648AF3D27991B36D275558D159935B0B8828 (void);
-// 0x000001BD System.Void Pathfinding.AstarData::set_graphTypes(System.Type[])
+// 0x00000165 System.Void Pathfinding.AstarData::set_graphTypes(System.Type[])
 extern void AstarData_set_graphTypes_m566170F7C4622A6E055A64F99A167108EEF4CDE4 (void);
-// 0x000001BE System.Byte[] Pathfinding.AstarData::get_data()
+// 0x00000166 System.Byte[] Pathfinding.AstarData::get_data()
 extern void AstarData_get_data_mD931095856E12D86E688BA33E5864826F6948929 (void);
-// 0x000001BF System.Void Pathfinding.AstarData::set_data(System.Byte[])
+// 0x00000167 System.Void Pathfinding.AstarData::set_data(System.Byte[])
 extern void AstarData_set_data_mC9D55E1681240F535B342CB137DB695F0F8C17BD (void);
-// 0x000001C0 System.Byte[] Pathfinding.AstarData::GetData()
+// 0x00000168 System.Byte[] Pathfinding.AstarData::GetData()
 extern void AstarData_GetData_m782E6B5D472FCBE592F7199FD966BC974F8DEF9D (void);
-// 0x000001C1 System.Void Pathfinding.AstarData::SetData(System.Byte[])
+// 0x00000169 System.Void Pathfinding.AstarData::SetData(System.Byte[])
 extern void AstarData_SetData_mE7446D5EDF39C7D2E43E2D1F2D3FDD138BE67934 (void);
-// 0x000001C2 System.Void Pathfinding.AstarData::Awake()
+// 0x0000016A System.Void Pathfinding.AstarData::Awake()
 extern void AstarData_Awake_mEC5940362894925A32A06263B4DA56FAEE08CCB5 (void);
-// 0x000001C3 System.Void Pathfinding.AstarData::LockGraphStructure(System.Boolean)
+// 0x0000016B System.Void Pathfinding.AstarData::LockGraphStructure(System.Boolean)
 extern void AstarData_LockGraphStructure_mBE798D94E20933A51206614C49FB0B3D8D749AFB (void);
-// 0x000001C4 System.Void Pathfinding.AstarData::UnlockGraphStructure()
+// 0x0000016C System.Void Pathfinding.AstarData::UnlockGraphStructure()
 extern void AstarData_UnlockGraphStructure_mF922B95D3B2C44F675D0F772FC07D06EC7BA5D2A (void);
-// 0x000001C5 Pathfinding.PathProcessor/GraphUpdateLock Pathfinding.AstarData::AssertSafe(System.Boolean)
+// 0x0000016D Pathfinding.PathProcessor/GraphUpdateLock Pathfinding.AstarData::AssertSafe(System.Boolean)
 extern void AstarData_AssertSafe_m7BA716717D0ECE5EB0DC8F49E5C9A36CA1E97B37 (void);
-// 0x000001C6 System.Void Pathfinding.AstarData::GetNodes(System.Action`1<Pathfinding.GraphNode>)
+// 0x0000016E System.Void Pathfinding.AstarData::GetNodes(System.Action`1<Pathfinding.GraphNode>)
 extern void AstarData_GetNodes_mA0156323B8E3D8AE259CD76772638A78F21FDCA1 (void);
-// 0x000001C7 System.Void Pathfinding.AstarData::UpdateShortcuts()
+// 0x0000016F System.Void Pathfinding.AstarData::UpdateShortcuts()
 extern void AstarData_UpdateShortcuts_m5A2BC0AEC2E9100A4782C6A21542B8D92C4FC974 (void);
-// 0x000001C8 System.Void Pathfinding.AstarData::LoadFromCache()
+// 0x00000170 System.Void Pathfinding.AstarData::LoadFromCache()
 extern void AstarData_LoadFromCache_m014F5FEA7B7BFEE742F46BCF2D106F8EC70FC132 (void);
-// 0x000001C9 System.Byte[] Pathfinding.AstarData::SerializeGraphs()
+// 0x00000171 System.Byte[] Pathfinding.AstarData::SerializeGraphs()
 extern void AstarData_SerializeGraphs_mC356CCF8FFC67A44B0A7EBDC32175D0CF5170CAC (void);
-// 0x000001CA System.Byte[] Pathfinding.AstarData::SerializeGraphs(Pathfinding.Serialization.SerializeSettings)
+// 0x00000172 System.Byte[] Pathfinding.AstarData::SerializeGraphs(Pathfinding.Serialization.SerializeSettings)
 extern void AstarData_SerializeGraphs_m1276A6308447602E2F3D2461BE645D7C77AF9F14 (void);
-// 0x000001CB System.Byte[] Pathfinding.AstarData::SerializeGraphs(Pathfinding.Serialization.SerializeSettings,System.UInt32&)
+// 0x00000173 System.Byte[] Pathfinding.AstarData::SerializeGraphs(Pathfinding.Serialization.SerializeSettings,System.UInt32&)
 extern void AstarData_SerializeGraphs_mDE7D6E454B0C2403B4DFE8763C57802361972035 (void);
-// 0x000001CC System.Void Pathfinding.AstarData::DeserializeGraphs()
+// 0x00000174 System.Void Pathfinding.AstarData::DeserializeGraphs()
 extern void AstarData_DeserializeGraphs_m202D2E95C71FE2512DF1A2913FAE0C32F94D3893 (void);
-// 0x000001CD System.Void Pathfinding.AstarData::ClearGraphs()
+// 0x00000175 System.Void Pathfinding.AstarData::ClearGraphs()
 extern void AstarData_ClearGraphs_mAC07E92683DB19CA98EFF8F696413E177026CC3C (void);
-// 0x000001CE System.Void Pathfinding.AstarData::OnDestroy()
+// 0x00000176 System.Void Pathfinding.AstarData::OnDestroy()
 extern void AstarData_OnDestroy_m241C70B0144DA9548AEE1B34D381CE443B4F0500 (void);
-// 0x000001CF System.Void Pathfinding.AstarData::DeserializeGraphs(System.Byte[])
+// 0x00000177 System.Void Pathfinding.AstarData::DeserializeGraphs(System.Byte[])
 extern void AstarData_DeserializeGraphs_mF63F1183308BA89241E3486D816191C6AA8253C4 (void);
-// 0x000001D0 System.Void Pathfinding.AstarData::DeserializeGraphsAdditive(System.Byte[])
+// 0x00000178 System.Void Pathfinding.AstarData::DeserializeGraphsAdditive(System.Byte[])
 extern void AstarData_DeserializeGraphsAdditive_m126E1193D01CAF452A37D98270F73EA2BB878272 (void);
-// 0x000001D1 System.Void Pathfinding.AstarData::DeserializeGraphsPartAdditive(Pathfinding.Serialization.AstarSerializer)
+// 0x00000179 System.Void Pathfinding.AstarData::DeserializeGraphsPartAdditive(Pathfinding.Serialization.AstarSerializer)
 extern void AstarData_DeserializeGraphsPartAdditive_mE990C1D49EAD0596F1B2489C3592260559E09DDB (void);
-// 0x000001D2 System.Void Pathfinding.AstarData::FindGraphTypes()
+// 0x0000017A System.Void Pathfinding.AstarData::FindGraphTypes()
 extern void AstarData_FindGraphTypes_m5202F9C3675B9152CE7216EFFE152A52EB665154 (void);
-// 0x000001D3 System.Type Pathfinding.AstarData::GetGraphType(System.String)
+// 0x0000017B System.Type Pathfinding.AstarData::GetGraphType(System.String)
 extern void AstarData_GetGraphType_m5BBA2CC6EC42E6C82BDB54DADEC46E1CB0A66DF2 (void);
-// 0x000001D4 Pathfinding.NavGraph Pathfinding.AstarData::CreateGraph(System.String)
+// 0x0000017C Pathfinding.NavGraph Pathfinding.AstarData::CreateGraph(System.String)
 extern void AstarData_CreateGraph_m249976D6D8E6CB01D8AF151E2C389E6311A0E2E5 (void);
-// 0x000001D5 Pathfinding.NavGraph Pathfinding.AstarData::CreateGraph(System.Type)
+// 0x0000017D Pathfinding.NavGraph Pathfinding.AstarData::CreateGraph(System.Type)
 extern void AstarData_CreateGraph_m41A1BE2BF4B1DC43E89985AC20DAB82D3784049F (void);
-// 0x000001D6 Pathfinding.NavGraph Pathfinding.AstarData::AddGraph(System.String)
+// 0x0000017E Pathfinding.NavGraph Pathfinding.AstarData::AddGraph(System.String)
 extern void AstarData_AddGraph_m4F77FB5E445CA2BFB5495150B07D39350DA14C5A (void);
-// 0x000001D7 Pathfinding.NavGraph Pathfinding.AstarData::AddGraph(System.Type)
+// 0x0000017F Pathfinding.NavGraph Pathfinding.AstarData::AddGraph(System.Type)
 extern void AstarData_AddGraph_mF81512C121448E20CC2782D92140A0198D831125 (void);
-// 0x000001D8 System.Void Pathfinding.AstarData::AddGraph(Pathfinding.NavGraph)
+// 0x00000180 System.Void Pathfinding.AstarData::AddGraph(Pathfinding.NavGraph)
 extern void AstarData_AddGraph_m0FA9BBACB5AFD451F2405029669F21460E5FD483 (void);
-// 0x000001D9 System.Boolean Pathfinding.AstarData::RemoveGraph(Pathfinding.NavGraph)
+// 0x00000181 System.Boolean Pathfinding.AstarData::RemoveGraph(Pathfinding.NavGraph)
 extern void AstarData_RemoveGraph_mBB3606C668CACA06E4C4ED921B1E0F3D794F603D (void);
-// 0x000001DA Pathfinding.NavGraph Pathfinding.AstarData::GetGraph(Pathfinding.GraphNode)
+// 0x00000182 Pathfinding.NavGraph Pathfinding.AstarData::GetGraph(Pathfinding.GraphNode)
 extern void AstarData_GetGraph_m277003679707540B49B5ADCDE494AA6492F3450F (void);
-// 0x000001DB Pathfinding.NavGraph Pathfinding.AstarData::FindGraph(System.Func`2<Pathfinding.NavGraph,System.Boolean>)
+// 0x00000183 Pathfinding.NavGraph Pathfinding.AstarData::FindGraph(System.Func`2<Pathfinding.NavGraph,System.Boolean>)
 extern void AstarData_FindGraph_mCFCFDB7F4CEB39C490156100D10E9A36FA11D63A (void);
-// 0x000001DC Pathfinding.NavGraph Pathfinding.AstarData::FindGraphOfType(System.Type)
+// 0x00000184 Pathfinding.NavGraph Pathfinding.AstarData::FindGraphOfType(System.Type)
 extern void AstarData_FindGraphOfType_m43DAF37ABE3BA40D8C5D7B507AAD5CE45A19358D (void);
-// 0x000001DD Pathfinding.NavGraph Pathfinding.AstarData::FindGraphWhichInheritsFrom(System.Type)
+// 0x00000185 Pathfinding.NavGraph Pathfinding.AstarData::FindGraphWhichInheritsFrom(System.Type)
 extern void AstarData_FindGraphWhichInheritsFrom_mDCC1921F43787A2628868153817068D0F35E7B85 (void);
-// 0x000001DE System.Collections.IEnumerable Pathfinding.AstarData::FindGraphsOfType(System.Type)
+// 0x00000186 System.Collections.IEnumerable Pathfinding.AstarData::FindGraphsOfType(System.Type)
 extern void AstarData_FindGraphsOfType_m76C653A04C8F6E2835BC1721C06B3B9B96DC2489 (void);
-// 0x000001DF System.Collections.IEnumerable Pathfinding.AstarData::GetUpdateableGraphs()
+// 0x00000187 System.Collections.IEnumerable Pathfinding.AstarData::GetUpdateableGraphs()
 extern void AstarData_GetUpdateableGraphs_m4A4894D93E968DE1B5F0FB80879AFE424DFFE65B (void);
-// 0x000001E0 System.Collections.IEnumerable Pathfinding.AstarData::GetRaycastableGraphs()
+// 0x00000188 System.Collections.IEnumerable Pathfinding.AstarData::GetRaycastableGraphs()
 extern void AstarData_GetRaycastableGraphs_m517CC5A1D8F689B28664DAB5488DE4D0ABB82FFC (void);
-// 0x000001E1 System.Int32 Pathfinding.AstarData::GetGraphIndex(Pathfinding.NavGraph)
+// 0x00000189 System.Int32 Pathfinding.AstarData::GetGraphIndex(Pathfinding.NavGraph)
 extern void AstarData_GetGraphIndex_mEE39A9C890D7D44B139C86A4DF94AA0E171069C0 (void);
-// 0x000001E2 System.Void Pathfinding.AstarData::.ctor()
+// 0x0000018A System.Void Pathfinding.AstarData::.ctor()
 extern void AstarData__ctor_m97A08C694D4ADDF2AD51D4EC296E2F62DA50F576 (void);
-// 0x000001E3 System.Void Pathfinding.AstarData::.cctor()
+// 0x0000018B System.Void Pathfinding.AstarData::.cctor()
 extern void AstarData__cctor_m1D883C80ABE2E6A56B88380F488E544C8B83130D (void);
-// 0x000001E4 System.Void Pathfinding.AstarData/<>c__DisplayClass46_0::.ctor()
+// 0x0000018C System.Void Pathfinding.AstarData/<>c__DisplayClass46_0::.ctor()
 extern void U3CU3Ec__DisplayClass46_0__ctor_m59930AAC0F624EB20DD04C9A2CCCF34DEEE80495 (void);
-// 0x000001E5 System.Void Pathfinding.AstarData/<>c__DisplayClass46_0::<DeserializeGraphsPartAdditive>b__0(Pathfinding.GraphNode)
+// 0x0000018D System.Void Pathfinding.AstarData/<>c__DisplayClass46_0::<DeserializeGraphsPartAdditive>b__0(Pathfinding.GraphNode)
 extern void U3CU3Ec__DisplayClass46_0_U3CDeserializeGraphsPartAdditiveU3Eb__0_mCCF777CA54C8A4CCB48AED6E7906AEE1452DCF09 (void);
-// 0x000001E6 System.Void Pathfinding.AstarData/<>c__DisplayClass57_0::.ctor()
+// 0x0000018E System.Void Pathfinding.AstarData/<>c__DisplayClass57_0::.ctor()
 extern void U3CU3Ec__DisplayClass57_0__ctor_mE7A33719CCE52775A1EAEB7D180DF42911F5745D (void);
-// 0x000001E7 System.Boolean Pathfinding.AstarData/<>c__DisplayClass57_0::<FindGraphOfType>b__0(Pathfinding.NavGraph)
+// 0x0000018F System.Boolean Pathfinding.AstarData/<>c__DisplayClass57_0::<FindGraphOfType>b__0(Pathfinding.NavGraph)
 extern void U3CU3Ec__DisplayClass57_0_U3CFindGraphOfTypeU3Eb__0_m876C6FF288A09D405129F8E95550B71672074059 (void);
-// 0x000001E8 System.Void Pathfinding.AstarData/<>c__DisplayClass58_0::.ctor()
+// 0x00000190 System.Void Pathfinding.AstarData/<>c__DisplayClass58_0::.ctor()
 extern void U3CU3Ec__DisplayClass58_0__ctor_mE0CAA5D2111B77C0D25DD22CC92741437C018026 (void);
-// 0x000001E9 System.Boolean Pathfinding.AstarData/<>c__DisplayClass58_0::<FindGraphWhichInheritsFrom>b__0(Pathfinding.NavGraph)
+// 0x00000191 System.Boolean Pathfinding.AstarData/<>c__DisplayClass58_0::<FindGraphWhichInheritsFrom>b__0(Pathfinding.NavGraph)
 extern void U3CU3Ec__DisplayClass58_0_U3CFindGraphWhichInheritsFromU3Eb__0_m009160497BFC3B148C9033408EB14BA1C35C0F88 (void);
-// 0x000001EA System.Void Pathfinding.AstarData/<FindGraphsOfType>d__59::.ctor(System.Int32)
+// 0x00000192 System.Void Pathfinding.AstarData/<FindGraphsOfType>d__59::.ctor(System.Int32)
 extern void U3CFindGraphsOfTypeU3Ed__59__ctor_m76EC75103125854DE9EA92A1B1127EEA12086AFF (void);
-// 0x000001EB System.Void Pathfinding.AstarData/<FindGraphsOfType>d__59::System.IDisposable.Dispose()
+// 0x00000193 System.Void Pathfinding.AstarData/<FindGraphsOfType>d__59::System.IDisposable.Dispose()
 extern void U3CFindGraphsOfTypeU3Ed__59_System_IDisposable_Dispose_m230EBF028AA70FC7AE8224149873E820A11C2BF7 (void);
-// 0x000001EC System.Boolean Pathfinding.AstarData/<FindGraphsOfType>d__59::MoveNext()
+// 0x00000194 System.Boolean Pathfinding.AstarData/<FindGraphsOfType>d__59::MoveNext()
 extern void U3CFindGraphsOfTypeU3Ed__59_MoveNext_mB81810A0EB5214D2742F82E3CE4681D4B02F9D6D (void);
-// 0x000001ED System.Object Pathfinding.AstarData/<FindGraphsOfType>d__59::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000195 System.Object Pathfinding.AstarData/<FindGraphsOfType>d__59::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CFindGraphsOfTypeU3Ed__59_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB8467003F5469005A4FEBFEB34D848D9A3CB2267 (void);
-// 0x000001EE System.Void Pathfinding.AstarData/<FindGraphsOfType>d__59::System.Collections.IEnumerator.Reset()
+// 0x00000196 System.Void Pathfinding.AstarData/<FindGraphsOfType>d__59::System.Collections.IEnumerator.Reset()
 extern void U3CFindGraphsOfTypeU3Ed__59_System_Collections_IEnumerator_Reset_m582CAE31008E1DEF18F7E57E1F5CA772AC407D0D (void);
-// 0x000001EF System.Object Pathfinding.AstarData/<FindGraphsOfType>d__59::System.Collections.IEnumerator.get_Current()
+// 0x00000197 System.Object Pathfinding.AstarData/<FindGraphsOfType>d__59::System.Collections.IEnumerator.get_Current()
 extern void U3CFindGraphsOfTypeU3Ed__59_System_Collections_IEnumerator_get_Current_mB8832204627CD1EBBCD97BABA573F7D9CF600D1B (void);
-// 0x000001F0 System.Collections.Generic.IEnumerator`1<System.Object> Pathfinding.AstarData/<FindGraphsOfType>d__59::System.Collections.Generic.IEnumerable<System.Object>.GetEnumerator()
+// 0x00000198 System.Collections.Generic.IEnumerator`1<System.Object> Pathfinding.AstarData/<FindGraphsOfType>d__59::System.Collections.Generic.IEnumerable<System.Object>.GetEnumerator()
 extern void U3CFindGraphsOfTypeU3Ed__59_System_Collections_Generic_IEnumerableU3CSystem_ObjectU3E_GetEnumerator_mC96B20E0940488484829B5FFC0A43BBC4CACE52C (void);
-// 0x000001F1 System.Collections.IEnumerator Pathfinding.AstarData/<FindGraphsOfType>d__59::System.Collections.IEnumerable.GetEnumerator()
+// 0x00000199 System.Collections.IEnumerator Pathfinding.AstarData/<FindGraphsOfType>d__59::System.Collections.IEnumerable.GetEnumerator()
 extern void U3CFindGraphsOfTypeU3Ed__59_System_Collections_IEnumerable_GetEnumerator_mBB68EEA76D181B11910E006B7C4882688B9F3FDC (void);
-// 0x000001F2 System.Void Pathfinding.AstarData/<GetUpdateableGraphs>d__60::.ctor(System.Int32)
+// 0x0000019A System.Void Pathfinding.AstarData/<GetUpdateableGraphs>d__60::.ctor(System.Int32)
 extern void U3CGetUpdateableGraphsU3Ed__60__ctor_m21E19C12B0D28E00BD999781258F4AE12EEF72EA (void);
-// 0x000001F3 System.Void Pathfinding.AstarData/<GetUpdateableGraphs>d__60::System.IDisposable.Dispose()
+// 0x0000019B System.Void Pathfinding.AstarData/<GetUpdateableGraphs>d__60::System.IDisposable.Dispose()
 extern void U3CGetUpdateableGraphsU3Ed__60_System_IDisposable_Dispose_m94D2A7AE67A5C6469784B36E452B7ED960FF09C0 (void);
-// 0x000001F4 System.Boolean Pathfinding.AstarData/<GetUpdateableGraphs>d__60::MoveNext()
+// 0x0000019C System.Boolean Pathfinding.AstarData/<GetUpdateableGraphs>d__60::MoveNext()
 extern void U3CGetUpdateableGraphsU3Ed__60_MoveNext_m660D091ED50B8136A8044696A8F04924413824B0 (void);
-// 0x000001F5 System.Object Pathfinding.AstarData/<GetUpdateableGraphs>d__60::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000019D System.Object Pathfinding.AstarData/<GetUpdateableGraphs>d__60::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CGetUpdateableGraphsU3Ed__60_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mE5C5BBF9845502EBE8C014A3156CE65FF64A2BB0 (void);
-// 0x000001F6 System.Void Pathfinding.AstarData/<GetUpdateableGraphs>d__60::System.Collections.IEnumerator.Reset()
+// 0x0000019E System.Void Pathfinding.AstarData/<GetUpdateableGraphs>d__60::System.Collections.IEnumerator.Reset()
 extern void U3CGetUpdateableGraphsU3Ed__60_System_Collections_IEnumerator_Reset_m77EE6C1B6C24EA98EB2CC08B4E5DB4417A770455 (void);
-// 0x000001F7 System.Object Pathfinding.AstarData/<GetUpdateableGraphs>d__60::System.Collections.IEnumerator.get_Current()
+// 0x0000019F System.Object Pathfinding.AstarData/<GetUpdateableGraphs>d__60::System.Collections.IEnumerator.get_Current()
 extern void U3CGetUpdateableGraphsU3Ed__60_System_Collections_IEnumerator_get_Current_m8C3FE3396672F645DB0DE8837A32B610ECC9E55F (void);
-// 0x000001F8 System.Collections.Generic.IEnumerator`1<System.Object> Pathfinding.AstarData/<GetUpdateableGraphs>d__60::System.Collections.Generic.IEnumerable<System.Object>.GetEnumerator()
+// 0x000001A0 System.Collections.Generic.IEnumerator`1<System.Object> Pathfinding.AstarData/<GetUpdateableGraphs>d__60::System.Collections.Generic.IEnumerable<System.Object>.GetEnumerator()
 extern void U3CGetUpdateableGraphsU3Ed__60_System_Collections_Generic_IEnumerableU3CSystem_ObjectU3E_GetEnumerator_mC6780CD8238DAB72E5893A72266B4570076BB508 (void);
-// 0x000001F9 System.Collections.IEnumerator Pathfinding.AstarData/<GetUpdateableGraphs>d__60::System.Collections.IEnumerable.GetEnumerator()
+// 0x000001A1 System.Collections.IEnumerator Pathfinding.AstarData/<GetUpdateableGraphs>d__60::System.Collections.IEnumerable.GetEnumerator()
 extern void U3CGetUpdateableGraphsU3Ed__60_System_Collections_IEnumerable_GetEnumerator_mE49B591EA3D431445D01756A6512861B04C07135 (void);
-// 0x000001FA System.Void Pathfinding.AstarData/<GetRaycastableGraphs>d__61::.ctor(System.Int32)
+// 0x000001A2 System.Void Pathfinding.AstarData/<GetRaycastableGraphs>d__61::.ctor(System.Int32)
 extern void U3CGetRaycastableGraphsU3Ed__61__ctor_m2777672CC8A70872D8AEF4DAE1511FE9B64B9D17 (void);
-// 0x000001FB System.Void Pathfinding.AstarData/<GetRaycastableGraphs>d__61::System.IDisposable.Dispose()
+// 0x000001A3 System.Void Pathfinding.AstarData/<GetRaycastableGraphs>d__61::System.IDisposable.Dispose()
 extern void U3CGetRaycastableGraphsU3Ed__61_System_IDisposable_Dispose_mB9F52ADEA5955E1FF34B96919092A761769C538B (void);
-// 0x000001FC System.Boolean Pathfinding.AstarData/<GetRaycastableGraphs>d__61::MoveNext()
+// 0x000001A4 System.Boolean Pathfinding.AstarData/<GetRaycastableGraphs>d__61::MoveNext()
 extern void U3CGetRaycastableGraphsU3Ed__61_MoveNext_m589AB8B82A5C22D771657B04663704089414717B (void);
-// 0x000001FD System.Object Pathfinding.AstarData/<GetRaycastableGraphs>d__61::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000001A5 System.Object Pathfinding.AstarData/<GetRaycastableGraphs>d__61::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CGetRaycastableGraphsU3Ed__61_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mBFA4726CAB7C657C3BBDEF8F80E232611C47EE7D (void);
-// 0x000001FE System.Void Pathfinding.AstarData/<GetRaycastableGraphs>d__61::System.Collections.IEnumerator.Reset()
+// 0x000001A6 System.Void Pathfinding.AstarData/<GetRaycastableGraphs>d__61::System.Collections.IEnumerator.Reset()
 extern void U3CGetRaycastableGraphsU3Ed__61_System_Collections_IEnumerator_Reset_m0AFE339F0CB87349F0FE9C610F0E5D60DAE15C7D (void);
-// 0x000001FF System.Object Pathfinding.AstarData/<GetRaycastableGraphs>d__61::System.Collections.IEnumerator.get_Current()
+// 0x000001A7 System.Object Pathfinding.AstarData/<GetRaycastableGraphs>d__61::System.Collections.IEnumerator.get_Current()
 extern void U3CGetRaycastableGraphsU3Ed__61_System_Collections_IEnumerator_get_Current_mE5CB8F8C620E9A235950C61B5DD67979134DD65B (void);
-// 0x00000200 System.Collections.Generic.IEnumerator`1<System.Object> Pathfinding.AstarData/<GetRaycastableGraphs>d__61::System.Collections.Generic.IEnumerable<System.Object>.GetEnumerator()
+// 0x000001A8 System.Collections.Generic.IEnumerator`1<System.Object> Pathfinding.AstarData/<GetRaycastableGraphs>d__61::System.Collections.Generic.IEnumerable<System.Object>.GetEnumerator()
 extern void U3CGetRaycastableGraphsU3Ed__61_System_Collections_Generic_IEnumerableU3CSystem_ObjectU3E_GetEnumerator_mA522C83179050EDF5A73ECEB15883F1C8E9CA510 (void);
-// 0x00000201 System.Collections.IEnumerator Pathfinding.AstarData/<GetRaycastableGraphs>d__61::System.Collections.IEnumerable.GetEnumerator()
+// 0x000001A9 System.Collections.IEnumerator Pathfinding.AstarData/<GetRaycastableGraphs>d__61::System.Collections.IEnumerable.GetEnumerator()
 extern void U3CGetRaycastableGraphsU3Ed__61_System_Collections_IEnumerable_GetEnumerator_mFEEFF0671CD1E2D71BB91FA3599A9B3206256FBA (void);
-// 0x00000202 UnityEngine.Vector3 Pathfinding.AstarSplines::CatmullRom(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+// 0x000001AA UnityEngine.Vector3 Pathfinding.AstarSplines::CatmullRom(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
 extern void AstarSplines_CatmullRom_m0F5E1A3CCB09948B4759A1917BA5B36495761079 (void);
-// 0x00000203 UnityEngine.Vector3 Pathfinding.AstarSplines::CubicBezier(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+// 0x000001AB UnityEngine.Vector3 Pathfinding.AstarSplines::CubicBezier(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
 extern void AstarSplines_CubicBezier_m1B0D89E05C98A7954892F1842CBB206EF6A1C7E9 (void);
-// 0x00000204 UnityEngine.Vector3 Pathfinding.AstarSplines::CubicBezierDerivative(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+// 0x000001AC UnityEngine.Vector3 Pathfinding.AstarSplines::CubicBezierDerivative(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
 extern void AstarSplines_CubicBezierDerivative_mF9F71095BDEE99E9982DC9C991437FC67590FBEB (void);
-// 0x00000205 UnityEngine.Vector3 Pathfinding.AstarSplines::CubicBezierSecondDerivative(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+// 0x000001AD UnityEngine.Vector3 Pathfinding.AstarSplines::CubicBezierSecondDerivative(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
 extern void AstarSplines_CubicBezierSecondDerivative_m88B02184784220A5951E285DA96EA314D540AFBA (void);
-// 0x00000206 UnityEngine.Vector2 Pathfinding.VectorMath::ComplexMultiply(UnityEngine.Vector2,UnityEngine.Vector2)
+// 0x000001AE UnityEngine.Vector2 Pathfinding.VectorMath::ComplexMultiply(UnityEngine.Vector2,UnityEngine.Vector2)
 extern void VectorMath_ComplexMultiply_m9F001CB1A3B60719260E6E13338939AFEACD4657 (void);
-// 0x00000207 UnityEngine.Vector2 Pathfinding.VectorMath::ComplexMultiplyConjugate(UnityEngine.Vector2,UnityEngine.Vector2)
+// 0x000001AF UnityEngine.Vector2 Pathfinding.VectorMath::ComplexMultiplyConjugate(UnityEngine.Vector2,UnityEngine.Vector2)
 extern void VectorMath_ComplexMultiplyConjugate_mDC45B1FCE87838A4DF836DF53A65093B62E63147 (void);
-// 0x00000208 UnityEngine.Vector3 Pathfinding.VectorMath::ClosestPointOnLine(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001B0 UnityEngine.Vector3 Pathfinding.VectorMath::ClosestPointOnLine(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_ClosestPointOnLine_m12B3AF57DF967C65DF62177E581288AAA4732684 (void);
-// 0x00000209 System.Single Pathfinding.VectorMath::ClosestPointOnLineFactor(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001B1 System.Single Pathfinding.VectorMath::ClosestPointOnLineFactor(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_ClosestPointOnLineFactor_mEC0CD2D1E09AE495945435208A22112A547CB476 (void);
-// 0x0000020A System.Single Pathfinding.VectorMath::ClosestPointOnLineFactor(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
+// 0x000001B2 System.Single Pathfinding.VectorMath::ClosestPointOnLineFactor(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
 extern void VectorMath_ClosestPointOnLineFactor_mE3A447F08C0F54C9D26A51BDEDBFF13B8B75F22B (void);
-// 0x0000020B System.Single Pathfinding.VectorMath::ClosestPointOnLineFactor(Pathfinding.Int2,Pathfinding.Int2,Pathfinding.Int2)
+// 0x000001B3 System.Single Pathfinding.VectorMath::ClosestPointOnLineFactor(Pathfinding.Int2,Pathfinding.Int2,Pathfinding.Int2)
 extern void VectorMath_ClosestPointOnLineFactor_mB57C304224E697C313BCA7163F5FA9B1A402660F (void);
-// 0x0000020C UnityEngine.Vector3 Pathfinding.VectorMath::ClosestPointOnSegment(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001B4 UnityEngine.Vector3 Pathfinding.VectorMath::ClosestPointOnSegment(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_ClosestPointOnSegment_mEE1C608A7DCBE4809E300E1AF0C1A8AB6F825A92 (void);
-// 0x0000020D UnityEngine.Vector3 Pathfinding.VectorMath::ClosestPointOnSegmentXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001B5 UnityEngine.Vector3 Pathfinding.VectorMath::ClosestPointOnSegmentXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_ClosestPointOnSegmentXZ_m2AE5F39CA303ACC90797CC87EEB75E70BB1E2CB0 (void);
-// 0x0000020E System.Single Pathfinding.VectorMath::SqrDistancePointSegmentApproximate(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+// 0x000001B6 System.Single Pathfinding.VectorMath::SqrDistancePointSegmentApproximate(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
 extern void VectorMath_SqrDistancePointSegmentApproximate_mE87341388B39AD625F4EF786912F6C5BC9583929 (void);
-// 0x0000020F System.Single Pathfinding.VectorMath::SqrDistancePointSegmentApproximate(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
+// 0x000001B7 System.Single Pathfinding.VectorMath::SqrDistancePointSegmentApproximate(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
 extern void VectorMath_SqrDistancePointSegmentApproximate_m777B59418679C0B1FEF5F3449BA81DF247BE9BBC (void);
-// 0x00000210 System.Single Pathfinding.VectorMath::SqrDistancePointSegment(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001B8 System.Single Pathfinding.VectorMath::SqrDistancePointSegment(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_SqrDistancePointSegment_m33FAF67E30FC0473B3753C5CE182C46A12850099 (void);
-// 0x00000211 System.Single Pathfinding.VectorMath::SqrDistanceSegmentSegment(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001B9 System.Single Pathfinding.VectorMath::SqrDistanceSegmentSegment(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_SqrDistanceSegmentSegment_m80031F06D84EC22124533A86CFC0F6D0944E962F (void);
-// 0x00000212 System.Single Pathfinding.VectorMath::SqrDistanceXZ(UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001BA System.Single Pathfinding.VectorMath::SqrDistanceXZ(UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_SqrDistanceXZ_m3E008B834A880F44C7A734BA2BCBA21C46734D51 (void);
-// 0x00000213 System.Int64 Pathfinding.VectorMath::SignedTriangleAreaTimes2XZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
+// 0x000001BB System.Int64 Pathfinding.VectorMath::SignedTriangleAreaTimes2XZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
 extern void VectorMath_SignedTriangleAreaTimes2XZ_m9C72088E8AB173B4FDC393F2C7963E3954C055BE (void);
-// 0x00000214 System.Single Pathfinding.VectorMath::SignedTriangleAreaTimes2XZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001BC System.Single Pathfinding.VectorMath::SignedTriangleAreaTimes2XZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_SignedTriangleAreaTimes2XZ_m2D9977E06CBDC12214D0556112B1CF3FFACDD67E (void);
-// 0x00000215 System.Boolean Pathfinding.VectorMath::RightXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001BD System.Boolean Pathfinding.VectorMath::RightXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_RightXZ_m783467DA8F4A27611F72D1A76C4E5CE48D626174 (void);
-// 0x00000216 System.Boolean Pathfinding.VectorMath::RightXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
+// 0x000001BE System.Boolean Pathfinding.VectorMath::RightXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
 extern void VectorMath_RightXZ_mD64D16C2E534493D263C53DC245DF862B0F8DEA6 (void);
-// 0x00000217 Pathfinding.Side Pathfinding.VectorMath::SideXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
+// 0x000001BF Pathfinding.Side Pathfinding.VectorMath::SideXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
 extern void VectorMath_SideXZ_mAC65FB9664F4C85BEB88694CE0C50208D47091C7 (void);
-// 0x00000218 System.Boolean Pathfinding.VectorMath::RightOrColinear(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2)
+// 0x000001C0 System.Boolean Pathfinding.VectorMath::RightOrColinear(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2)
 extern void VectorMath_RightOrColinear_mB34E3F7A1BB5175BC946E6B9FA8256E6C5646C96 (void);
-// 0x00000219 System.Boolean Pathfinding.VectorMath::RightOrColinear(Pathfinding.Int2,Pathfinding.Int2,Pathfinding.Int2)
+// 0x000001C1 System.Boolean Pathfinding.VectorMath::RightOrColinear(Pathfinding.Int2,Pathfinding.Int2,Pathfinding.Int2)
 extern void VectorMath_RightOrColinear_mB5E83002DB6238EC4CEEA880E50FEA2A4925C860 (void);
-// 0x0000021A System.Boolean Pathfinding.VectorMath::RightOrColinearXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001C2 System.Boolean Pathfinding.VectorMath::RightOrColinearXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_RightOrColinearXZ_mB4E21EEF15049363F827235D8695B37BC8463686 (void);
-// 0x0000021B System.Boolean Pathfinding.VectorMath::RightOrColinearXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
+// 0x000001C3 System.Boolean Pathfinding.VectorMath::RightOrColinearXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
 extern void VectorMath_RightOrColinearXZ_mA7BF3B45F7492480380BC8FE42408A6FC1127AC4 (void);
-// 0x0000021C System.Boolean Pathfinding.VectorMath::IsClockwiseMarginXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001C4 System.Boolean Pathfinding.VectorMath::IsClockwiseMarginXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_IsClockwiseMarginXZ_m529952763448588576CB2FB5C2AA369F7703AAC5 (void);
-// 0x0000021D System.Boolean Pathfinding.VectorMath::IsClockwiseXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001C5 System.Boolean Pathfinding.VectorMath::IsClockwiseXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_IsClockwiseXZ_m255C729F06D35A2BA3D4E5842FB8B3EE1D1F241F (void);
-// 0x0000021E System.Boolean Pathfinding.VectorMath::IsClockwiseXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
+// 0x000001C6 System.Boolean Pathfinding.VectorMath::IsClockwiseXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
 extern void VectorMath_IsClockwiseXZ_mA7D8D82EDB9ED7455275BC7966151B8713D7F901 (void);
-// 0x0000021F System.Boolean Pathfinding.VectorMath::IsClockwiseOrColinearXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
+// 0x000001C7 System.Boolean Pathfinding.VectorMath::IsClockwiseOrColinearXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
 extern void VectorMath_IsClockwiseOrColinearXZ_m243F806BB9EA60C0B64786F02B657126F0FE4141 (void);
-// 0x00000220 System.Boolean Pathfinding.VectorMath::IsClockwiseOrColinear(Pathfinding.Int2,Pathfinding.Int2,Pathfinding.Int2)
+// 0x000001C8 System.Boolean Pathfinding.VectorMath::IsClockwiseOrColinear(Pathfinding.Int2,Pathfinding.Int2,Pathfinding.Int2)
 extern void VectorMath_IsClockwiseOrColinear_m9E1D7793A0E5A1CA15958C4ED5BF2AB738970CE9 (void);
-// 0x00000221 System.Boolean Pathfinding.VectorMath::IsColinear(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001C9 System.Boolean Pathfinding.VectorMath::IsColinear(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_IsColinear_m7679128DE55C14B0AA74BA62FB2EFAB879950116 (void);
-// 0x00000222 System.Boolean Pathfinding.VectorMath::IsColinear(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2)
+// 0x000001CA System.Boolean Pathfinding.VectorMath::IsColinear(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2)
 extern void VectorMath_IsColinear_m27E0AD8A207ABCD0EDC06051A7CABDD23BDEA8C7 (void);
-// 0x00000223 System.Boolean Pathfinding.VectorMath::IsColinearXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
+// 0x000001CB System.Boolean Pathfinding.VectorMath::IsColinearXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
 extern void VectorMath_IsColinearXZ_mBC50EAAF30D8810364362F434166F16CFAD7362A (void);
-// 0x00000224 System.Boolean Pathfinding.VectorMath::IsColinearXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001CC System.Boolean Pathfinding.VectorMath::IsColinearXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_IsColinearXZ_m78868E7F86427A3D8EB3571A567DB40CB745D6AB (void);
-// 0x00000225 System.Boolean Pathfinding.VectorMath::IsColinearAlmostXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
+// 0x000001CD System.Boolean Pathfinding.VectorMath::IsColinearAlmostXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
 extern void VectorMath_IsColinearAlmostXZ_m879C9F0FA9A9C7E0B59C90547246F5B9E0D7D222 (void);
-// 0x00000226 System.Boolean Pathfinding.VectorMath::SegmentsIntersect(Pathfinding.Int2,Pathfinding.Int2,Pathfinding.Int2,Pathfinding.Int2)
+// 0x000001CE System.Boolean Pathfinding.VectorMath::SegmentsIntersect(Pathfinding.Int2,Pathfinding.Int2,Pathfinding.Int2,Pathfinding.Int2)
 extern void VectorMath_SegmentsIntersect_m97AA96C10F347E4D092E7871F40FAA614F20E6B4 (void);
-// 0x00000227 System.Boolean Pathfinding.VectorMath::SegmentsIntersectXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
+// 0x000001CF System.Boolean Pathfinding.VectorMath::SegmentsIntersectXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
 extern void VectorMath_SegmentsIntersectXZ_mB539A3D26170A303FEE3169A632A12110D2995F4 (void);
-// 0x00000228 System.Boolean Pathfinding.VectorMath::SegmentsIntersectXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001D0 System.Boolean Pathfinding.VectorMath::SegmentsIntersectXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_SegmentsIntersectXZ_m643C3156A7CB8CA66039076FF744F742D8875B1C (void);
-// 0x00000229 UnityEngine.Vector3 Pathfinding.VectorMath::LineDirIntersectionPointXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001D1 UnityEngine.Vector3 Pathfinding.VectorMath::LineDirIntersectionPointXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_LineDirIntersectionPointXZ_mEDFB88A4864FE16DCCDDEECD67DC0ECBAC082B47 (void);
-// 0x0000022A UnityEngine.Vector3 Pathfinding.VectorMath::LineDirIntersectionPointXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean&)
+// 0x000001D2 UnityEngine.Vector3 Pathfinding.VectorMath::LineDirIntersectionPointXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean&)
 extern void VectorMath_LineDirIntersectionPointXZ_m1DD4BEDCE7E49269ED40E2BC247B51D596B6915D (void);
-// 0x0000022B System.Boolean Pathfinding.VectorMath::RaySegmentIntersectXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
+// 0x000001D3 System.Boolean Pathfinding.VectorMath::RaySegmentIntersectXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
 extern void VectorMath_RaySegmentIntersectXZ_m7CBAFEAEAB263C273E4B1D74860E6732C56DE7A7 (void);
-// 0x0000022C System.Boolean Pathfinding.VectorMath::LineIntersectionFactorXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3,System.Single&,System.Single&)
+// 0x000001D4 System.Boolean Pathfinding.VectorMath::LineIntersectionFactorXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3,System.Single&,System.Single&)
 extern void VectorMath_LineIntersectionFactorXZ_m825611EAAAD855EDFABDB56ED72EC8D7A85E58B0 (void);
-// 0x0000022D System.Boolean Pathfinding.VectorMath::LineIntersectionFactorXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single&,System.Single&)
+// 0x000001D5 System.Boolean Pathfinding.VectorMath::LineIntersectionFactorXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single&,System.Single&)
 extern void VectorMath_LineIntersectionFactorXZ_mA5CE1BBD9276DC36453CE9099A41FDEC61421835 (void);
-// 0x0000022E System.Single Pathfinding.VectorMath::LineRayIntersectionFactorXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
+// 0x000001D6 System.Single Pathfinding.VectorMath::LineRayIntersectionFactorXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
 extern void VectorMath_LineRayIntersectionFactorXZ_mAA98EC91E0C1D30589FEA27929B8885759B33615 (void);
-// 0x0000022F System.Single Pathfinding.VectorMath::LineIntersectionFactorXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001D7 System.Single Pathfinding.VectorMath::LineIntersectionFactorXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_LineIntersectionFactorXZ_m31FBF501683945547B96D6B7E1C0014636E51937 (void);
-// 0x00000230 UnityEngine.Vector3 Pathfinding.VectorMath::LineIntersectionPointXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001D8 UnityEngine.Vector3 Pathfinding.VectorMath::LineIntersectionPointXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_LineIntersectionPointXZ_m1D6606FE5F03E3CDD034CDB56D93CA2B3D7BF7E3 (void);
-// 0x00000231 UnityEngine.Vector3 Pathfinding.VectorMath::LineIntersectionPointXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean&)
+// 0x000001D9 UnityEngine.Vector3 Pathfinding.VectorMath::LineIntersectionPointXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean&)
 extern void VectorMath_LineIntersectionPointXZ_m161B5E005C00D2E9DE9F269B9C45AB6AB6FA4733 (void);
-// 0x00000232 UnityEngine.Vector2 Pathfinding.VectorMath::LineIntersectionPoint(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2)
+// 0x000001DA UnityEngine.Vector2 Pathfinding.VectorMath::LineIntersectionPoint(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2)
 extern void VectorMath_LineIntersectionPoint_m9F6849F2310533A2F04DFFC014639C025EBDE5BC (void);
-// 0x00000233 UnityEngine.Vector2 Pathfinding.VectorMath::LineIntersectionPoint(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,System.Boolean&)
+// 0x000001DB UnityEngine.Vector2 Pathfinding.VectorMath::LineIntersectionPoint(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,System.Boolean&)
 extern void VectorMath_LineIntersectionPoint_mFA298C8580B508BEEFF8930D20A9B27DB8236F25 (void);
-// 0x00000234 UnityEngine.Vector3 Pathfinding.VectorMath::SegmentIntersectionPointXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean&)
+// 0x000001DC UnityEngine.Vector3 Pathfinding.VectorMath::SegmentIntersectionPointXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean&)
 extern void VectorMath_SegmentIntersectionPointXZ_m6FEE0AFF4560DB0F13D45DA3DC2FE01609E1CAE3 (void);
-// 0x00000235 System.Boolean Pathfinding.VectorMath::SegmentIntersectsBounds(UnityEngine.Bounds,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001DD System.Boolean Pathfinding.VectorMath::SegmentIntersectsBounds(UnityEngine.Bounds,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void VectorMath_SegmentIntersectsBounds_mECD496C441A77A84324F5D0D8D5FB7C80E29F6F6 (void);
-// 0x00000236 System.Single Pathfinding.VectorMath::LineCircleIntersectionFactor(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+// 0x000001DE System.Single Pathfinding.VectorMath::LineCircleIntersectionFactor(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
 extern void VectorMath_LineCircleIntersectionFactor_m619ECDA5D703F58AC080E27690692F9D9F6FDFEF (void);
-// 0x00000237 System.Boolean Pathfinding.VectorMath::ReversesFaceOrientations(UnityEngine.Matrix4x4)
+// 0x000001DF System.Boolean Pathfinding.VectorMath::ReversesFaceOrientations(UnityEngine.Matrix4x4)
 extern void VectorMath_ReversesFaceOrientations_m7B0E6A9181E509FCD43A8024CB00A2D08D9A02E2 (void);
-// 0x00000238 System.Boolean Pathfinding.VectorMath::ReversesFaceOrientationsXZ(UnityEngine.Matrix4x4)
+// 0x000001E0 System.Boolean Pathfinding.VectorMath::ReversesFaceOrientationsXZ(UnityEngine.Matrix4x4)
 extern void VectorMath_ReversesFaceOrientationsXZ_mF6EE808861EF029BA38A0F980264616636697F13 (void);
-// 0x00000239 UnityEngine.Vector3 Pathfinding.VectorMath::Normalize(UnityEngine.Vector3,System.Single&)
+// 0x000001E1 UnityEngine.Vector3 Pathfinding.VectorMath::Normalize(UnityEngine.Vector3,System.Single&)
 extern void VectorMath_Normalize_mF95952FDEBBAA0B887816CFCB3DF0B10AAE1D1E1 (void);
-// 0x0000023A UnityEngine.Vector2 Pathfinding.VectorMath::Normalize(UnityEngine.Vector2,System.Single&)
+// 0x000001E2 UnityEngine.Vector2 Pathfinding.VectorMath::Normalize(UnityEngine.Vector2,System.Single&)
 extern void VectorMath_Normalize_m743922F227D6A58AEE2C3634B6783EFB558875AA (void);
-// 0x0000023B UnityEngine.Vector3 Pathfinding.VectorMath::ClampMagnitudeXZ(UnityEngine.Vector3,System.Single)
+// 0x000001E3 UnityEngine.Vector3 Pathfinding.VectorMath::ClampMagnitudeXZ(UnityEngine.Vector3,System.Single)
 extern void VectorMath_ClampMagnitudeXZ_mA9A1DF174EE3018A561BA83D7BDC4C2EADCAE60A (void);
-// 0x0000023C System.Single Pathfinding.VectorMath::MagnitudeXZ(UnityEngine.Vector3)
+// 0x000001E4 System.Single Pathfinding.VectorMath::MagnitudeXZ(UnityEngine.Vector3)
 extern void VectorMath_MagnitudeXZ_mE5EE4F942BEA61989C4B647953817BC114C75F50 (void);
-// 0x0000023D System.Single Pathfinding.AstarMath::MapTo(System.Single,System.Single,System.Single,System.Single,System.Single)
+// 0x000001E5 System.Single Pathfinding.AstarMath::MapTo(System.Single,System.Single,System.Single,System.Single,System.Single)
 extern void AstarMath_MapTo_m2D40E381C353D7FD1C7B2FFE1EDD3D5369138191 (void);
-// 0x0000023E System.String Pathfinding.AstarMath::FormatBytesBinary(System.Int32)
+// 0x000001E6 System.String Pathfinding.AstarMath::FormatBytesBinary(System.Int32)
 extern void AstarMath_FormatBytesBinary_m96A017D5FDF64C3D3E43D499019B2C13AE13262E (void);
-// 0x0000023F System.Int32 Pathfinding.AstarMath::Bit(System.Int32,System.Int32)
+// 0x000001E7 System.Int32 Pathfinding.AstarMath::Bit(System.Int32,System.Int32)
 extern void AstarMath_Bit_mE6FC716DED37AAEB5EB8EDFDAC87619CE7AACAF6 (void);
-// 0x00000240 UnityEngine.Color Pathfinding.AstarMath::IntToColor(System.Int32,System.Single)
+// 0x000001E8 UnityEngine.Color Pathfinding.AstarMath::IntToColor(System.Int32,System.Single)
 extern void AstarMath_IntToColor_m18FEEDABB70B78676E696C86EA4A89B84A7ABB2E (void);
-// 0x00000241 UnityEngine.Color Pathfinding.AstarMath::HSVToRGB(System.Single,System.Single,System.Single)
+// 0x000001E9 UnityEngine.Color Pathfinding.AstarMath::HSVToRGB(System.Single,System.Single,System.Single)
 extern void AstarMath_HSVToRGB_mEA5D04BA78D8AAFB1D015AF313A8ADD3B14E99EF (void);
-// 0x00000242 System.Boolean Pathfinding.Polygon::ContainsPointXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001EA System.Boolean Pathfinding.Polygon::ContainsPointXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void Polygon_ContainsPointXZ_mACF7A18D73DF0A8769B94914AF1A45A0F9609B8A (void);
-// 0x00000243 System.Boolean Pathfinding.Polygon::ContainsPointXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
+// 0x000001EB System.Boolean Pathfinding.Polygon::ContainsPointXZ(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
 extern void Polygon_ContainsPointXZ_m565E4C4EEA44C0BCB823F6F688DCB54C55E3635C (void);
-// 0x00000244 System.Boolean Pathfinding.Polygon::ContainsPoint(Pathfinding.Int2,Pathfinding.Int2,Pathfinding.Int2,Pathfinding.Int2)
+// 0x000001EC System.Boolean Pathfinding.Polygon::ContainsPoint(Pathfinding.Int2,Pathfinding.Int2,Pathfinding.Int2,Pathfinding.Int2)
 extern void Polygon_ContainsPoint_mAA2ADC01725BD025A8DDEC9EE789DBA091AEFBF1 (void);
-// 0x00000245 System.Boolean Pathfinding.Polygon::ContainsPoint(UnityEngine.Vector2[],UnityEngine.Vector2)
+// 0x000001ED System.Boolean Pathfinding.Polygon::ContainsPoint(UnityEngine.Vector2[],UnityEngine.Vector2)
 extern void Polygon_ContainsPoint_m95323AD1292A2065FA735CE4DDDC2CA8E02D0767 (void);
-// 0x00000246 System.Boolean Pathfinding.Polygon::ContainsPointXZ(UnityEngine.Vector3[],UnityEngine.Vector3)
+// 0x000001EE System.Boolean Pathfinding.Polygon::ContainsPointXZ(UnityEngine.Vector3[],UnityEngine.Vector3)
 extern void Polygon_ContainsPointXZ_mB92CDD66D095A5B67545B629D2EE698FD8A3B664 (void);
-// 0x00000247 System.Int32 Pathfinding.Polygon::SampleYCoordinateInTriangle(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
+// 0x000001EF System.Int32 Pathfinding.Polygon::SampleYCoordinateInTriangle(Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3,Pathfinding.Int3)
 extern void Polygon_SampleYCoordinateInTriangle_mAF4EB194626C5A653F61A1BD34B1E3186141122B (void);
-// 0x00000248 UnityEngine.Vector3[] Pathfinding.Polygon::ConvexHullXZ(UnityEngine.Vector3[])
+// 0x000001F0 UnityEngine.Vector3[] Pathfinding.Polygon::ConvexHullXZ(UnityEngine.Vector3[])
 extern void Polygon_ConvexHullXZ_m6B3CDDB1783283A100E1769E79DFDA6C49901E88 (void);
-// 0x00000249 UnityEngine.Vector2 Pathfinding.Polygon::ClosestPointOnTriangle(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2)
+// 0x000001F1 UnityEngine.Vector2 Pathfinding.Polygon::ClosestPointOnTriangle(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2)
 extern void Polygon_ClosestPointOnTriangle_m698E3ED6AE962226999D8FEB042E28864DBAD138 (void);
-// 0x0000024A UnityEngine.Vector3 Pathfinding.Polygon::ClosestPointOnTriangleXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001F2 UnityEngine.Vector3 Pathfinding.Polygon::ClosestPointOnTriangleXZ(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void Polygon_ClosestPointOnTriangleXZ_mB09011499825EC3F8EAABCF31E15EFFB2D63A1EE (void);
-// 0x0000024B UnityEngine.Vector3 Pathfinding.Polygon::ClosestPointOnTriangle(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001F3 UnityEngine.Vector3 Pathfinding.Polygon::ClosestPointOnTriangle(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void Polygon_ClosestPointOnTriangle_mAE9BE26EAD9FC2A8C506624BB50758978D9F7FD1 (void);
-// 0x0000024C System.Void Pathfinding.Polygon::CompressMesh(System.Collections.Generic.List`1<Pathfinding.Int3>,System.Collections.Generic.List`1<System.Int32>,Pathfinding.Int3[]&,System.Int32[]&)
+// 0x000001F4 System.Void Pathfinding.Polygon::CompressMesh(System.Collections.Generic.List`1<Pathfinding.Int3>,System.Collections.Generic.List`1<System.Int32>,Pathfinding.Int3[]&,System.Int32[]&)
 extern void Polygon_CompressMesh_m25C643093267B2EE1981E7CE38384F0C30BB155B (void);
-// 0x0000024D System.Void Pathfinding.Polygon::TraceContours(System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>,System.Collections.Generic.HashSet`1<System.Int32>,System.Action`2<System.Collections.Generic.List`1<System.Int32>,System.Boolean>)
+// 0x000001F5 System.Void Pathfinding.Polygon::TraceContours(System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>,System.Collections.Generic.HashSet`1<System.Int32>,System.Action`2<System.Collections.Generic.List`1<System.Int32>,System.Boolean>)
 extern void Polygon_TraceContours_m38EAD365006A30E051EE78C3AB86EE54D013C9AA (void);
-// 0x0000024E System.Void Pathfinding.Polygon::Subdivide(System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Int32)
+// 0x000001F6 System.Void Pathfinding.Polygon::Subdivide(System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Int32)
 extern void Polygon_Subdivide_mA88024240A3BA24B2E52DBB096CDE8A90150EBF0 (void);
-// 0x0000024F System.Void Pathfinding.Polygon::.cctor()
+// 0x000001F7 System.Void Pathfinding.Polygon::.cctor()
 extern void Polygon__cctor_mD7D7335EE851BF8160E980E4AE552D9E34509CCE (void);
-// 0x00000250 System.Void Pathfinding.GraphUpdateScene::Start()
+// 0x000001F8 System.Void Pathfinding.GraphUpdateScene::Start()
 extern void GraphUpdateScene_Start_m26FBBCC60EE2307A0F65A7D42E08C6D96803CD9F (void);
-// 0x00000251 System.Void Pathfinding.GraphUpdateScene::OnPostScan()
+// 0x000001F9 System.Void Pathfinding.GraphUpdateScene::OnPostScan()
 extern void GraphUpdateScene_OnPostScan_m5765F29C7A5EBA9A08EABB8886A53BEF454FD505 (void);
-// 0x00000252 System.Void Pathfinding.GraphUpdateScene::InvertSettings()
+// 0x000001FA System.Void Pathfinding.GraphUpdateScene::InvertSettings()
 extern void GraphUpdateScene_InvertSettings_m77A3CFD226FA71DE4218298FD543CB086E452CDC (void);
-// 0x00000253 System.Void Pathfinding.GraphUpdateScene::RecalcConvex()
+// 0x000001FB System.Void Pathfinding.GraphUpdateScene::RecalcConvex()
 extern void GraphUpdateScene_RecalcConvex_mDC02AADBA56CD256F5BDD876A32760FCA27053C4 (void);
-// 0x00000254 System.Void Pathfinding.GraphUpdateScene::ToggleUseWorldSpace()
+// 0x000001FC System.Void Pathfinding.GraphUpdateScene::ToggleUseWorldSpace()
 extern void GraphUpdateScene_ToggleUseWorldSpace_m52E1C499D8BCA81497075D679A4E6023BA297531 (void);
-// 0x00000255 System.Void Pathfinding.GraphUpdateScene::LockToY()
+// 0x000001FD System.Void Pathfinding.GraphUpdateScene::LockToY()
 extern void GraphUpdateScene_LockToY_m2021ADBC016586D11E80894C8E9D823F9846021E (void);
-// 0x00000256 UnityEngine.Bounds Pathfinding.GraphUpdateScene::GetBounds()
+// 0x000001FE UnityEngine.Bounds Pathfinding.GraphUpdateScene::GetBounds()
 extern void GraphUpdateScene_GetBounds_mE23D1E9FC929EE4CA136A90538F122B78600358F (void);
-// 0x00000257 System.Void Pathfinding.GraphUpdateScene::Apply()
+// 0x000001FF System.Void Pathfinding.GraphUpdateScene::Apply()
 extern void GraphUpdateScene_Apply_m3266628E6A3E6DEB1978D894523DC8E4FF0F9FF0 (void);
-// 0x00000258 System.Void Pathfinding.GraphUpdateScene::OnDrawGizmos()
+// 0x00000200 System.Void Pathfinding.GraphUpdateScene::OnDrawGizmos()
 extern void GraphUpdateScene_OnDrawGizmos_mF4D755B4BC8FD03449481DD751C8A0E7AC9147C6 (void);
-// 0x00000259 System.Void Pathfinding.GraphUpdateScene::OnDrawGizmosSelected()
+// 0x00000201 System.Void Pathfinding.GraphUpdateScene::OnDrawGizmosSelected()
 extern void GraphUpdateScene_OnDrawGizmosSelected_m99607D5AB14D0664D70410764E3B9AF00C2A2B14 (void);
-// 0x0000025A System.Void Pathfinding.GraphUpdateScene::OnDrawGizmos(System.Boolean)
+// 0x00000202 System.Void Pathfinding.GraphUpdateScene::OnDrawGizmos(System.Boolean)
 extern void GraphUpdateScene_OnDrawGizmos_mF515889B391F5493808EE7EBD74C9BEC6EB49BBC (void);
-// 0x0000025B System.Void Pathfinding.GraphUpdateScene::DisableLegacyMode()
+// 0x00000203 System.Void Pathfinding.GraphUpdateScene::DisableLegacyMode()
 extern void GraphUpdateScene_DisableLegacyMode_m7AEC3C4ADB6B151A1A0ACFAD4F7AA5BCDB10A326 (void);
-// 0x0000025C System.Void Pathfinding.GraphUpdateScene::Awake()
+// 0x00000204 System.Void Pathfinding.GraphUpdateScene::Awake()
 extern void GraphUpdateScene_Awake_mF1F4A642B3DA1790D21D44C5608E075635C2788C (void);
-// 0x0000025D System.Void Pathfinding.GraphUpdateScene::.ctor()
+// 0x00000205 System.Void Pathfinding.GraphUpdateScene::.ctor()
 extern void GraphUpdateScene__ctor_m96F9F6FE8AC07BA122E75425C0B7F8169FC44FC4 (void);
-// 0x0000025E UnityEngine.Vector3[] Pathfinding.GraphUpdateShape::get_points()
+// 0x00000206 UnityEngine.Vector3[] Pathfinding.GraphUpdateShape::get_points()
 extern void GraphUpdateShape_get_points_m8F39D15CC4ED26C4C3D4E02563020EC34D7DF521 (void);
-// 0x0000025F System.Void Pathfinding.GraphUpdateShape::set_points(UnityEngine.Vector3[])
+// 0x00000207 System.Void Pathfinding.GraphUpdateShape::set_points(UnityEngine.Vector3[])
 extern void GraphUpdateShape_set_points_mE39604CF1053F8267EEDC0772AA012B8295934AE (void);
-// 0x00000260 System.Boolean Pathfinding.GraphUpdateShape::get_convex()
+// 0x00000208 System.Boolean Pathfinding.GraphUpdateShape::get_convex()
 extern void GraphUpdateShape_get_convex_m72F202626C2F759FB4CE934BDEADDB948192199D (void);
-// 0x00000261 System.Void Pathfinding.GraphUpdateShape::set_convex(System.Boolean)
+// 0x00000209 System.Void Pathfinding.GraphUpdateShape::set_convex(System.Boolean)
 extern void GraphUpdateShape_set_convex_mDFB79D44EC6BBAFFF8846BF5557E30B615B57ADC (void);
-// 0x00000262 System.Void Pathfinding.GraphUpdateShape::.ctor()
+// 0x0000020A System.Void Pathfinding.GraphUpdateShape::.ctor()
 extern void GraphUpdateShape__ctor_mCC5834850B20234F8371C6C93B7921EF11DEA96E (void);
-// 0x00000263 System.Void Pathfinding.GraphUpdateShape::.ctor(UnityEngine.Vector3[],System.Boolean,UnityEngine.Matrix4x4,System.Single)
+// 0x0000020B System.Void Pathfinding.GraphUpdateShape::.ctor(UnityEngine.Vector3[],System.Boolean,UnityEngine.Matrix4x4,System.Single)
 extern void GraphUpdateShape__ctor_mEA71020D39D50E46CC494F0644E4125F2FAAB711 (void);
-// 0x00000264 System.Void Pathfinding.GraphUpdateShape::CalculateConvexHull()
+// 0x0000020C System.Void Pathfinding.GraphUpdateShape::CalculateConvexHull()
 extern void GraphUpdateShape_CalculateConvexHull_m02C0CBABF4C5A71699886EB1856A12821B5BBBED (void);
-// 0x00000265 UnityEngine.Bounds Pathfinding.GraphUpdateShape::GetBounds()
+// 0x0000020D UnityEngine.Bounds Pathfinding.GraphUpdateShape::GetBounds()
 extern void GraphUpdateShape_GetBounds_m86481EBB14746EE1596FE7B72011EDDD12747167 (void);
-// 0x00000266 UnityEngine.Bounds Pathfinding.GraphUpdateShape::GetBounds(UnityEngine.Vector3[],UnityEngine.Matrix4x4,System.Single)
+// 0x0000020E UnityEngine.Bounds Pathfinding.GraphUpdateShape::GetBounds(UnityEngine.Vector3[],UnityEngine.Matrix4x4,System.Single)
 extern void GraphUpdateShape_GetBounds_mCDE03059A5507708B4E8860AFEB5A9F3049F8719 (void);
-// 0x00000267 UnityEngine.Bounds Pathfinding.GraphUpdateShape::GetBounds(UnityEngine.Vector3[],UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+// 0x0000020F UnityEngine.Bounds Pathfinding.GraphUpdateShape::GetBounds(UnityEngine.Vector3[],UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
 extern void GraphUpdateShape_GetBounds_mEF6BF703BB2818D6DB11970BF702126CF7FB4C98 (void);
-// 0x00000268 System.Boolean Pathfinding.GraphUpdateShape::Contains(Pathfinding.GraphNode)
+// 0x00000210 System.Boolean Pathfinding.GraphUpdateShape::Contains(Pathfinding.GraphNode)
 extern void GraphUpdateShape_Contains_mF654DEAD1D4BA598E384ED1CF3AFA13202890BBD (void);
-// 0x00000269 System.Boolean Pathfinding.GraphUpdateShape::Contains(UnityEngine.Vector3)
+// 0x00000211 System.Boolean Pathfinding.GraphUpdateShape::Contains(UnityEngine.Vector3)
 extern void GraphUpdateShape_Contains_m3320DAC00E765940CF1CE0F1C4A3EA80000FD46D (void);
-// 0x0000026A UnityEngine.Transform Pathfinding.AnimationLink::SearchRec(UnityEngine.Transform,System.String)
+// 0x00000212 UnityEngine.Transform Pathfinding.AnimationLink::SearchRec(UnityEngine.Transform,System.String)
 extern void AnimationLink_SearchRec_m1169E45D50130DBB657F6493FF047E0A3C37313F (void);
-// 0x0000026B System.Void Pathfinding.AnimationLink::CalculateOffsets(System.Collections.Generic.List`1<UnityEngine.Vector3>,UnityEngine.Vector3&)
+// 0x00000213 System.Void Pathfinding.AnimationLink::CalculateOffsets(System.Collections.Generic.List`1<UnityEngine.Vector3>,UnityEngine.Vector3&)
 extern void AnimationLink_CalculateOffsets_mF29AB6ED7FC97D80B8F9D0AB29F710F53AF4189C (void);
-// 0x0000026C System.Void Pathfinding.AnimationLink::OnDrawGizmosSelected()
+// 0x00000214 System.Void Pathfinding.AnimationLink::OnDrawGizmosSelected()
 extern void AnimationLink_OnDrawGizmosSelected_m1C313BCA631BFD87F361285336BC7EED58E25BBA (void);
-// 0x0000026D System.Void Pathfinding.AnimationLink::.ctor()
+// 0x00000215 System.Void Pathfinding.AnimationLink::.ctor()
 extern void AnimationLink__ctor_m1919D3DA382F3282A081D244C52329FC93BDF52F (void);
-// 0x0000026E System.String Pathfinding.AnimationLink/LinkClip::get_name()
+// 0x00000216 System.String Pathfinding.AnimationLink/LinkClip::get_name()
 extern void LinkClip_get_name_mF32E2A451E2D8F30BF36C6F7FB2E9C5F0E5769F5 (void);
-// 0x0000026F System.Void Pathfinding.AnimationLink/LinkClip::.ctor()
+// 0x00000217 System.Void Pathfinding.AnimationLink/LinkClip::.ctor()
 extern void LinkClip__ctor_m113BB045E72170012330D6771BE217B59A59958A (void);
-// 0x00000270 System.Void Pathfinding.AstarDebugger::Start()
+// 0x00000218 System.Void Pathfinding.AstarDebugger::Start()
 extern void AstarDebugger_Start_mA2B2A15D636E0D105178D9CE69AB7DC2207992A6 (void);
-// 0x00000271 System.Void Pathfinding.AstarDebugger::LateUpdate()
+// 0x00000219 System.Void Pathfinding.AstarDebugger::LateUpdate()
 extern void AstarDebugger_LateUpdate_m0597855E36D882BBEECB8DE195BE99CE3F21DE72 (void);
-// 0x00000272 System.Void Pathfinding.AstarDebugger::DrawGraphLine(System.Int32,UnityEngine.Matrix4x4,System.Single,System.Single,System.Single,System.Single,UnityEngine.Color)
+// 0x0000021A System.Void Pathfinding.AstarDebugger::DrawGraphLine(System.Int32,UnityEngine.Matrix4x4,System.Single,System.Single,System.Single,System.Single,UnityEngine.Color)
 extern void AstarDebugger_DrawGraphLine_mB974A3396CB038147951748C4AA8A8DA1F1E0B78 (void);
-// 0x00000273 System.Void Pathfinding.AstarDebugger::OnGUI()
+// 0x0000021B System.Void Pathfinding.AstarDebugger::OnGUI()
 extern void AstarDebugger_OnGUI_m09D85DF6A87336FBD35F2AA5570E83F3D2150F13 (void);
-// 0x00000274 System.Void Pathfinding.AstarDebugger::.ctor()
+// 0x0000021C System.Void Pathfinding.AstarDebugger::.ctor()
 extern void AstarDebugger__ctor_m1464CD16179160AD3054425A02315BD0D30948DC (void);
-// 0x00000275 System.Void Pathfinding.AstarDebugger/PathTypeDebug::.ctor(System.String,System.Func`1<System.Int32>,System.Func`1<System.Int32>)
+// 0x0000021D System.Void Pathfinding.AstarDebugger/PathTypeDebug::.ctor(System.String,System.Func`1<System.Int32>,System.Func`1<System.Int32>)
 extern void PathTypeDebug__ctor_m58D411C5BAB68015705CCBEA56C0A72AF6A5A80C (void);
-// 0x00000276 System.Void Pathfinding.AstarDebugger/PathTypeDebug::Print(System.Text.StringBuilder)
+// 0x0000021E System.Void Pathfinding.AstarDebugger/PathTypeDebug::Print(System.Text.StringBuilder)
 extern void PathTypeDebug_Print_mBAFF7D3A48FC5CD467D1EF4331A051993053FC36 (void);
-// 0x00000277 System.Void Pathfinding.AstarDebugger/<>c::.cctor()
+// 0x0000021F System.Void Pathfinding.AstarDebugger/<>c::.cctor()
 extern void U3CU3Ec__cctor_mDD93DD660931901D98D29F26DA4833E9A19E291F (void);
-// 0x00000278 System.Void Pathfinding.AstarDebugger/<>c::.ctor()
+// 0x00000220 System.Void Pathfinding.AstarDebugger/<>c::.ctor()
 extern void U3CU3Ec__ctor_mA38456067384CCF433ED621A7DED8A45D04E8AB5 (void);
-// 0x00000279 System.Int32 Pathfinding.AstarDebugger/<>c::<.ctor>b__42_0()
+// 0x00000221 System.Int32 Pathfinding.AstarDebugger/<>c::<.ctor>b__42_0()
 extern void U3CU3Ec_U3C_ctorU3Eb__42_0_mC9B460EC24FA7D4F738FF9CB7FFAFD7B8C9B3B6A (void);
-// 0x0000027A System.Int32 Pathfinding.AstarDebugger/<>c::<.ctor>b__42_1()
+// 0x00000222 System.Int32 Pathfinding.AstarDebugger/<>c::<.ctor>b__42_1()
 extern void U3CU3Ec_U3C_ctorU3Eb__42_1_mB1FDE475BCECD70AECBBF649CDA1C4E022DE998C (void);
-// 0x0000027B System.Boolean Pathfinding.AutoRepathPolicy::ShouldRecalculatePath(Pathfinding.IAstarAI)
+// 0x00000223 System.Boolean Pathfinding.AutoRepathPolicy::ShouldRecalculatePath(Pathfinding.IAstarAI)
 extern void AutoRepathPolicy_ShouldRecalculatePath_m023145CEA430C09F6A2A444FCA7003D93833C94B (void);
-// 0x0000027C System.Void Pathfinding.AutoRepathPolicy::Reset()
+// 0x00000224 System.Void Pathfinding.AutoRepathPolicy::Reset()
 extern void AutoRepathPolicy_Reset_m63661F10AB942DB4D14A473906ED8AB43C47E651 (void);
-// 0x0000027D System.Void Pathfinding.AutoRepathPolicy::DidRecalculatePath(UnityEngine.Vector3)
+// 0x00000225 System.Void Pathfinding.AutoRepathPolicy::DidRecalculatePath(UnityEngine.Vector3)
 extern void AutoRepathPolicy_DidRecalculatePath_m8B3294FCB046E90EC5B67F83EB27D2C87158ADE3 (void);
-// 0x0000027E System.Void Pathfinding.AutoRepathPolicy::DrawGizmos(Pathfinding.IAstarAI)
+// 0x00000226 System.Void Pathfinding.AutoRepathPolicy::DrawGizmos(Pathfinding.IAstarAI)
 extern void AutoRepathPolicy_DrawGizmos_m7B4D0A96BA85D1D2466C32E527678A9BC506993F (void);
-// 0x0000027F System.Void Pathfinding.AutoRepathPolicy::.ctor()
+// 0x00000227 System.Void Pathfinding.AutoRepathPolicy::.ctor()
 extern void AutoRepathPolicy__ctor_m59D53395864DCBECF3604430EA54BAB754EABE6A (void);
-// 0x00000280 System.Boolean Pathfinding.BinaryHeap::get_isEmpty()
+// 0x00000228 System.Boolean Pathfinding.BinaryHeap::get_isEmpty()
 extern void BinaryHeap_get_isEmpty_mE07D5F71AE028DF9CE6814D0F4CF2E65D039E56B (void);
-// 0x00000281 System.Int32 Pathfinding.BinaryHeap::RoundUpToNextMultipleMod1(System.Int32)
+// 0x00000229 System.Int32 Pathfinding.BinaryHeap::RoundUpToNextMultipleMod1(System.Int32)
 extern void BinaryHeap_RoundUpToNextMultipleMod1_m5CF0931E392160CA7B36CB6C88CE8EF3E823B435 (void);
-// 0x00000282 System.Void Pathfinding.BinaryHeap::.ctor(System.Int32)
+// 0x0000022A System.Void Pathfinding.BinaryHeap::.ctor(System.Int32)
 extern void BinaryHeap__ctor_m691C935A39E8D01859A51EA2C00EB2E1B5B7A9F7 (void);
-// 0x00000283 System.Void Pathfinding.BinaryHeap::Clear()
+// 0x0000022B System.Void Pathfinding.BinaryHeap::Clear()
 extern void BinaryHeap_Clear_m809DA2C5784270DE1CE83123B867C1C427C3345C (void);
-// 0x00000284 Pathfinding.PathNode Pathfinding.BinaryHeap::GetNode(System.Int32)
+// 0x0000022C Pathfinding.PathNode Pathfinding.BinaryHeap::GetNode(System.Int32)
 extern void BinaryHeap_GetNode_m684EE6AAB85AB18D7453B2FE87EDBAC19B00B480 (void);
-// 0x00000285 System.Void Pathfinding.BinaryHeap::SetF(System.Int32,System.UInt32)
+// 0x0000022D System.Void Pathfinding.BinaryHeap::SetF(System.Int32,System.UInt32)
 extern void BinaryHeap_SetF_mABBDABD9FC9310FC6CD5DC4B8EAA655E95C583E4 (void);
-// 0x00000286 System.Void Pathfinding.BinaryHeap::Expand()
+// 0x0000022E System.Void Pathfinding.BinaryHeap::Expand()
 extern void BinaryHeap_Expand_m9C08E4D61C478268FC84B0632A1D47FBDBF748F0 (void);
-// 0x00000287 System.Void Pathfinding.BinaryHeap::Add(Pathfinding.PathNode)
+// 0x0000022F System.Void Pathfinding.BinaryHeap::Add(Pathfinding.PathNode)
 extern void BinaryHeap_Add_mB5BC32B95CB5A82A97C54966C7B3EC5D8BD900C4 (void);
-// 0x00000288 System.Void Pathfinding.BinaryHeap::DecreaseKey(Pathfinding.BinaryHeap/Tuple,System.UInt16)
+// 0x00000230 System.Void Pathfinding.BinaryHeap::DecreaseKey(Pathfinding.BinaryHeap/Tuple,System.UInt16)
 extern void BinaryHeap_DecreaseKey_mE0EEF778BCC4DA17515A34366DE2B4A23FAB49E0 (void);
-// 0x00000289 Pathfinding.PathNode Pathfinding.BinaryHeap::Remove()
+// 0x00000231 Pathfinding.PathNode Pathfinding.BinaryHeap::Remove()
 extern void BinaryHeap_Remove_m92D5860F8FB93758678CE4498D844906F3025A7B (void);
-// 0x0000028A System.Void Pathfinding.BinaryHeap::Validate()
+// 0x00000232 System.Void Pathfinding.BinaryHeap::Validate()
 extern void BinaryHeap_Validate_m43EC70EF9136B6DBA22B20548BBE08CF7AF1408A (void);
-// 0x0000028B System.Void Pathfinding.BinaryHeap::Rebuild()
+// 0x00000233 System.Void Pathfinding.BinaryHeap::Rebuild()
 extern void BinaryHeap_Rebuild_m17010999526D89EDEA7D2FDA67091B5FA63F4AA1 (void);
-// 0x0000028C System.Void Pathfinding.BinaryHeap/Tuple::.ctor(System.UInt32,Pathfinding.PathNode)
+// 0x00000234 System.Void Pathfinding.BinaryHeap/Tuple::.ctor(System.UInt32,Pathfinding.PathNode)
 extern void Tuple__ctor_mBBBCDA7F0E29DF7B456055665DB86F69D352A202 (void);
-// 0x0000028D System.Void Pathfinding.GraphEditorBase::.ctor()
+// 0x00000235 System.Void Pathfinding.GraphEditorBase::.ctor()
 extern void GraphEditorBase__ctor_mCCD2DB58DE05BD9C20EBBB4E6D40A4E94A37DB80 (void);
-// 0x0000028E System.Collections.Generic.List`1<T> Pathfinding.GraphModifier::GetModifiersOfType()
-// 0x0000028F System.Void Pathfinding.GraphModifier::FindAllModifiers()
+// 0x00000236 System.Collections.Generic.List`1<T> Pathfinding.GraphModifier::GetModifiersOfType()
+// 0x00000237 System.Void Pathfinding.GraphModifier::FindAllModifiers()
 extern void GraphModifier_FindAllModifiers_m2469A5B6794F2D420A82901C55FA55F69331461E (void);
-// 0x00000290 System.Void Pathfinding.GraphModifier::TriggerEvent(Pathfinding.GraphModifier/EventType)
+// 0x00000238 System.Void Pathfinding.GraphModifier::TriggerEvent(Pathfinding.GraphModifier/EventType)
 extern void GraphModifier_TriggerEvent_mE3187A21AD5747B3B8A9DCF1360FA3B621C7414A (void);
-// 0x00000291 System.Void Pathfinding.GraphModifier::OnEnable()
+// 0x00000239 System.Void Pathfinding.GraphModifier::OnEnable()
 extern void GraphModifier_OnEnable_mBA11BC964FB2B02B985252D32EBC4C4D837BBC53 (void);
-// 0x00000292 System.Void Pathfinding.GraphModifier::OnDisable()
+// 0x0000023A System.Void Pathfinding.GraphModifier::OnDisable()
 extern void GraphModifier_OnDisable_m354E0DD523E10BEF424260CBFE34124A644EF2AD (void);
-// 0x00000293 System.Void Pathfinding.GraphModifier::Awake()
+// 0x0000023B System.Void Pathfinding.GraphModifier::Awake()
 extern void GraphModifier_Awake_mCD8812B6F33CD598741F3CF1FA20108697EB40E6 (void);
-// 0x00000294 System.Void Pathfinding.GraphModifier::ConfigureUniqueID()
+// 0x0000023C System.Void Pathfinding.GraphModifier::ConfigureUniqueID()
 extern void GraphModifier_ConfigureUniqueID_m2E1629276A033781ECE56C2799C6B60B4FC7C51B (void);
-// 0x00000295 System.Void Pathfinding.GraphModifier::AddToLinkedList()
+// 0x0000023D System.Void Pathfinding.GraphModifier::AddToLinkedList()
 extern void GraphModifier_AddToLinkedList_mD04D78DA690C957506BCA2BC3D5D0C79203197DD (void);
-// 0x00000296 System.Void Pathfinding.GraphModifier::RemoveFromLinkedList()
+// 0x0000023E System.Void Pathfinding.GraphModifier::RemoveFromLinkedList()
 extern void GraphModifier_RemoveFromLinkedList_mAB95691C5E73248BF681D5533946D52C6870814C (void);
-// 0x00000297 System.Void Pathfinding.GraphModifier::OnDestroy()
+// 0x0000023F System.Void Pathfinding.GraphModifier::OnDestroy()
 extern void GraphModifier_OnDestroy_mDFC417C9A079E708D63D182CB3EFAA4DC4D3C551 (void);
-// 0x00000298 System.Void Pathfinding.GraphModifier::OnPostScan()
+// 0x00000240 System.Void Pathfinding.GraphModifier::OnPostScan()
 extern void GraphModifier_OnPostScan_m97A239AEDC3367B5DBE345F9F7F13A4FE0110E77 (void);
-// 0x00000299 System.Void Pathfinding.GraphModifier::OnPreScan()
+// 0x00000241 System.Void Pathfinding.GraphModifier::OnPreScan()
 extern void GraphModifier_OnPreScan_m2B346D10EE4F69EAC19C71056811520B2E8EF962 (void);
-// 0x0000029A System.Void Pathfinding.GraphModifier::OnLatePostScan()
+// 0x00000242 System.Void Pathfinding.GraphModifier::OnLatePostScan()
 extern void GraphModifier_OnLatePostScan_mE0DF85307CC4FB7F32FA0A16141E9DD901B579BA (void);
-// 0x0000029B System.Void Pathfinding.GraphModifier::OnPostCacheLoad()
+// 0x00000243 System.Void Pathfinding.GraphModifier::OnPostCacheLoad()
 extern void GraphModifier_OnPostCacheLoad_m0111416ED00B47F17F11622DA4232B97B8E2A7A0 (void);
-// 0x0000029C System.Void Pathfinding.GraphModifier::OnGraphsPreUpdate()
+// 0x00000244 System.Void Pathfinding.GraphModifier::OnGraphsPreUpdate()
 extern void GraphModifier_OnGraphsPreUpdate_m7A2192FE281D68165FAABFBE7D9872536CF552C9 (void);
-// 0x0000029D System.Void Pathfinding.GraphModifier::OnGraphsPostUpdate()
+// 0x00000245 System.Void Pathfinding.GraphModifier::OnGraphsPostUpdate()
 extern void GraphModifier_OnGraphsPostUpdate_m17878E02A6D263F821AFE8889AE226FC15DF3D5E (void);
-// 0x0000029E System.Void Pathfinding.GraphModifier::Reset()
+// 0x00000246 System.Void Pathfinding.GraphModifier::Reset()
 extern void GraphModifier_Reset_mD7451CD3D3C093FDC788566F6ABD70F42B937297 (void);
-// 0x0000029F System.Void Pathfinding.GraphModifier::.ctor()
+// 0x00000247 System.Void Pathfinding.GraphModifier::.ctor()
 extern void GraphModifier__ctor_mF84B5438C95A77E22EEF5E7AA58714A5BA65DBDF (void);
-// 0x000002A0 System.Void Pathfinding.GraphModifier::.cctor()
+// 0x00000248 System.Void Pathfinding.GraphModifier::.cctor()
 extern void GraphModifier__cctor_mBE757AB46E536267A1F497283C30CD38229676D4 (void);
-// 0x000002A1 System.Void Pathfinding.GraphUpdateProcessor::add_OnGraphsUpdated(System.Action)
+// 0x00000249 System.Void Pathfinding.GraphUpdateProcessor::add_OnGraphsUpdated(System.Action)
 extern void GraphUpdateProcessor_add_OnGraphsUpdated_mC7C85F208091100F3B4869020FC66A42A5452D5D (void);
-// 0x000002A2 System.Void Pathfinding.GraphUpdateProcessor::remove_OnGraphsUpdated(System.Action)
+// 0x0000024A System.Void Pathfinding.GraphUpdateProcessor::remove_OnGraphsUpdated(System.Action)
 extern void GraphUpdateProcessor_remove_OnGraphsUpdated_mC064866B5855DD6D96ED3A3008F8A8745E37F7A7 (void);
-// 0x000002A3 System.Boolean Pathfinding.GraphUpdateProcessor::get_IsAnyGraphUpdateQueued()
+// 0x0000024B System.Boolean Pathfinding.GraphUpdateProcessor::get_IsAnyGraphUpdateQueued()
 extern void GraphUpdateProcessor_get_IsAnyGraphUpdateQueued_mC1D4270DA7AEBA74AA4BC297E19F934D0BE155B6 (void);
-// 0x000002A4 System.Boolean Pathfinding.GraphUpdateProcessor::get_IsAnyGraphUpdateInProgress()
+// 0x0000024C System.Boolean Pathfinding.GraphUpdateProcessor::get_IsAnyGraphUpdateInProgress()
 extern void GraphUpdateProcessor_get_IsAnyGraphUpdateInProgress_mBFABE0E7F9BD06FF313C0B9D64F214F2CA3178F0 (void);
-// 0x000002A5 System.Void Pathfinding.GraphUpdateProcessor::.ctor(AstarPath)
+// 0x0000024D System.Void Pathfinding.GraphUpdateProcessor::.ctor(AstarPath)
 extern void GraphUpdateProcessor__ctor_mD59AFD84471A13E40F0D3676E9B0029C8F20014E (void);
-// 0x000002A6 Pathfinding.AstarWorkItem Pathfinding.GraphUpdateProcessor::GetWorkItem()
+// 0x0000024E Pathfinding.AstarWorkItem Pathfinding.GraphUpdateProcessor::GetWorkItem()
 extern void GraphUpdateProcessor_GetWorkItem_mD93C160AFC12CCF4CCF677B1F2EF64981FFD6FCD (void);
-// 0x000002A7 System.Void Pathfinding.GraphUpdateProcessor::EnableMultithreading()
+// 0x0000024F System.Void Pathfinding.GraphUpdateProcessor::EnableMultithreading()
 extern void GraphUpdateProcessor_EnableMultithreading_mA1DE3A11D591F500D2A4B8198FB9BA8022E0E3D7 (void);
-// 0x000002A8 System.Void Pathfinding.GraphUpdateProcessor::DisableMultithreading()
+// 0x00000250 System.Void Pathfinding.GraphUpdateProcessor::DisableMultithreading()
 extern void GraphUpdateProcessor_DisableMultithreading_m8A912927C584665A162211924C096E08D18C0F67 (void);
-// 0x000002A9 System.Void Pathfinding.GraphUpdateProcessor::AddToQueue(Pathfinding.GraphUpdateObject)
+// 0x00000251 System.Void Pathfinding.GraphUpdateProcessor::AddToQueue(Pathfinding.GraphUpdateObject)
 extern void GraphUpdateProcessor_AddToQueue_m7F36B6074281BB990CF54BB8410605EA6DA2C50B (void);
-// 0x000002AA System.Void Pathfinding.GraphUpdateProcessor::QueueGraphUpdatesInternal()
+// 0x00000252 System.Void Pathfinding.GraphUpdateProcessor::QueueGraphUpdatesInternal()
 extern void GraphUpdateProcessor_QueueGraphUpdatesInternal_m36BC29B2C068F297A47AEE5D587837024FD7987D (void);
-// 0x000002AB System.Boolean Pathfinding.GraphUpdateProcessor::ProcessGraphUpdates(System.Boolean)
+// 0x00000253 System.Boolean Pathfinding.GraphUpdateProcessor::ProcessGraphUpdates(System.Boolean)
 extern void GraphUpdateProcessor_ProcessGraphUpdates_m911AE0FAA5FA95C13EF6838191A1C2FF99887C54 (void);
-// 0x000002AC System.Boolean Pathfinding.GraphUpdateProcessor::ProcessRegularUpdates(System.Boolean)
+// 0x00000254 System.Boolean Pathfinding.GraphUpdateProcessor::ProcessRegularUpdates(System.Boolean)
 extern void GraphUpdateProcessor_ProcessRegularUpdates_m064E295D0976D5E17F1270DD81070E88521F486C (void);
-// 0x000002AD System.Boolean Pathfinding.GraphUpdateProcessor::StartAsyncUpdatesIfQueued()
+// 0x00000255 System.Boolean Pathfinding.GraphUpdateProcessor::StartAsyncUpdatesIfQueued()
 extern void GraphUpdateProcessor_StartAsyncUpdatesIfQueued_m4A836BA79F4FC12D1FB74B2AB1FF2AC494DE0C6E (void);
-// 0x000002AE System.Void Pathfinding.GraphUpdateProcessor::ProcessPostUpdates()
+// 0x00000256 System.Void Pathfinding.GraphUpdateProcessor::ProcessPostUpdates()
 extern void GraphUpdateProcessor_ProcessPostUpdates_m0D357BF10425570E6D32105E4037E0B278A3E74A (void);
-// 0x000002AF System.Collections.Generic.List`1<UnityEngine.Vector3> Pathfinding.GraphUtilities::GetContours(Pathfinding.NavGraph)
+// 0x00000257 System.Collections.Generic.List`1<UnityEngine.Vector3> Pathfinding.GraphUtilities::GetContours(Pathfinding.NavGraph)
 extern void GraphUtilities_GetContours_m914E3D12B2EB75386D8B4883B21AEF03F2FBC4A8 (void);
-// 0x000002B0 System.Void Pathfinding.GraphUtilities::GetContours(Pathfinding.INavmesh,System.Action`2<System.Collections.Generic.List`1<Pathfinding.Int3>,System.Boolean>)
+// 0x00000258 System.Void Pathfinding.GraphUtilities::GetContours(Pathfinding.INavmesh,System.Action`2<System.Collections.Generic.List`1<Pathfinding.Int3>,System.Boolean>)
 extern void GraphUtilities_GetContours_m2F345B6C41555BC8307AD3C31FC043EC0C9E72D7 (void);
-// 0x000002B1 System.Void Pathfinding.GraphUtilities::GetContours(Pathfinding.GridGraph,System.Action`1<UnityEngine.Vector3[]>,System.Single,Pathfinding.GridNodeBase[])
+// 0x00000259 System.Void Pathfinding.GraphUtilities::GetContours(Pathfinding.GridGraph,System.Action`1<UnityEngine.Vector3[]>,System.Single,Pathfinding.GridNodeBase[])
 extern void GraphUtilities_GetContours_m73BDE3B24741DB36FD6B37E5AC89ED7AB56FEE12 (void);
-// 0x000002B2 System.Void Pathfinding.GraphUtilities/<>c__DisplayClass0_0::.ctor()
+// 0x0000025A System.Void Pathfinding.GraphUtilities/<>c__DisplayClass0_0::.ctor()
 extern void U3CU3Ec__DisplayClass0_0__ctor_mA660191E6F97BF06FDEE175263AA3F3586A83E53 (void);
-// 0x000002B3 System.Void Pathfinding.GraphUtilities/<>c__DisplayClass0_0::<GetContours>b__0(System.Collections.Generic.List`1<Pathfinding.Int3>,System.Boolean)
+// 0x0000025B System.Void Pathfinding.GraphUtilities/<>c__DisplayClass0_0::<GetContours>b__0(System.Collections.Generic.List`1<Pathfinding.Int3>,System.Boolean)
 extern void U3CU3Ec__DisplayClass0_0_U3CGetContoursU3Eb__0_m3205605DE80705A234BDFFDE193414DE129C0439 (void);
-// 0x000002B4 System.Void Pathfinding.GraphUtilities/<>c__DisplayClass0_0::<GetContours>b__1(UnityEngine.Vector3[])
+// 0x0000025C System.Void Pathfinding.GraphUtilities/<>c__DisplayClass0_0::<GetContours>b__1(UnityEngine.Vector3[])
 extern void U3CU3Ec__DisplayClass0_0_U3CGetContoursU3Eb__1_m062F9F8172DC3D6D46FB102FEB7D53862BC71B27 (void);
-// 0x000002B5 System.Void Pathfinding.GraphUtilities/<>c__DisplayClass1_0::.ctor()
+// 0x0000025D System.Void Pathfinding.GraphUtilities/<>c__DisplayClass1_0::.ctor()
 extern void U3CU3Ec__DisplayClass1_0__ctor_mCFEE0A91FB46D5B1530CA337D7AD5E4495086226 (void);
-// 0x000002B6 System.Void Pathfinding.GraphUtilities/<>c__DisplayClass1_0::<GetContours>b__0(Pathfinding.GraphNode)
+// 0x0000025E System.Void Pathfinding.GraphUtilities/<>c__DisplayClass1_0::<GetContours>b__0(Pathfinding.GraphNode)
 extern void U3CU3Ec__DisplayClass1_0_U3CGetContoursU3Eb__0_mF798D0794486B1D65CE32732E10F49E5AE2A6BF4 (void);
-// 0x000002B7 System.Void Pathfinding.GraphUtilities/<>c__DisplayClass1_0::<GetContours>b__1(System.Collections.Generic.List`1<System.Int32>,System.Boolean)
+// 0x0000025F System.Void Pathfinding.GraphUtilities/<>c__DisplayClass1_0::<GetContours>b__1(System.Collections.Generic.List`1<System.Int32>,System.Boolean)
 extern void U3CU3Ec__DisplayClass1_0_U3CGetContoursU3Eb__1_mA2AACCB8DB6751AD294007E75D44307BB0799845 (void);
-// 0x000002B8 System.Int32 Pathfinding.HierarchicalGraph::get_version()
+// 0x00000260 System.Int32 Pathfinding.HierarchicalGraph::get_version()
 extern void HierarchicalGraph_get_version_mDB9D8A6E42F4F5A26E148AD960FBACF7429FB0AA (void);
-// 0x000002B9 System.Void Pathfinding.HierarchicalGraph::set_version(System.Int32)
+// 0x00000261 System.Void Pathfinding.HierarchicalGraph::set_version(System.Int32)
 extern void HierarchicalGraph_set_version_mE7A2D5368C1AFE0A188BA0CAA63EF90FAAE1DFA0 (void);
-// 0x000002BA System.Void Pathfinding.HierarchicalGraph::.ctor()
+// 0x00000262 System.Void Pathfinding.HierarchicalGraph::.ctor()
 extern void HierarchicalGraph__ctor_m76087726AFA84F7D76891135B3C2F3519089E873 (void);
-// 0x000002BB System.Void Pathfinding.HierarchicalGraph::Grow()
+// 0x00000263 System.Void Pathfinding.HierarchicalGraph::Grow()
 extern void HierarchicalGraph_Grow_m558EDE1B2EFA8DC1FB9BAEC136BA12FE250C50E1 (void);
-// 0x000002BC System.Int32 Pathfinding.HierarchicalGraph::GetHierarchicalNodeIndex()
+// 0x00000264 System.Int32 Pathfinding.HierarchicalGraph::GetHierarchicalNodeIndex()
 extern void HierarchicalGraph_GetHierarchicalNodeIndex_m07CBF12C41862F52D38434FBDAFACB23BF2AE910 (void);
-// 0x000002BD System.Void Pathfinding.HierarchicalGraph::OnCreatedNode(Pathfinding.GraphNode)
+// 0x00000265 System.Void Pathfinding.HierarchicalGraph::OnCreatedNode(Pathfinding.GraphNode)
 extern void HierarchicalGraph_OnCreatedNode_m7BBBE07C8242DBEA4DCC83CE9B96628A1432DBE7 (void);
-// 0x000002BE System.Void Pathfinding.HierarchicalGraph::AddDirtyNode(Pathfinding.GraphNode)
+// 0x00000266 System.Void Pathfinding.HierarchicalGraph::AddDirtyNode(Pathfinding.GraphNode)
 extern void HierarchicalGraph_AddDirtyNode_m7EF882514CA190295D8580CB34B0AEF5891B7823 (void);
-// 0x000002BF System.Int32 Pathfinding.HierarchicalGraph::get_NumConnectedComponents()
+// 0x00000267 System.Int32 Pathfinding.HierarchicalGraph::get_NumConnectedComponents()
 extern void HierarchicalGraph_get_NumConnectedComponents_m8A50B6BC509D18905CF484DB34C9B3CC14FC0514 (void);
-// 0x000002C0 System.Void Pathfinding.HierarchicalGraph::set_NumConnectedComponents(System.Int32)
+// 0x00000268 System.Void Pathfinding.HierarchicalGraph::set_NumConnectedComponents(System.Int32)
 extern void HierarchicalGraph_set_NumConnectedComponents_mB997290CFBED00FA19CD5F20E889A6E74355EF49 (void);
-// 0x000002C1 System.UInt32 Pathfinding.HierarchicalGraph::GetConnectedComponent(System.Int32)
+// 0x00000269 System.UInt32 Pathfinding.HierarchicalGraph::GetConnectedComponent(System.Int32)
 extern void HierarchicalGraph_GetConnectedComponent_mB8A909F8D19752DA94E09CC2F3B846AA07A49F2E (void);
-// 0x000002C2 System.Void Pathfinding.HierarchicalGraph::RemoveHierarchicalNode(System.Int32,System.Boolean)
+// 0x0000026A System.Void Pathfinding.HierarchicalGraph::RemoveHierarchicalNode(System.Int32,System.Boolean)
 extern void HierarchicalGraph_RemoveHierarchicalNode_m29EB8E53F01AD387FBF5C0D40E1710817410F6FB (void);
-// 0x000002C3 System.Void Pathfinding.HierarchicalGraph::RecalculateIfNecessary()
+// 0x0000026B System.Void Pathfinding.HierarchicalGraph::RecalculateIfNecessary()
 extern void HierarchicalGraph_RecalculateIfNecessary_mE8FA1B677D429C912DD8CC13E7C574C75E237876 (void);
-// 0x000002C4 System.Void Pathfinding.HierarchicalGraph::RecalculateAll()
+// 0x0000026C System.Void Pathfinding.HierarchicalGraph::RecalculateAll()
 extern void HierarchicalGraph_RecalculateAll_mC4C447C2915F1F5FA06CAEE6B07CFFB0F4171FF5 (void);
-// 0x000002C5 System.Void Pathfinding.HierarchicalGraph::FloodFill()
+// 0x0000026D System.Void Pathfinding.HierarchicalGraph::FloodFill()
 extern void HierarchicalGraph_FloodFill_mB42158805A0CB4AD581210E710623AE3F9881B68 (void);
-// 0x000002C6 System.Void Pathfinding.HierarchicalGraph::FindHierarchicalNodeChildren(System.Int32,Pathfinding.GraphNode)
+// 0x0000026E System.Void Pathfinding.HierarchicalGraph::FindHierarchicalNodeChildren(System.Int32,Pathfinding.GraphNode)
 extern void HierarchicalGraph_FindHierarchicalNodeChildren_mD34B480C1817914BF275A310A76058C492C9862C (void);
-// 0x000002C7 System.Void Pathfinding.HierarchicalGraph::OnDrawGizmos(Pathfinding.Util.RetainedGizmos)
+// 0x0000026F System.Void Pathfinding.HierarchicalGraph::OnDrawGizmos(Pathfinding.Util.RetainedGizmos)
 extern void HierarchicalGraph_OnDrawGizmos_mC920258857746561E9F767E3225E6E75D3D0F8F1 (void);
-// 0x000002C8 System.Void Pathfinding.HierarchicalGraph::<.ctor>b__22_0(Pathfinding.GraphNode)
+// 0x00000270 System.Void Pathfinding.HierarchicalGraph::<.ctor>b__22_0(Pathfinding.GraphNode)
 extern void HierarchicalGraph_U3C_ctorU3Eb__22_0_m07B8B3887D8BC24DE973DC7EB72005E929FCBAD4 (void);
-// 0x000002C9 System.Void Pathfinding.HierarchicalGraph::<RecalculateAll>b__34_0(Pathfinding.GraphNode)
+// 0x00000271 System.Void Pathfinding.HierarchicalGraph::<RecalculateAll>b__34_0(Pathfinding.GraphNode)
 extern void HierarchicalGraph_U3CRecalculateAllU3Eb__34_0_m4953BA57E151A78EC923569D49AE4F9A779AC5BD (void);
-// 0x000002CA Pathfinding.Int3 Pathfinding.Int3::get_zero()
+// 0x00000272 Pathfinding.Int3 Pathfinding.Int3::get_zero()
 extern void Int3_get_zero_mE60104509A05E695E5E18E42F0CA94157A6DF25C (void);
-// 0x000002CB System.Void Pathfinding.Int3::.ctor(UnityEngine.Vector3)
+// 0x00000273 System.Void Pathfinding.Int3::.ctor(UnityEngine.Vector3)
 extern void Int3__ctor_mD63C74F44E26012553DF182655E8F86CC01A1B1E (void);
-// 0x000002CC System.Void Pathfinding.Int3::.ctor(System.Int32,System.Int32,System.Int32)
+// 0x00000274 System.Void Pathfinding.Int3::.ctor(System.Int32,System.Int32,System.Int32)
 extern void Int3__ctor_mBEC112E5D6994865BD0D7EA889D8D2A9647DF16F (void);
-// 0x000002CD System.Boolean Pathfinding.Int3::op_Equality(Pathfinding.Int3,Pathfinding.Int3)
+// 0x00000275 System.Boolean Pathfinding.Int3::op_Equality(Pathfinding.Int3,Pathfinding.Int3)
 extern void Int3_op_Equality_m5EB0A3F0EF1636B5F31D09CC2EBC4F72C88032C2 (void);
-// 0x000002CE System.Boolean Pathfinding.Int3::op_Inequality(Pathfinding.Int3,Pathfinding.Int3)
+// 0x00000276 System.Boolean Pathfinding.Int3::op_Inequality(Pathfinding.Int3,Pathfinding.Int3)
 extern void Int3_op_Inequality_mC158305BFBA56FB5DEC9B555A056A9613E81BD50 (void);
-// 0x000002CF Pathfinding.Int3 Pathfinding.Int3::op_Explicit(UnityEngine.Vector3)
+// 0x00000277 Pathfinding.Int3 Pathfinding.Int3::op_Explicit(UnityEngine.Vector3)
 extern void Int3_op_Explicit_m735A20700611A249214D777FBA105305CEA5C34F (void);
-// 0x000002D0 UnityEngine.Vector3 Pathfinding.Int3::op_Explicit(Pathfinding.Int3)
+// 0x00000278 UnityEngine.Vector3 Pathfinding.Int3::op_Explicit(Pathfinding.Int3)
 extern void Int3_op_Explicit_mDB6D09A6D07BAAB0D6FBEEC71266F608C3FC825C (void);
-// 0x000002D1 Pathfinding.Int3 Pathfinding.Int3::op_Subtraction(Pathfinding.Int3,Pathfinding.Int3)
+// 0x00000279 Pathfinding.Int3 Pathfinding.Int3::op_Subtraction(Pathfinding.Int3,Pathfinding.Int3)
 extern void Int3_op_Subtraction_mE783E221E3504675A13BF9A440316A8A01F71B8E (void);
-// 0x000002D2 Pathfinding.Int3 Pathfinding.Int3::op_UnaryNegation(Pathfinding.Int3)
+// 0x0000027A Pathfinding.Int3 Pathfinding.Int3::op_UnaryNegation(Pathfinding.Int3)
 extern void Int3_op_UnaryNegation_mF8E1ABA63B4CC168F3BF55D9C3BC6BC188DCEE8E (void);
-// 0x000002D3 Pathfinding.Int3 Pathfinding.Int3::op_Addition(Pathfinding.Int3,Pathfinding.Int3)
+// 0x0000027B Pathfinding.Int3 Pathfinding.Int3::op_Addition(Pathfinding.Int3,Pathfinding.Int3)
 extern void Int3_op_Addition_mB80493FA1BF7D5410E713B41EC744857D17D2023 (void);
-// 0x000002D4 Pathfinding.Int3 Pathfinding.Int3::op_Multiply(Pathfinding.Int3,System.Int32)
+// 0x0000027C Pathfinding.Int3 Pathfinding.Int3::op_Multiply(Pathfinding.Int3,System.Int32)
 extern void Int3_op_Multiply_m2149472B31866E2AD8C6D9D4D6AA73305F8FAEC7 (void);
-// 0x000002D5 Pathfinding.Int3 Pathfinding.Int3::op_Multiply(Pathfinding.Int3,System.Single)
+// 0x0000027D Pathfinding.Int3 Pathfinding.Int3::op_Multiply(Pathfinding.Int3,System.Single)
 extern void Int3_op_Multiply_m12AD38AB914D7B8BA6D315A06006EF4A23DEA61D (void);
-// 0x000002D6 Pathfinding.Int3 Pathfinding.Int3::op_Multiply(Pathfinding.Int3,System.Double)
+// 0x0000027E Pathfinding.Int3 Pathfinding.Int3::op_Multiply(Pathfinding.Int3,System.Double)
 extern void Int3_op_Multiply_m8CCE861BCFFFEFAFCF89DA02C4630BDA0CDF45DD (void);
-// 0x000002D7 Pathfinding.Int3 Pathfinding.Int3::op_Division(Pathfinding.Int3,System.Single)
+// 0x0000027F Pathfinding.Int3 Pathfinding.Int3::op_Division(Pathfinding.Int3,System.Single)
 extern void Int3_op_Division_m2351E833F37887DA26163641413CBE2A10756CC4 (void);
-// 0x000002D8 System.Int32 Pathfinding.Int3::get_Item(System.Int32)
+// 0x00000280 System.Int32 Pathfinding.Int3::get_Item(System.Int32)
 extern void Int3_get_Item_m802943AA086EFABB0B7928AC639BD087E7CB6A2F (void);
-// 0x000002D9 System.Void Pathfinding.Int3::set_Item(System.Int32,System.Int32)
+// 0x00000281 System.Void Pathfinding.Int3::set_Item(System.Int32,System.Int32)
 extern void Int3_set_Item_m229C7D4C1C6C06A0D7E8843A4FFB0AD586CFF61D (void);
-// 0x000002DA System.Single Pathfinding.Int3::Angle(Pathfinding.Int3,Pathfinding.Int3)
+// 0x00000282 System.Single Pathfinding.Int3::Angle(Pathfinding.Int3,Pathfinding.Int3)
 extern void Int3_Angle_m01E2CC9B4BBCE38C174DF080B013322DDBEF6503 (void);
-// 0x000002DB System.Int32 Pathfinding.Int3::Dot(Pathfinding.Int3,Pathfinding.Int3)
+// 0x00000283 System.Int32 Pathfinding.Int3::Dot(Pathfinding.Int3,Pathfinding.Int3)
 extern void Int3_Dot_mAED37AEB561EAEC05FDB760A123CAFCFE86A4023 (void);
-// 0x000002DC System.Int64 Pathfinding.Int3::DotLong(Pathfinding.Int3,Pathfinding.Int3)
+// 0x00000284 System.Int64 Pathfinding.Int3::DotLong(Pathfinding.Int3,Pathfinding.Int3)
 extern void Int3_DotLong_m744F83EBF355BD0D272078E3E9F701A66BCF6DB6 (void);
-// 0x000002DD Pathfinding.Int3 Pathfinding.Int3::Normal2D()
+// 0x00000285 Pathfinding.Int3 Pathfinding.Int3::Normal2D()
 extern void Int3_Normal2D_m4594B86F09E4C141FAB9B5638802B456646BC091 (void);
-// 0x000002DE System.Single Pathfinding.Int3::get_magnitude()
+// 0x00000286 System.Single Pathfinding.Int3::get_magnitude()
 extern void Int3_get_magnitude_mC91010F258A993213D989C018A621AB2C6150BAF (void);
-// 0x000002DF System.Int32 Pathfinding.Int3::get_costMagnitude()
+// 0x00000287 System.Int32 Pathfinding.Int3::get_costMagnitude()
 extern void Int3_get_costMagnitude_m6286EB04015DE9C7D4C177B0D006A2E7F71E4250 (void);
-// 0x000002E0 System.Single Pathfinding.Int3::get_sqrMagnitude()
+// 0x00000288 System.Single Pathfinding.Int3::get_sqrMagnitude()
 extern void Int3_get_sqrMagnitude_mE49C6C2EF3A41769D19AFA9E284526A3B1BEF984 (void);
-// 0x000002E1 System.Int64 Pathfinding.Int3::get_sqrMagnitudeLong()
+// 0x00000289 System.Int64 Pathfinding.Int3::get_sqrMagnitudeLong()
 extern void Int3_get_sqrMagnitudeLong_m8319324D5E2D6785E1C26B09E64E669D8C563482 (void);
-// 0x000002E2 System.String Pathfinding.Int3::op_Implicit(Pathfinding.Int3)
+// 0x0000028A System.String Pathfinding.Int3::op_Implicit(Pathfinding.Int3)
 extern void Int3_op_Implicit_m4B0844C76E14376CF2A734F08B603A0DC0A2D984 (void);
-// 0x000002E3 System.String Pathfinding.Int3::ToString()
+// 0x0000028B System.String Pathfinding.Int3::ToString()
 extern void Int3_ToString_mE39945C2B248D7AD330B6CE73CCFF9B88B5CAB44 (void);
-// 0x000002E4 System.Boolean Pathfinding.Int3::Equals(System.Object)
+// 0x0000028C System.Boolean Pathfinding.Int3::Equals(System.Object)
 extern void Int3_Equals_mDF1B60CB7DC37A57A65D3819F8306410F2DDD0B8 (void);
-// 0x000002E5 System.Boolean Pathfinding.Int3::Equals(Pathfinding.Int3)
+// 0x0000028D System.Boolean Pathfinding.Int3::Equals(Pathfinding.Int3)
 extern void Int3_Equals_m6B8E5A0F29F921D5E0272FAF1E4A2C5D46885B02 (void);
-// 0x000002E6 System.Int32 Pathfinding.Int3::GetHashCode()
+// 0x0000028E System.Int32 Pathfinding.Int3::GetHashCode()
 extern void Int3_GetHashCode_m153F4D2AFDE0064AAC312D1EF0712EB8DEB36051 (void);
-// 0x000002E7 System.Void Pathfinding.Int2::.ctor(System.Int32,System.Int32)
+// 0x0000028F System.Void Pathfinding.Int2::.ctor(System.Int32,System.Int32)
 extern void Int2__ctor_m10E45E61E7A435B387D725D0278EC1FEB97CE284 (void);
-// 0x000002E8 System.Int64 Pathfinding.Int2::get_sqrMagnitudeLong()
+// 0x00000290 System.Int64 Pathfinding.Int2::get_sqrMagnitudeLong()
 extern void Int2_get_sqrMagnitudeLong_mC0B6184B47BE88CEAD76372AAE89956A7BF20546 (void);
-// 0x000002E9 Pathfinding.Int2 Pathfinding.Int2::op_Addition(Pathfinding.Int2,Pathfinding.Int2)
+// 0x00000291 Pathfinding.Int2 Pathfinding.Int2::op_Addition(Pathfinding.Int2,Pathfinding.Int2)
 extern void Int2_op_Addition_m139F63D0D870F9E20B666682DC0FF3737DC9D20C (void);
-// 0x000002EA Pathfinding.Int2 Pathfinding.Int2::op_Subtraction(Pathfinding.Int2,Pathfinding.Int2)
+// 0x00000292 Pathfinding.Int2 Pathfinding.Int2::op_Subtraction(Pathfinding.Int2,Pathfinding.Int2)
 extern void Int2_op_Subtraction_mA0975DACC07124A9E66E7D30C72182708FBC4067 (void);
-// 0x000002EB System.Boolean Pathfinding.Int2::op_Equality(Pathfinding.Int2,Pathfinding.Int2)
+// 0x00000293 System.Boolean Pathfinding.Int2::op_Equality(Pathfinding.Int2,Pathfinding.Int2)
 extern void Int2_op_Equality_mFE241F9F0628D317579331BFA4805572676D50C3 (void);
-// 0x000002EC System.Boolean Pathfinding.Int2::op_Inequality(Pathfinding.Int2,Pathfinding.Int2)
+// 0x00000294 System.Boolean Pathfinding.Int2::op_Inequality(Pathfinding.Int2,Pathfinding.Int2)
 extern void Int2_op_Inequality_m6DF9D0FD5FE8AD50C9E0F4991DC021A721582104 (void);
-// 0x000002ED System.Int64 Pathfinding.Int2::DotLong(Pathfinding.Int2,Pathfinding.Int2)
+// 0x00000295 System.Int64 Pathfinding.Int2::DotLong(Pathfinding.Int2,Pathfinding.Int2)
 extern void Int2_DotLong_m21E59FA2DC83FCA816147E3C5805B2AF004DE550 (void);
-// 0x000002EE System.Boolean Pathfinding.Int2::Equals(System.Object)
+// 0x00000296 System.Boolean Pathfinding.Int2::Equals(System.Object)
 extern void Int2_Equals_m27B6A3641243C06AB77E19B8C8773E9F7C6943C3 (void);
-// 0x000002EF System.Boolean Pathfinding.Int2::Equals(Pathfinding.Int2)
+// 0x00000297 System.Boolean Pathfinding.Int2::Equals(Pathfinding.Int2)
 extern void Int2_Equals_m832AF4B8862F9390E0135858F2F1C8180F2D46ED (void);
-// 0x000002F0 System.Int32 Pathfinding.Int2::GetHashCode()
+// 0x00000298 System.Int32 Pathfinding.Int2::GetHashCode()
 extern void Int2_GetHashCode_mE2828AE291994477EC8613706748D6D5E1C5C79E (void);
-// 0x000002F1 Pathfinding.Int2 Pathfinding.Int2::Min(Pathfinding.Int2,Pathfinding.Int2)
+// 0x00000299 Pathfinding.Int2 Pathfinding.Int2::Min(Pathfinding.Int2,Pathfinding.Int2)
 extern void Int2_Min_mC6CF58AA3C5DB16ED297EAFB3E508BE07CE2CCDA (void);
-// 0x000002F2 Pathfinding.Int2 Pathfinding.Int2::Max(Pathfinding.Int2,Pathfinding.Int2)
+// 0x0000029A Pathfinding.Int2 Pathfinding.Int2::Max(Pathfinding.Int2,Pathfinding.Int2)
 extern void Int2_Max_m36938F69206240DB22654F750BE201FE0B4D0382 (void);
-// 0x000002F3 Pathfinding.Int2 Pathfinding.Int2::FromInt3XZ(Pathfinding.Int3)
+// 0x0000029B Pathfinding.Int2 Pathfinding.Int2::FromInt3XZ(Pathfinding.Int3)
 extern void Int2_FromInt3XZ_mB5A9E93FA679734BD596EABA0519B26E84ECC5B2 (void);
-// 0x000002F4 Pathfinding.Int3 Pathfinding.Int2::ToInt3XZ(Pathfinding.Int2)
+// 0x0000029C Pathfinding.Int3 Pathfinding.Int2::ToInt3XZ(Pathfinding.Int2)
 extern void Int2_ToInt3XZ_mDF699F724F63283BFF9D0DB4D911142DBDA0A57F (void);
-// 0x000002F5 System.String Pathfinding.Int2::ToString()
+// 0x0000029D System.String Pathfinding.Int2::ToString()
 extern void Int2_ToString_m2066CECC353D9ADB97C47B768B30A9319B61EFB3 (void);
-// 0x000002F6 UnityEngine.Transform Pathfinding.NodeLink::get_Start()
+// 0x0000029E UnityEngine.Transform Pathfinding.NodeLink::get_Start()
 extern void NodeLink_get_Start_m63D49B1112F44FB5A444D8F6E659BB8DC78AF8A1 (void);
-// 0x000002F7 UnityEngine.Transform Pathfinding.NodeLink::get_End()
+// 0x0000029F UnityEngine.Transform Pathfinding.NodeLink::get_End()
 extern void NodeLink_get_End_m89DD3017F292610323D70128EF7E0DC182BB3958 (void);
-// 0x000002F8 System.Void Pathfinding.NodeLink::OnPostScan()
+// 0x000002A0 System.Void Pathfinding.NodeLink::OnPostScan()
 extern void NodeLink_OnPostScan_m92F0330F8FC9D0F519F1B148C53FDD28C8A5A2D1 (void);
-// 0x000002F9 System.Void Pathfinding.NodeLink::InternalOnPostScan()
+// 0x000002A1 System.Void Pathfinding.NodeLink::InternalOnPostScan()
 extern void NodeLink_InternalOnPostScan_m10696EAA2859F70473210C8A0F983ED85099FC1F (void);
-// 0x000002FA System.Void Pathfinding.NodeLink::OnGraphsPostUpdate()
+// 0x000002A2 System.Void Pathfinding.NodeLink::OnGraphsPostUpdate()
 extern void NodeLink_OnGraphsPostUpdate_m387E79641E7D3B349C56E227703C970869720957 (void);
-// 0x000002FB System.Void Pathfinding.NodeLink::Apply()
+// 0x000002A3 System.Void Pathfinding.NodeLink::Apply()
 extern void NodeLink_Apply_m6B8E763F57671E780592BABFCCB4CBC7A610BB06 (void);
-// 0x000002FC System.Void Pathfinding.NodeLink::OnDrawGizmos()
+// 0x000002A4 System.Void Pathfinding.NodeLink::OnDrawGizmos()
 extern void NodeLink_OnDrawGizmos_m916F951B792B6E21606348C02354581B7FEA6C45 (void);
-// 0x000002FD System.Void Pathfinding.NodeLink::.ctor()
+// 0x000002A5 System.Void Pathfinding.NodeLink::.ctor()
 extern void NodeLink__ctor_mEE7982FC80597D9512D2AD0733B905D75B984F43 (void);
-// 0x000002FE System.Boolean Pathfinding.NodeLink::<OnPostScan>b__8_0(System.Boolean)
+// 0x000002A6 System.Boolean Pathfinding.NodeLink::<OnPostScan>b__8_0(System.Boolean)
 extern void NodeLink_U3COnPostScanU3Eb__8_0_m8CD778947499EDDB28286DB6B401D7C51D7D977C (void);
-// 0x000002FF System.Boolean Pathfinding.NodeLink::<OnGraphsPostUpdate>b__10_0(System.Boolean)
+// 0x000002A7 System.Boolean Pathfinding.NodeLink::<OnGraphsPostUpdate>b__10_0(System.Boolean)
 extern void NodeLink_U3COnGraphsPostUpdateU3Eb__10_0_m0606FCC1AB02082D6FE5DBBAD8B079141A9F9414 (void);
-// 0x00000300 Pathfinding.NodeLink2 Pathfinding.NodeLink2::GetNodeLink(Pathfinding.GraphNode)
+// 0x000002A8 Pathfinding.NodeLink2 Pathfinding.NodeLink2::GetNodeLink(Pathfinding.GraphNode)
 extern void NodeLink2_GetNodeLink_m259F91E78CD33C8D3A0DFE2EDCD4FB96D88117C5 (void);
-// 0x00000301 UnityEngine.Transform Pathfinding.NodeLink2::get_StartTransform()
+// 0x000002A9 UnityEngine.Transform Pathfinding.NodeLink2::get_StartTransform()
 extern void NodeLink2_get_StartTransform_m1DBF4D8A4A5344B6467D83FBF61EB3FD7B71A414 (void);
-// 0x00000302 UnityEngine.Transform Pathfinding.NodeLink2::get_EndTransform()
+// 0x000002AA UnityEngine.Transform Pathfinding.NodeLink2::get_EndTransform()
 extern void NodeLink2_get_EndTransform_mB968AA6D359333319FC158A52A4A8C69A7A8E013 (void);
-// 0x00000303 Pathfinding.PointNode Pathfinding.NodeLink2::get_startNode()
+// 0x000002AB Pathfinding.PointNode Pathfinding.NodeLink2::get_startNode()
 extern void NodeLink2_get_startNode_m5B89F839434AA7E90BB46958764501709D14E25F (void);
-// 0x00000304 System.Void Pathfinding.NodeLink2::set_startNode(Pathfinding.PointNode)
+// 0x000002AC System.Void Pathfinding.NodeLink2::set_startNode(Pathfinding.PointNode)
 extern void NodeLink2_set_startNode_m0957A125625CA469A5EEC696B7CEDF23C70C3B2B (void);
-// 0x00000305 Pathfinding.PointNode Pathfinding.NodeLink2::get_endNode()
+// 0x000002AD Pathfinding.PointNode Pathfinding.NodeLink2::get_endNode()
 extern void NodeLink2_get_endNode_m43ADDC4F355516FB0B683FF8C9BB384C8518CDB0 (void);
-// 0x00000306 System.Void Pathfinding.NodeLink2::set_endNode(Pathfinding.PointNode)
+// 0x000002AE System.Void Pathfinding.NodeLink2::set_endNode(Pathfinding.PointNode)
 extern void NodeLink2_set_endNode_m32DB9AA5A15F14BBE373F39E448117B0B7262A53 (void);
-// 0x00000307 Pathfinding.GraphNode Pathfinding.NodeLink2::get_StartNode()
+// 0x000002AF Pathfinding.GraphNode Pathfinding.NodeLink2::get_StartNode()
 extern void NodeLink2_get_StartNode_m345582DD34BDA0049F4FFF26F54D157D56E6EEFA (void);
-// 0x00000308 Pathfinding.GraphNode Pathfinding.NodeLink2::get_EndNode()
+// 0x000002B0 Pathfinding.GraphNode Pathfinding.NodeLink2::get_EndNode()
 extern void NodeLink2_get_EndNode_mAD563E2FC732B925BF86D8B5CF85EDA4D4092DAD (void);
-// 0x00000309 System.Void Pathfinding.NodeLink2::OnPostScan()
+// 0x000002B1 System.Void Pathfinding.NodeLink2::OnPostScan()
 extern void NodeLink2_OnPostScan_mA321A715A86C2FF6C650498328BEA94648DEE7DD (void);
-// 0x0000030A System.Void Pathfinding.NodeLink2::InternalOnPostScan()
+// 0x000002B2 System.Void Pathfinding.NodeLink2::InternalOnPostScan()
 extern void NodeLink2_InternalOnPostScan_mBFFDDB92AD6BBBA5CA149DD82E753F620A12566E (void);
-// 0x0000030B System.Void Pathfinding.NodeLink2::OnGraphsPostUpdate()
+// 0x000002B3 System.Void Pathfinding.NodeLink2::OnGraphsPostUpdate()
 extern void NodeLink2_OnGraphsPostUpdate_m0FC3B4844E49B7415900B31AB400189D52F6C366 (void);
-// 0x0000030C System.Void Pathfinding.NodeLink2::OnEnable()
+// 0x000002B4 System.Void Pathfinding.NodeLink2::OnEnable()
 extern void NodeLink2_OnEnable_m3FFAFE3E5DCE448EB47CA03E2016520EC5DA1054 (void);
-// 0x0000030D System.Void Pathfinding.NodeLink2::OnDisable()
+// 0x000002B5 System.Void Pathfinding.NodeLink2::OnDisable()
 extern void NodeLink2_OnDisable_mE0A05053F493DDC757582DF109402C71E4CF661E (void);
-// 0x0000030E System.Void Pathfinding.NodeLink2::RemoveConnections(Pathfinding.GraphNode)
+// 0x000002B6 System.Void Pathfinding.NodeLink2::RemoveConnections(Pathfinding.GraphNode)
 extern void NodeLink2_RemoveConnections_mBB47093CF5F1FB4319B5F3398AA13D8B8F92F5A2 (void);
-// 0x0000030F System.Void Pathfinding.NodeLink2::ContextApplyForce()
+// 0x000002B7 System.Void Pathfinding.NodeLink2::ContextApplyForce()
 extern void NodeLink2_ContextApplyForce_m7FD9DE3289FF1829EB1DCF3EC7D0D23F50385590 (void);
-// 0x00000310 System.Void Pathfinding.NodeLink2::Apply(System.Boolean)
+// 0x000002B8 System.Void Pathfinding.NodeLink2::Apply(System.Boolean)
 extern void NodeLink2_Apply_m85364B78EEF34F4F53548271B1A5B307C5CC4E0F (void);
-// 0x00000311 System.Void Pathfinding.NodeLink2::OnDrawGizmosSelected()
+// 0x000002B9 System.Void Pathfinding.NodeLink2::OnDrawGizmosSelected()
 extern void NodeLink2_OnDrawGizmosSelected_mBAFF47FBB7A93226C5A0AF2B937DB5370E16C6AE (void);
-// 0x00000312 System.Void Pathfinding.NodeLink2::OnDrawGizmos()
+// 0x000002BA System.Void Pathfinding.NodeLink2::OnDrawGizmos()
 extern void NodeLink2_OnDrawGizmos_m3F5919E7D39DB61DF4861CD5DC794DB73A66DEB3 (void);
-// 0x00000313 System.Void Pathfinding.NodeLink2::OnDrawGizmos(System.Boolean)
+// 0x000002BB System.Void Pathfinding.NodeLink2::OnDrawGizmos(System.Boolean)
 extern void NodeLink2_OnDrawGizmos_m0135B02B8222A009FA5CC669CDDE1F657D0E4C7B (void);
-// 0x00000314 System.Void Pathfinding.NodeLink2::SerializeReferences(Pathfinding.Serialization.GraphSerializationContext)
+// 0x000002BC System.Void Pathfinding.NodeLink2::SerializeReferences(Pathfinding.Serialization.GraphSerializationContext)
 extern void NodeLink2_SerializeReferences_mABD3DB0D460B4FF8164BACA467C195A80B603FEC (void);
-// 0x00000315 System.Void Pathfinding.NodeLink2::DeserializeReferences(Pathfinding.Serialization.GraphSerializationContext)
+// 0x000002BD System.Void Pathfinding.NodeLink2::DeserializeReferences(Pathfinding.Serialization.GraphSerializationContext)
 extern void NodeLink2_DeserializeReferences_m87A6C0F50B03E3C25723D1FD730714FEF4FCC606 (void);
-// 0x00000316 System.Void Pathfinding.NodeLink2::.ctor()
+// 0x000002BE System.Void Pathfinding.NodeLink2::.ctor()
 extern void NodeLink2__ctor_m3AF6DFDC46218450DEE7BD0FE79C09123C3A4793 (void);
-// 0x00000317 System.Void Pathfinding.NodeLink2::.cctor()
+// 0x000002BF System.Void Pathfinding.NodeLink2::.cctor()
 extern void NodeLink2__cctor_mD59DBAEF81D7FB11D7647AB028C6C51F3EFC84B8 (void);
-// 0x00000318 System.Void Pathfinding.NodeLink3Node::.ctor(AstarPath)
+// 0x000002C0 System.Void Pathfinding.NodeLink3Node::.ctor(AstarPath)
 extern void NodeLink3Node__ctor_m80465FD097D5070FD00DDCC724D55234832B03DC (void);
-// 0x00000319 System.Boolean Pathfinding.NodeLink3Node::GetPortal(Pathfinding.GraphNode,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Boolean)
+// 0x000002C1 System.Boolean Pathfinding.NodeLink3Node::GetPortal(Pathfinding.GraphNode,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Boolean)
 extern void NodeLink3Node_GetPortal_mA9B13519BE0F34A4E18B1B59D818758B206ED2C4 (void);
-// 0x0000031A Pathfinding.GraphNode Pathfinding.NodeLink3Node::GetOther(Pathfinding.GraphNode)
+// 0x000002C2 Pathfinding.GraphNode Pathfinding.NodeLink3Node::GetOther(Pathfinding.GraphNode)
 extern void NodeLink3Node_GetOther_mDA6AB45F60111954381ABA0F917514F33F9B0E0A (void);
-// 0x0000031B Pathfinding.GraphNode Pathfinding.NodeLink3Node::GetOtherInternal(Pathfinding.GraphNode)
+// 0x000002C3 Pathfinding.GraphNode Pathfinding.NodeLink3Node::GetOtherInternal(Pathfinding.GraphNode)
 extern void NodeLink3Node_GetOtherInternal_m979DA0B851A656ACC55AE31DD65EFFE190FE3E13 (void);
-// 0x0000031C Pathfinding.NodeLink3 Pathfinding.NodeLink3::GetNodeLink(Pathfinding.GraphNode)
+// 0x000002C4 Pathfinding.NodeLink3 Pathfinding.NodeLink3::GetNodeLink(Pathfinding.GraphNode)
 extern void NodeLink3_GetNodeLink_mB13D24477FF0DFF8ED33900E068CA231DD3FB72B (void);
-// 0x0000031D UnityEngine.Transform Pathfinding.NodeLink3::get_StartTransform()
+// 0x000002C5 UnityEngine.Transform Pathfinding.NodeLink3::get_StartTransform()
 extern void NodeLink3_get_StartTransform_m0B90C294B1D3DA41A565894FB6D24D077FB2E2F1 (void);
-// 0x0000031E UnityEngine.Transform Pathfinding.NodeLink3::get_EndTransform()
+// 0x000002C6 UnityEngine.Transform Pathfinding.NodeLink3::get_EndTransform()
 extern void NodeLink3_get_EndTransform_m4D3BD5D07F4C4F33A175C7458124E5D12B481C6F (void);
-// 0x0000031F Pathfinding.GraphNode Pathfinding.NodeLink3::get_StartNode()
+// 0x000002C7 Pathfinding.GraphNode Pathfinding.NodeLink3::get_StartNode()
 extern void NodeLink3_get_StartNode_mFFEFB56FDDF8754A408BF5C9022B4C1AAAB600E1 (void);
-// 0x00000320 Pathfinding.GraphNode Pathfinding.NodeLink3::get_EndNode()
+// 0x000002C8 Pathfinding.GraphNode Pathfinding.NodeLink3::get_EndNode()
 extern void NodeLink3_get_EndNode_mBE908DC0EFB133565E447227478929CFF493D09A (void);
-// 0x00000321 System.Void Pathfinding.NodeLink3::OnPostScan()
+// 0x000002C9 System.Void Pathfinding.NodeLink3::OnPostScan()
 extern void NodeLink3_OnPostScan_m5ED9DC176099476A32F8E31013BCB4A12E2C1F87 (void);
-// 0x00000322 System.Void Pathfinding.NodeLink3::InternalOnPostScan()
+// 0x000002CA System.Void Pathfinding.NodeLink3::InternalOnPostScan()
 extern void NodeLink3_InternalOnPostScan_m0F8825DE9C4DE7D1E2A883A78EE3A99EA853D82D (void);
-// 0x00000323 System.Void Pathfinding.NodeLink3::OnGraphsPostUpdate()
+// 0x000002CB System.Void Pathfinding.NodeLink3::OnGraphsPostUpdate()
 extern void NodeLink3_OnGraphsPostUpdate_m19496D3195E7CD36803286CDC3EA1D593F475213 (void);
-// 0x00000324 System.Void Pathfinding.NodeLink3::OnEnable()
+// 0x000002CC System.Void Pathfinding.NodeLink3::OnEnable()
 extern void NodeLink3_OnEnable_m5C3BB14E691FE4A937F694715076FA710A057291 (void);
-// 0x00000325 System.Void Pathfinding.NodeLink3::OnDisable()
+// 0x000002CD System.Void Pathfinding.NodeLink3::OnDisable()
 extern void NodeLink3_OnDisable_mE16DEB8324E489BD12B02193BEC6DA4A076FB5ED (void);
-// 0x00000326 System.Void Pathfinding.NodeLink3::RemoveConnections(Pathfinding.GraphNode)
+// 0x000002CE System.Void Pathfinding.NodeLink3::RemoveConnections(Pathfinding.GraphNode)
 extern void NodeLink3_RemoveConnections_m1FE87E765B27AD6E81B7007AF9196D3D67C7968E (void);
-// 0x00000327 System.Void Pathfinding.NodeLink3::ContextApplyForce()
+// 0x000002CF System.Void Pathfinding.NodeLink3::ContextApplyForce()
 extern void NodeLink3_ContextApplyForce_m8455333C7A028180DFDDB8011A401F80B831CC01 (void);
-// 0x00000328 System.Void Pathfinding.NodeLink3::Apply(System.Boolean)
+// 0x000002D0 System.Void Pathfinding.NodeLink3::Apply(System.Boolean)
 extern void NodeLink3_Apply_m5CFD37D7D126CCFA17C7A0B56D28DC928A230BFB (void);
-// 0x00000329 System.Void Pathfinding.NodeLink3::OnDrawGizmosSelected()
+// 0x000002D1 System.Void Pathfinding.NodeLink3::OnDrawGizmosSelected()
 extern void NodeLink3_OnDrawGizmosSelected_m96AAA481F7C64EFFFE46C7EB6E21804D3047D065 (void);
-// 0x0000032A System.Void Pathfinding.NodeLink3::OnDrawGizmos()
+// 0x000002D2 System.Void Pathfinding.NodeLink3::OnDrawGizmos()
 extern void NodeLink3_OnDrawGizmos_m816984D9DC47535EF203E54D46D46C07AE71B66C (void);
-// 0x0000032B System.Void Pathfinding.NodeLink3::OnDrawGizmos(System.Boolean)
+// 0x000002D3 System.Void Pathfinding.NodeLink3::OnDrawGizmos(System.Boolean)
 extern void NodeLink3_OnDrawGizmos_mA031453169A654A394810BACDE795208829FBE75 (void);
-// 0x0000032C System.Void Pathfinding.NodeLink3::.ctor()
+// 0x000002D4 System.Void Pathfinding.NodeLink3::.ctor()
 extern void NodeLink3__ctor_m9D5D73B815BF219057BABAFDAF05236147CC4E58 (void);
-// 0x0000032D System.Void Pathfinding.NodeLink3::.cctor()
+// 0x000002D5 System.Void Pathfinding.NodeLink3::.cctor()
 extern void NodeLink3__cctor_m9A4703AFCEDF61B3BC0C7BA31D8C52AAB056AF1F (void);
-// 0x0000032E System.Boolean Pathfinding.NodeLink3::<OnPostScan>b__20_0(System.Boolean)
+// 0x000002D6 System.Boolean Pathfinding.NodeLink3::<OnPostScan>b__20_0(System.Boolean)
 extern void NodeLink3_U3COnPostScanU3Eb__20_0_m7B3A5CA96426CEB7FAE478BB9CEE2E92E42C8A9F (void);
-// 0x0000032F System.Void Pathfinding.PathPool::Pool(Pathfinding.Path)
+// 0x000002D7 System.Void Pathfinding.PathPool::Pool(Pathfinding.Path)
 extern void PathPool_Pool_mFE6BE9197A2C5C36F9E7AEC6F54607DE92EB4CFF (void);
-// 0x00000330 System.Int32 Pathfinding.PathPool::GetTotalCreated(System.Type)
+// 0x000002D8 System.Int32 Pathfinding.PathPool::GetTotalCreated(System.Type)
 extern void PathPool_GetTotalCreated_mE78E21D85C5A14742F1ABF04E667EDBDC509309E (void);
-// 0x00000331 System.Int32 Pathfinding.PathPool::GetSize(System.Type)
+// 0x000002D9 System.Int32 Pathfinding.PathPool::GetSize(System.Type)
 extern void PathPool_GetSize_m2A2FF5D4FD3155744632997982F8A93D5BF2BE0E (void);
-// 0x00000332 T Pathfinding.PathPool::GetPath()
-// 0x00000333 System.Void Pathfinding.PathPool::.cctor()
+// 0x000002DA T Pathfinding.PathPool::GetPath()
+// 0x000002DB System.Void Pathfinding.PathPool::.cctor()
 extern void PathPool__cctor_mF38E37CC5DF5EEBBB7883F18263C8FEA46DB033D (void);
-// 0x00000334 System.Void Pathfinding.PathProcessor::add_OnPathPreSearch(System.Action`1<Pathfinding.Path>)
+// 0x000002DC System.Void Pathfinding.PathProcessor::add_OnPathPreSearch(System.Action`1<Pathfinding.Path>)
 extern void PathProcessor_add_OnPathPreSearch_mA861A05C411BC978B0D63729413DE6E45560CE3A (void);
-// 0x00000335 System.Void Pathfinding.PathProcessor::remove_OnPathPreSearch(System.Action`1<Pathfinding.Path>)
+// 0x000002DD System.Void Pathfinding.PathProcessor::remove_OnPathPreSearch(System.Action`1<Pathfinding.Path>)
 extern void PathProcessor_remove_OnPathPreSearch_m2E46C6CFA2A0DAF9A591A8C8870C934915F282D7 (void);
-// 0x00000336 System.Void Pathfinding.PathProcessor::add_OnPathPostSearch(System.Action`1<Pathfinding.Path>)
+// 0x000002DE System.Void Pathfinding.PathProcessor::add_OnPathPostSearch(System.Action`1<Pathfinding.Path>)
 extern void PathProcessor_add_OnPathPostSearch_m2F7975C753F7DA823E8934A2A522F5AA729A805F (void);
-// 0x00000337 System.Void Pathfinding.PathProcessor::remove_OnPathPostSearch(System.Action`1<Pathfinding.Path>)
+// 0x000002DF System.Void Pathfinding.PathProcessor::remove_OnPathPostSearch(System.Action`1<Pathfinding.Path>)
 extern void PathProcessor_remove_OnPathPostSearch_m36E9CF6A8485F847AED5144C8145E1F45626BC05 (void);
-// 0x00000338 System.Void Pathfinding.PathProcessor::add_OnQueueUnblocked(System.Action)
+// 0x000002E0 System.Void Pathfinding.PathProcessor::add_OnQueueUnblocked(System.Action)
 extern void PathProcessor_add_OnQueueUnblocked_mD0402FE7AFDA4D67BEB55D6CF96E498D7DDC0797 (void);
-// 0x00000339 System.Void Pathfinding.PathProcessor::remove_OnQueueUnblocked(System.Action)
+// 0x000002E1 System.Void Pathfinding.PathProcessor::remove_OnQueueUnblocked(System.Action)
 extern void PathProcessor_remove_OnQueueUnblocked_m2E30DF3F194D83B3A77071F0CA94841354E39B69 (void);
-// 0x0000033A System.Int32 Pathfinding.PathProcessor::get_NumThreads()
+// 0x000002E2 System.Int32 Pathfinding.PathProcessor::get_NumThreads()
 extern void PathProcessor_get_NumThreads_m6A72E19A8110D40DCCD4A2E82C1CD6B5A5397D55 (void);
-// 0x0000033B System.Boolean Pathfinding.PathProcessor::get_IsUsingMultithreading()
+// 0x000002E3 System.Boolean Pathfinding.PathProcessor::get_IsUsingMultithreading()
 extern void PathProcessor_get_IsUsingMultithreading_m5AC7A0DA792294902C1F5F28EF4816BFD263002D (void);
-// 0x0000033C System.Void Pathfinding.PathProcessor::.ctor(AstarPath,Pathfinding.PathReturnQueue,System.Int32,System.Boolean)
+// 0x000002E4 System.Void Pathfinding.PathProcessor::.ctor(AstarPath,Pathfinding.PathReturnQueue,System.Int32,System.Boolean)
 extern void PathProcessor__ctor_mA72FA649C64AA10C31DBC3A482680AEA3FDE2A30 (void);
-// 0x0000033D System.Int32 Pathfinding.PathProcessor::Lock(System.Boolean)
+// 0x000002E5 System.Int32 Pathfinding.PathProcessor::Lock(System.Boolean)
 extern void PathProcessor_Lock_m7E76D2ECD2989F844C2786B65AACE8A44E62C1FF (void);
-// 0x0000033E System.Void Pathfinding.PathProcessor::Unlock(System.Int32)
+// 0x000002E6 System.Void Pathfinding.PathProcessor::Unlock(System.Int32)
 extern void PathProcessor_Unlock_mA82A7915541D83DB891FEE665DB2A16E12F03536 (void);
-// 0x0000033F Pathfinding.PathProcessor/GraphUpdateLock Pathfinding.PathProcessor::PausePathfinding(System.Boolean)
+// 0x000002E7 Pathfinding.PathProcessor/GraphUpdateLock Pathfinding.PathProcessor::PausePathfinding(System.Boolean)
 extern void PathProcessor_PausePathfinding_m290E9ECDE3ADC3A0AC26484DEF13803E1BA2C310 (void);
-// 0x00000340 System.Void Pathfinding.PathProcessor::TickNonMultithreaded()
+// 0x000002E8 System.Void Pathfinding.PathProcessor::TickNonMultithreaded()
 extern void PathProcessor_TickNonMultithreaded_mCE73F28C1193CFB77FDF955B6BDCB18C5F45344E (void);
-// 0x00000341 System.Void Pathfinding.PathProcessor::JoinThreads()
+// 0x000002E9 System.Void Pathfinding.PathProcessor::JoinThreads()
 extern void PathProcessor_JoinThreads_m8882A8D63D7A39F1565868E92D92ADDEB2435165 (void);
-// 0x00000342 System.Void Pathfinding.PathProcessor::AbortThreads()
+// 0x000002EA System.Void Pathfinding.PathProcessor::AbortThreads()
 extern void PathProcessor_AbortThreads_m2E62C86C019016B5EB5D2AA1EDEA9A0B741DDE6D (void);
-// 0x00000343 System.Int32 Pathfinding.PathProcessor::GetNewNodeIndex()
+// 0x000002EB System.Int32 Pathfinding.PathProcessor::GetNewNodeIndex()
 extern void PathProcessor_GetNewNodeIndex_mB62BE252552039B0CEA2B6644B1D519546E53837 (void);
-// 0x00000344 System.Void Pathfinding.PathProcessor::InitializeNode(Pathfinding.GraphNode)
+// 0x000002EC System.Void Pathfinding.PathProcessor::InitializeNode(Pathfinding.GraphNode)
 extern void PathProcessor_InitializeNode_mAED966B69CEDFDE83E0F471ED084DD3CE40947C2 (void);
-// 0x00000345 System.Void Pathfinding.PathProcessor::DestroyNode(Pathfinding.GraphNode)
+// 0x000002ED System.Void Pathfinding.PathProcessor::DestroyNode(Pathfinding.GraphNode)
 extern void PathProcessor_DestroyNode_m8FA8A9CE820F0EE8EB8AB6A6ED355C367441A804 (void);
-// 0x00000346 System.Void Pathfinding.PathProcessor::CalculatePathsThreaded(Pathfinding.PathHandler)
+// 0x000002EE System.Void Pathfinding.PathProcessor::CalculatePathsThreaded(Pathfinding.PathHandler)
 extern void PathProcessor_CalculatePathsThreaded_m3A95732FD5083C2FBB321E9409C270ADA1DF3759 (void);
-// 0x00000347 System.Collections.IEnumerator Pathfinding.PathProcessor::CalculatePaths(Pathfinding.PathHandler)
+// 0x000002EF System.Collections.IEnumerator Pathfinding.PathProcessor::CalculatePaths(Pathfinding.PathHandler)
 extern void PathProcessor_CalculatePaths_m065EE70E33515B21F7BE4309D1CADEBE962F7CC1 (void);
-// 0x00000348 System.Void Pathfinding.PathProcessor/GraphUpdateLock::.ctor(Pathfinding.PathProcessor,System.Boolean)
+// 0x000002F0 System.Void Pathfinding.PathProcessor/GraphUpdateLock::.ctor(Pathfinding.PathProcessor,System.Boolean)
 extern void GraphUpdateLock__ctor_m72FDD7B09CFA3493907C1181D4E657CB999D3DC8 (void);
-// 0x00000349 System.Boolean Pathfinding.PathProcessor/GraphUpdateLock::get_Held()
+// 0x000002F1 System.Boolean Pathfinding.PathProcessor/GraphUpdateLock::get_Held()
 extern void GraphUpdateLock_get_Held_m1D5503FC3E06005CF7C0B70E0B976F57709C21A0 (void);
-// 0x0000034A System.Void Pathfinding.PathProcessor/GraphUpdateLock::Release()
+// 0x000002F2 System.Void Pathfinding.PathProcessor/GraphUpdateLock::Release()
 extern void GraphUpdateLock_Release_m5DD2E0681ED1C58B742460500AC5FC6EDB4933FB (void);
-// 0x0000034B System.Void Pathfinding.PathProcessor/<>c__DisplayClass24_0::.ctor()
+// 0x000002F3 System.Void Pathfinding.PathProcessor/<>c__DisplayClass24_0::.ctor()
 extern void U3CU3Ec__DisplayClass24_0__ctor_m415D77018EE062167616D71194E037A2C03A6A14 (void);
-// 0x0000034C System.Void Pathfinding.PathProcessor/<>c__DisplayClass24_0::<.ctor>b__0()
+// 0x000002F4 System.Void Pathfinding.PathProcessor/<>c__DisplayClass24_0::<.ctor>b__0()
 extern void U3CU3Ec__DisplayClass24_0_U3C_ctorU3Eb__0_m9FA29525541DFEF71299B7CB6572AD4AC66B59C1 (void);
-// 0x0000034D System.Void Pathfinding.PathProcessor/<CalculatePaths>d__36::.ctor(System.Int32)
+// 0x000002F5 System.Void Pathfinding.PathProcessor/<CalculatePaths>d__36::.ctor(System.Int32)
 extern void U3CCalculatePathsU3Ed__36__ctor_m80AE35E939C06EC3CA1B243C3CC14D95A9622CC3 (void);
-// 0x0000034E System.Void Pathfinding.PathProcessor/<CalculatePaths>d__36::System.IDisposable.Dispose()
+// 0x000002F6 System.Void Pathfinding.PathProcessor/<CalculatePaths>d__36::System.IDisposable.Dispose()
 extern void U3CCalculatePathsU3Ed__36_System_IDisposable_Dispose_m7A8F2103770CB401D2D2DF00EE4E3BC22ACDD8EB (void);
-// 0x0000034F System.Boolean Pathfinding.PathProcessor/<CalculatePaths>d__36::MoveNext()
+// 0x000002F7 System.Boolean Pathfinding.PathProcessor/<CalculatePaths>d__36::MoveNext()
 extern void U3CCalculatePathsU3Ed__36_MoveNext_m1E1066C354A3B15B87E3D71A44F29EFEA931F3F7 (void);
-// 0x00000350 System.Object Pathfinding.PathProcessor/<CalculatePaths>d__36::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000002F8 System.Object Pathfinding.PathProcessor/<CalculatePaths>d__36::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CCalculatePathsU3Ed__36_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB5B0734D07149D1FA9AAEF46F4AEF9E90FCAE96C (void);
-// 0x00000351 System.Void Pathfinding.PathProcessor/<CalculatePaths>d__36::System.Collections.IEnumerator.Reset()
+// 0x000002F9 System.Void Pathfinding.PathProcessor/<CalculatePaths>d__36::System.Collections.IEnumerator.Reset()
 extern void U3CCalculatePathsU3Ed__36_System_Collections_IEnumerator_Reset_m0198CDDAD2E12F0E63402D967F47B914C34D1376 (void);
-// 0x00000352 System.Object Pathfinding.PathProcessor/<CalculatePaths>d__36::System.Collections.IEnumerator.get_Current()
+// 0x000002FA System.Object Pathfinding.PathProcessor/<CalculatePaths>d__36::System.Collections.IEnumerator.get_Current()
 extern void U3CCalculatePathsU3Ed__36_System_Collections_IEnumerator_get_Current_m88AC50D18738FFE5F385627D171A3A61986D1D38 (void);
-// 0x00000353 System.Void Pathfinding.PathReturnQueue::.ctor(System.Object)
+// 0x000002FB System.Void Pathfinding.PathReturnQueue::.ctor(System.Object)
 extern void PathReturnQueue__ctor_mA77E28BA23C901BA18249A0703A69CEE45897FC8 (void);
-// 0x00000354 System.Void Pathfinding.PathReturnQueue::Enqueue(Pathfinding.Path)
+// 0x000002FC System.Void Pathfinding.PathReturnQueue::Enqueue(Pathfinding.Path)
 extern void PathReturnQueue_Enqueue_mE9E6A9B9AF077F4C3E02BF5DA77CBC8C2FE6D4EE (void);
-// 0x00000355 System.Void Pathfinding.PathReturnQueue::ReturnPaths(System.Boolean)
+// 0x000002FD System.Void Pathfinding.PathReturnQueue::ReturnPaths(System.Boolean)
 extern void PathReturnQueue_ReturnPaths_m40E2D149A15EE345F34E97FE88ABD9D40CAB3B29 (void);
-// 0x00000356 System.Void Pathfinding.ThreadControlQueue::.ctor(System.Int32)
+// 0x000002FE System.Void Pathfinding.ThreadControlQueue::.ctor(System.Int32)
 extern void ThreadControlQueue__ctor_m76CE5F6D19A8CC60CFCDFFA6E0B07130C895E8E4 (void);
-// 0x00000357 System.Boolean Pathfinding.ThreadControlQueue::get_IsEmpty()
+// 0x000002FF System.Boolean Pathfinding.ThreadControlQueue::get_IsEmpty()
 extern void ThreadControlQueue_get_IsEmpty_m99C266CB45DB5321BB4E38028EEBE68CBC3D1C0A (void);
-// 0x00000358 System.Boolean Pathfinding.ThreadControlQueue::get_IsTerminating()
+// 0x00000300 System.Boolean Pathfinding.ThreadControlQueue::get_IsTerminating()
 extern void ThreadControlQueue_get_IsTerminating_m966601A5E4511BE83AAA3956C2E62461DE571458 (void);
-// 0x00000359 System.Void Pathfinding.ThreadControlQueue::Block()
+// 0x00000301 System.Void Pathfinding.ThreadControlQueue::Block()
 extern void ThreadControlQueue_Block_m8963DA80862DFFED119858687CBE03BED3D1046F (void);
-// 0x0000035A System.Void Pathfinding.ThreadControlQueue::Unblock()
+// 0x00000302 System.Void Pathfinding.ThreadControlQueue::Unblock()
 extern void ThreadControlQueue_Unblock_m6D416ACFD94C94BE53CB1628DF9B26487C9C5D10 (void);
-// 0x0000035B System.Void Pathfinding.ThreadControlQueue::Lock()
+// 0x00000303 System.Void Pathfinding.ThreadControlQueue::Lock()
 extern void ThreadControlQueue_Lock_m3D881CB65C3519C68AD56760D73B06CB60066E79 (void);
-// 0x0000035C System.Void Pathfinding.ThreadControlQueue::Unlock()
+// 0x00000304 System.Void Pathfinding.ThreadControlQueue::Unlock()
 extern void ThreadControlQueue_Unlock_m7CE7E777AC8681BAC47B59FD11490D4EB569ED66 (void);
-// 0x0000035D System.Boolean Pathfinding.ThreadControlQueue::get_AllReceiversBlocked()
+// 0x00000305 System.Boolean Pathfinding.ThreadControlQueue::get_AllReceiversBlocked()
 extern void ThreadControlQueue_get_AllReceiversBlocked_m269C454E9155860FFAC33E715B3D5B9E903BE4DD (void);
-// 0x0000035E System.Void Pathfinding.ThreadControlQueue::PushFront(Pathfinding.Path)
+// 0x00000306 System.Void Pathfinding.ThreadControlQueue::PushFront(Pathfinding.Path)
 extern void ThreadControlQueue_PushFront_m9C6E3BA0316577BC6EB047B4EC19BA2CE031F07B (void);
-// 0x0000035F System.Void Pathfinding.ThreadControlQueue::Push(Pathfinding.Path)
+// 0x00000307 System.Void Pathfinding.ThreadControlQueue::Push(Pathfinding.Path)
 extern void ThreadControlQueue_Push_mCBB4DF9651B49E250129426841A5A54EDFD1FB5E (void);
-// 0x00000360 System.Void Pathfinding.ThreadControlQueue::Starving()
+// 0x00000308 System.Void Pathfinding.ThreadControlQueue::Starving()
 extern void ThreadControlQueue_Starving_m8CE943DDE1D42DF6CF861E6565C8B5E67AD4FEA5 (void);
-// 0x00000361 System.Void Pathfinding.ThreadControlQueue::TerminateReceivers()
+// 0x00000309 System.Void Pathfinding.ThreadControlQueue::TerminateReceivers()
 extern void ThreadControlQueue_TerminateReceivers_mB2BC0ECA57D64842B193DC833849EB61C9A92617 (void);
-// 0x00000362 Pathfinding.Path Pathfinding.ThreadControlQueue::Pop()
+// 0x0000030A Pathfinding.Path Pathfinding.ThreadControlQueue::Pop()
 extern void ThreadControlQueue_Pop_m1E79416C32F5F20774C81B045E6E569DE8049FA9 (void);
-// 0x00000363 System.Void Pathfinding.ThreadControlQueue::ReceiverTerminated()
+// 0x0000030B System.Void Pathfinding.ThreadControlQueue::ReceiverTerminated()
 extern void ThreadControlQueue_ReceiverTerminated_m843CD3825CFE806324EA30AC8151C40FC5229209 (void);
-// 0x00000364 Pathfinding.Path Pathfinding.ThreadControlQueue::PopNoBlock(System.Boolean)
+// 0x0000030C Pathfinding.Path Pathfinding.ThreadControlQueue::PopNoBlock(System.Boolean)
 extern void ThreadControlQueue_PopNoBlock_mC52796BEF793CA1D6B171388AF18ECCB635CA5A2 (void);
-// 0x00000365 System.Void Pathfinding.ThreadControlQueue/QueueTerminationException::.ctor()
+// 0x0000030D System.Void Pathfinding.ThreadControlQueue/QueueTerminationException::.ctor()
 extern void QueueTerminationException__ctor_m5947656F45F3E3F548FAF83B59DC93FE33A502B2 (void);
-// 0x00000366 System.Void Pathfinding.AstarWorkItem::.ctor(System.Func`2<System.Boolean,System.Boolean>)
+// 0x0000030E System.Void Pathfinding.AstarWorkItem::.ctor(System.Func`2<System.Boolean,System.Boolean>)
 extern void AstarWorkItem__ctor_m80ECD25182BAE190E36A03B3F4580FEEB2712D10 (void);
-// 0x00000367 System.Void Pathfinding.AstarWorkItem::.ctor(System.Func`3<Pathfinding.IWorkItemContext,System.Boolean,System.Boolean>)
+// 0x0000030F System.Void Pathfinding.AstarWorkItem::.ctor(System.Func`3<Pathfinding.IWorkItemContext,System.Boolean,System.Boolean>)
 extern void AstarWorkItem__ctor_mA9A13FF76A946336BBB4500FA3445DAD5796A5F1 (void);
-// 0x00000368 System.Void Pathfinding.AstarWorkItem::.ctor(System.Action,System.Func`2<System.Boolean,System.Boolean>)
+// 0x00000310 System.Void Pathfinding.AstarWorkItem::.ctor(System.Action,System.Func`2<System.Boolean,System.Boolean>)
 extern void AstarWorkItem__ctor_m3D28340F13DC5ADB7DA7F8D6799BFB8E1193E0EF (void);
-// 0x00000369 System.Void Pathfinding.AstarWorkItem::.ctor(System.Action`1<Pathfinding.IWorkItemContext>,System.Func`3<Pathfinding.IWorkItemContext,System.Boolean,System.Boolean>)
+// 0x00000311 System.Void Pathfinding.AstarWorkItem::.ctor(System.Action`1<Pathfinding.IWorkItemContext>,System.Func`3<Pathfinding.IWorkItemContext,System.Boolean,System.Boolean>)
 extern void AstarWorkItem__ctor_mECE98A7AF478834B9D18E594D0ADCC01A65C4183 (void);
-// 0x0000036A System.Void Pathfinding.IWorkItemContext::QueueFloodFill()
-// 0x0000036B System.Void Pathfinding.IWorkItemContext::EnsureValidFloodFill()
-// 0x0000036C System.Void Pathfinding.IWorkItemContext::SetGraphDirty(Pathfinding.NavGraph)
-// 0x0000036D System.Boolean Pathfinding.WorkItemProcessor::get_workItemsInProgressRightNow()
+// 0x00000312 System.Void Pathfinding.IWorkItemContext::QueueFloodFill()
+// 0x00000313 System.Void Pathfinding.IWorkItemContext::EnsureValidFloodFill()
+// 0x00000314 System.Void Pathfinding.IWorkItemContext::SetGraphDirty(Pathfinding.NavGraph)
+// 0x00000315 System.Boolean Pathfinding.WorkItemProcessor::get_workItemsInProgressRightNow()
 extern void WorkItemProcessor_get_workItemsInProgressRightNow_m60FBD7509CEF87981D9181DFC8D50AFC87ACDE45 (void);
-// 0x0000036E System.Void Pathfinding.WorkItemProcessor::set_workItemsInProgressRightNow(System.Boolean)
+// 0x00000316 System.Void Pathfinding.WorkItemProcessor::set_workItemsInProgressRightNow(System.Boolean)
 extern void WorkItemProcessor_set_workItemsInProgressRightNow_m3E09E30BAF7ED50028799F127FBC9DBF01B85A35 (void);
-// 0x0000036F System.Boolean Pathfinding.WorkItemProcessor::get_anyQueued()
+// 0x00000317 System.Boolean Pathfinding.WorkItemProcessor::get_anyQueued()
 extern void WorkItemProcessor_get_anyQueued_mC7426515D6AB3ACBBBC25DF194BBD8637D22B439 (void);
-// 0x00000370 System.Boolean Pathfinding.WorkItemProcessor::get_workItemsInProgress()
+// 0x00000318 System.Boolean Pathfinding.WorkItemProcessor::get_workItemsInProgress()
 extern void WorkItemProcessor_get_workItemsInProgress_mAE52A544C670C0C6DA7709C73CD6C7F0E3388DC9 (void);
-// 0x00000371 System.Void Pathfinding.WorkItemProcessor::set_workItemsInProgress(System.Boolean)
+// 0x00000319 System.Void Pathfinding.WorkItemProcessor::set_workItemsInProgress(System.Boolean)
 extern void WorkItemProcessor_set_workItemsInProgress_m2061576C1F113A0726D7D414AAD2020C68CAAF3C (void);
-// 0x00000372 System.Void Pathfinding.WorkItemProcessor::Pathfinding.IWorkItemContext.QueueFloodFill()
+// 0x0000031A System.Void Pathfinding.WorkItemProcessor::Pathfinding.IWorkItemContext.QueueFloodFill()
 extern void WorkItemProcessor_Pathfinding_IWorkItemContext_QueueFloodFill_m08636DD313CDE9E1C96D59560B135825F115C4BF (void);
-// 0x00000373 System.Void Pathfinding.WorkItemProcessor::Pathfinding.IWorkItemContext.SetGraphDirty(Pathfinding.NavGraph)
+// 0x0000031B System.Void Pathfinding.WorkItemProcessor::Pathfinding.IWorkItemContext.SetGraphDirty(Pathfinding.NavGraph)
 extern void WorkItemProcessor_Pathfinding_IWorkItemContext_SetGraphDirty_mD27A771BCC7AAE494FAAB268BFB8C5C99681E22B (void);
-// 0x00000374 System.Void Pathfinding.WorkItemProcessor::EnsureValidFloodFill()
+// 0x0000031C System.Void Pathfinding.WorkItemProcessor::EnsureValidFloodFill()
 extern void WorkItemProcessor_EnsureValidFloodFill_m891B9D7CC280F560B1B97118096C5505943F759E (void);
-// 0x00000375 System.Void Pathfinding.WorkItemProcessor::.ctor(AstarPath)
+// 0x0000031D System.Void Pathfinding.WorkItemProcessor::.ctor(AstarPath)
 extern void WorkItemProcessor__ctor_mA5FFB2611E46B546AC0E7BEC2AF9B2C1F1E07EFF (void);
-// 0x00000376 System.Void Pathfinding.WorkItemProcessor::OnFloodFill()
+// 0x0000031E System.Void Pathfinding.WorkItemProcessor::OnFloodFill()
 extern void WorkItemProcessor_OnFloodFill_mE7B7FE3B231C99D711A95F8FE2B3C6743EFC8C27 (void);
-// 0x00000377 System.Void Pathfinding.WorkItemProcessor::AddWorkItem(Pathfinding.AstarWorkItem)
+// 0x0000031F System.Void Pathfinding.WorkItemProcessor::AddWorkItem(Pathfinding.AstarWorkItem)
 extern void WorkItemProcessor_AddWorkItem_mDCC92BD549244780274132E4AD3A65B7FD00DADC (void);
-// 0x00000378 System.Boolean Pathfinding.WorkItemProcessor::ProcessWorkItems(System.Boolean)
+// 0x00000320 System.Boolean Pathfinding.WorkItemProcessor::ProcessWorkItems(System.Boolean)
 extern void WorkItemProcessor_ProcessWorkItems_mE9C873F8DB275A7ED7D3E3B608A2AE0061A4560F (void);
-// 0x00000379 T Pathfinding.WorkItemProcessor/IndexedQueue`1::get_Item(System.Int32)
-// 0x0000037A System.Void Pathfinding.WorkItemProcessor/IndexedQueue`1::set_Item(System.Int32,T)
-// 0x0000037B System.Int32 Pathfinding.WorkItemProcessor/IndexedQueue`1::get_Count()
-// 0x0000037C System.Void Pathfinding.WorkItemProcessor/IndexedQueue`1::set_Count(System.Int32)
-// 0x0000037D System.Void Pathfinding.WorkItemProcessor/IndexedQueue`1::Enqueue(T)
-// 0x0000037E T Pathfinding.WorkItemProcessor/IndexedQueue`1::Dequeue()
-// 0x0000037F System.Void Pathfinding.WorkItemProcessor/IndexedQueue`1::.ctor()
-// 0x00000380 System.Void Pathfinding.Connection::.ctor(Pathfinding.GraphNode,System.UInt32,System.Byte)
+// 0x00000321 T Pathfinding.WorkItemProcessor/IndexedQueue`1::get_Item(System.Int32)
+// 0x00000322 System.Void Pathfinding.WorkItemProcessor/IndexedQueue`1::set_Item(System.Int32,T)
+// 0x00000323 System.Int32 Pathfinding.WorkItemProcessor/IndexedQueue`1::get_Count()
+// 0x00000324 System.Void Pathfinding.WorkItemProcessor/IndexedQueue`1::set_Count(System.Int32)
+// 0x00000325 System.Void Pathfinding.WorkItemProcessor/IndexedQueue`1::Enqueue(T)
+// 0x00000326 T Pathfinding.WorkItemProcessor/IndexedQueue`1::Dequeue()
+// 0x00000327 System.Void Pathfinding.WorkItemProcessor/IndexedQueue`1::.ctor()
+// 0x00000328 System.Void Pathfinding.Connection::.ctor(Pathfinding.GraphNode,System.UInt32,System.Byte)
 extern void Connection__ctor_m4A097A70539A4C301535E59D91A09A2D7C52E1D2 (void);
-// 0x00000381 System.Int32 Pathfinding.Connection::GetHashCode()
+// 0x00000329 System.Int32 Pathfinding.Connection::GetHashCode()
 extern void Connection_GetHashCode_m1B33710893D1443A103B25749ED833D3830ECCA2 (void);
-// 0x00000382 System.Boolean Pathfinding.Connection::Equals(System.Object)
+// 0x0000032A System.Boolean Pathfinding.Connection::Equals(System.Object)
 extern void Connection_Equals_m0B5A487BB2AB4F6914AD87DA3D591528704EA702 (void);
-// 0x00000383 Pathfinding.NavGraph Pathfinding.GraphNode::get_Graph()
+// 0x0000032B Pathfinding.NavGraph Pathfinding.GraphNode::get_Graph()
 extern void GraphNode_get_Graph_mB23268E38AA50142FEE9276D0F2C11146E4A50AE (void);
-// 0x00000384 System.Void Pathfinding.GraphNode::.ctor(AstarPath)
+// 0x0000032C System.Void Pathfinding.GraphNode::.ctor(AstarPath)
 extern void GraphNode__ctor_m962B0F8CB16339D10AD78273E651373A10B3ACC2 (void);
-// 0x00000385 System.Void Pathfinding.GraphNode::Destroy()
+// 0x0000032D System.Void Pathfinding.GraphNode::Destroy()
 extern void GraphNode_Destroy_mDA77B05D323D3821AAE1CB7DE44F9DD48823C41D (void);
-// 0x00000386 System.Boolean Pathfinding.GraphNode::get_Destroyed()
+// 0x0000032E System.Boolean Pathfinding.GraphNode::get_Destroyed()
 extern void GraphNode_get_Destroyed_m6BE532323FF36C53B8B56D60495A1B0576F9C423 (void);
-// 0x00000387 System.Int32 Pathfinding.GraphNode::get_NodeIndex()
+// 0x0000032F System.Int32 Pathfinding.GraphNode::get_NodeIndex()
 extern void GraphNode_get_NodeIndex_m0C1ABD402641993CE78427C724352DE9B459B532 (void);
-// 0x00000388 System.Void Pathfinding.GraphNode::set_NodeIndex(System.Int32)
+// 0x00000330 System.Void Pathfinding.GraphNode::set_NodeIndex(System.Int32)
 extern void GraphNode_set_NodeIndex_m67711B4DDE1E6351C0C139EE9E0B9725DD053EAC (void);
-// 0x00000389 System.Boolean Pathfinding.GraphNode::get_TemporaryFlag1()
+// 0x00000331 System.Boolean Pathfinding.GraphNode::get_TemporaryFlag1()
 extern void GraphNode_get_TemporaryFlag1_m291417336DCCA22A7DED7A2CB298156D2092CD26 (void);
-// 0x0000038A System.Void Pathfinding.GraphNode::set_TemporaryFlag1(System.Boolean)
+// 0x00000332 System.Void Pathfinding.GraphNode::set_TemporaryFlag1(System.Boolean)
 extern void GraphNode_set_TemporaryFlag1_m49B9FE36353FF71A77F4342745A17C2986EB6387 (void);
-// 0x0000038B System.Boolean Pathfinding.GraphNode::get_TemporaryFlag2()
+// 0x00000333 System.Boolean Pathfinding.GraphNode::get_TemporaryFlag2()
 extern void GraphNode_get_TemporaryFlag2_mD932726CEA12AB522BA0829CC1D8364051556149 (void);
-// 0x0000038C System.Void Pathfinding.GraphNode::set_TemporaryFlag2(System.Boolean)
+// 0x00000334 System.Void Pathfinding.GraphNode::set_TemporaryFlag2(System.Boolean)
 extern void GraphNode_set_TemporaryFlag2_m0BC5863C24CFE1AA72D1B730CCC3283456EDBC09 (void);
-// 0x0000038D System.UInt32 Pathfinding.GraphNode::get_Flags()
+// 0x00000335 System.UInt32 Pathfinding.GraphNode::get_Flags()
 extern void GraphNode_get_Flags_m3C230B3005D139D8B4D575E8D35E43967837B4B1 (void);
-// 0x0000038E System.Void Pathfinding.GraphNode::set_Flags(System.UInt32)
+// 0x00000336 System.Void Pathfinding.GraphNode::set_Flags(System.UInt32)
 extern void GraphNode_set_Flags_mA3BFC8E434A7ECA94058A1BBD5204586A82E245E (void);
-// 0x0000038F System.UInt32 Pathfinding.GraphNode::get_Penalty()
+// 0x00000337 System.UInt32 Pathfinding.GraphNode::get_Penalty()
 extern void GraphNode_get_Penalty_mB571B6C662C647253292F6CB15BA639E9FC11B00 (void);
-// 0x00000390 System.Void Pathfinding.GraphNode::set_Penalty(System.UInt32)
+// 0x00000338 System.Void Pathfinding.GraphNode::set_Penalty(System.UInt32)
 extern void GraphNode_set_Penalty_mC96C25B6939F620A6619F746CF7401FCA55FF00E (void);
-// 0x00000391 System.Boolean Pathfinding.GraphNode::get_Walkable()
+// 0x00000339 System.Boolean Pathfinding.GraphNode::get_Walkable()
 extern void GraphNode_get_Walkable_m0E6424EE787C81738AE10646992082EA15D90276 (void);
-// 0x00000392 System.Void Pathfinding.GraphNode::set_Walkable(System.Boolean)
+// 0x0000033A System.Void Pathfinding.GraphNode::set_Walkable(System.Boolean)
 extern void GraphNode_set_Walkable_mCF50E3137F65A96644AED7F796F4DCE9EA1577CE (void);
-// 0x00000393 System.Int32 Pathfinding.GraphNode::get_HierarchicalNodeIndex()
+// 0x0000033B System.Int32 Pathfinding.GraphNode::get_HierarchicalNodeIndex()
 extern void GraphNode_get_HierarchicalNodeIndex_mDA5F72F73692892E6A1AB01877463381A0391D56 (void);
-// 0x00000394 System.Void Pathfinding.GraphNode::set_HierarchicalNodeIndex(System.Int32)
+// 0x0000033C System.Void Pathfinding.GraphNode::set_HierarchicalNodeIndex(System.Int32)
 extern void GraphNode_set_HierarchicalNodeIndex_mA2E26494D068C19E65D75A14F1263E2345334F02 (void);
-// 0x00000395 System.Boolean Pathfinding.GraphNode::get_IsHierarchicalNodeDirty()
+// 0x0000033D System.Boolean Pathfinding.GraphNode::get_IsHierarchicalNodeDirty()
 extern void GraphNode_get_IsHierarchicalNodeDirty_m719B212B4EA163EE1DFED96E7BCEF2555C551DA8 (void);
-// 0x00000396 System.Void Pathfinding.GraphNode::set_IsHierarchicalNodeDirty(System.Boolean)
+// 0x0000033E System.Void Pathfinding.GraphNode::set_IsHierarchicalNodeDirty(System.Boolean)
 extern void GraphNode_set_IsHierarchicalNodeDirty_mA9AAB9D2771A905DD1F802F19381CF42CC6CAE7D (void);
-// 0x00000397 System.UInt32 Pathfinding.GraphNode::get_Area()
+// 0x0000033F System.UInt32 Pathfinding.GraphNode::get_Area()
 extern void GraphNode_get_Area_m5696D85F0AAF24AEE54DB0FDF83FFC2C83704339 (void);
-// 0x00000398 System.UInt32 Pathfinding.GraphNode::get_GraphIndex()
+// 0x00000340 System.UInt32 Pathfinding.GraphNode::get_GraphIndex()
 extern void GraphNode_get_GraphIndex_mB3FD59266210CD03A2422C847FC06E4B3D74B428 (void);
-// 0x00000399 System.Void Pathfinding.GraphNode::set_GraphIndex(System.UInt32)
+// 0x00000341 System.Void Pathfinding.GraphNode::set_GraphIndex(System.UInt32)
 extern void GraphNode_set_GraphIndex_m9B2794336E89B1606DDA06CE9042A64BC06BCCEF (void);
-// 0x0000039A System.UInt32 Pathfinding.GraphNode::get_Tag()
+// 0x00000342 System.UInt32 Pathfinding.GraphNode::get_Tag()
 extern void GraphNode_get_Tag_m1E8BB45933CFC75EFFF09488C59CE1289A3543BC (void);
-// 0x0000039B System.Void Pathfinding.GraphNode::set_Tag(System.UInt32)
+// 0x00000343 System.Void Pathfinding.GraphNode::set_Tag(System.UInt32)
 extern void GraphNode_set_Tag_m7BBADEE7A94A2FF55C42402F042B3DFC9719ED26 (void);
-// 0x0000039C System.Void Pathfinding.GraphNode::SetConnectivityDirty()
+// 0x00000344 System.Void Pathfinding.GraphNode::SetConnectivityDirty()
 extern void GraphNode_SetConnectivityDirty_m1B823A693BA88849DB202D906E6DD5646D83E86E (void);
-// 0x0000039D System.Void Pathfinding.GraphNode::RecalculateConnectionCosts()
+// 0x00000345 System.Void Pathfinding.GraphNode::RecalculateConnectionCosts()
 extern void GraphNode_RecalculateConnectionCosts_mE9BF028AB1E148AD373B19A101F99B8E70F51848 (void);
-// 0x0000039E System.Void Pathfinding.GraphNode::UpdateRecursiveG(Pathfinding.Path,Pathfinding.PathNode,Pathfinding.PathHandler)
+// 0x00000346 System.Void Pathfinding.GraphNode::UpdateRecursiveG(Pathfinding.Path,Pathfinding.PathNode,Pathfinding.PathHandler)
 extern void GraphNode_UpdateRecursiveG_m29F7399EF7EA34BA3AE932F962FEBDD03058407A (void);
-// 0x0000039F System.Void Pathfinding.GraphNode::GetConnections(System.Action`1<Pathfinding.GraphNode>)
-// 0x000003A0 System.Void Pathfinding.GraphNode::AddConnection(Pathfinding.GraphNode,System.UInt32)
-// 0x000003A1 System.Void Pathfinding.GraphNode::RemoveConnection(Pathfinding.GraphNode)
-// 0x000003A2 System.Void Pathfinding.GraphNode::ClearConnections(System.Boolean)
-// 0x000003A3 System.Boolean Pathfinding.GraphNode::ContainsConnection(Pathfinding.GraphNode)
+// 0x00000347 System.Void Pathfinding.GraphNode::GetConnections(System.Action`1<Pathfinding.GraphNode>)
+// 0x00000348 System.Void Pathfinding.GraphNode::AddConnection(Pathfinding.GraphNode,System.UInt32)
+// 0x00000349 System.Void Pathfinding.GraphNode::RemoveConnection(Pathfinding.GraphNode)
+// 0x0000034A System.Void Pathfinding.GraphNode::ClearConnections(System.Boolean)
+// 0x0000034B System.Boolean Pathfinding.GraphNode::ContainsConnection(Pathfinding.GraphNode)
 extern void GraphNode_ContainsConnection_m852720DA2F5101851274EA0E5EF978F1AD5978EE (void);
-// 0x000003A4 System.Boolean Pathfinding.GraphNode::GetPortal(Pathfinding.GraphNode,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Boolean)
+// 0x0000034C System.Boolean Pathfinding.GraphNode::GetPortal(Pathfinding.GraphNode,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Boolean)
 extern void GraphNode_GetPortal_mDB390BB5EB7267D4E6ADC31A382B186F6A1F2F52 (void);
-// 0x000003A5 System.Void Pathfinding.GraphNode::Open(Pathfinding.Path,Pathfinding.PathNode,Pathfinding.PathHandler)
-// 0x000003A6 System.Single Pathfinding.GraphNode::SurfaceArea()
+// 0x0000034D System.Void Pathfinding.GraphNode::Open(Pathfinding.Path,Pathfinding.PathNode,Pathfinding.PathHandler)
+// 0x0000034E System.Single Pathfinding.GraphNode::SurfaceArea()
 extern void GraphNode_SurfaceArea_m432669C94BD9E2A1C11F1A6AE532BE8796A5B742 (void);
-// 0x000003A7 UnityEngine.Vector3 Pathfinding.GraphNode::RandomPointOnSurface()
+// 0x0000034F UnityEngine.Vector3 Pathfinding.GraphNode::RandomPointOnSurface()
 extern void GraphNode_RandomPointOnSurface_m3D1D1304AF7EB1A2C65030BC94AB93D4DACD9508 (void);
-// 0x000003A8 UnityEngine.Vector3 Pathfinding.GraphNode::ClosestPointOnNode(UnityEngine.Vector3)
-// 0x000003A9 System.Int32 Pathfinding.GraphNode::GetGizmoHashCode()
+// 0x00000350 UnityEngine.Vector3 Pathfinding.GraphNode::ClosestPointOnNode(UnityEngine.Vector3)
+// 0x00000351 System.Int32 Pathfinding.GraphNode::GetGizmoHashCode()
 extern void GraphNode_GetGizmoHashCode_m4F6FBDB8048E7493E8FCE4CF3B800DA49DAAA686 (void);
-// 0x000003AA System.Void Pathfinding.GraphNode::SerializeNode(Pathfinding.Serialization.GraphSerializationContext)
+// 0x00000352 System.Void Pathfinding.GraphNode::SerializeNode(Pathfinding.Serialization.GraphSerializationContext)
 extern void GraphNode_SerializeNode_mD33B9C61E7205A8A098807428025CF2FF4626DDA (void);
-// 0x000003AB System.Void Pathfinding.GraphNode::DeserializeNode(Pathfinding.Serialization.GraphSerializationContext)
+// 0x00000353 System.Void Pathfinding.GraphNode::DeserializeNode(Pathfinding.Serialization.GraphSerializationContext)
 extern void GraphNode_DeserializeNode_mE353ED15276B00A0A798066891B1FF38B91EF1CA (void);
-// 0x000003AC System.Void Pathfinding.GraphNode::SerializeReferences(Pathfinding.Serialization.GraphSerializationContext)
+// 0x00000354 System.Void Pathfinding.GraphNode::SerializeReferences(Pathfinding.Serialization.GraphSerializationContext)
 extern void GraphNode_SerializeReferences_m790F6FF88A7247A12E05A1E93FF4688E22E332A6 (void);
-// 0x000003AD System.Void Pathfinding.GraphNode::DeserializeReferences(Pathfinding.Serialization.GraphSerializationContext)
+// 0x00000355 System.Void Pathfinding.GraphNode::DeserializeReferences(Pathfinding.Serialization.GraphSerializationContext)
 extern void GraphNode_DeserializeReferences_mB7820280A75661780353F01F51D90E50701CC159 (void);
-// 0x000003AE System.Void Pathfinding.GraphNode/<>c__DisplayClass60_0::.ctor()
+// 0x00000356 System.Void Pathfinding.GraphNode/<>c__DisplayClass60_0::.ctor()
 extern void U3CU3Ec__DisplayClass60_0__ctor_m28FE7B59344928FCDAEAD87098B7F5EF73E52BB3 (void);
-// 0x000003AF System.Void Pathfinding.GraphNode/<>c__DisplayClass60_0::<UpdateRecursiveG>b__0(Pathfinding.GraphNode)
+// 0x00000357 System.Void Pathfinding.GraphNode/<>c__DisplayClass60_0::<UpdateRecursiveG>b__0(Pathfinding.GraphNode)
 extern void U3CU3Ec__DisplayClass60_0_U3CUpdateRecursiveGU3Eb__0_m1A6AC12FF3FE4F87C35ABA8CB5DC4BE6AE6D26DB (void);
-// 0x000003B0 System.Void Pathfinding.GraphNode/<>c__DisplayClass65_0::.ctor()
+// 0x00000358 System.Void Pathfinding.GraphNode/<>c__DisplayClass65_0::.ctor()
 extern void U3CU3Ec__DisplayClass65_0__ctor_m9907DABE36BDAFB6DB8ED0807FDB684B9F54D41C (void);
-// 0x000003B1 System.Void Pathfinding.GraphNode/<>c__DisplayClass65_0::<ContainsConnection>b__0(Pathfinding.GraphNode)
+// 0x00000359 System.Void Pathfinding.GraphNode/<>c__DisplayClass65_0::<ContainsConnection>b__0(Pathfinding.GraphNode)
 extern void U3CU3Ec__DisplayClass65_0_U3CContainsConnectionU3Eb__0_mDB8C80CDB4887C69C69B458682079ABEC439ACB4 (void);
-// 0x000003B2 System.Void Pathfinding.MeshNode::.ctor(AstarPath)
+// 0x0000035A System.Void Pathfinding.MeshNode::.ctor(AstarPath)
 extern void MeshNode__ctor_m0D20EE79DC4C9F222B97C79D91D3748AB3E6B846 (void);
-// 0x000003B3 Pathfinding.Int3 Pathfinding.MeshNode::GetVertex(System.Int32)
-// 0x000003B4 System.Int32 Pathfinding.MeshNode::GetVertexCount()
-// 0x000003B5 UnityEngine.Vector3 Pathfinding.MeshNode::ClosestPointOnNodeXZ(UnityEngine.Vector3)
-// 0x000003B6 System.Void Pathfinding.MeshNode::ClearConnections(System.Boolean)
+// 0x0000035B Pathfinding.Int3 Pathfinding.MeshNode::GetVertex(System.Int32)
+// 0x0000035C System.Int32 Pathfinding.MeshNode::GetVertexCount()
+// 0x0000035D UnityEngine.Vector3 Pathfinding.MeshNode::ClosestPointOnNodeXZ(UnityEngine.Vector3)
+// 0x0000035E System.Void Pathfinding.MeshNode::ClearConnections(System.Boolean)
 extern void MeshNode_ClearConnections_m013FE20F4EFC3B361335E70752A2EA5B03EC7302 (void);
-// 0x000003B7 System.Void Pathfinding.MeshNode::GetConnections(System.Action`1<Pathfinding.GraphNode>)
+// 0x0000035F System.Void Pathfinding.MeshNode::GetConnections(System.Action`1<Pathfinding.GraphNode>)
 extern void MeshNode_GetConnections_mB284529C8FC8E028ABF179293BBFF1B3517B7304 (void);
-// 0x000003B8 System.Boolean Pathfinding.MeshNode::ContainsConnection(Pathfinding.GraphNode)
+// 0x00000360 System.Boolean Pathfinding.MeshNode::ContainsConnection(Pathfinding.GraphNode)
 extern void MeshNode_ContainsConnection_m4514B07EF704605FBF6489C4F3CBBAEDDD6A47E9 (void);
-// 0x000003B9 System.Void Pathfinding.MeshNode::UpdateRecursiveG(Pathfinding.Path,Pathfinding.PathNode,Pathfinding.PathHandler)
+// 0x00000361 System.Void Pathfinding.MeshNode::UpdateRecursiveG(Pathfinding.Path,Pathfinding.PathNode,Pathfinding.PathHandler)
 extern void MeshNode_UpdateRecursiveG_m275BA4F068F7CD2B259D6F8A8C2ED6863512F021 (void);
-// 0x000003BA System.Void Pathfinding.MeshNode::AddConnection(Pathfinding.GraphNode,System.UInt32)
+// 0x00000362 System.Void Pathfinding.MeshNode::AddConnection(Pathfinding.GraphNode,System.UInt32)
 extern void MeshNode_AddConnection_mF3AB32BDC0AEBDD82A8C850C864B1B0D510C932F (void);
-// 0x000003BB System.Void Pathfinding.MeshNode::AddConnection(Pathfinding.GraphNode,System.UInt32,System.Int32)
+// 0x00000363 System.Void Pathfinding.MeshNode::AddConnection(Pathfinding.GraphNode,System.UInt32,System.Int32)
 extern void MeshNode_AddConnection_m21650A45029D3DE32BD899CD4594FD8185B6AD4E (void);
-// 0x000003BC System.Void Pathfinding.MeshNode::RemoveConnection(Pathfinding.GraphNode)
+// 0x00000364 System.Void Pathfinding.MeshNode::RemoveConnection(Pathfinding.GraphNode)
 extern void MeshNode_RemoveConnection_m118105CA71D15BAD51AFB791376C92DFC1E864DD (void);
-// 0x000003BD System.Boolean Pathfinding.MeshNode::ContainsPoint(Pathfinding.Int3)
+// 0x00000365 System.Boolean Pathfinding.MeshNode::ContainsPoint(Pathfinding.Int3)
 extern void MeshNode_ContainsPoint_mF6EB5DAB65526BF65B60B7B619647CDCF109F7E4 (void);
-// 0x000003BE System.Boolean Pathfinding.MeshNode::ContainsPoint(UnityEngine.Vector3)
-// 0x000003BF System.Boolean Pathfinding.MeshNode::ContainsPointInGraphSpace(Pathfinding.Int3)
-// 0x000003C0 System.Int32 Pathfinding.MeshNode::GetGizmoHashCode()
+// 0x00000366 System.Boolean Pathfinding.MeshNode::ContainsPoint(UnityEngine.Vector3)
+// 0x00000367 System.Boolean Pathfinding.MeshNode::ContainsPointInGraphSpace(Pathfinding.Int3)
+// 0x00000368 System.Int32 Pathfinding.MeshNode::GetGizmoHashCode()
 extern void MeshNode_GetGizmoHashCode_mA1FAFB4E32FA1F9CB6EF501A1BBDADC9BDB9BE03 (void);
-// 0x000003C1 System.Void Pathfinding.MeshNode::SerializeReferences(Pathfinding.Serialization.GraphSerializationContext)
+// 0x00000369 System.Void Pathfinding.MeshNode::SerializeReferences(Pathfinding.Serialization.GraphSerializationContext)
 extern void MeshNode_SerializeReferences_mE91E27A818134DF02401026AD9EE137078E1383F (void);
-// 0x000003C2 System.Void Pathfinding.MeshNode::DeserializeReferences(Pathfinding.Serialization.GraphSerializationContext)
+// 0x0000036A System.Void Pathfinding.MeshNode::DeserializeReferences(Pathfinding.Serialization.GraphSerializationContext)
 extern void MeshNode_DeserializeReferences_m637586192D6948D92FFA263DB471A0CDE69DEFF7 (void);
-// 0x000003C3 System.Boolean Pathfinding.ITraversalProvider::CanTraverse(Pathfinding.Path,Pathfinding.GraphNode)
-// 0x000003C4 System.UInt32 Pathfinding.ITraversalProvider::GetTraversalCost(Pathfinding.Path,Pathfinding.GraphNode)
-// 0x000003C5 System.Boolean Pathfinding.DefaultITraversalProvider::CanTraverse(Pathfinding.Path,Pathfinding.GraphNode)
+// 0x0000036B System.Boolean Pathfinding.ITraversalProvider::CanTraverse(Pathfinding.Path,Pathfinding.GraphNode)
+// 0x0000036C System.UInt32 Pathfinding.ITraversalProvider::GetTraversalCost(Pathfinding.Path,Pathfinding.GraphNode)
+// 0x0000036D System.Boolean Pathfinding.DefaultITraversalProvider::CanTraverse(Pathfinding.Path,Pathfinding.GraphNode)
 extern void DefaultITraversalProvider_CanTraverse_mD8F0537C9E7564A2E91EA4114E642972B609588B (void);
-// 0x000003C6 System.UInt32 Pathfinding.DefaultITraversalProvider::GetTraversalCost(Pathfinding.Path,Pathfinding.GraphNode)
+// 0x0000036E System.UInt32 Pathfinding.DefaultITraversalProvider::GetTraversalCost(Pathfinding.Path,Pathfinding.GraphNode)
 extern void DefaultITraversalProvider_GetTraversalCost_mCD5C2A86307819BCD13A0E0800B7105863EB2A97 (void);
-// 0x000003C7 Pathfinding.PathState Pathfinding.Path::get_PipelineState()
+// 0x0000036F Pathfinding.PathState Pathfinding.Path::get_PipelineState()
 extern void Path_get_PipelineState_m023522980CCC797DA5CED38FFF5802630674587A (void);
-// 0x000003C8 System.Void Pathfinding.Path::set_PipelineState(Pathfinding.PathState)
+// 0x00000370 System.Void Pathfinding.Path::set_PipelineState(Pathfinding.PathState)
 extern void Path_set_PipelineState_mEB9D1B611E4E759C1C313263C6E914E92FB97DB8 (void);
-// 0x000003C9 Pathfinding.PathCompleteState Pathfinding.Path::get_CompleteState()
+// 0x00000371 Pathfinding.PathCompleteState Pathfinding.Path::get_CompleteState()
 extern void Path_get_CompleteState_mEE69369F0E12BC9777F4650382D9D946E11C505B (void);
-// 0x000003CA System.Void Pathfinding.Path::set_CompleteState(Pathfinding.PathCompleteState)
+// 0x00000372 System.Void Pathfinding.Path::set_CompleteState(Pathfinding.PathCompleteState)
 extern void Path_set_CompleteState_m4DCDB8EE538A927682FA71BC376AE1A37DDB5C74 (void);
-// 0x000003CB System.Boolean Pathfinding.Path::get_error()
+// 0x00000373 System.Boolean Pathfinding.Path::get_error()
 extern void Path_get_error_m53DE4309315C8B6A124412EC3CBF9AA514414FE2 (void);
-// 0x000003CC System.String Pathfinding.Path::get_errorLog()
+// 0x00000374 System.String Pathfinding.Path::get_errorLog()
 extern void Path_get_errorLog_m01EC32EFEBDE42DCA7FAFCDE6935E23BC4FA6B76 (void);
-// 0x000003CD System.Void Pathfinding.Path::set_errorLog(System.String)
+// 0x00000375 System.Void Pathfinding.Path::set_errorLog(System.String)
 extern void Path_set_errorLog_m49198BBD9E0C10D7B2421178C81524731E8E1959 (void);
-// 0x000003CE System.Int32 Pathfinding.Path::get_searchedNodes()
+// 0x00000376 System.Int32 Pathfinding.Path::get_searchedNodes()
 extern void Path_get_searchedNodes_m292CBC10DFDEBD2883B746F99009506C2F5C0D4C (void);
-// 0x000003CF System.Void Pathfinding.Path::set_searchedNodes(System.Int32)
+// 0x00000377 System.Void Pathfinding.Path::set_searchedNodes(System.Int32)
 extern void Path_set_searchedNodes_mEE42EB4BEA9B85DBB6910F04ACDA7B9D09C7194A (void);
-// 0x000003D0 System.Boolean Pathfinding.Path::Pathfinding.IPathInternals.get_Pooled()
+// 0x00000378 System.Boolean Pathfinding.Path::Pathfinding.IPathInternals.get_Pooled()
 extern void Path_Pathfinding_IPathInternals_get_Pooled_m2230BEF8850B2B3D9067851209FEC0E88B26A386 (void);
-// 0x000003D1 System.Void Pathfinding.Path::Pathfinding.IPathInternals.set_Pooled(System.Boolean)
+// 0x00000379 System.Void Pathfinding.Path::Pathfinding.IPathInternals.set_Pooled(System.Boolean)
 extern void Path_Pathfinding_IPathInternals_set_Pooled_m45F4DC6C8F5D1C44A4637A650FDB35A95FF22FB6 (void);
-// 0x000003D2 System.Boolean Pathfinding.Path::get_recycled()
+// 0x0000037A System.Boolean Pathfinding.Path::get_recycled()
 extern void Path_get_recycled_m87B67D75E28C1995BF58409781079D2BC73C6636 (void);
-// 0x000003D3 System.UInt16 Pathfinding.Path::get_pathID()
+// 0x0000037B System.UInt16 Pathfinding.Path::get_pathID()
 extern void Path_get_pathID_m3BD6DF279EDC2AEF1E2B1687856A0687701A2D63 (void);
-// 0x000003D4 System.Void Pathfinding.Path::set_pathID(System.UInt16)
+// 0x0000037C System.Void Pathfinding.Path::set_pathID(System.UInt16)
 extern void Path_set_pathID_m1809310BA902166A40AF2D8323B60540258210F4 (void);
-// 0x000003D5 System.Int32[] Pathfinding.Path::get_tagPenalties()
+// 0x0000037D System.Int32[] Pathfinding.Path::get_tagPenalties()
 extern void Path_get_tagPenalties_m23AEA6E36491D6641376284840A296BD2309CEF9 (void);
-// 0x000003D6 System.Void Pathfinding.Path::set_tagPenalties(System.Int32[])
+// 0x0000037E System.Void Pathfinding.Path::set_tagPenalties(System.Int32[])
 extern void Path_set_tagPenalties_mD7B79BBBF32D5193353A01FDD4454883EEC3EE70 (void);
-// 0x000003D7 System.Boolean Pathfinding.Path::get_FloodingPath()
+// 0x0000037F System.Boolean Pathfinding.Path::get_FloodingPath()
 extern void Path_get_FloodingPath_m2259FB773338D2B87ED9F4D36AEE0871756FF68C (void);
-// 0x000003D8 System.Single Pathfinding.Path::GetTotalLength()
+// 0x00000380 System.Single Pathfinding.Path::GetTotalLength()
 extern void Path_GetTotalLength_m8FF950877569E8B90E86C3062EF6B73CD5AEBD5B (void);
-// 0x000003D9 System.Collections.IEnumerator Pathfinding.Path::WaitForPath()
+// 0x00000381 System.Collections.IEnumerator Pathfinding.Path::WaitForPath()
 extern void Path_WaitForPath_m0346AFC61522E7E67310431CE6CE2C1E5EC30649 (void);
-// 0x000003DA System.Void Pathfinding.Path::BlockUntilCalculated()
+// 0x00000382 System.Void Pathfinding.Path::BlockUntilCalculated()
 extern void Path_BlockUntilCalculated_mD99F5939C4DDFD539D939B509EA185A982E66846 (void);
-// 0x000003DB System.UInt32 Pathfinding.Path::CalculateHScore(Pathfinding.GraphNode)
+// 0x00000383 System.UInt32 Pathfinding.Path::CalculateHScore(Pathfinding.GraphNode)
 extern void Path_CalculateHScore_m2DC595B3B0268A737F8E956819C3F14C5663BD13 (void);
-// 0x000003DC System.UInt32 Pathfinding.Path::GetTagPenalty(System.Int32)
+// 0x00000384 System.UInt32 Pathfinding.Path::GetTagPenalty(System.Int32)
 extern void Path_GetTagPenalty_m933FF50BB43D802C60831C3F262E053D290A0249 (void);
-// 0x000003DD Pathfinding.Int3 Pathfinding.Path::GetHTarget()
+// 0x00000385 Pathfinding.Int3 Pathfinding.Path::GetHTarget()
 extern void Path_GetHTarget_mBC4019E5939A632FB6B22111B782C46E6007AEF3 (void);
-// 0x000003DE System.Boolean Pathfinding.Path::CanTraverse(Pathfinding.GraphNode)
+// 0x00000386 System.Boolean Pathfinding.Path::CanTraverse(Pathfinding.GraphNode)
 extern void Path_CanTraverse_m6591EBB82B68115ECC6D103EBF00414BDDC0A308 (void);
-// 0x000003DF System.UInt32 Pathfinding.Path::GetTraversalCost(Pathfinding.GraphNode)
+// 0x00000387 System.UInt32 Pathfinding.Path::GetTraversalCost(Pathfinding.GraphNode)
 extern void Path_GetTraversalCost_mC9C3D703DF4EB5AF7B3B8C61CD7F952063E4D1B1 (void);
-// 0x000003E0 System.UInt32 Pathfinding.Path::GetConnectionSpecialCost(Pathfinding.GraphNode,Pathfinding.GraphNode,System.UInt32)
+// 0x00000388 System.UInt32 Pathfinding.Path::GetConnectionSpecialCost(Pathfinding.GraphNode,Pathfinding.GraphNode,System.UInt32)
 extern void Path_GetConnectionSpecialCost_mB706A47537513D393B19B2F06EC8B32D55B7034D (void);
-// 0x000003E1 System.Boolean Pathfinding.Path::IsDone()
+// 0x00000389 System.Boolean Pathfinding.Path::IsDone()
 extern void Path_IsDone_mAA4925F728BEEDEC381214064699D9D1731272BC (void);
-// 0x000003E2 System.Void Pathfinding.Path::Pathfinding.IPathInternals.AdvanceState(Pathfinding.PathState)
+// 0x0000038A System.Void Pathfinding.Path::Pathfinding.IPathInternals.AdvanceState(Pathfinding.PathState)
 extern void Path_Pathfinding_IPathInternals_AdvanceState_m76BBEB1E74103B504C9DCAA002B789336A6E4203 (void);
-// 0x000003E3 Pathfinding.PathState Pathfinding.Path::GetState()
+// 0x0000038B Pathfinding.PathState Pathfinding.Path::GetState()
 extern void Path_GetState_m40FB7FBE809E4D9F11762A732194FE0151EF65EC (void);
-// 0x000003E4 System.Void Pathfinding.Path::FailWithError(System.String)
+// 0x0000038C System.Void Pathfinding.Path::FailWithError(System.String)
 extern void Path_FailWithError_mA4AF1BC36520C428CDDE5EEDF1FA730F07068AC7 (void);
-// 0x000003E5 System.Void Pathfinding.Path::LogError(System.String)
+// 0x0000038D System.Void Pathfinding.Path::LogError(System.String)
 extern void Path_LogError_m33EC3D350697315CC5843D6AC00CBDD1A55FBD08 (void);
-// 0x000003E6 System.Void Pathfinding.Path::Log(System.String)
+// 0x0000038E System.Void Pathfinding.Path::Log(System.String)
 extern void Path_Log_m9F20428B49A54F05B31810484520D897C0E722D7 (void);
-// 0x000003E7 System.Void Pathfinding.Path::Error()
+// 0x0000038F System.Void Pathfinding.Path::Error()
 extern void Path_Error_m1343A204BD28D52D57A34BC7D4235B1FD6322713 (void);
-// 0x000003E8 System.Void Pathfinding.Path::ErrorCheck()
+// 0x00000390 System.Void Pathfinding.Path::ErrorCheck()
 extern void Path_ErrorCheck_mED7550AE1CC95C04F2505EEE5147B79E8FB46E1B (void);
-// 0x000003E9 System.Void Pathfinding.Path::OnEnterPool()
+// 0x00000391 System.Void Pathfinding.Path::OnEnterPool()
 extern void Path_OnEnterPool_m370FB5B60870575F18F96849D82AA54DBB7BFA68 (void);
-// 0x000003EA System.Void Pathfinding.Path::Reset()
+// 0x00000392 System.Void Pathfinding.Path::Reset()
 extern void Path_Reset_m616CBCB3DCC5903EA195F4CE7E953B84EFEB21EC (void);
-// 0x000003EB System.Void Pathfinding.Path::Claim(System.Object)
+// 0x00000393 System.Void Pathfinding.Path::Claim(System.Object)
 extern void Path_Claim_mE8B5AEDE7A691A8E07D8E9C51B9FFD947EBE78D3 (void);
-// 0x000003EC System.Void Pathfinding.Path::ReleaseSilent(System.Object)
+// 0x00000394 System.Void Pathfinding.Path::ReleaseSilent(System.Object)
 extern void Path_ReleaseSilent_m12FD8408D126636F32A0FDB27B3A97B8316ADF8A (void);
-// 0x000003ED System.Void Pathfinding.Path::Release(System.Object,System.Boolean)
+// 0x00000395 System.Void Pathfinding.Path::Release(System.Object,System.Boolean)
 extern void Path_Release_m74BF2DB429B29E8369F9204F7A995D5C261886B5 (void);
-// 0x000003EE System.Void Pathfinding.Path::Trace(Pathfinding.PathNode)
+// 0x00000396 System.Void Pathfinding.Path::Trace(Pathfinding.PathNode)
 extern void Path_Trace_mE505DEE95CDF7B88A5EB208FE9FD03521076F24C (void);
-// 0x000003EF System.Void Pathfinding.Path::DebugStringPrefix(Pathfinding.PathLog,System.Text.StringBuilder)
+// 0x00000397 System.Void Pathfinding.Path::DebugStringPrefix(Pathfinding.PathLog,System.Text.StringBuilder)
 extern void Path_DebugStringPrefix_m66C8FCA88350362AEE54B3A93030B58CDFCE234A (void);
-// 0x000003F0 System.Void Pathfinding.Path::DebugStringSuffix(Pathfinding.PathLog,System.Text.StringBuilder)
+// 0x00000398 System.Void Pathfinding.Path::DebugStringSuffix(Pathfinding.PathLog,System.Text.StringBuilder)
 extern void Path_DebugStringSuffix_m245C85FD8EBF769BFA25B6C717E81BCDFC77EC4F (void);
-// 0x000003F1 System.String Pathfinding.Path::DebugString(Pathfinding.PathLog)
+// 0x00000399 System.String Pathfinding.Path::DebugString(Pathfinding.PathLog)
 extern void Path_DebugString_m8B08D7E67FEE568B2C3BC4C38D6447783EB8BAFF (void);
-// 0x000003F2 System.Void Pathfinding.Path::ReturnPath()
+// 0x0000039A System.Void Pathfinding.Path::ReturnPath()
 extern void Path_ReturnPath_mA94644EA96286A4B079EA6FB2EFC953F6CA69392 (void);
-// 0x000003F3 System.Void Pathfinding.Path::PrepareBase(Pathfinding.PathHandler)
+// 0x0000039B System.Void Pathfinding.Path::PrepareBase(Pathfinding.PathHandler)
 extern void Path_PrepareBase_mC4C06A11184142FA79C6715EAA25519A4BD66192 (void);
-// 0x000003F4 System.Void Pathfinding.Path::Prepare()
-// 0x000003F5 System.Void Pathfinding.Path::Cleanup()
+// 0x0000039C System.Void Pathfinding.Path::Prepare()
+// 0x0000039D System.Void Pathfinding.Path::Cleanup()
 extern void Path_Cleanup_mFF47B8310BBFBE8F9D2C96A8EFB8F409448F182C (void);
-// 0x000003F6 System.Void Pathfinding.Path::Initialize()
-// 0x000003F7 System.Void Pathfinding.Path::CalculateStep(System.Int64)
-// 0x000003F8 Pathfinding.PathHandler Pathfinding.Path::Pathfinding.IPathInternals.get_PathHandler()
+// 0x0000039E System.Void Pathfinding.Path::Initialize()
+// 0x0000039F System.Void Pathfinding.Path::CalculateStep(System.Int64)
+// 0x000003A0 Pathfinding.PathHandler Pathfinding.Path::Pathfinding.IPathInternals.get_PathHandler()
 extern void Path_Pathfinding_IPathInternals_get_PathHandler_m647D6C32FA737C74F438B4781DA7BCFB405A857E (void);
-// 0x000003F9 System.Void Pathfinding.Path::Pathfinding.IPathInternals.OnEnterPool()
+// 0x000003A1 System.Void Pathfinding.Path::Pathfinding.IPathInternals.OnEnterPool()
 extern void Path_Pathfinding_IPathInternals_OnEnterPool_m24D425EF812BAA8B4B1C678B457EF5B7691DE5C1 (void);
-// 0x000003FA System.Void Pathfinding.Path::Pathfinding.IPathInternals.Reset()
+// 0x000003A2 System.Void Pathfinding.Path::Pathfinding.IPathInternals.Reset()
 extern void Path_Pathfinding_IPathInternals_Reset_mFB73313ADCA2CAB5491C38683E8014D94670EB99 (void);
-// 0x000003FB System.Void Pathfinding.Path::Pathfinding.IPathInternals.ReturnPath()
+// 0x000003A3 System.Void Pathfinding.Path::Pathfinding.IPathInternals.ReturnPath()
 extern void Path_Pathfinding_IPathInternals_ReturnPath_mF9D5521AF637EF99CA7F0AA7A422FBD9902572CE (void);
-// 0x000003FC System.Void Pathfinding.Path::Pathfinding.IPathInternals.PrepareBase(Pathfinding.PathHandler)
+// 0x000003A4 System.Void Pathfinding.Path::Pathfinding.IPathInternals.PrepareBase(Pathfinding.PathHandler)
 extern void Path_Pathfinding_IPathInternals_PrepareBase_mBC4D419B4805BDA190E4F29B9D40B0FCCF306174 (void);
-// 0x000003FD System.Void Pathfinding.Path::Pathfinding.IPathInternals.Prepare()
+// 0x000003A5 System.Void Pathfinding.Path::Pathfinding.IPathInternals.Prepare()
 extern void Path_Pathfinding_IPathInternals_Prepare_m28BE3EFA3D5F882D34599CBC89A1F588D2363DE9 (void);
-// 0x000003FE System.Void Pathfinding.Path::Pathfinding.IPathInternals.Cleanup()
+// 0x000003A6 System.Void Pathfinding.Path::Pathfinding.IPathInternals.Cleanup()
 extern void Path_Pathfinding_IPathInternals_Cleanup_m81AFACC491FBF58C87968B91AA0B9678CC819395 (void);
-// 0x000003FF System.Void Pathfinding.Path::Pathfinding.IPathInternals.Initialize()
+// 0x000003A7 System.Void Pathfinding.Path::Pathfinding.IPathInternals.Initialize()
 extern void Path_Pathfinding_IPathInternals_Initialize_m6A06274ED2650137A3D0564CC3058B3C246BC453 (void);
-// 0x00000400 System.Void Pathfinding.Path::Pathfinding.IPathInternals.CalculateStep(System.Int64)
+// 0x000003A8 System.Void Pathfinding.Path::Pathfinding.IPathInternals.CalculateStep(System.Int64)
 extern void Path_Pathfinding_IPathInternals_CalculateStep_mB33CAE4A8A8F734C64F3566D2D5F9C1038961E8E (void);
-// 0x00000401 System.String Pathfinding.Path::Pathfinding.IPathInternals.DebugString(Pathfinding.PathLog)
+// 0x000003A9 System.String Pathfinding.Path::Pathfinding.IPathInternals.DebugString(Pathfinding.PathLog)
 extern void Path_Pathfinding_IPathInternals_DebugString_m3F07FE61BE5397807693A993C02ED62204C74419 (void);
-// 0x00000402 System.Void Pathfinding.Path::.ctor()
+// 0x000003AA System.Void Pathfinding.Path::.ctor()
 extern void Path__ctor_m1D9F63CFC622F0877C161853252523DA35A6F395 (void);
-// 0x00000403 System.Void Pathfinding.Path::.cctor()
+// 0x000003AB System.Void Pathfinding.Path::.cctor()
 extern void Path__cctor_m95CF5FCF4D9BFFBFAC91FBE2FBBB7224941B32B2 (void);
-// 0x00000404 System.Void Pathfinding.Path/<WaitForPath>d__54::.ctor(System.Int32)
+// 0x000003AC System.Void Pathfinding.Path/<WaitForPath>d__54::.ctor(System.Int32)
 extern void U3CWaitForPathU3Ed__54__ctor_m947D1894B6D6008CA7C6358255CBCB45A113ECEE (void);
-// 0x00000405 System.Void Pathfinding.Path/<WaitForPath>d__54::System.IDisposable.Dispose()
+// 0x000003AD System.Void Pathfinding.Path/<WaitForPath>d__54::System.IDisposable.Dispose()
 extern void U3CWaitForPathU3Ed__54_System_IDisposable_Dispose_mF955CE6158FB1CE4AEFF28957FC5EF3EF894B7DD (void);
-// 0x00000406 System.Boolean Pathfinding.Path/<WaitForPath>d__54::MoveNext()
+// 0x000003AE System.Boolean Pathfinding.Path/<WaitForPath>d__54::MoveNext()
 extern void U3CWaitForPathU3Ed__54_MoveNext_mD2462ED18FBF664404838513D1979C0ECB214B2F (void);
-// 0x00000407 System.Object Pathfinding.Path/<WaitForPath>d__54::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000003AF System.Object Pathfinding.Path/<WaitForPath>d__54::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CWaitForPathU3Ed__54_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m779553A6648CDBF16E5AC05F69E0A6ED50B4D725 (void);
-// 0x00000408 System.Void Pathfinding.Path/<WaitForPath>d__54::System.Collections.IEnumerator.Reset()
+// 0x000003B0 System.Void Pathfinding.Path/<WaitForPath>d__54::System.Collections.IEnumerator.Reset()
 extern void U3CWaitForPathU3Ed__54_System_Collections_IEnumerator_Reset_m9D7C2E22A01ECE52A77A815D2FF541FBF26F6848 (void);
-// 0x00000409 System.Object Pathfinding.Path/<WaitForPath>d__54::System.Collections.IEnumerator.get_Current()
+// 0x000003B1 System.Object Pathfinding.Path/<WaitForPath>d__54::System.Collections.IEnumerator.get_Current()
 extern void U3CWaitForPathU3Ed__54_System_Collections_IEnumerator_get_Current_m810DA1157874185387CA75CEF4316EA55A735B5E (void);
-// 0x0000040A Pathfinding.PathHandler Pathfinding.IPathInternals::get_PathHandler()
-// 0x0000040B System.Boolean Pathfinding.IPathInternals::get_Pooled()
-// 0x0000040C System.Void Pathfinding.IPathInternals::set_Pooled(System.Boolean)
-// 0x0000040D System.Void Pathfinding.IPathInternals::AdvanceState(Pathfinding.PathState)
-// 0x0000040E System.Void Pathfinding.IPathInternals::OnEnterPool()
-// 0x0000040F System.Void Pathfinding.IPathInternals::Reset()
-// 0x00000410 System.Void Pathfinding.IPathInternals::ReturnPath()
-// 0x00000411 System.Void Pathfinding.IPathInternals::PrepareBase(Pathfinding.PathHandler)
-// 0x00000412 System.Void Pathfinding.IPathInternals::Prepare()
-// 0x00000413 System.Void Pathfinding.IPathInternals::Initialize()
-// 0x00000414 System.Void Pathfinding.IPathInternals::Cleanup()
-// 0x00000415 System.Void Pathfinding.IPathInternals::CalculateStep(System.Int64)
-// 0x00000416 System.String Pathfinding.IPathInternals::DebugString(Pathfinding.PathLog)
-// 0x00000417 System.UInt32 Pathfinding.PathNode::get_cost()
+// 0x000003B2 Pathfinding.PathHandler Pathfinding.IPathInternals::get_PathHandler()
+// 0x000003B3 System.Boolean Pathfinding.IPathInternals::get_Pooled()
+// 0x000003B4 System.Void Pathfinding.IPathInternals::set_Pooled(System.Boolean)
+// 0x000003B5 System.Void Pathfinding.IPathInternals::AdvanceState(Pathfinding.PathState)
+// 0x000003B6 System.Void Pathfinding.IPathInternals::OnEnterPool()
+// 0x000003B7 System.Void Pathfinding.IPathInternals::Reset()
+// 0x000003B8 System.Void Pathfinding.IPathInternals::ReturnPath()
+// 0x000003B9 System.Void Pathfinding.IPathInternals::PrepareBase(Pathfinding.PathHandler)
+// 0x000003BA System.Void Pathfinding.IPathInternals::Prepare()
+// 0x000003BB System.Void Pathfinding.IPathInternals::Initialize()
+// 0x000003BC System.Void Pathfinding.IPathInternals::Cleanup()
+// 0x000003BD System.Void Pathfinding.IPathInternals::CalculateStep(System.Int64)
+// 0x000003BE System.String Pathfinding.IPathInternals::DebugString(Pathfinding.PathLog)
+// 0x000003BF System.UInt32 Pathfinding.PathNode::get_cost()
 extern void PathNode_get_cost_m2F7832895C415641D680D0076BFEA78FD476A5FF (void);
-// 0x00000418 System.Void Pathfinding.PathNode::set_cost(System.UInt32)
+// 0x000003C0 System.Void Pathfinding.PathNode::set_cost(System.UInt32)
 extern void PathNode_set_cost_m4F0D1036108954F1BEEE9B2F05D2B1361340DB9B (void);
-// 0x00000419 System.Boolean Pathfinding.PathNode::get_flag1()
+// 0x000003C1 System.Boolean Pathfinding.PathNode::get_flag1()
 extern void PathNode_get_flag1_m00AA9F729101A2E09DDF3F46BD4E7436F60B52FD (void);
-// 0x0000041A System.Void Pathfinding.PathNode::set_flag1(System.Boolean)
+// 0x000003C2 System.Void Pathfinding.PathNode::set_flag1(System.Boolean)
 extern void PathNode_set_flag1_m65365E945A7D9B5E84135815329E8B5A874F947C (void);
-// 0x0000041B System.Boolean Pathfinding.PathNode::get_flag2()
+// 0x000003C3 System.Boolean Pathfinding.PathNode::get_flag2()
 extern void PathNode_get_flag2_mC736180A7E80447EE033429097B927B0418B5E89 (void);
-// 0x0000041C System.Void Pathfinding.PathNode::set_flag2(System.Boolean)
+// 0x000003C4 System.Void Pathfinding.PathNode::set_flag2(System.Boolean)
 extern void PathNode_set_flag2_mFD251C4F3B6A314822D452F55629473C66D73AB3 (void);
-// 0x0000041D System.UInt32 Pathfinding.PathNode::get_G()
+// 0x000003C5 System.UInt32 Pathfinding.PathNode::get_G()
 extern void PathNode_get_G_m0E7AE64273951DD9497FF7C653C106AE49E46DCA (void);
-// 0x0000041E System.Void Pathfinding.PathNode::set_G(System.UInt32)
+// 0x000003C6 System.Void Pathfinding.PathNode::set_G(System.UInt32)
 extern void PathNode_set_G_m3442A82598E500CE060A1D38E4A51B1AAF27D22B (void);
-// 0x0000041F System.UInt32 Pathfinding.PathNode::get_H()
+// 0x000003C7 System.UInt32 Pathfinding.PathNode::get_H()
 extern void PathNode_get_H_m744D5E3A3334D37CF6C655D83D38ACD478062A68 (void);
-// 0x00000420 System.Void Pathfinding.PathNode::set_H(System.UInt32)
+// 0x000003C8 System.Void Pathfinding.PathNode::set_H(System.UInt32)
 extern void PathNode_set_H_mAF82EAE13B1FE99B79FBA9BA0AE474433B35E138 (void);
-// 0x00000421 System.UInt32 Pathfinding.PathNode::get_F()
+// 0x000003C9 System.UInt32 Pathfinding.PathNode::get_F()
 extern void PathNode_get_F_m28D9FAC258B95CADE70FBEA7D0453166ED64A548 (void);
-// 0x00000422 System.Void Pathfinding.PathNode::UpdateG(Pathfinding.Path)
+// 0x000003CA System.Void Pathfinding.PathNode::UpdateG(Pathfinding.Path)
 extern void PathNode_UpdateG_m1FA6C1922FB9FF49CB36AE406FF4EF4E56AF3C86 (void);
-// 0x00000423 System.Void Pathfinding.PathNode::.ctor()
+// 0x000003CB System.Void Pathfinding.PathNode::.ctor()
 extern void PathNode__ctor_m10FE50BD2C5A48657DF99F0353A9D887A5E19026 (void);
-// 0x00000424 System.UInt16 Pathfinding.PathHandler::get_PathID()
+// 0x000003CC System.UInt16 Pathfinding.PathHandler::get_PathID()
 extern void PathHandler_get_PathID_mB2BEB9A4DB6D6F853198DF7BE9E0CCE63CF1F633 (void);
-// 0x00000425 System.Void Pathfinding.PathHandler::.ctor(System.Int32,System.Int32)
+// 0x000003CD System.Void Pathfinding.PathHandler::.ctor(System.Int32,System.Int32)
 extern void PathHandler__ctor_m74609E7430123DF00B84CCA212F28B3A6EFC8471 (void);
-// 0x00000426 System.Void Pathfinding.PathHandler::InitializeForPath(Pathfinding.Path)
+// 0x000003CE System.Void Pathfinding.PathHandler::InitializeForPath(Pathfinding.Path)
 extern void PathHandler_InitializeForPath_mA2B36824C7E5BAB511CAC7B15EF2F1C22BC6D3B7 (void);
-// 0x00000427 System.Void Pathfinding.PathHandler::DestroyNode(Pathfinding.GraphNode)
+// 0x000003CF System.Void Pathfinding.PathHandler::DestroyNode(Pathfinding.GraphNode)
 extern void PathHandler_DestroyNode_m3D987420EDBACCBBBAF997F6D9E5E63660D0F919 (void);
-// 0x00000428 System.Void Pathfinding.PathHandler::InitializeNode(Pathfinding.GraphNode)
+// 0x000003D0 System.Void Pathfinding.PathHandler::InitializeNode(Pathfinding.GraphNode)
 extern void PathHandler_InitializeNode_m7B8415CA68528C025A3F2BFB20E5236052A1630D (void);
-// 0x00000429 Pathfinding.PathNode Pathfinding.PathHandler::GetPathNode(System.Int32)
+// 0x000003D1 Pathfinding.PathNode Pathfinding.PathHandler::GetPathNode(System.Int32)
 extern void PathHandler_GetPathNode_m8B0F028B65232B2A10F2A7A61C56D8CFF41D6B41 (void);
-// 0x0000042A Pathfinding.PathNode Pathfinding.PathHandler::GetPathNode(Pathfinding.GraphNode)
+// 0x000003D2 Pathfinding.PathNode Pathfinding.PathHandler::GetPathNode(Pathfinding.GraphNode)
 extern void PathHandler_GetPathNode_mB0C878D58DE62369AF0843FA14AA078251CB2879 (void);
-// 0x0000042B System.Void Pathfinding.PathHandler::ClearPathIDs()
+// 0x000003D3 System.Void Pathfinding.PathHandler::ClearPathIDs()
 extern void PathHandler_ClearPathIDs_m2F5E23B4E9A681DC6ABD2008F0B838C0FA3F77DF (void);
+// 0x000003D4 System.Int32 Pathfinding.AstarColor::ColorHash()
+extern void AstarColor_ColorHash_m7E7AB1D3ED0F004DDA52B1F83FF46BB14C4E2240 (void);
+// 0x000003D5 UnityEngine.Color Pathfinding.AstarColor::GetAreaColor(System.UInt32)
+extern void AstarColor_GetAreaColor_m2BD2DB488CF613210166AFEFC7C92B1136563ED6 (void);
+// 0x000003D6 UnityEngine.Color Pathfinding.AstarColor::GetTagColor(System.UInt32)
+extern void AstarColor_GetTagColor_m2A418CA68C79BC1C9A9499C17EF3D4BCD23E5639 (void);
+// 0x000003D7 System.Void Pathfinding.AstarColor::PushToStatic(AstarPath)
+extern void AstarColor_PushToStatic_m8700047424E6FC430F9F5AD19A9767BC72D78103 (void);
+// 0x000003D8 System.Void Pathfinding.AstarColor::.ctor()
+extern void AstarColor__ctor_m7AAE6F02DBD6138EBA7F5634E9AE5FD477D3107D (void);
+// 0x000003D9 System.Void Pathfinding.AstarColor::.cctor()
+extern void AstarColor__cctor_m80E9B8D244ACAE54FBC2B83CC8B424348699B3C6 (void);
+// 0x000003DA System.Single Pathfinding.GraphHitInfo::get_distance()
+extern void GraphHitInfo_get_distance_m4226EFCEB6AFCF460E08812DDC99ABC52DFE8432 (void);
+// 0x000003DB System.Void Pathfinding.GraphHitInfo::.ctor(UnityEngine.Vector3)
+extern void GraphHitInfo__ctor_m3934969A80A0BB8D52DA5B97D9CAFB89390EA7FB (void);
+// 0x000003DC System.Boolean Pathfinding.NNConstraint::SuitableGraph(System.Int32,Pathfinding.NavGraph)
+extern void NNConstraint_SuitableGraph_mA7EB01C59D03F36D8A325A618C34B4A973B7C4E4 (void);
+// 0x000003DD System.Boolean Pathfinding.NNConstraint::Suitable(Pathfinding.GraphNode)
+extern void NNConstraint_Suitable_m78BC193FC7142A1DEB9465336E980909BD75352C (void);
+// 0x000003DE Pathfinding.NNConstraint Pathfinding.NNConstraint::get_Default()
+extern void NNConstraint_get_Default_m410AF35B2BE77A5624592BEF34FC6783F7F9D6EA (void);
+// 0x000003DF Pathfinding.NNConstraint Pathfinding.NNConstraint::get_None()
+extern void NNConstraint_get_None_m64D379ED16BA6D507F7A3837557A44C519FA4811 (void);
+// 0x000003E0 System.Void Pathfinding.NNConstraint::.ctor()
+extern void NNConstraint__ctor_m89532DC1D551FE988E139BD5558B16E6A6FFF088 (void);
+// 0x000003E1 Pathfinding.PathNNConstraint Pathfinding.PathNNConstraint::get_Default()
+extern void PathNNConstraint_get_Default_m4D87AB0993FC27983CCFD0FF96FC9461F7916874 (void);
+// 0x000003E2 System.Void Pathfinding.PathNNConstraint::SetStart(Pathfinding.GraphNode)
+extern void PathNNConstraint_SetStart_m16CA8FFBC338C4CA735571B9E7482123DBE50E28 (void);
+// 0x000003E3 System.Void Pathfinding.PathNNConstraint::.ctor()
+extern void PathNNConstraint__ctor_m4F0E20DD29C5CD8B00C9637B48D6488491DBB1C1 (void);
+// 0x000003E4 System.Void Pathfinding.NNInfoInternal::.ctor(Pathfinding.GraphNode)
+extern void NNInfoInternal__ctor_mAF15F2D3925A1F1AF14425DAE40F6FD9168258E1 (void);
+// 0x000003E5 System.Void Pathfinding.NNInfoInternal::UpdateInfo()
+extern void NNInfoInternal_UpdateInfo_m38114F55F54AF9A11A4C913F1502C2DAAFD3492B (void);
+// 0x000003E6 UnityEngine.Vector3 Pathfinding.NNInfo::get_clampedPosition()
+extern void NNInfo_get_clampedPosition_m5AAB5398DD2E6AFE18AA575229DD5EC5F90A6A8B (void);
+// 0x000003E7 System.Void Pathfinding.NNInfo::.ctor(Pathfinding.NNInfoInternal)
+extern void NNInfo__ctor_m79C6D21A9B1C006AFB39E0DA9E5B27F722C346B3 (void);
+// 0x000003E8 UnityEngine.Vector3 Pathfinding.NNInfo::op_Explicit(Pathfinding.NNInfo)
+extern void NNInfo_op_Explicit_mE06D72597F04F4C7C7A289FF171CD9CD26833A9C (void);
+// 0x000003E9 Pathfinding.GraphNode Pathfinding.NNInfo::op_Explicit(Pathfinding.NNInfo)
+extern void NNInfo_op_Explicit_m3239F117A37550323D4A5CFA38FE4D575BC61071 (void);
+// 0x000003EA System.Void Pathfinding.Progress::.ctor(System.Single,System.String)
+extern void Progress__ctor_m8BC684F39818E3E62C1F46D208B3BA661F15A56A (void);
+// 0x000003EB Pathfinding.Progress Pathfinding.Progress::MapTo(System.Single,System.Single,System.String)
+extern void Progress_MapTo_m455B07D01EC1D98BC1D20633899DEF5497D23AD6 (void);
+// 0x000003EC System.String Pathfinding.Progress::ToString()
+extern void Progress_ToString_m0D2EC8B56BA27E93C38E2704C859F6A6964284EA (void);
+// 0x000003ED System.Void Pathfinding.IUpdatableGraph::UpdateArea(Pathfinding.GraphUpdateObject)
+// 0x000003EE System.Void Pathfinding.IUpdatableGraph::UpdateAreaInit(Pathfinding.GraphUpdateObject)
+// 0x000003EF System.Void Pathfinding.IUpdatableGraph::UpdateAreaPost(Pathfinding.GraphUpdateObject)
+// 0x000003F0 Pathfinding.GraphUpdateThreading Pathfinding.IUpdatableGraph::CanUpdateAsync(Pathfinding.GraphUpdateObject)
+// 0x000003F1 System.Void Pathfinding.GraphUpdateObject::set_requiresFloodFill(System.Boolean)
+extern void GraphUpdateObject_set_requiresFloodFill_mCB2673DA6E262CC56323813425CC4CA056B0A93D (void);
+// 0x000003F2 Pathfinding.GraphUpdateStage Pathfinding.GraphUpdateObject::get_stage()
+extern void GraphUpdateObject_get_stage_m9705996F9B5749E9607B48FC99E09C7D34891216 (void);
+// 0x000003F3 System.Void Pathfinding.GraphUpdateObject::WillUpdateNode(Pathfinding.GraphNode)
+extern void GraphUpdateObject_WillUpdateNode_m7BF6DA130A6AD2544185BF03246FB0DA705F879E (void);
+// 0x000003F4 System.Void Pathfinding.GraphUpdateObject::RevertFromBackup()
+extern void GraphUpdateObject_RevertFromBackup_mD704797508B8A26B1ADE625E82B94E6D33806B91 (void);
+// 0x000003F5 System.Void Pathfinding.GraphUpdateObject::Apply(Pathfinding.GraphNode)
+extern void GraphUpdateObject_Apply_m4FF2CF22FEFAA3CF7051AB0EFB490B22BB0E80AC (void);
+// 0x000003F6 System.Void Pathfinding.GraphUpdateObject::.ctor()
+extern void GraphUpdateObject__ctor_m34D5AC70D1C226E1D34CE1644579D1E14A084E5E (void);
+// 0x000003F7 System.Void Pathfinding.GraphUpdateObject::.ctor(UnityEngine.Bounds)
+extern void GraphUpdateObject__ctor_m40AEC562F18276B374698781F0AFF943AA7460F6 (void);
+// 0x000003F8 Pathfinding.Util.GraphTransform Pathfinding.ITransformedGraph::get_transform()
+// 0x000003F9 System.Boolean Pathfinding.IRaycastableGraph::Linecast(UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000003FA System.Boolean Pathfinding.IRaycastableGraph::Linecast(UnityEngine.Vector3,UnityEngine.Vector3,Pathfinding.GraphNode)
+// 0x000003FB System.Boolean Pathfinding.IRaycastableGraph::Linecast(UnityEngine.Vector3,UnityEngine.Vector3,Pathfinding.GraphNode,Pathfinding.GraphHitInfo&)
+// 0x000003FC System.Boolean Pathfinding.IRaycastableGraph::Linecast(UnityEngine.Vector3,UnityEngine.Vector3,Pathfinding.GraphNode,Pathfinding.GraphHitInfo&,System.Collections.Generic.List`1<Pathfinding.GraphNode>)
+// 0x000003FD System.Boolean Pathfinding.IRaycastableGraph::Linecast(UnityEngine.Vector3,UnityEngine.Vector3,Pathfinding.GraphHitInfo&,System.Collections.Generic.List`1<Pathfinding.GraphNode>,System.Func`2<Pathfinding.GraphNode,System.Boolean>)
+// 0x000003FE System.Void Pathfinding.IntRect::.ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+extern void IntRect__ctor_mAD05090D8533AE0675F3A432F713EEA629F47276 (void);
+// 0x000003FF System.Boolean Pathfinding.IntRect::Contains(System.Int32,System.Int32)
+extern void IntRect_Contains_m5E307C7E3F45B01584E41D0A141A3AF5E5D6549D (void);
+// 0x00000400 System.Int32 Pathfinding.IntRect::get_Width()
+extern void IntRect_get_Width_m9EA6709E7015866BC23F2C686A873E772AA1ACA2 (void);
+// 0x00000401 System.Int32 Pathfinding.IntRect::get_Height()
+extern void IntRect_get_Height_m8F1FAE617C491964F4C2E4D873F04C27ACE7EDB6 (void);
+// 0x00000402 System.Int32 Pathfinding.IntRect::get_Area()
+extern void IntRect_get_Area_m67F56F53086CA064945CC39CB7EC43900054F4EE (void);
+// 0x00000403 System.Boolean Pathfinding.IntRect::IsValid()
+extern void IntRect_IsValid_m30D2815DE068E60D2D00FF0D5704EA49CF6265B6 (void);
+// 0x00000404 System.Boolean Pathfinding.IntRect::op_Equality(Pathfinding.IntRect,Pathfinding.IntRect)
+extern void IntRect_op_Equality_mC20C3095A2748AE91D534933C494F5C890BEFD74 (void);
+// 0x00000405 System.Boolean Pathfinding.IntRect::op_Inequality(Pathfinding.IntRect,Pathfinding.IntRect)
+extern void IntRect_op_Inequality_m1FAECD46E6A737808AD3133E87F2DC1113A277FB (void);
+// 0x00000406 System.Boolean Pathfinding.IntRect::Equals(System.Object)
+extern void IntRect_Equals_mA4600D8A17F056792F5F7A706B81D31A80AE622F (void);
+// 0x00000407 System.Int32 Pathfinding.IntRect::GetHashCode()
+extern void IntRect_GetHashCode_mC8E932403819159E1CF07CAA1253C9947270910A (void);
+// 0x00000408 Pathfinding.IntRect Pathfinding.IntRect::Intersection(Pathfinding.IntRect,Pathfinding.IntRect)
+extern void IntRect_Intersection_mC9C9632D62D5CD280EF4ED149BCA8EAE58878CAC (void);
+// 0x00000409 System.Boolean Pathfinding.IntRect::Intersects(Pathfinding.IntRect,Pathfinding.IntRect)
+extern void IntRect_Intersects_mF191C92E733544458A919C640E959BD2D540FAC1 (void);
+// 0x0000040A Pathfinding.IntRect Pathfinding.IntRect::Union(Pathfinding.IntRect,Pathfinding.IntRect)
+extern void IntRect_Union_m0E7D1469F99F79979C07AAC375BF504230415A1B (void);
+// 0x0000040B Pathfinding.IntRect Pathfinding.IntRect::ExpandToContain(System.Int32,System.Int32)
+extern void IntRect_ExpandToContain_m0101C3D2B025AC4F51691FD01565434DCD7FD32F (void);
+// 0x0000040C Pathfinding.IntRect Pathfinding.IntRect::Expand(System.Int32)
+extern void IntRect_Expand_m1C793316AD4030CC25DC01024264FF1C18D9A261 (void);
+// 0x0000040D System.String Pathfinding.IntRect::ToString()
+extern void IntRect_ToString_m4ED582D9AF529226579475E49368E28A54E138B3 (void);
+// 0x0000040E System.Void Pathfinding.IntRect::DebugDraw(Pathfinding.Util.GraphTransform,UnityEngine.Color)
+extern void IntRect_DebugDraw_m3C211EE0DD7C1D53C8E112EF06770774329D9AAA (void);
+// 0x0000040F Pathfinding.GraphMask Pathfinding.GraphMask::get_everything()
+extern void GraphMask_get_everything_m7C96C59E69960A1BD867BBE06880038C2A72EC58 (void);
+// 0x00000410 System.Void Pathfinding.GraphMask::.ctor(System.Int32)
+extern void GraphMask__ctor_m209825C360CF751A78CC88246E6DC06423A45320 (void);
+// 0x00000411 System.Int32 Pathfinding.GraphMask::op_Implicit(Pathfinding.GraphMask)
+extern void GraphMask_op_Implicit_mF59D0E96477D283F1250040023BB2B0E209915C5 (void);
+// 0x00000412 Pathfinding.GraphMask Pathfinding.GraphMask::op_Implicit(System.Int32)
+extern void GraphMask_op_Implicit_m224C3DCB9258487B9BE3AF1AF88BAF9505B1579E (void);
+// 0x00000413 Pathfinding.GraphMask Pathfinding.GraphMask::op_BitwiseAnd(Pathfinding.GraphMask,Pathfinding.GraphMask)
+extern void GraphMask_op_BitwiseAnd_m97DF12BB6A23449423113FA51006406E31730B4A (void);
+// 0x00000414 Pathfinding.GraphMask Pathfinding.GraphMask::op_BitwiseOr(Pathfinding.GraphMask,Pathfinding.GraphMask)
+extern void GraphMask_op_BitwiseOr_mA374D9ABA6E5EA1C3821D73BF19BE5CCDF45188A (void);
+// 0x00000415 Pathfinding.GraphMask Pathfinding.GraphMask::op_OnesComplement(Pathfinding.GraphMask)
+extern void GraphMask_op_OnesComplement_m6DD2A2A1755D805DEBEBE9108B7889DD71CBC530 (void);
+// 0x00000416 System.Boolean Pathfinding.GraphMask::Contains(System.Int32)
+extern void GraphMask_Contains_m95162AF8F373AF9C11623439E9B52B3E3F013EE8 (void);
+// 0x00000417 Pathfinding.GraphMask Pathfinding.GraphMask::FromGraph(Pathfinding.NavGraph)
+extern void GraphMask_FromGraph_mCCF5DBF710890F395A657C6303FE39D24EBB7A1A (void);
+// 0x00000418 System.String Pathfinding.GraphMask::ToString()
+extern void GraphMask_ToString_mC984BD27B0A579765BF882DBCD5347597EBC171A (void);
+// 0x00000419 Pathfinding.GraphMask Pathfinding.GraphMask::FromGraphName(System.String)
+extern void GraphMask_FromGraphName_m6F8CD875FF02B77EFDBD619AD723C56BC5E6EDC7 (void);
+// 0x0000041A System.Void Pathfinding.GraphMask/<>c__DisplayClass12_0::.ctor()
+extern void U3CU3Ec__DisplayClass12_0__ctor_mB20530C6ABF6B6498DFEA503E9EFDA8FE90C62A3 (void);
+// 0x0000041B System.Boolean Pathfinding.GraphMask/<>c__DisplayClass12_0::<FromGraphName>b__0(Pathfinding.NavGraph)
+extern void U3CU3Ec__DisplayClass12_0_U3CFromGraphNameU3Eb__0_m452D17A005150603EFAAB68C552FE064161346C6 (void);
+// 0x0000041C System.Void Pathfinding.OnPathDelegate::.ctor(System.Object,System.IntPtr)
+extern void OnPathDelegate__ctor_mD3FAB4AAEAF5DCAA68A6D1C3C8A7A9F316362C43 (void);
+// 0x0000041D System.Void Pathfinding.OnPathDelegate::Invoke(Pathfinding.Path)
+extern void OnPathDelegate_Invoke_m17E23601849FDCA5C8558EB78BE36C6202423A80 (void);
+// 0x0000041E System.IAsyncResult Pathfinding.OnPathDelegate::BeginInvoke(Pathfinding.Path,System.AsyncCallback,System.Object)
+extern void OnPathDelegate_BeginInvoke_mAC6A91395D7EDF06B926063A7D5BA208817C2C92 (void);
+// 0x0000041F System.Void Pathfinding.OnPathDelegate::EndInvoke(System.IAsyncResult)
+extern void OnPathDelegate_EndInvoke_m27872925AF801F9FF33C1C14EB572EFEEF97A173 (void);
+// 0x00000420 System.Void Pathfinding.OnGraphDelegate::.ctor(System.Object,System.IntPtr)
+extern void OnGraphDelegate__ctor_m99421FA7BD0A95B64C53165FEC425F4DE0B8C768 (void);
+// 0x00000421 System.Void Pathfinding.OnGraphDelegate::Invoke(Pathfinding.NavGraph)
+extern void OnGraphDelegate_Invoke_mA373F596F6B04C3C44E98792EE88D30C86D7D0C7 (void);
+// 0x00000422 System.IAsyncResult Pathfinding.OnGraphDelegate::BeginInvoke(Pathfinding.NavGraph,System.AsyncCallback,System.Object)
+extern void OnGraphDelegate_BeginInvoke_mD407B9A6ADCCBC5C54A6C0B345649E8A1B10710F (void);
+// 0x00000423 System.Void Pathfinding.OnGraphDelegate::EndInvoke(System.IAsyncResult)
+extern void OnGraphDelegate_EndInvoke_m21B7D967DF667E82669E789BA0C2B0A5565E47C1 (void);
+// 0x00000424 System.Void Pathfinding.OnScanDelegate::.ctor(System.Object,System.IntPtr)
+extern void OnScanDelegate__ctor_m676DC4E4B01150D561792C8DA62789DF6E056D8D (void);
+// 0x00000425 System.Void Pathfinding.OnScanDelegate::Invoke(AstarPath)
+extern void OnScanDelegate_Invoke_mD41A4EA9794D0A8AE8C4A2F5BB61A40046F5335D (void);
+// 0x00000426 System.IAsyncResult Pathfinding.OnScanDelegate::BeginInvoke(AstarPath,System.AsyncCallback,System.Object)
+extern void OnScanDelegate_BeginInvoke_m9AE3947C3969352B5C583F94787999C5CE4D8CC9 (void);
+// 0x00000427 System.Void Pathfinding.OnScanDelegate::EndInvoke(System.IAsyncResult)
+extern void OnScanDelegate_EndInvoke_m1247908910B8613972E4466CBED5DDEFD4A7D5E5 (void);
+// 0x00000428 System.Void Pathfinding.OnScanStatus::.ctor(System.Object,System.IntPtr)
+extern void OnScanStatus__ctor_mF58A92138A44B6412D955510F576153BB64F0AA1 (void);
+// 0x00000429 System.Void Pathfinding.OnScanStatus::Invoke(Pathfinding.Progress)
+extern void OnScanStatus_Invoke_m1DD9AC0079CB25B9E51D6421629C310BA585168F (void);
+// 0x0000042A System.IAsyncResult Pathfinding.OnScanStatus::BeginInvoke(Pathfinding.Progress,System.AsyncCallback,System.Object)
+extern void OnScanStatus_BeginInvoke_m955C8C2ABB275B4E99E3FA32AC87A1153C7FCC63 (void);
+// 0x0000042B System.Void Pathfinding.OnScanStatus::EndInvoke(System.IAsyncResult)
+extern void OnScanStatus_EndInvoke_m44D160FE7EC62E44B9E98F4BD4049AB8BFB685C8 (void);
 // 0x0000042C System.Void Pathfinding.TargetMover::Start()
 extern void TargetMover_Start_m7EEE2A79B29AC7CA7122B6EBCAE54D494CDED94D (void);
 // 0x0000042D System.Void Pathfinding.TargetMover::OnGUI()
@@ -2369,170 +2369,170 @@ extern void U3CScanInternalU3Ed__88_System_Collections_IEnumerator_get_Current_m
 extern void U3CScanInternalU3Ed__88_System_Collections_Generic_IEnumerableU3CPathfinding_ProgressU3E_GetEnumerator_m2D8570149884AFCDC2CDD50699DACBD1DE7AF704 (void);
 // 0x000004CC System.Collections.IEnumerator Pathfinding.GridGraph/<ScanInternal>d__88::System.Collections.IEnumerable.GetEnumerator()
 extern void U3CScanInternalU3Ed__88_System_Collections_IEnumerable_GetEnumerator_m2706753BC21C18B56EB53D0E0489F72C8F60954A (void);
-// 0x000004CD System.Single Pathfinding.NavmeshBase::get_TileWorldSizeX()
-// 0x000004CE System.Single Pathfinding.NavmeshBase::get_TileWorldSizeZ()
-// 0x000004CF System.Single Pathfinding.NavmeshBase::get_MaxTileConnectionEdgeDistance()
-// 0x000004D0 Pathfinding.Util.GraphTransform Pathfinding.NavmeshBase::Pathfinding.ITransformedGraph.get_transform()
-extern void NavmeshBase_Pathfinding_ITransformedGraph_get_transform_m93278676E6699146DA1457FC9D16B9CCD59DCDE4 (void);
-// 0x000004D1 System.Boolean Pathfinding.NavmeshBase::get_RecalculateNormals()
-// 0x000004D2 Pathfinding.Util.GraphTransform Pathfinding.NavmeshBase::CalculateTransform()
-// 0x000004D3 Pathfinding.NavmeshTile Pathfinding.NavmeshBase::GetTile(System.Int32,System.Int32)
-extern void NavmeshBase_GetTile_mD94F785359795C4760F72CF31111898D65B607C3 (void);
-// 0x000004D4 Pathfinding.Int3 Pathfinding.NavmeshBase::GetVertex(System.Int32)
-extern void NavmeshBase_GetVertex_mDCF2189E306A1B39264C0C5AF1B7190C1B2E7123 (void);
-// 0x000004D5 Pathfinding.Int3 Pathfinding.NavmeshBase::GetVertexInGraphSpace(System.Int32)
-extern void NavmeshBase_GetVertexInGraphSpace_mEF81ED88D6221EDA89056F5F107D32ECA2A4E3F4 (void);
-// 0x000004D6 System.Int32 Pathfinding.NavmeshBase::GetTileIndex(System.Int32)
-extern void NavmeshBase_GetTileIndex_m5BA0E51B81DCBED47168E68DB4C88AF0BA99D7B1 (void);
-// 0x000004D7 System.Int32 Pathfinding.NavmeshBase::GetVertexArrayIndex(System.Int32)
-extern void NavmeshBase_GetVertexArrayIndex_m218808427E81550B510510B88E55CB68DDCBFBDE (void);
-// 0x000004D8 System.Void Pathfinding.NavmeshBase::GetTileCoordinates(System.Int32,System.Int32&,System.Int32&)
-extern void NavmeshBase_GetTileCoordinates_m3C22F76F93DF194FE7CFE94964335348CE41A1E3 (void);
-// 0x000004D9 Pathfinding.NavmeshTile[] Pathfinding.NavmeshBase::GetTiles()
-extern void NavmeshBase_GetTiles_mE53F498B8DD07FEF263AF80007D5C18D70CF73A8 (void);
-// 0x000004DA UnityEngine.Bounds Pathfinding.NavmeshBase::GetTileBounds(Pathfinding.IntRect)
-extern void NavmeshBase_GetTileBounds_m9F38253E2356CE6B144F5C18776467956B7D06FB (void);
-// 0x000004DB UnityEngine.Bounds Pathfinding.NavmeshBase::GetTileBounds(System.Int32,System.Int32,System.Int32,System.Int32)
-extern void NavmeshBase_GetTileBounds_m7D1EC5DA5A0D73442D2A6582D2834251C144BBF2 (void);
-// 0x000004DC UnityEngine.Bounds Pathfinding.NavmeshBase::GetTileBoundsInGraphSpace(Pathfinding.IntRect)
-extern void NavmeshBase_GetTileBoundsInGraphSpace_mD1A6FA50ADEE60DBAE0F84585DF3CCE39BF704B3 (void);
-// 0x000004DD UnityEngine.Bounds Pathfinding.NavmeshBase::GetTileBoundsInGraphSpace(System.Int32,System.Int32,System.Int32,System.Int32)
-extern void NavmeshBase_GetTileBoundsInGraphSpace_mE0D02B715CF5F315B1A1383038CFCB95BB5E4018 (void);
-// 0x000004DE Pathfinding.Int2 Pathfinding.NavmeshBase::GetTileCoordinates(UnityEngine.Vector3)
-extern void NavmeshBase_GetTileCoordinates_m453BD8D644FECE41B7E29BEF0AA9D1EE50FF67CF (void);
-// 0x000004DF System.Void Pathfinding.NavmeshBase::OnDestroy()
-extern void NavmeshBase_OnDestroy_m3D451B7A2A7F6A5E521883184DF317FBFE2B6754 (void);
-// 0x000004E0 System.Void Pathfinding.NavmeshBase::RelocateNodes(UnityEngine.Matrix4x4)
-extern void NavmeshBase_RelocateNodes_m2D718A138CA20C25EA9C50C1399441DB97794D84 (void);
-// 0x000004E1 System.Void Pathfinding.NavmeshBase::RelocateNodes(Pathfinding.Util.GraphTransform)
-extern void NavmeshBase_RelocateNodes_mA893BE9E8CE84A96F3BCCDB9F434641AC2565727 (void);
-// 0x000004E2 Pathfinding.NavmeshTile Pathfinding.NavmeshBase::NewEmptyTile(System.Int32,System.Int32)
-extern void NavmeshBase_NewEmptyTile_mA89DA614A405548C8D120B2787927D379AB83148 (void);
-// 0x000004E3 System.Void Pathfinding.NavmeshBase::GetNodes(System.Action`1<Pathfinding.GraphNode>)
-extern void NavmeshBase_GetNodes_m8A0AF28D9D9CD3269DC29B571A1BD0B60BA6BA85 (void);
-// 0x000004E4 Pathfinding.IntRect Pathfinding.NavmeshBase::GetTouchingTiles(UnityEngine.Bounds,System.Single)
-extern void NavmeshBase_GetTouchingTiles_mF61F0683F3FC528B8E4C929C37352E0395E181B0 (void);
-// 0x000004E5 Pathfinding.IntRect Pathfinding.NavmeshBase::GetTouchingTilesInGraphSpace(UnityEngine.Rect)
-extern void NavmeshBase_GetTouchingTilesInGraphSpace_m68C9F41633F5327F253A88FB09FA3B6C9674AFD8 (void);
-// 0x000004E6 Pathfinding.IntRect Pathfinding.NavmeshBase::GetTouchingTilesRound(UnityEngine.Bounds)
-extern void NavmeshBase_GetTouchingTilesRound_mDE02FD9A4A605DF197F8B9B79F015722EE4FCA76 (void);
-// 0x000004E7 System.Void Pathfinding.NavmeshBase::ConnectTileWithNeighbours(Pathfinding.NavmeshTile,System.Boolean)
-extern void NavmeshBase_ConnectTileWithNeighbours_m8E3E8CD8A49453696BD3AA726C8D7E8A6F9A463B (void);
-// 0x000004E8 System.Void Pathfinding.NavmeshBase::RemoveConnectionsFromTile(Pathfinding.NavmeshTile)
-extern void NavmeshBase_RemoveConnectionsFromTile_mDBB64CD8DCDEB3AADA32E6568459643A27EB5084 (void);
-// 0x000004E9 System.Void Pathfinding.NavmeshBase::RemoveConnectionsFromTo(Pathfinding.NavmeshTile,Pathfinding.NavmeshTile)
-extern void NavmeshBase_RemoveConnectionsFromTo_mDB763CF70F86F2D6B71FAF94ADB51267E635AB62 (void);
-// 0x000004EA Pathfinding.NNInfoInternal Pathfinding.NavmeshBase::GetNearest(UnityEngine.Vector3,Pathfinding.NNConstraint,Pathfinding.GraphNode)
-extern void NavmeshBase_GetNearest_m4F3F740075AAB2363CBAB5744BD6514FADE023A7 (void);
-// 0x000004EB Pathfinding.NNInfoInternal Pathfinding.NavmeshBase::GetNearestForce(UnityEngine.Vector3,Pathfinding.NNConstraint)
-extern void NavmeshBase_GetNearestForce_m34302AEE96088473D5E22E18A736A279CACBA3B6 (void);
-// 0x000004EC Pathfinding.GraphNode Pathfinding.NavmeshBase::PointOnNavmesh(UnityEngine.Vector3,Pathfinding.NNConstraint)
-extern void NavmeshBase_PointOnNavmesh_m00D1346EF671F64D68380799BC30BD645D0A8768 (void);
-// 0x000004ED System.Void Pathfinding.NavmeshBase::FillWithEmptyTiles()
-extern void NavmeshBase_FillWithEmptyTiles_mF344A935A10F26804F02385737F229C81BE44095 (void);
-// 0x000004EE System.Void Pathfinding.NavmeshBase::CreateNodeConnections(Pathfinding.TriangleMeshNode[])
-extern void NavmeshBase_CreateNodeConnections_mE3D1C55960D9F60C06AFCA6775A164E7AF12856D (void);
-// 0x000004EF System.Void Pathfinding.NavmeshBase::ConnectTiles(Pathfinding.NavmeshTile,Pathfinding.NavmeshTile)
-extern void NavmeshBase_ConnectTiles_mF332DA22AD4B2FF87FC3CF58710C31F70352405B (void);
-// 0x000004F0 System.Void Pathfinding.NavmeshBase::StartBatchTileUpdate()
-extern void NavmeshBase_StartBatchTileUpdate_m8A08C3E41F560CBB3373A3E74ED52C14E5CF9302 (void);
-// 0x000004F1 System.Void Pathfinding.NavmeshBase::DestroyNodes(System.Collections.Generic.List`1<Pathfinding.MeshNode>)
-extern void NavmeshBase_DestroyNodes_mCF55C9DD982BD8DAA62DDFD7A19BBF23027D717A (void);
-// 0x000004F2 System.Void Pathfinding.NavmeshBase::TryConnect(System.Int32,System.Int32)
-extern void NavmeshBase_TryConnect_mDE382DF8A9FF17534A929101E1BDE73793F091FD (void);
-// 0x000004F3 System.Void Pathfinding.NavmeshBase::EndBatchTileUpdate()
-extern void NavmeshBase_EndBatchTileUpdate_mE4AFB99C74A92C1026952D872179E5A14BD00553 (void);
-// 0x000004F4 System.Void Pathfinding.NavmeshBase::ClearTile(System.Int32,System.Int32)
-extern void NavmeshBase_ClearTile_m5AD5CDBDCC976B9B26D049034D488AED8960F618 (void);
-// 0x000004F5 System.Void Pathfinding.NavmeshBase::PrepareNodeRecycling(System.Int32,System.Int32,Pathfinding.Int3[],System.Int32[],Pathfinding.TriangleMeshNode[])
-extern void NavmeshBase_PrepareNodeRecycling_m96F0801E7CEBE11EEC99E38E5221AB5660E5B834 (void);
-// 0x000004F6 System.Void Pathfinding.NavmeshBase::ReplaceTile(System.Int32,System.Int32,Pathfinding.Int3[],System.Int32[])
-extern void NavmeshBase_ReplaceTile_m5D3C27F3D401BAD8AC9EC6B92493CF4EF829FD69 (void);
-// 0x000004F7 System.Void Pathfinding.NavmeshBase::CreateNodes(Pathfinding.TriangleMeshNode[],System.Int32[],System.Int32,System.UInt32)
-extern void NavmeshBase_CreateNodes_m7BFF7CCFE468A7BAD42CBA3A35808AE5427FCEA1 (void);
-// 0x000004F8 System.Void Pathfinding.NavmeshBase::.ctor()
-extern void NavmeshBase__ctor_m1862DCB5497316A4CE27F317AF797A098D340F1D (void);
-// 0x000004F9 System.Void Pathfinding.NavmeshBase::OnDrawGizmos(Pathfinding.Util.RetainedGizmos,System.Boolean)
-extern void NavmeshBase_OnDrawGizmos_m2CEF8C1624AEF0191F1E634FB1BD809E46F024E5 (void);
-// 0x000004FA System.Void Pathfinding.NavmeshBase::CreateNavmeshSurfaceVisualization(Pathfinding.NavmeshTile[],System.Int32,System.Int32,Pathfinding.Util.GraphGizmoHelper)
-extern void NavmeshBase_CreateNavmeshSurfaceVisualization_mE34B5EEDDD48B630D599D95936A4E77634F2BA4E (void);
-// 0x000004FB System.Void Pathfinding.NavmeshBase::CreateNavmeshOutlineVisualization(Pathfinding.NavmeshTile[],System.Int32,System.Int32,Pathfinding.Util.GraphGizmoHelper)
-extern void NavmeshBase_CreateNavmeshOutlineVisualization_m9FBC256BBF14998F30609B0905144E6BC23902A5 (void);
-// 0x000004FC System.Void Pathfinding.NavmeshBase::SerializeExtraInfo(Pathfinding.Serialization.GraphSerializationContext)
-extern void NavmeshBase_SerializeExtraInfo_m6168B4B5021680672337D59531829C78654273AE (void);
-// 0x000004FD System.Void Pathfinding.NavmeshBase::DeserializeExtraInfo(Pathfinding.Serialization.GraphSerializationContext)
-extern void NavmeshBase_DeserializeExtraInfo_m23ACF8EAE0D29C13CB7283B609AC5E3E81C19AF0 (void);
-// 0x000004FE System.Void Pathfinding.NavmeshBase::PostDeserialization(Pathfinding.Serialization.GraphSerializationContext)
-extern void NavmeshBase_PostDeserialization_m26510C3722320EC68C1677EB21AE54A71A2F0953 (void);
-// 0x000004FF System.Void Pathfinding.NavmeshBase::.cctor()
-extern void NavmeshBase__cctor_mB40BBA9A167EAF7DCF76FD0FFB351FC8597E178C (void);
-// 0x00000500 System.Void Pathfinding.NavmeshBase/<>c__DisplayClass74_0::.ctor()
-extern void U3CU3Ec__DisplayClass74_0__ctor_mBA6E4F03EE75AE2C93E6AC9EA1D62603070D4ACD (void);
-// 0x00000501 System.Void Pathfinding.NavmeshBase/<>c__DisplayClass74_0::<PostDeserialization>b__3(Pathfinding.GraphNode)
-extern void U3CU3Ec__DisplayClass74_0_U3CPostDeserializationU3Eb__3_mE36262BC17A64F58CD4EDBF718D5E5380928115F (void);
-// 0x00000502 System.Void Pathfinding.NavmeshBase/<>c__DisplayClass74_1::.ctor()
-extern void U3CU3Ec__DisplayClass74_1__ctor_m57C1C10B29591ACE67B533ED23A8C02FE1106956 (void);
-// 0x00000503 System.Boolean Pathfinding.NavmeshBase/<>c__DisplayClass74_1::<PostDeserialization>b__4(Pathfinding.Connection)
-extern void U3CU3Ec__DisplayClass74_1_U3CPostDeserializationU3Eb__4_m09B26A83C41D6B50D55BE7EBA99167371FC6D262 (void);
-// 0x00000504 System.Void Pathfinding.NavmeshBase/<>c::.cctor()
-extern void U3CU3Ec__cctor_mA0378D7084D46FF6669003D868A84141D927E476 (void);
-// 0x00000505 System.Void Pathfinding.NavmeshBase/<>c::.ctor()
-extern void U3CU3Ec__ctor_m8D294E78D8BEF55B1BA548E94C376365782D0807 (void);
-// 0x00000506 System.Collections.Generic.IEnumerable`1<Pathfinding.TriangleMeshNode> Pathfinding.NavmeshBase/<>c::<PostDeserialization>b__74_0(Pathfinding.NavmeshTile)
-extern void U3CU3Ec_U3CPostDeserializationU3Eb__74_0_mD1E0786A187954DA5C197FC3AD7CE6CF5B856AFC (void);
-// 0x00000507 Pathfinding.TriangleMeshNode Pathfinding.NavmeshBase/<>c::<PostDeserialization>b__74_1(Pathfinding.TriangleMeshNode)
-extern void U3CU3Ec_U3CPostDeserializationU3Eb__74_1_mA9F50141FEDA62EE26B6BAAB4125BF97F870CE48 (void);
-// 0x00000508 Pathfinding.Connection[] Pathfinding.NavmeshBase/<>c::<PostDeserialization>b__74_2(Pathfinding.TriangleMeshNode)
-extern void U3CU3Ec_U3CPostDeserializationU3Eb__74_2_mB5823CDDD61117437A2C0E81589D98DF307783FB (void);
-// 0x00000509 System.Void Pathfinding.INavmesh::GetNodes(System.Action`1<Pathfinding.GraphNode>)
-// 0x0000050A System.Boolean Pathfinding.NavMeshGraph::get_RecalculateNormals()
+// 0x000004CD System.Void Pathfinding.INavmesh::GetNodes(System.Action`1<Pathfinding.GraphNode>)
+// 0x000004CE System.Boolean Pathfinding.NavMeshGraph::get_RecalculateNormals()
 extern void NavMeshGraph_get_RecalculateNormals_mEDAC62014D8EF1E002DE35E20416A12942F144BA (void);
-// 0x0000050B System.Single Pathfinding.NavMeshGraph::get_TileWorldSizeX()
+// 0x000004CF System.Single Pathfinding.NavMeshGraph::get_TileWorldSizeX()
 extern void NavMeshGraph_get_TileWorldSizeX_mDFA256AF24ABE6909171F75092D8ABBC55D4DB77 (void);
-// 0x0000050C System.Single Pathfinding.NavMeshGraph::get_TileWorldSizeZ()
+// 0x000004D0 System.Single Pathfinding.NavMeshGraph::get_TileWorldSizeZ()
 extern void NavMeshGraph_get_TileWorldSizeZ_mA66778A0D3D8F88E79DF8709B94D447D7EE158A6 (void);
-// 0x0000050D System.Single Pathfinding.NavMeshGraph::get_MaxTileConnectionEdgeDistance()
+// 0x000004D1 System.Single Pathfinding.NavMeshGraph::get_MaxTileConnectionEdgeDistance()
 extern void NavMeshGraph_get_MaxTileConnectionEdgeDistance_mE03FD2034C78B3D78D5555FF085BBEFE6B8DFDA5 (void);
-// 0x0000050E Pathfinding.Util.GraphTransform Pathfinding.NavMeshGraph::CalculateTransform()
+// 0x000004D2 Pathfinding.Util.GraphTransform Pathfinding.NavMeshGraph::CalculateTransform()
 extern void NavMeshGraph_CalculateTransform_m812BFC7A50F8AE47029240BAD066B01939B7B8B3 (void);
-// 0x0000050F Pathfinding.GraphUpdateThreading Pathfinding.NavMeshGraph::Pathfinding.IUpdatableGraph.CanUpdateAsync(Pathfinding.GraphUpdateObject)
+// 0x000004D3 Pathfinding.GraphUpdateThreading Pathfinding.NavMeshGraph::Pathfinding.IUpdatableGraph.CanUpdateAsync(Pathfinding.GraphUpdateObject)
 extern void NavMeshGraph_Pathfinding_IUpdatableGraph_CanUpdateAsync_mEF1E8E280141B5B4E0B0A12FBF64FCFC121B0952 (void);
-// 0x00000510 System.Void Pathfinding.NavMeshGraph::Pathfinding.IUpdatableGraph.UpdateAreaInit(Pathfinding.GraphUpdateObject)
+// 0x000004D4 System.Void Pathfinding.NavMeshGraph::Pathfinding.IUpdatableGraph.UpdateAreaInit(Pathfinding.GraphUpdateObject)
 extern void NavMeshGraph_Pathfinding_IUpdatableGraph_UpdateAreaInit_mBCBB1EA4A995D41D82FA424D00B923014F3C59B2 (void);
-// 0x00000511 System.Void Pathfinding.NavMeshGraph::Pathfinding.IUpdatableGraph.UpdateAreaPost(Pathfinding.GraphUpdateObject)
+// 0x000004D5 System.Void Pathfinding.NavMeshGraph::Pathfinding.IUpdatableGraph.UpdateAreaPost(Pathfinding.GraphUpdateObject)
 extern void NavMeshGraph_Pathfinding_IUpdatableGraph_UpdateAreaPost_mF6AC19535C9B9FBAEF7E1E9F95B29F7EE9492813 (void);
-// 0x00000512 System.Void Pathfinding.NavMeshGraph::Pathfinding.IUpdatableGraph.UpdateArea(Pathfinding.GraphUpdateObject)
+// 0x000004D6 System.Void Pathfinding.NavMeshGraph::Pathfinding.IUpdatableGraph.UpdateArea(Pathfinding.GraphUpdateObject)
 extern void NavMeshGraph_Pathfinding_IUpdatableGraph_UpdateArea_m4532606FA3AB155AD97D9485BFF5049A0F0399B4 (void);
-// 0x00000513 System.Void Pathfinding.NavMeshGraph::UpdateArea(Pathfinding.GraphUpdateObject,Pathfinding.INavmeshHolder)
+// 0x000004D7 System.Void Pathfinding.NavMeshGraph::UpdateArea(Pathfinding.GraphUpdateObject,Pathfinding.INavmeshHolder)
 extern void NavMeshGraph_UpdateArea_mFA0928B85FDF7CE830372D8792469570434EED2E (void);
-// 0x00000514 System.Void Pathfinding.NavMeshGraph::ScanInternal(System.String)
+// 0x000004D8 System.Void Pathfinding.NavMeshGraph::ScanInternal(System.String)
 extern void NavMeshGraph_ScanInternal_mB75E618D2E5097AFBCD9AE80744C072DA8D49B3A (void);
-// 0x00000515 System.Collections.Generic.IEnumerable`1<Pathfinding.Progress> Pathfinding.NavMeshGraph::ScanInternal()
+// 0x000004D9 System.Collections.Generic.IEnumerable`1<Pathfinding.Progress> Pathfinding.NavMeshGraph::ScanInternal()
 extern void NavMeshGraph_ScanInternal_mA4B12AD81F33206423D12910131955ED6CC72804 (void);
-// 0x00000516 System.Void Pathfinding.NavMeshGraph::DeserializeSettingsCompatibility(Pathfinding.Serialization.GraphSerializationContext)
+// 0x000004DA System.Void Pathfinding.NavMeshGraph::DeserializeSettingsCompatibility(Pathfinding.Serialization.GraphSerializationContext)
 extern void NavMeshGraph_DeserializeSettingsCompatibility_m5EF80CB6D70927D7C36E78452345995909C6FFE1 (void);
-// 0x00000517 System.Void Pathfinding.NavMeshGraph::.ctor()
+// 0x000004DB System.Void Pathfinding.NavMeshGraph::.ctor()
 extern void NavMeshGraph__ctor_m9BE882C8C6BBC141DA14F4C2852D79B67EFCAB38 (void);
-// 0x00000518 System.Void Pathfinding.NavMeshGraph/<>c__DisplayClass19_0::.ctor()
+// 0x000004DC System.Void Pathfinding.NavMeshGraph/<>c__DisplayClass19_0::.ctor()
 extern void U3CU3Ec__DisplayClass19_0__ctor_mEAC43BC527ED1634E8677F3A832C584392F68D1E (void);
-// 0x00000519 System.Void Pathfinding.NavMeshGraph/<>c__DisplayClass19_0::<UpdateArea>b__0(Pathfinding.GraphNode)
+// 0x000004DD System.Void Pathfinding.NavMeshGraph/<>c__DisplayClass19_0::<UpdateArea>b__0(Pathfinding.GraphNode)
 extern void U3CU3Ec__DisplayClass19_0_U3CUpdateAreaU3Eb__0_m2129D10888EFF7B410FBADB8DB83600C0E05F15B (void);
-// 0x0000051A System.Void Pathfinding.NavMeshGraph/<ScanInternal>d__21::.ctor(System.Int32)
+// 0x000004DE System.Void Pathfinding.NavMeshGraph/<ScanInternal>d__21::.ctor(System.Int32)
 extern void U3CScanInternalU3Ed__21__ctor_mFBE3AFAE3D6610C18DCC6C7E7F511DAC8BA2EA60 (void);
-// 0x0000051B System.Void Pathfinding.NavMeshGraph/<ScanInternal>d__21::System.IDisposable.Dispose()
+// 0x000004DF System.Void Pathfinding.NavMeshGraph/<ScanInternal>d__21::System.IDisposable.Dispose()
 extern void U3CScanInternalU3Ed__21_System_IDisposable_Dispose_m51D19F16A2AF26C1A7AFD4DA05E92553040FFCB7 (void);
-// 0x0000051C System.Boolean Pathfinding.NavMeshGraph/<ScanInternal>d__21::MoveNext()
+// 0x000004E0 System.Boolean Pathfinding.NavMeshGraph/<ScanInternal>d__21::MoveNext()
 extern void U3CScanInternalU3Ed__21_MoveNext_m60564168A07C7EF4EFD17FFC479A6517EC9B88CC (void);
-// 0x0000051D Pathfinding.Progress Pathfinding.NavMeshGraph/<ScanInternal>d__21::System.Collections.Generic.IEnumerator<Pathfinding.Progress>.get_Current()
+// 0x000004E1 Pathfinding.Progress Pathfinding.NavMeshGraph/<ScanInternal>d__21::System.Collections.Generic.IEnumerator<Pathfinding.Progress>.get_Current()
 extern void U3CScanInternalU3Ed__21_System_Collections_Generic_IEnumeratorU3CPathfinding_ProgressU3E_get_Current_m8FDDA49D8BF38957B1284FFAB9B5924ACA1A343A (void);
-// 0x0000051E System.Void Pathfinding.NavMeshGraph/<ScanInternal>d__21::System.Collections.IEnumerator.Reset()
+// 0x000004E2 System.Void Pathfinding.NavMeshGraph/<ScanInternal>d__21::System.Collections.IEnumerator.Reset()
 extern void U3CScanInternalU3Ed__21_System_Collections_IEnumerator_Reset_m6DB46565E85CEE8B6938F45120DF6BC6916FD451 (void);
-// 0x0000051F System.Object Pathfinding.NavMeshGraph/<ScanInternal>d__21::System.Collections.IEnumerator.get_Current()
+// 0x000004E3 System.Object Pathfinding.NavMeshGraph/<ScanInternal>d__21::System.Collections.IEnumerator.get_Current()
 extern void U3CScanInternalU3Ed__21_System_Collections_IEnumerator_get_Current_m55927A3A91FE461D70FFCA8FC09C508BFD745507 (void);
-// 0x00000520 System.Collections.Generic.IEnumerator`1<Pathfinding.Progress> Pathfinding.NavMeshGraph/<ScanInternal>d__21::System.Collections.Generic.IEnumerable<Pathfinding.Progress>.GetEnumerator()
+// 0x000004E4 System.Collections.Generic.IEnumerator`1<Pathfinding.Progress> Pathfinding.NavMeshGraph/<ScanInternal>d__21::System.Collections.Generic.IEnumerable<Pathfinding.Progress>.GetEnumerator()
 extern void U3CScanInternalU3Ed__21_System_Collections_Generic_IEnumerableU3CPathfinding_ProgressU3E_GetEnumerator_mA991C61199796D875667AD6FB0B6738FFE3E584F (void);
-// 0x00000521 System.Collections.IEnumerator Pathfinding.NavMeshGraph/<ScanInternal>d__21::System.Collections.IEnumerable.GetEnumerator()
+// 0x000004E5 System.Collections.IEnumerator Pathfinding.NavMeshGraph/<ScanInternal>d__21::System.Collections.IEnumerable.GetEnumerator()
 extern void U3CScanInternalU3Ed__21_System_Collections_IEnumerable_GetEnumerator_m2CEA72B3D1E5D37193EE422E91C7E1C80BAA4493 (void);
+// 0x000004E6 System.Single Pathfinding.NavmeshBase::get_TileWorldSizeX()
+// 0x000004E7 System.Single Pathfinding.NavmeshBase::get_TileWorldSizeZ()
+// 0x000004E8 System.Single Pathfinding.NavmeshBase::get_MaxTileConnectionEdgeDistance()
+// 0x000004E9 Pathfinding.Util.GraphTransform Pathfinding.NavmeshBase::Pathfinding.ITransformedGraph.get_transform()
+extern void NavmeshBase_Pathfinding_ITransformedGraph_get_transform_m93278676E6699146DA1457FC9D16B9CCD59DCDE4 (void);
+// 0x000004EA System.Boolean Pathfinding.NavmeshBase::get_RecalculateNormals()
+// 0x000004EB Pathfinding.Util.GraphTransform Pathfinding.NavmeshBase::CalculateTransform()
+// 0x000004EC Pathfinding.NavmeshTile Pathfinding.NavmeshBase::GetTile(System.Int32,System.Int32)
+extern void NavmeshBase_GetTile_mD94F785359795C4760F72CF31111898D65B607C3 (void);
+// 0x000004ED Pathfinding.Int3 Pathfinding.NavmeshBase::GetVertex(System.Int32)
+extern void NavmeshBase_GetVertex_mDCF2189E306A1B39264C0C5AF1B7190C1B2E7123 (void);
+// 0x000004EE Pathfinding.Int3 Pathfinding.NavmeshBase::GetVertexInGraphSpace(System.Int32)
+extern void NavmeshBase_GetVertexInGraphSpace_mEF81ED88D6221EDA89056F5F107D32ECA2A4E3F4 (void);
+// 0x000004EF System.Int32 Pathfinding.NavmeshBase::GetTileIndex(System.Int32)
+extern void NavmeshBase_GetTileIndex_m5BA0E51B81DCBED47168E68DB4C88AF0BA99D7B1 (void);
+// 0x000004F0 System.Int32 Pathfinding.NavmeshBase::GetVertexArrayIndex(System.Int32)
+extern void NavmeshBase_GetVertexArrayIndex_m218808427E81550B510510B88E55CB68DDCBFBDE (void);
+// 0x000004F1 System.Void Pathfinding.NavmeshBase::GetTileCoordinates(System.Int32,System.Int32&,System.Int32&)
+extern void NavmeshBase_GetTileCoordinates_m3C22F76F93DF194FE7CFE94964335348CE41A1E3 (void);
+// 0x000004F2 Pathfinding.NavmeshTile[] Pathfinding.NavmeshBase::GetTiles()
+extern void NavmeshBase_GetTiles_mE53F498B8DD07FEF263AF80007D5C18D70CF73A8 (void);
+// 0x000004F3 UnityEngine.Bounds Pathfinding.NavmeshBase::GetTileBounds(Pathfinding.IntRect)
+extern void NavmeshBase_GetTileBounds_m9F38253E2356CE6B144F5C18776467956B7D06FB (void);
+// 0x000004F4 UnityEngine.Bounds Pathfinding.NavmeshBase::GetTileBounds(System.Int32,System.Int32,System.Int32,System.Int32)
+extern void NavmeshBase_GetTileBounds_m7D1EC5DA5A0D73442D2A6582D2834251C144BBF2 (void);
+// 0x000004F5 UnityEngine.Bounds Pathfinding.NavmeshBase::GetTileBoundsInGraphSpace(Pathfinding.IntRect)
+extern void NavmeshBase_GetTileBoundsInGraphSpace_mD1A6FA50ADEE60DBAE0F84585DF3CCE39BF704B3 (void);
+// 0x000004F6 UnityEngine.Bounds Pathfinding.NavmeshBase::GetTileBoundsInGraphSpace(System.Int32,System.Int32,System.Int32,System.Int32)
+extern void NavmeshBase_GetTileBoundsInGraphSpace_mE0D02B715CF5F315B1A1383038CFCB95BB5E4018 (void);
+// 0x000004F7 Pathfinding.Int2 Pathfinding.NavmeshBase::GetTileCoordinates(UnityEngine.Vector3)
+extern void NavmeshBase_GetTileCoordinates_m453BD8D644FECE41B7E29BEF0AA9D1EE50FF67CF (void);
+// 0x000004F8 System.Void Pathfinding.NavmeshBase::OnDestroy()
+extern void NavmeshBase_OnDestroy_m3D451B7A2A7F6A5E521883184DF317FBFE2B6754 (void);
+// 0x000004F9 System.Void Pathfinding.NavmeshBase::RelocateNodes(UnityEngine.Matrix4x4)
+extern void NavmeshBase_RelocateNodes_m2D718A138CA20C25EA9C50C1399441DB97794D84 (void);
+// 0x000004FA System.Void Pathfinding.NavmeshBase::RelocateNodes(Pathfinding.Util.GraphTransform)
+extern void NavmeshBase_RelocateNodes_mA893BE9E8CE84A96F3BCCDB9F434641AC2565727 (void);
+// 0x000004FB Pathfinding.NavmeshTile Pathfinding.NavmeshBase::NewEmptyTile(System.Int32,System.Int32)
+extern void NavmeshBase_NewEmptyTile_mA89DA614A405548C8D120B2787927D379AB83148 (void);
+// 0x000004FC System.Void Pathfinding.NavmeshBase::GetNodes(System.Action`1<Pathfinding.GraphNode>)
+extern void NavmeshBase_GetNodes_m8A0AF28D9D9CD3269DC29B571A1BD0B60BA6BA85 (void);
+// 0x000004FD Pathfinding.IntRect Pathfinding.NavmeshBase::GetTouchingTiles(UnityEngine.Bounds,System.Single)
+extern void NavmeshBase_GetTouchingTiles_mF61F0683F3FC528B8E4C929C37352E0395E181B0 (void);
+// 0x000004FE Pathfinding.IntRect Pathfinding.NavmeshBase::GetTouchingTilesInGraphSpace(UnityEngine.Rect)
+extern void NavmeshBase_GetTouchingTilesInGraphSpace_m68C9F41633F5327F253A88FB09FA3B6C9674AFD8 (void);
+// 0x000004FF Pathfinding.IntRect Pathfinding.NavmeshBase::GetTouchingTilesRound(UnityEngine.Bounds)
+extern void NavmeshBase_GetTouchingTilesRound_mDE02FD9A4A605DF197F8B9B79F015722EE4FCA76 (void);
+// 0x00000500 System.Void Pathfinding.NavmeshBase::ConnectTileWithNeighbours(Pathfinding.NavmeshTile,System.Boolean)
+extern void NavmeshBase_ConnectTileWithNeighbours_m8E3E8CD8A49453696BD3AA726C8D7E8A6F9A463B (void);
+// 0x00000501 System.Void Pathfinding.NavmeshBase::RemoveConnectionsFromTile(Pathfinding.NavmeshTile)
+extern void NavmeshBase_RemoveConnectionsFromTile_mDBB64CD8DCDEB3AADA32E6568459643A27EB5084 (void);
+// 0x00000502 System.Void Pathfinding.NavmeshBase::RemoveConnectionsFromTo(Pathfinding.NavmeshTile,Pathfinding.NavmeshTile)
+extern void NavmeshBase_RemoveConnectionsFromTo_mDB763CF70F86F2D6B71FAF94ADB51267E635AB62 (void);
+// 0x00000503 Pathfinding.NNInfoInternal Pathfinding.NavmeshBase::GetNearest(UnityEngine.Vector3,Pathfinding.NNConstraint,Pathfinding.GraphNode)
+extern void NavmeshBase_GetNearest_m4F3F740075AAB2363CBAB5744BD6514FADE023A7 (void);
+// 0x00000504 Pathfinding.NNInfoInternal Pathfinding.NavmeshBase::GetNearestForce(UnityEngine.Vector3,Pathfinding.NNConstraint)
+extern void NavmeshBase_GetNearestForce_m34302AEE96088473D5E22E18A736A279CACBA3B6 (void);
+// 0x00000505 Pathfinding.GraphNode Pathfinding.NavmeshBase::PointOnNavmesh(UnityEngine.Vector3,Pathfinding.NNConstraint)
+extern void NavmeshBase_PointOnNavmesh_m00D1346EF671F64D68380799BC30BD645D0A8768 (void);
+// 0x00000506 System.Void Pathfinding.NavmeshBase::FillWithEmptyTiles()
+extern void NavmeshBase_FillWithEmptyTiles_mF344A935A10F26804F02385737F229C81BE44095 (void);
+// 0x00000507 System.Void Pathfinding.NavmeshBase::CreateNodeConnections(Pathfinding.TriangleMeshNode[])
+extern void NavmeshBase_CreateNodeConnections_mE3D1C55960D9F60C06AFCA6775A164E7AF12856D (void);
+// 0x00000508 System.Void Pathfinding.NavmeshBase::ConnectTiles(Pathfinding.NavmeshTile,Pathfinding.NavmeshTile)
+extern void NavmeshBase_ConnectTiles_mF332DA22AD4B2FF87FC3CF58710C31F70352405B (void);
+// 0x00000509 System.Void Pathfinding.NavmeshBase::StartBatchTileUpdate()
+extern void NavmeshBase_StartBatchTileUpdate_m8A08C3E41F560CBB3373A3E74ED52C14E5CF9302 (void);
+// 0x0000050A System.Void Pathfinding.NavmeshBase::DestroyNodes(System.Collections.Generic.List`1<Pathfinding.MeshNode>)
+extern void NavmeshBase_DestroyNodes_mCF55C9DD982BD8DAA62DDFD7A19BBF23027D717A (void);
+// 0x0000050B System.Void Pathfinding.NavmeshBase::TryConnect(System.Int32,System.Int32)
+extern void NavmeshBase_TryConnect_mDE382DF8A9FF17534A929101E1BDE73793F091FD (void);
+// 0x0000050C System.Void Pathfinding.NavmeshBase::EndBatchTileUpdate()
+extern void NavmeshBase_EndBatchTileUpdate_mE4AFB99C74A92C1026952D872179E5A14BD00553 (void);
+// 0x0000050D System.Void Pathfinding.NavmeshBase::ClearTile(System.Int32,System.Int32)
+extern void NavmeshBase_ClearTile_m5AD5CDBDCC976B9B26D049034D488AED8960F618 (void);
+// 0x0000050E System.Void Pathfinding.NavmeshBase::PrepareNodeRecycling(System.Int32,System.Int32,Pathfinding.Int3[],System.Int32[],Pathfinding.TriangleMeshNode[])
+extern void NavmeshBase_PrepareNodeRecycling_m96F0801E7CEBE11EEC99E38E5221AB5660E5B834 (void);
+// 0x0000050F System.Void Pathfinding.NavmeshBase::ReplaceTile(System.Int32,System.Int32,Pathfinding.Int3[],System.Int32[])
+extern void NavmeshBase_ReplaceTile_m5D3C27F3D401BAD8AC9EC6B92493CF4EF829FD69 (void);
+// 0x00000510 System.Void Pathfinding.NavmeshBase::CreateNodes(Pathfinding.TriangleMeshNode[],System.Int32[],System.Int32,System.UInt32)
+extern void NavmeshBase_CreateNodes_m7BFF7CCFE468A7BAD42CBA3A35808AE5427FCEA1 (void);
+// 0x00000511 System.Void Pathfinding.NavmeshBase::.ctor()
+extern void NavmeshBase__ctor_m1862DCB5497316A4CE27F317AF797A098D340F1D (void);
+// 0x00000512 System.Void Pathfinding.NavmeshBase::OnDrawGizmos(Pathfinding.Util.RetainedGizmos,System.Boolean)
+extern void NavmeshBase_OnDrawGizmos_m2CEF8C1624AEF0191F1E634FB1BD809E46F024E5 (void);
+// 0x00000513 System.Void Pathfinding.NavmeshBase::CreateNavmeshSurfaceVisualization(Pathfinding.NavmeshTile[],System.Int32,System.Int32,Pathfinding.Util.GraphGizmoHelper)
+extern void NavmeshBase_CreateNavmeshSurfaceVisualization_mE34B5EEDDD48B630D599D95936A4E77634F2BA4E (void);
+// 0x00000514 System.Void Pathfinding.NavmeshBase::CreateNavmeshOutlineVisualization(Pathfinding.NavmeshTile[],System.Int32,System.Int32,Pathfinding.Util.GraphGizmoHelper)
+extern void NavmeshBase_CreateNavmeshOutlineVisualization_m9FBC256BBF14998F30609B0905144E6BC23902A5 (void);
+// 0x00000515 System.Void Pathfinding.NavmeshBase::SerializeExtraInfo(Pathfinding.Serialization.GraphSerializationContext)
+extern void NavmeshBase_SerializeExtraInfo_m6168B4B5021680672337D59531829C78654273AE (void);
+// 0x00000516 System.Void Pathfinding.NavmeshBase::DeserializeExtraInfo(Pathfinding.Serialization.GraphSerializationContext)
+extern void NavmeshBase_DeserializeExtraInfo_m23ACF8EAE0D29C13CB7283B609AC5E3E81C19AF0 (void);
+// 0x00000517 System.Void Pathfinding.NavmeshBase::PostDeserialization(Pathfinding.Serialization.GraphSerializationContext)
+extern void NavmeshBase_PostDeserialization_m26510C3722320EC68C1677EB21AE54A71A2F0953 (void);
+// 0x00000518 System.Void Pathfinding.NavmeshBase::.cctor()
+extern void NavmeshBase__cctor_mB40BBA9A167EAF7DCF76FD0FFB351FC8597E178C (void);
+// 0x00000519 System.Void Pathfinding.NavmeshBase/<>c__DisplayClass74_0::.ctor()
+extern void U3CU3Ec__DisplayClass74_0__ctor_mBA6E4F03EE75AE2C93E6AC9EA1D62603070D4ACD (void);
+// 0x0000051A System.Void Pathfinding.NavmeshBase/<>c__DisplayClass74_0::<PostDeserialization>b__3(Pathfinding.GraphNode)
+extern void U3CU3Ec__DisplayClass74_0_U3CPostDeserializationU3Eb__3_mE36262BC17A64F58CD4EDBF718D5E5380928115F (void);
+// 0x0000051B System.Void Pathfinding.NavmeshBase/<>c__DisplayClass74_1::.ctor()
+extern void U3CU3Ec__DisplayClass74_1__ctor_m57C1C10B29591ACE67B533ED23A8C02FE1106956 (void);
+// 0x0000051C System.Boolean Pathfinding.NavmeshBase/<>c__DisplayClass74_1::<PostDeserialization>b__4(Pathfinding.Connection)
+extern void U3CU3Ec__DisplayClass74_1_U3CPostDeserializationU3Eb__4_m09B26A83C41D6B50D55BE7EBA99167371FC6D262 (void);
+// 0x0000051D System.Void Pathfinding.NavmeshBase/<>c::.cctor()
+extern void U3CU3Ec__cctor_mA0378D7084D46FF6669003D868A84141D927E476 (void);
+// 0x0000051E System.Void Pathfinding.NavmeshBase/<>c::.ctor()
+extern void U3CU3Ec__ctor_m8D294E78D8BEF55B1BA548E94C376365782D0807 (void);
+// 0x0000051F System.Collections.Generic.IEnumerable`1<Pathfinding.TriangleMeshNode> Pathfinding.NavmeshBase/<>c::<PostDeserialization>b__74_0(Pathfinding.NavmeshTile)
+extern void U3CU3Ec_U3CPostDeserializationU3Eb__74_0_mD1E0786A187954DA5C197FC3AD7CE6CF5B856AFC (void);
+// 0x00000520 Pathfinding.TriangleMeshNode Pathfinding.NavmeshBase/<>c::<PostDeserialization>b__74_1(Pathfinding.TriangleMeshNode)
+extern void U3CU3Ec_U3CPostDeserializationU3Eb__74_1_mA9F50141FEDA62EE26B6BAAB4125BF97F870CE48 (void);
+// 0x00000521 Pathfinding.Connection[] Pathfinding.NavmeshBase/<>c::<PostDeserialization>b__74_2(Pathfinding.TriangleMeshNode)
+extern void U3CU3Ec_U3CPostDeserializationU3Eb__74_2_mB5823CDDD61117437A2C0E81589D98DF307783FB (void);
 // 0x00000522 System.Void Pathfinding.GridNode::.ctor(AstarPath)
 extern void GridNode__ctor_m49A61AAAE3D00861021A696392EAFDA03599B283 (void);
 // 0x00000523 Pathfinding.GridGraph Pathfinding.GridNode::GetGridGraph(System.UInt32)
@@ -3548,97 +3548,97 @@ extern void TinyJsonDeserializer__cctor_mAF720CC9C4E308BF8C44E72D13259704F31628E
 extern void WindowsStoreCompatibility_GetTypeFromInfo_m7EA216070126C3E467E5EA7E8107994A16B38D33 (void);
 // 0x00000724 System.Type Pathfinding.WindowsStore.WindowsStoreCompatibility::GetTypeInfo(System.Type)
 extern void WindowsStoreCompatibility_GetTypeInfo_m633F0F655696111B41DED211B55FC4C268F52E75 (void);
-// 0x00000725 System.Void Pathfinding.Util.PreserveAttribute::.ctor()
-extern void PreserveAttribute__ctor_m39541782EE65A3F61D54B13A27694399D12E3A20 (void);
-// 0x00000726 T[] Pathfinding.Util.ArrayPool`1::Claim(System.Int32)
-// 0x00000727 T[] Pathfinding.Util.ArrayPool`1::ClaimWithExactLength(System.Int32)
-// 0x00000728 System.Void Pathfinding.Util.ArrayPool`1::Release(T[]&,System.Boolean)
-// 0x00000729 System.Void Pathfinding.Util.ArrayPool`1::.cctor()
-// 0x0000072A T[] Pathfinding.Util.ListExtensions::ToArrayFromPool(System.Collections.Generic.List`1<T>)
-// 0x0000072B System.Void Pathfinding.Util.ListExtensions::ClearFast(System.Collections.Generic.List`1<T>)
-// 0x0000072C System.Void Pathfinding.Util.Draw::SetColor(UnityEngine.Color)
+// 0x00000725 T[] Pathfinding.Util.ArrayPool`1::Claim(System.Int32)
+// 0x00000726 T[] Pathfinding.Util.ArrayPool`1::ClaimWithExactLength(System.Int32)
+// 0x00000727 System.Void Pathfinding.Util.ArrayPool`1::Release(T[]&,System.Boolean)
+// 0x00000728 System.Void Pathfinding.Util.ArrayPool`1::.cctor()
+// 0x00000729 T[] Pathfinding.Util.ListExtensions::ToArrayFromPool(System.Collections.Generic.List`1<T>)
+// 0x0000072A System.Void Pathfinding.Util.ListExtensions::ClearFast(System.Collections.Generic.List`1<T>)
+// 0x0000072B System.Void Pathfinding.Util.Draw::SetColor(UnityEngine.Color)
 extern void Draw_SetColor_mAE5C8B3175D0BD2C1229821222C782577BC2F756 (void);
-// 0x0000072D System.Void Pathfinding.Util.Draw::Polyline(System.Collections.Generic.List`1<UnityEngine.Vector3>,UnityEngine.Color,System.Boolean)
+// 0x0000072C System.Void Pathfinding.Util.Draw::Polyline(System.Collections.Generic.List`1<UnityEngine.Vector3>,UnityEngine.Color,System.Boolean)
 extern void Draw_Polyline_m662B871A51079E49AE8CDB1F9DE58BFEA2A0E4DD (void);
-// 0x0000072E System.Void Pathfinding.Util.Draw::Line(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color)
+// 0x0000072D System.Void Pathfinding.Util.Draw::Line(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color)
 extern void Draw_Line_mDB65A31BCD1018966BC086AF7C19422A39EF5DD7 (void);
-// 0x0000072F System.Void Pathfinding.Util.Draw::CircleXZ(UnityEngine.Vector3,System.Single,UnityEngine.Color,System.Single,System.Single)
+// 0x0000072E System.Void Pathfinding.Util.Draw::CircleXZ(UnityEngine.Vector3,System.Single,UnityEngine.Color,System.Single,System.Single)
 extern void Draw_CircleXZ_m2FEF86D3A398D26376E8131C3D9AFD461AB60DD0 (void);
-// 0x00000730 System.Void Pathfinding.Util.Draw::Cylinder(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single,UnityEngine.Color)
+// 0x0000072F System.Void Pathfinding.Util.Draw::Cylinder(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single,UnityEngine.Color)
 extern void Draw_Cylinder_m08AAA040C5E203558379617B829EDF351620B0B2 (void);
-// 0x00000731 System.Void Pathfinding.Util.Draw::CrossXZ(UnityEngine.Vector3,UnityEngine.Color,System.Single)
+// 0x00000730 System.Void Pathfinding.Util.Draw::CrossXZ(UnityEngine.Vector3,UnityEngine.Color,System.Single)
 extern void Draw_CrossXZ_m1490235A711580BA939A5CBC8BECC687DE6FB6EC (void);
-// 0x00000732 System.Void Pathfinding.Util.Draw::Bezier(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color)
+// 0x00000731 System.Void Pathfinding.Util.Draw::Bezier(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color)
 extern void Draw_Bezier_m501BB2CB0BDF880AE54618BA9A947815E3100A30 (void);
-// 0x00000733 System.Void Pathfinding.Util.Draw::.ctor()
+// 0x00000732 System.Void Pathfinding.Util.Draw::.ctor()
 extern void Draw__ctor_m6689E171F702B416EC5DCE646F5903D7D321DEA2 (void);
-// 0x00000734 System.Void Pathfinding.Util.Draw::.cctor()
+// 0x00000733 System.Void Pathfinding.Util.Draw::.cctor()
 extern void Draw__cctor_m671FB41D974F6347C10F1F99F08B913979F76DCA (void);
-// 0x00000735 System.Collections.Generic.List`1<T> Pathfinding.Util.ListPool`1::Claim()
-// 0x00000736 System.Int32 Pathfinding.Util.ListPool`1::FindCandidate(System.Collections.Generic.List`1<System.Collections.Generic.List`1<T>>,System.Int32)
-// 0x00000737 System.Collections.Generic.List`1<T> Pathfinding.Util.ListPool`1::Claim(System.Int32)
-// 0x00000738 System.Void Pathfinding.Util.ListPool`1::Warmup(System.Int32,System.Int32)
-// 0x00000739 System.Void Pathfinding.Util.ListPool`1::Release(System.Collections.Generic.List`1<T>&)
-// 0x0000073A System.Void Pathfinding.Util.ListPool`1::Release(System.Collections.Generic.List`1<T>)
-// 0x0000073B System.Void Pathfinding.Util.ListPool`1::Clear()
-// 0x0000073C System.Int32 Pathfinding.Util.ListPool`1::GetSize()
-// 0x0000073D System.Void Pathfinding.Util.ListPool`1::.cctor()
-// 0x0000073E UnityEngine.Vector2 Pathfinding.Util.MovementUtilities::ClampVelocity(UnityEngine.Vector2,System.Single,System.Single,System.Boolean,UnityEngine.Vector2)
+// 0x00000734 System.Collections.Generic.List`1<T> Pathfinding.Util.ListPool`1::Claim()
+// 0x00000735 System.Int32 Pathfinding.Util.ListPool`1::FindCandidate(System.Collections.Generic.List`1<System.Collections.Generic.List`1<T>>,System.Int32)
+// 0x00000736 System.Collections.Generic.List`1<T> Pathfinding.Util.ListPool`1::Claim(System.Int32)
+// 0x00000737 System.Void Pathfinding.Util.ListPool`1::Warmup(System.Int32,System.Int32)
+// 0x00000738 System.Void Pathfinding.Util.ListPool`1::Release(System.Collections.Generic.List`1<T>&)
+// 0x00000739 System.Void Pathfinding.Util.ListPool`1::Release(System.Collections.Generic.List`1<T>)
+// 0x0000073A System.Void Pathfinding.Util.ListPool`1::Clear()
+// 0x0000073B System.Int32 Pathfinding.Util.ListPool`1::GetSize()
+// 0x0000073C System.Void Pathfinding.Util.ListPool`1::.cctor()
+// 0x0000073D UnityEngine.Vector2 Pathfinding.Util.MovementUtilities::ClampVelocity(UnityEngine.Vector2,System.Single,System.Single,System.Boolean,UnityEngine.Vector2)
 extern void MovementUtilities_ClampVelocity_m07571AC118F105480C99E065E327F2931884E0F2 (void);
-// 0x0000073F UnityEngine.Vector2 Pathfinding.Util.MovementUtilities::CalculateAccelerationToReachPoint(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,System.Single,System.Single,System.Single,UnityEngine.Vector2)
+// 0x0000073E UnityEngine.Vector2 Pathfinding.Util.MovementUtilities::CalculateAccelerationToReachPoint(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,System.Single,System.Single,System.Single,UnityEngine.Vector2)
 extern void MovementUtilities_CalculateAccelerationToReachPoint_m862FD83D3884EBD3BB4803F2C86057599F5534EF (void);
-// 0x00000740 System.Void Pathfinding.Util.IAstarPooledObject::OnEnterPool()
-// 0x00000741 T Pathfinding.Util.ObjectPool`1::Claim()
-// 0x00000742 System.Void Pathfinding.Util.ObjectPool`1::Release(T&)
-// 0x00000743 T Pathfinding.Util.ObjectPoolSimple`1::Claim()
-// 0x00000744 System.Void Pathfinding.Util.ObjectPoolSimple`1::Release(T&)
-// 0x00000745 System.Void Pathfinding.Util.ObjectPoolSimple`1::Clear()
-// 0x00000746 System.Int32 Pathfinding.Util.ObjectPoolSimple`1::GetSize()
-// 0x00000747 System.Void Pathfinding.Util.ObjectPoolSimple`1::.cctor()
-// 0x00000748 UnityEngine.Vector3 Pathfinding.Util.PathInterpolator::get_position()
+// 0x0000073F System.Void Pathfinding.Util.IAstarPooledObject::OnEnterPool()
+// 0x00000740 T Pathfinding.Util.ObjectPool`1::Claim()
+// 0x00000741 System.Void Pathfinding.Util.ObjectPool`1::Release(T&)
+// 0x00000742 T Pathfinding.Util.ObjectPoolSimple`1::Claim()
+// 0x00000743 System.Void Pathfinding.Util.ObjectPoolSimple`1::Release(T&)
+// 0x00000744 System.Void Pathfinding.Util.ObjectPoolSimple`1::Clear()
+// 0x00000745 System.Int32 Pathfinding.Util.ObjectPoolSimple`1::GetSize()
+// 0x00000746 System.Void Pathfinding.Util.ObjectPoolSimple`1::.cctor()
+// 0x00000747 UnityEngine.Vector3 Pathfinding.Util.PathInterpolator::get_position()
 extern void PathInterpolator_get_position_m01A3994DA2C207249EF670CEF3DEBC90881D78E7 (void);
-// 0x00000749 UnityEngine.Vector3 Pathfinding.Util.PathInterpolator::get_endPoint()
+// 0x00000748 UnityEngine.Vector3 Pathfinding.Util.PathInterpolator::get_endPoint()
 extern void PathInterpolator_get_endPoint_mAE2E9F82BB9A90AA3A5EFE1E4A40E8652DD67859 (void);
-// 0x0000074A UnityEngine.Vector3 Pathfinding.Util.PathInterpolator::get_tangent()
+// 0x00000749 UnityEngine.Vector3 Pathfinding.Util.PathInterpolator::get_tangent()
 extern void PathInterpolator_get_tangent_mC6B8116E043AAEE590EE548CE332D300BACE1184 (void);
-// 0x0000074B System.Single Pathfinding.Util.PathInterpolator::get_remainingDistance()
+// 0x0000074A System.Single Pathfinding.Util.PathInterpolator::get_remainingDistance()
 extern void PathInterpolator_get_remainingDistance_m3CFC429FA834A044ECDA51E64AF81465DA59A83D (void);
-// 0x0000074C System.Void Pathfinding.Util.PathInterpolator::set_remainingDistance(System.Single)
+// 0x0000074B System.Void Pathfinding.Util.PathInterpolator::set_remainingDistance(System.Single)
 extern void PathInterpolator_set_remainingDistance_m0E34B1A2B6E216DC576C2522CF13B9B702A32D91 (void);
-// 0x0000074D System.Single Pathfinding.Util.PathInterpolator::get_distance()
+// 0x0000074C System.Single Pathfinding.Util.PathInterpolator::get_distance()
 extern void PathInterpolator_get_distance_m3C2D5679C3751E4E1A8392ACC2EFB9172980A227 (void);
-// 0x0000074E System.Void Pathfinding.Util.PathInterpolator::set_distance(System.Single)
+// 0x0000074D System.Void Pathfinding.Util.PathInterpolator::set_distance(System.Single)
 extern void PathInterpolator_set_distance_mE398B96F6AE0CBC2F72F6C5E987E3DA7D11B6D62 (void);
-// 0x0000074F System.Int32 Pathfinding.Util.PathInterpolator::get_segmentIndex()
+// 0x0000074E System.Int32 Pathfinding.Util.PathInterpolator::get_segmentIndex()
 extern void PathInterpolator_get_segmentIndex_m658D4C6341B58E273C125437B28FA4684786BF04 (void);
-// 0x00000750 System.Void Pathfinding.Util.PathInterpolator::set_segmentIndex(System.Int32)
+// 0x0000074F System.Void Pathfinding.Util.PathInterpolator::set_segmentIndex(System.Int32)
 extern void PathInterpolator_set_segmentIndex_mC03E80D9E3FD888AC21C7036155A7CBBC74F501B (void);
-// 0x00000751 System.Boolean Pathfinding.Util.PathInterpolator::get_valid()
+// 0x00000750 System.Boolean Pathfinding.Util.PathInterpolator::get_valid()
 extern void PathInterpolator_get_valid_m26B2AD388D0DD4053F5FBB9A362AAF5EF2B7EE1C (void);
-// 0x00000752 System.Void Pathfinding.Util.PathInterpolator::GetRemainingPath(System.Collections.Generic.List`1<UnityEngine.Vector3>)
+// 0x00000751 System.Void Pathfinding.Util.PathInterpolator::GetRemainingPath(System.Collections.Generic.List`1<UnityEngine.Vector3>)
 extern void PathInterpolator_GetRemainingPath_mA4E9AEB466C0DB17A697742CD99AEAF57FD73445 (void);
-// 0x00000753 System.Void Pathfinding.Util.PathInterpolator::SetPath(System.Collections.Generic.List`1<UnityEngine.Vector3>)
+// 0x00000752 System.Void Pathfinding.Util.PathInterpolator::SetPath(System.Collections.Generic.List`1<UnityEngine.Vector3>)
 extern void PathInterpolator_SetPath_m5922BD96653E20481E3714D859A4D90B750DB8DE (void);
-// 0x00000754 System.Void Pathfinding.Util.PathInterpolator::MoveToSegment(System.Int32,System.Single)
+// 0x00000753 System.Void Pathfinding.Util.PathInterpolator::MoveToSegment(System.Int32,System.Single)
 extern void PathInterpolator_MoveToSegment_m29E827E81DCE809D0DE6BCA50036FD2B2BA9C28C (void);
-// 0x00000755 System.Void Pathfinding.Util.PathInterpolator::MoveToClosestPoint(UnityEngine.Vector3)
+// 0x00000754 System.Void Pathfinding.Util.PathInterpolator::MoveToClosestPoint(UnityEngine.Vector3)
 extern void PathInterpolator_MoveToClosestPoint_mE48CF223F234579AEF0F69279D590FE44E6D72CC (void);
-// 0x00000756 System.Void Pathfinding.Util.PathInterpolator::MoveToLocallyClosestPoint(UnityEngine.Vector3,System.Boolean,System.Boolean)
+// 0x00000755 System.Void Pathfinding.Util.PathInterpolator::MoveToLocallyClosestPoint(UnityEngine.Vector3,System.Boolean,System.Boolean)
 extern void PathInterpolator_MoveToLocallyClosestPoint_mF34D23C4BA53850D705461655E9B1EC8B3BA81F5 (void);
-// 0x00000757 System.Void Pathfinding.Util.PathInterpolator::MoveToCircleIntersection2D(UnityEngine.Vector3,System.Single,Pathfinding.Util.IMovementPlane)
+// 0x00000756 System.Void Pathfinding.Util.PathInterpolator::MoveToCircleIntersection2D(UnityEngine.Vector3,System.Single,Pathfinding.Util.IMovementPlane)
 extern void PathInterpolator_MoveToCircleIntersection2D_m50FB2435E4D58275F8B30582EF94E73598D9276E (void);
-// 0x00000758 System.Void Pathfinding.Util.PathInterpolator::PrevSegment()
+// 0x00000757 System.Void Pathfinding.Util.PathInterpolator::PrevSegment()
 extern void PathInterpolator_PrevSegment_mBCA6D450407356CB6A2BBA555D3884C4669BA1D7 (void);
-// 0x00000759 System.Void Pathfinding.Util.PathInterpolator::NextSegment()
+// 0x00000758 System.Void Pathfinding.Util.PathInterpolator::NextSegment()
 extern void PathInterpolator_NextSegment_m39DF1D495039B224CFA786A8E898AAF48915F7D6 (void);
-// 0x0000075A System.Void Pathfinding.Util.PathInterpolator::.ctor()
+// 0x00000759 System.Void Pathfinding.Util.PathInterpolator::.ctor()
 extern void PathInterpolator__ctor_m7478FCC88D2E48E56629C6868DBAC08FD7E2C3D4 (void);
-// 0x0000075B System.Void Pathfinding.Util.StackPool`1::.cctor()
-// 0x0000075C System.Collections.Generic.Stack`1<T> Pathfinding.Util.StackPool`1::Claim()
-// 0x0000075D System.Void Pathfinding.Util.StackPool`1::Warmup(System.Int32)
-// 0x0000075E System.Void Pathfinding.Util.StackPool`1::Release(System.Collections.Generic.Stack`1<T>)
-// 0x0000075F System.Void Pathfinding.Util.StackPool`1::Clear()
-// 0x00000760 System.Int32 Pathfinding.Util.StackPool`1::GetSize()
+// 0x0000075A System.Void Pathfinding.Util.StackPool`1::.cctor()
+// 0x0000075B System.Collections.Generic.Stack`1<T> Pathfinding.Util.StackPool`1::Claim()
+// 0x0000075C System.Void Pathfinding.Util.StackPool`1::Warmup(System.Int32)
+// 0x0000075D System.Void Pathfinding.Util.StackPool`1::Release(System.Collections.Generic.Stack`1<T>)
+// 0x0000075E System.Void Pathfinding.Util.StackPool`1::Clear()
+// 0x0000075F System.Int32 Pathfinding.Util.StackPool`1::GetSize()
+// 0x00000760 System.Void Pathfinding.Util.PreserveAttribute::.ctor()
+extern void PreserveAttribute__ctor_m39541782EE65A3F61D54B13A27694399D12E3A20 (void);
 // 0x00000761 UnityEngine.Vector2 Pathfinding.Util.IMovementPlane::ToPlane(UnityEngine.Vector3)
 // 0x00000762 UnityEngine.Vector2 Pathfinding.Util.IMovementPlane::ToPlane(UnityEngine.Vector3,System.Single&)
 // 0x00000763 UnityEngine.Vector3 Pathfinding.Util.IMovementPlane::ToWorld(UnityEngine.Vector2,System.Single)
@@ -4276,94 +4276,6 @@ static Il2CppMethodPointer s_methodPointers[2046] =
 	U3CU3Ec__cctor_m8AA3BCC68701513CB6E3652FADB28CB8CF2AD6B1,
 	U3CU3Ec__ctor_mB513A0B2A3943261B81EA38A8EBF3687C53D4E98,
 	U3CU3Ec_U3CRegisterModifierU3Eb__25_0_m81C3FFA7BB6E72D5CA3F4BFFE2C6FCC47B013487,
-	AstarColor_ColorHash_m7E7AB1D3ED0F004DDA52B1F83FF46BB14C4E2240,
-	AstarColor_GetAreaColor_m2BD2DB488CF613210166AFEFC7C92B1136563ED6,
-	AstarColor_GetTagColor_m2A418CA68C79BC1C9A9499C17EF3D4BCD23E5639,
-	AstarColor_PushToStatic_m8700047424E6FC430F9F5AD19A9767BC72D78103,
-	AstarColor__ctor_m7AAE6F02DBD6138EBA7F5634E9AE5FD477D3107D,
-	AstarColor__cctor_m80E9B8D244ACAE54FBC2B83CC8B424348699B3C6,
-	GraphHitInfo_get_distance_m4226EFCEB6AFCF460E08812DDC99ABC52DFE8432,
-	GraphHitInfo__ctor_m3934969A80A0BB8D52DA5B97D9CAFB89390EA7FB,
-	NNConstraint_SuitableGraph_mA7EB01C59D03F36D8A325A618C34B4A973B7C4E4,
-	NNConstraint_Suitable_m78BC193FC7142A1DEB9465336E980909BD75352C,
-	NNConstraint_get_Default_m410AF35B2BE77A5624592BEF34FC6783F7F9D6EA,
-	NNConstraint_get_None_m64D379ED16BA6D507F7A3837557A44C519FA4811,
-	NNConstraint__ctor_m89532DC1D551FE988E139BD5558B16E6A6FFF088,
-	PathNNConstraint_get_Default_m4D87AB0993FC27983CCFD0FF96FC9461F7916874,
-	PathNNConstraint_SetStart_m16CA8FFBC338C4CA735571B9E7482123DBE50E28,
-	PathNNConstraint__ctor_m4F0E20DD29C5CD8B00C9637B48D6488491DBB1C1,
-	NNInfoInternal__ctor_mAF15F2D3925A1F1AF14425DAE40F6FD9168258E1,
-	NNInfoInternal_UpdateInfo_m38114F55F54AF9A11A4C913F1502C2DAAFD3492B,
-	NNInfo_get_clampedPosition_m5AAB5398DD2E6AFE18AA575229DD5EC5F90A6A8B,
-	NNInfo__ctor_m79C6D21A9B1C006AFB39E0DA9E5B27F722C346B3,
-	NNInfo_op_Explicit_mE06D72597F04F4C7C7A289FF171CD9CD26833A9C,
-	NNInfo_op_Explicit_m3239F117A37550323D4A5CFA38FE4D575BC61071,
-	Progress__ctor_m8BC684F39818E3E62C1F46D208B3BA661F15A56A,
-	Progress_MapTo_m455B07D01EC1D98BC1D20633899DEF5497D23AD6,
-	Progress_ToString_m0D2EC8B56BA27E93C38E2704C859F6A6964284EA,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	GraphUpdateObject_set_requiresFloodFill_mCB2673DA6E262CC56323813425CC4CA056B0A93D,
-	GraphUpdateObject_get_stage_m9705996F9B5749E9607B48FC99E09C7D34891216,
-	GraphUpdateObject_WillUpdateNode_m7BF6DA130A6AD2544185BF03246FB0DA705F879E,
-	GraphUpdateObject_RevertFromBackup_mD704797508B8A26B1ADE625E82B94E6D33806B91,
-	GraphUpdateObject_Apply_m4FF2CF22FEFAA3CF7051AB0EFB490B22BB0E80AC,
-	GraphUpdateObject__ctor_m34D5AC70D1C226E1D34CE1644579D1E14A084E5E,
-	GraphUpdateObject__ctor_m40AEC562F18276B374698781F0AFF943AA7460F6,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	IntRect__ctor_mAD05090D8533AE0675F3A432F713EEA629F47276,
-	IntRect_Contains_m5E307C7E3F45B01584E41D0A141A3AF5E5D6549D,
-	IntRect_get_Width_m9EA6709E7015866BC23F2C686A873E772AA1ACA2,
-	IntRect_get_Height_m8F1FAE617C491964F4C2E4D873F04C27ACE7EDB6,
-	IntRect_get_Area_m67F56F53086CA064945CC39CB7EC43900054F4EE,
-	IntRect_IsValid_m30D2815DE068E60D2D00FF0D5704EA49CF6265B6,
-	IntRect_op_Equality_mC20C3095A2748AE91D534933C494F5C890BEFD74,
-	IntRect_op_Inequality_m1FAECD46E6A737808AD3133E87F2DC1113A277FB,
-	IntRect_Equals_mA4600D8A17F056792F5F7A706B81D31A80AE622F,
-	IntRect_GetHashCode_mC8E932403819159E1CF07CAA1253C9947270910A,
-	IntRect_Intersection_mC9C9632D62D5CD280EF4ED149BCA8EAE58878CAC,
-	IntRect_Intersects_mF191C92E733544458A919C640E959BD2D540FAC1,
-	IntRect_Union_m0E7D1469F99F79979C07AAC375BF504230415A1B,
-	IntRect_ExpandToContain_m0101C3D2B025AC4F51691FD01565434DCD7FD32F,
-	IntRect_Expand_m1C793316AD4030CC25DC01024264FF1C18D9A261,
-	IntRect_ToString_m4ED582D9AF529226579475E49368E28A54E138B3,
-	IntRect_DebugDraw_m3C211EE0DD7C1D53C8E112EF06770774329D9AAA,
-	GraphMask_get_everything_m7C96C59E69960A1BD867BBE06880038C2A72EC58,
-	GraphMask__ctor_m209825C360CF751A78CC88246E6DC06423A45320,
-	GraphMask_op_Implicit_mF59D0E96477D283F1250040023BB2B0E209915C5,
-	GraphMask_op_Implicit_m224C3DCB9258487B9BE3AF1AF88BAF9505B1579E,
-	GraphMask_op_BitwiseAnd_m97DF12BB6A23449423113FA51006406E31730B4A,
-	GraphMask_op_BitwiseOr_mA374D9ABA6E5EA1C3821D73BF19BE5CCDF45188A,
-	GraphMask_op_OnesComplement_m6DD2A2A1755D805DEBEBE9108B7889DD71CBC530,
-	GraphMask_Contains_m95162AF8F373AF9C11623439E9B52B3E3F013EE8,
-	GraphMask_FromGraph_mCCF5DBF710890F395A657C6303FE39D24EBB7A1A,
-	GraphMask_ToString_mC984BD27B0A579765BF882DBCD5347597EBC171A,
-	GraphMask_FromGraphName_m6F8CD875FF02B77EFDBD619AD723C56BC5E6EDC7,
-	U3CU3Ec__DisplayClass12_0__ctor_mB20530C6ABF6B6498DFEA503E9EFDA8FE90C62A3,
-	U3CU3Ec__DisplayClass12_0_U3CFromGraphNameU3Eb__0_m452D17A005150603EFAAB68C552FE064161346C6,
-	OnPathDelegate__ctor_mD3FAB4AAEAF5DCAA68A6D1C3C8A7A9F316362C43,
-	OnPathDelegate_Invoke_m17E23601849FDCA5C8558EB78BE36C6202423A80,
-	OnPathDelegate_BeginInvoke_mAC6A91395D7EDF06B926063A7D5BA208817C2C92,
-	OnPathDelegate_EndInvoke_m27872925AF801F9FF33C1C14EB572EFEEF97A173,
-	OnGraphDelegate__ctor_m99421FA7BD0A95B64C53165FEC425F4DE0B8C768,
-	OnGraphDelegate_Invoke_mA373F596F6B04C3C44E98792EE88D30C86D7D0C7,
-	OnGraphDelegate_BeginInvoke_mD407B9A6ADCCBC5C54A6C0B345649E8A1B10710F,
-	OnGraphDelegate_EndInvoke_m21B7D967DF667E82669E789BA0C2B0A5565E47C1,
-	OnScanDelegate__ctor_m676DC4E4B01150D561792C8DA62789DF6E056D8D,
-	OnScanDelegate_Invoke_mD41A4EA9794D0A8AE8C4A2F5BB61A40046F5335D,
-	OnScanDelegate_BeginInvoke_m9AE3947C3969352B5C583F94787999C5CE4D8CC9,
-	OnScanDelegate_EndInvoke_m1247908910B8613972E4466CBED5DDEFD4A7D5E5,
-	OnScanStatus__ctor_mF58A92138A44B6412D955510F576153BB64F0AA1,
-	OnScanStatus_Invoke_m1DD9AC0079CB25B9E51D6421629C310BA585168F,
-	OnScanStatus_BeginInvoke_m955C8C2ABB275B4E99E3FA32AC87A1153C7FCC63,
-	OnScanStatus_EndInvoke_m44D160FE7EC62E44B9E98F4BD4049AB8BFB685C8,
 	AstarData_get_active_mB84042E5FB8379EAA9DE36B8E514389225E7BFBD,
 	AstarData_get_navmesh_m39E4AF24FFBC61D8D9A689CF2B48BD95BD37C91E,
 	AstarData_set_navmesh_mE1221D383F6A8CF5A152BC02424A9B1A48B97855,
@@ -4995,6 +4907,94 @@ static Il2CppMethodPointer s_methodPointers[2046] =
 	PathHandler_GetPathNode_m8B0F028B65232B2A10F2A7A61C56D8CFF41D6B41,
 	PathHandler_GetPathNode_mB0C878D58DE62369AF0843FA14AA078251CB2879,
 	PathHandler_ClearPathIDs_m2F5E23B4E9A681DC6ABD2008F0B838C0FA3F77DF,
+	AstarColor_ColorHash_m7E7AB1D3ED0F004DDA52B1F83FF46BB14C4E2240,
+	AstarColor_GetAreaColor_m2BD2DB488CF613210166AFEFC7C92B1136563ED6,
+	AstarColor_GetTagColor_m2A418CA68C79BC1C9A9499C17EF3D4BCD23E5639,
+	AstarColor_PushToStatic_m8700047424E6FC430F9F5AD19A9767BC72D78103,
+	AstarColor__ctor_m7AAE6F02DBD6138EBA7F5634E9AE5FD477D3107D,
+	AstarColor__cctor_m80E9B8D244ACAE54FBC2B83CC8B424348699B3C6,
+	GraphHitInfo_get_distance_m4226EFCEB6AFCF460E08812DDC99ABC52DFE8432,
+	GraphHitInfo__ctor_m3934969A80A0BB8D52DA5B97D9CAFB89390EA7FB,
+	NNConstraint_SuitableGraph_mA7EB01C59D03F36D8A325A618C34B4A973B7C4E4,
+	NNConstraint_Suitable_m78BC193FC7142A1DEB9465336E980909BD75352C,
+	NNConstraint_get_Default_m410AF35B2BE77A5624592BEF34FC6783F7F9D6EA,
+	NNConstraint_get_None_m64D379ED16BA6D507F7A3837557A44C519FA4811,
+	NNConstraint__ctor_m89532DC1D551FE988E139BD5558B16E6A6FFF088,
+	PathNNConstraint_get_Default_m4D87AB0993FC27983CCFD0FF96FC9461F7916874,
+	PathNNConstraint_SetStart_m16CA8FFBC338C4CA735571B9E7482123DBE50E28,
+	PathNNConstraint__ctor_m4F0E20DD29C5CD8B00C9637B48D6488491DBB1C1,
+	NNInfoInternal__ctor_mAF15F2D3925A1F1AF14425DAE40F6FD9168258E1,
+	NNInfoInternal_UpdateInfo_m38114F55F54AF9A11A4C913F1502C2DAAFD3492B,
+	NNInfo_get_clampedPosition_m5AAB5398DD2E6AFE18AA575229DD5EC5F90A6A8B,
+	NNInfo__ctor_m79C6D21A9B1C006AFB39E0DA9E5B27F722C346B3,
+	NNInfo_op_Explicit_mE06D72597F04F4C7C7A289FF171CD9CD26833A9C,
+	NNInfo_op_Explicit_m3239F117A37550323D4A5CFA38FE4D575BC61071,
+	Progress__ctor_m8BC684F39818E3E62C1F46D208B3BA661F15A56A,
+	Progress_MapTo_m455B07D01EC1D98BC1D20633899DEF5497D23AD6,
+	Progress_ToString_m0D2EC8B56BA27E93C38E2704C859F6A6964284EA,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	GraphUpdateObject_set_requiresFloodFill_mCB2673DA6E262CC56323813425CC4CA056B0A93D,
+	GraphUpdateObject_get_stage_m9705996F9B5749E9607B48FC99E09C7D34891216,
+	GraphUpdateObject_WillUpdateNode_m7BF6DA130A6AD2544185BF03246FB0DA705F879E,
+	GraphUpdateObject_RevertFromBackup_mD704797508B8A26B1ADE625E82B94E6D33806B91,
+	GraphUpdateObject_Apply_m4FF2CF22FEFAA3CF7051AB0EFB490B22BB0E80AC,
+	GraphUpdateObject__ctor_m34D5AC70D1C226E1D34CE1644579D1E14A084E5E,
+	GraphUpdateObject__ctor_m40AEC562F18276B374698781F0AFF943AA7460F6,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	IntRect__ctor_mAD05090D8533AE0675F3A432F713EEA629F47276,
+	IntRect_Contains_m5E307C7E3F45B01584E41D0A141A3AF5E5D6549D,
+	IntRect_get_Width_m9EA6709E7015866BC23F2C686A873E772AA1ACA2,
+	IntRect_get_Height_m8F1FAE617C491964F4C2E4D873F04C27ACE7EDB6,
+	IntRect_get_Area_m67F56F53086CA064945CC39CB7EC43900054F4EE,
+	IntRect_IsValid_m30D2815DE068E60D2D00FF0D5704EA49CF6265B6,
+	IntRect_op_Equality_mC20C3095A2748AE91D534933C494F5C890BEFD74,
+	IntRect_op_Inequality_m1FAECD46E6A737808AD3133E87F2DC1113A277FB,
+	IntRect_Equals_mA4600D8A17F056792F5F7A706B81D31A80AE622F,
+	IntRect_GetHashCode_mC8E932403819159E1CF07CAA1253C9947270910A,
+	IntRect_Intersection_mC9C9632D62D5CD280EF4ED149BCA8EAE58878CAC,
+	IntRect_Intersects_mF191C92E733544458A919C640E959BD2D540FAC1,
+	IntRect_Union_m0E7D1469F99F79979C07AAC375BF504230415A1B,
+	IntRect_ExpandToContain_m0101C3D2B025AC4F51691FD01565434DCD7FD32F,
+	IntRect_Expand_m1C793316AD4030CC25DC01024264FF1C18D9A261,
+	IntRect_ToString_m4ED582D9AF529226579475E49368E28A54E138B3,
+	IntRect_DebugDraw_m3C211EE0DD7C1D53C8E112EF06770774329D9AAA,
+	GraphMask_get_everything_m7C96C59E69960A1BD867BBE06880038C2A72EC58,
+	GraphMask__ctor_m209825C360CF751A78CC88246E6DC06423A45320,
+	GraphMask_op_Implicit_mF59D0E96477D283F1250040023BB2B0E209915C5,
+	GraphMask_op_Implicit_m224C3DCB9258487B9BE3AF1AF88BAF9505B1579E,
+	GraphMask_op_BitwiseAnd_m97DF12BB6A23449423113FA51006406E31730B4A,
+	GraphMask_op_BitwiseOr_mA374D9ABA6E5EA1C3821D73BF19BE5CCDF45188A,
+	GraphMask_op_OnesComplement_m6DD2A2A1755D805DEBEBE9108B7889DD71CBC530,
+	GraphMask_Contains_m95162AF8F373AF9C11623439E9B52B3E3F013EE8,
+	GraphMask_FromGraph_mCCF5DBF710890F395A657C6303FE39D24EBB7A1A,
+	GraphMask_ToString_mC984BD27B0A579765BF882DBCD5347597EBC171A,
+	GraphMask_FromGraphName_m6F8CD875FF02B77EFDBD619AD723C56BC5E6EDC7,
+	U3CU3Ec__DisplayClass12_0__ctor_mB20530C6ABF6B6498DFEA503E9EFDA8FE90C62A3,
+	U3CU3Ec__DisplayClass12_0_U3CFromGraphNameU3Eb__0_m452D17A005150603EFAAB68C552FE064161346C6,
+	OnPathDelegate__ctor_mD3FAB4AAEAF5DCAA68A6D1C3C8A7A9F316362C43,
+	OnPathDelegate_Invoke_m17E23601849FDCA5C8558EB78BE36C6202423A80,
+	OnPathDelegate_BeginInvoke_mAC6A91395D7EDF06B926063A7D5BA208817C2C92,
+	OnPathDelegate_EndInvoke_m27872925AF801F9FF33C1C14EB572EFEEF97A173,
+	OnGraphDelegate__ctor_m99421FA7BD0A95B64C53165FEC425F4DE0B8C768,
+	OnGraphDelegate_Invoke_mA373F596F6B04C3C44E98792EE88D30C86D7D0C7,
+	OnGraphDelegate_BeginInvoke_mD407B9A6ADCCBC5C54A6C0B345649E8A1B10710F,
+	OnGraphDelegate_EndInvoke_m21B7D967DF667E82669E789BA0C2B0A5565E47C1,
+	OnScanDelegate__ctor_m676DC4E4B01150D561792C8DA62789DF6E056D8D,
+	OnScanDelegate_Invoke_mD41A4EA9794D0A8AE8C4A2F5BB61A40046F5335D,
+	OnScanDelegate_BeginInvoke_m9AE3947C3969352B5C583F94787999C5CE4D8CC9,
+	OnScanDelegate_EndInvoke_m1247908910B8613972E4466CBED5DDEFD4A7D5E5,
+	OnScanStatus__ctor_mF58A92138A44B6412D955510F576153BB64F0AA1,
+	OnScanStatus_Invoke_m1DD9AC0079CB25B9E51D6421629C310BA585168F,
+	OnScanStatus_BeginInvoke_m955C8C2ABB275B4E99E3FA32AC87A1153C7FCC63,
+	OnScanStatus_EndInvoke_m44D160FE7EC62E44B9E98F4BD4049AB8BFB685C8,
 	TargetMover_Start_m7EEE2A79B29AC7CA7122B6EBCAE54D494CDED94D,
 	TargetMover_OnGUI_m9F30BBB41E82B41A4104CFE380D08598509FBEAD,
 	TargetMover_Update_mE5CAE9FA83F94566D5F1F2E2F7EE5703F2FEDF1F,
@@ -5157,6 +5157,31 @@ static Il2CppMethodPointer s_methodPointers[2046] =
 	U3CScanInternalU3Ed__88_System_Collections_Generic_IEnumerableU3CPathfinding_ProgressU3E_GetEnumerator_m2D8570149884AFCDC2CDD50699DACBD1DE7AF704,
 	U3CScanInternalU3Ed__88_System_Collections_IEnumerable_GetEnumerator_m2706753BC21C18B56EB53D0E0489F72C8F60954A,
 	NULL,
+	NavMeshGraph_get_RecalculateNormals_mEDAC62014D8EF1E002DE35E20416A12942F144BA,
+	NavMeshGraph_get_TileWorldSizeX_mDFA256AF24ABE6909171F75092D8ABBC55D4DB77,
+	NavMeshGraph_get_TileWorldSizeZ_mA66778A0D3D8F88E79DF8709B94D447D7EE158A6,
+	NavMeshGraph_get_MaxTileConnectionEdgeDistance_mE03FD2034C78B3D78D5555FF085BBEFE6B8DFDA5,
+	NavMeshGraph_CalculateTransform_m812BFC7A50F8AE47029240BAD066B01939B7B8B3,
+	NavMeshGraph_Pathfinding_IUpdatableGraph_CanUpdateAsync_mEF1E8E280141B5B4E0B0A12FBF64FCFC121B0952,
+	NavMeshGraph_Pathfinding_IUpdatableGraph_UpdateAreaInit_mBCBB1EA4A995D41D82FA424D00B923014F3C59B2,
+	NavMeshGraph_Pathfinding_IUpdatableGraph_UpdateAreaPost_mF6AC19535C9B9FBAEF7E1E9F95B29F7EE9492813,
+	NavMeshGraph_Pathfinding_IUpdatableGraph_UpdateArea_m4532606FA3AB155AD97D9485BFF5049A0F0399B4,
+	NavMeshGraph_UpdateArea_mFA0928B85FDF7CE830372D8792469570434EED2E,
+	NavMeshGraph_ScanInternal_mB75E618D2E5097AFBCD9AE80744C072DA8D49B3A,
+	NavMeshGraph_ScanInternal_mA4B12AD81F33206423D12910131955ED6CC72804,
+	NavMeshGraph_DeserializeSettingsCompatibility_m5EF80CB6D70927D7C36E78452345995909C6FFE1,
+	NavMeshGraph__ctor_m9BE882C8C6BBC141DA14F4C2852D79B67EFCAB38,
+	U3CU3Ec__DisplayClass19_0__ctor_mEAC43BC527ED1634E8677F3A832C584392F68D1E,
+	U3CU3Ec__DisplayClass19_0_U3CUpdateAreaU3Eb__0_m2129D10888EFF7B410FBADB8DB83600C0E05F15B,
+	U3CScanInternalU3Ed__21__ctor_mFBE3AFAE3D6610C18DCC6C7E7F511DAC8BA2EA60,
+	U3CScanInternalU3Ed__21_System_IDisposable_Dispose_m51D19F16A2AF26C1A7AFD4DA05E92553040FFCB7,
+	U3CScanInternalU3Ed__21_MoveNext_m60564168A07C7EF4EFD17FFC479A6517EC9B88CC,
+	U3CScanInternalU3Ed__21_System_Collections_Generic_IEnumeratorU3CPathfinding_ProgressU3E_get_Current_m8FDDA49D8BF38957B1284FFAB9B5924ACA1A343A,
+	U3CScanInternalU3Ed__21_System_Collections_IEnumerator_Reset_m6DB46565E85CEE8B6938F45120DF6BC6916FD451,
+	U3CScanInternalU3Ed__21_System_Collections_IEnumerator_get_Current_m55927A3A91FE461D70FFCA8FC09C508BFD745507,
+	U3CScanInternalU3Ed__21_System_Collections_Generic_IEnumerableU3CPathfinding_ProgressU3E_GetEnumerator_mA991C61199796D875667AD6FB0B6738FFE3E584F,
+	U3CScanInternalU3Ed__21_System_Collections_IEnumerable_GetEnumerator_m2CEA72B3D1E5D37193EE422E91C7E1C80BAA4493,
+	NULL,
 	NULL,
 	NULL,
 	NavmeshBase_Pathfinding_ITransformedGraph_get_transform_m93278676E6699146DA1457FC9D16B9CCD59DCDE4,
@@ -5216,31 +5241,6 @@ static Il2CppMethodPointer s_methodPointers[2046] =
 	U3CU3Ec_U3CPostDeserializationU3Eb__74_0_mD1E0786A187954DA5C197FC3AD7CE6CF5B856AFC,
 	U3CU3Ec_U3CPostDeserializationU3Eb__74_1_mA9F50141FEDA62EE26B6BAAB4125BF97F870CE48,
 	U3CU3Ec_U3CPostDeserializationU3Eb__74_2_mB5823CDDD61117437A2C0E81589D98DF307783FB,
-	NULL,
-	NavMeshGraph_get_RecalculateNormals_mEDAC62014D8EF1E002DE35E20416A12942F144BA,
-	NavMeshGraph_get_TileWorldSizeX_mDFA256AF24ABE6909171F75092D8ABBC55D4DB77,
-	NavMeshGraph_get_TileWorldSizeZ_mA66778A0D3D8F88E79DF8709B94D447D7EE158A6,
-	NavMeshGraph_get_MaxTileConnectionEdgeDistance_mE03FD2034C78B3D78D5555FF085BBEFE6B8DFDA5,
-	NavMeshGraph_CalculateTransform_m812BFC7A50F8AE47029240BAD066B01939B7B8B3,
-	NavMeshGraph_Pathfinding_IUpdatableGraph_CanUpdateAsync_mEF1E8E280141B5B4E0B0A12FBF64FCFC121B0952,
-	NavMeshGraph_Pathfinding_IUpdatableGraph_UpdateAreaInit_mBCBB1EA4A995D41D82FA424D00B923014F3C59B2,
-	NavMeshGraph_Pathfinding_IUpdatableGraph_UpdateAreaPost_mF6AC19535C9B9FBAEF7E1E9F95B29F7EE9492813,
-	NavMeshGraph_Pathfinding_IUpdatableGraph_UpdateArea_m4532606FA3AB155AD97D9485BFF5049A0F0399B4,
-	NavMeshGraph_UpdateArea_mFA0928B85FDF7CE830372D8792469570434EED2E,
-	NavMeshGraph_ScanInternal_mB75E618D2E5097AFBCD9AE80744C072DA8D49B3A,
-	NavMeshGraph_ScanInternal_mA4B12AD81F33206423D12910131955ED6CC72804,
-	NavMeshGraph_DeserializeSettingsCompatibility_m5EF80CB6D70927D7C36E78452345995909C6FFE1,
-	NavMeshGraph__ctor_m9BE882C8C6BBC141DA14F4C2852D79B67EFCAB38,
-	U3CU3Ec__DisplayClass19_0__ctor_mEAC43BC527ED1634E8677F3A832C584392F68D1E,
-	U3CU3Ec__DisplayClass19_0_U3CUpdateAreaU3Eb__0_m2129D10888EFF7B410FBADB8DB83600C0E05F15B,
-	U3CScanInternalU3Ed__21__ctor_mFBE3AFAE3D6610C18DCC6C7E7F511DAC8BA2EA60,
-	U3CScanInternalU3Ed__21_System_IDisposable_Dispose_m51D19F16A2AF26C1A7AFD4DA05E92553040FFCB7,
-	U3CScanInternalU3Ed__21_MoveNext_m60564168A07C7EF4EFD17FFC479A6517EC9B88CC,
-	U3CScanInternalU3Ed__21_System_Collections_Generic_IEnumeratorU3CPathfinding_ProgressU3E_get_Current_m8FDDA49D8BF38957B1284FFAB9B5924ACA1A343A,
-	U3CScanInternalU3Ed__21_System_Collections_IEnumerator_Reset_m6DB46565E85CEE8B6938F45120DF6BC6916FD451,
-	U3CScanInternalU3Ed__21_System_Collections_IEnumerator_get_Current_m55927A3A91FE461D70FFCA8FC09C508BFD745507,
-	U3CScanInternalU3Ed__21_System_Collections_Generic_IEnumerableU3CPathfinding_ProgressU3E_GetEnumerator_mA991C61199796D875667AD6FB0B6738FFE3E584F,
-	U3CScanInternalU3Ed__21_System_Collections_IEnumerable_GetEnumerator_m2CEA72B3D1E5D37193EE422E91C7E1C80BAA4493,
 	GridNode__ctor_m49A61AAAE3D00861021A696392EAFDA03599B283,
 	GridNode_GetGridGraph_m4A218C251AAC87C84D18AECE1AC56147E0B5EB35,
 	GridNode_SetGridGraph_m2CCB8816869CD881A613914B8E34E553B4C4710F,
@@ -5756,7 +5756,6 @@ static Il2CppMethodPointer s_methodPointers[2046] =
 	TinyJsonDeserializer__cctor_mAF720CC9C4E308BF8C44E72D13259704F31628E1,
 	WindowsStoreCompatibility_GetTypeFromInfo_m7EA216070126C3E467E5EA7E8107994A16B38D33,
 	WindowsStoreCompatibility_GetTypeInfo_m633F0F655696111B41DED211B55FC4C268F52E75,
-	PreserveAttribute__ctor_m39541782EE65A3F61D54B13A27694399D12E3A20,
 	NULL,
 	NULL,
 	NULL,
@@ -5816,6 +5815,7 @@ static Il2CppMethodPointer s_methodPointers[2046] =
 	NULL,
 	NULL,
 	NULL,
+	PreserveAttribute__ctor_m39541782EE65A3F61D54B13A27694399D12E3A20,
 	NULL,
 	NULL,
 	NULL,
@@ -5975,30 +5975,6 @@ static Il2CppMethodPointer s_methodPointers[2046] =
 	U3CRemoveObjectU3Ed__5_System_Collections_IEnumerator_get_Current_mE4D29BD081B802F71D15B78403B541460731B3DF,
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m013D82BA9F9552CCE4CBC06A97E07E1C3F3B7351,
 };
-extern void GraphHitInfo_get_distance_m4226EFCEB6AFCF460E08812DDC99ABC52DFE8432_AdjustorThunk (void);
-extern void GraphHitInfo__ctor_m3934969A80A0BB8D52DA5B97D9CAFB89390EA7FB_AdjustorThunk (void);
-extern void NNInfoInternal__ctor_mAF15F2D3925A1F1AF14425DAE40F6FD9168258E1_AdjustorThunk (void);
-extern void NNInfoInternal_UpdateInfo_m38114F55F54AF9A11A4C913F1502C2DAAFD3492B_AdjustorThunk (void);
-extern void NNInfo_get_clampedPosition_m5AAB5398DD2E6AFE18AA575229DD5EC5F90A6A8B_AdjustorThunk (void);
-extern void NNInfo__ctor_m79C6D21A9B1C006AFB39E0DA9E5B27F722C346B3_AdjustorThunk (void);
-extern void Progress__ctor_m8BC684F39818E3E62C1F46D208B3BA661F15A56A_AdjustorThunk (void);
-extern void Progress_MapTo_m455B07D01EC1D98BC1D20633899DEF5497D23AD6_AdjustorThunk (void);
-extern void Progress_ToString_m0D2EC8B56BA27E93C38E2704C859F6A6964284EA_AdjustorThunk (void);
-extern void IntRect__ctor_mAD05090D8533AE0675F3A432F713EEA629F47276_AdjustorThunk (void);
-extern void IntRect_Contains_m5E307C7E3F45B01584E41D0A141A3AF5E5D6549D_AdjustorThunk (void);
-extern void IntRect_get_Width_m9EA6709E7015866BC23F2C686A873E772AA1ACA2_AdjustorThunk (void);
-extern void IntRect_get_Height_m8F1FAE617C491964F4C2E4D873F04C27ACE7EDB6_AdjustorThunk (void);
-extern void IntRect_get_Area_m67F56F53086CA064945CC39CB7EC43900054F4EE_AdjustorThunk (void);
-extern void IntRect_IsValid_m30D2815DE068E60D2D00FF0D5704EA49CF6265B6_AdjustorThunk (void);
-extern void IntRect_Equals_mA4600D8A17F056792F5F7A706B81D31A80AE622F_AdjustorThunk (void);
-extern void IntRect_GetHashCode_mC8E932403819159E1CF07CAA1253C9947270910A_AdjustorThunk (void);
-extern void IntRect_ExpandToContain_m0101C3D2B025AC4F51691FD01565434DCD7FD32F_AdjustorThunk (void);
-extern void IntRect_Expand_m1C793316AD4030CC25DC01024264FF1C18D9A261_AdjustorThunk (void);
-extern void IntRect_ToString_m4ED582D9AF529226579475E49368E28A54E138B3_AdjustorThunk (void);
-extern void IntRect_DebugDraw_m3C211EE0DD7C1D53C8E112EF06770774329D9AAA_AdjustorThunk (void);
-extern void GraphMask__ctor_m209825C360CF751A78CC88246E6DC06423A45320_AdjustorThunk (void);
-extern void GraphMask_Contains_m95162AF8F373AF9C11623439E9B52B3E3F013EE8_AdjustorThunk (void);
-extern void GraphMask_ToString_mC984BD27B0A579765BF882DBCD5347597EBC171A_AdjustorThunk (void);
 extern void PathTypeDebug__ctor_m58D411C5BAB68015705CCBEA56C0A72AF6A5A80C_AdjustorThunk (void);
 extern void PathTypeDebug_Print_mBAFF7D3A48FC5CD467D1EF4331A051993053FC36_AdjustorThunk (void);
 extern void Tuple__ctor_mBBBCDA7F0E29DF7B456055665DB86F69D352A202_AdjustorThunk (void);
@@ -6031,6 +6007,30 @@ extern void AstarWorkItem__ctor_mECE98A7AF478834B9D18E594D0ADCC01A65C4183_Adjust
 extern void Connection__ctor_m4A097A70539A4C301535E59D91A09A2D7C52E1D2_AdjustorThunk (void);
 extern void Connection_GetHashCode_m1B33710893D1443A103B25749ED833D3830ECCA2_AdjustorThunk (void);
 extern void Connection_Equals_m0B5A487BB2AB4F6914AD87DA3D591528704EA702_AdjustorThunk (void);
+extern void GraphHitInfo_get_distance_m4226EFCEB6AFCF460E08812DDC99ABC52DFE8432_AdjustorThunk (void);
+extern void GraphHitInfo__ctor_m3934969A80A0BB8D52DA5B97D9CAFB89390EA7FB_AdjustorThunk (void);
+extern void NNInfoInternal__ctor_mAF15F2D3925A1F1AF14425DAE40F6FD9168258E1_AdjustorThunk (void);
+extern void NNInfoInternal_UpdateInfo_m38114F55F54AF9A11A4C913F1502C2DAAFD3492B_AdjustorThunk (void);
+extern void NNInfo_get_clampedPosition_m5AAB5398DD2E6AFE18AA575229DD5EC5F90A6A8B_AdjustorThunk (void);
+extern void NNInfo__ctor_m79C6D21A9B1C006AFB39E0DA9E5B27F722C346B3_AdjustorThunk (void);
+extern void Progress__ctor_m8BC684F39818E3E62C1F46D208B3BA661F15A56A_AdjustorThunk (void);
+extern void Progress_MapTo_m455B07D01EC1D98BC1D20633899DEF5497D23AD6_AdjustorThunk (void);
+extern void Progress_ToString_m0D2EC8B56BA27E93C38E2704C859F6A6964284EA_AdjustorThunk (void);
+extern void IntRect__ctor_mAD05090D8533AE0675F3A432F713EEA629F47276_AdjustorThunk (void);
+extern void IntRect_Contains_m5E307C7E3F45B01584E41D0A141A3AF5E5D6549D_AdjustorThunk (void);
+extern void IntRect_get_Width_m9EA6709E7015866BC23F2C686A873E772AA1ACA2_AdjustorThunk (void);
+extern void IntRect_get_Height_m8F1FAE617C491964F4C2E4D873F04C27ACE7EDB6_AdjustorThunk (void);
+extern void IntRect_get_Area_m67F56F53086CA064945CC39CB7EC43900054F4EE_AdjustorThunk (void);
+extern void IntRect_IsValid_m30D2815DE068E60D2D00FF0D5704EA49CF6265B6_AdjustorThunk (void);
+extern void IntRect_Equals_mA4600D8A17F056792F5F7A706B81D31A80AE622F_AdjustorThunk (void);
+extern void IntRect_GetHashCode_mC8E932403819159E1CF07CAA1253C9947270910A_AdjustorThunk (void);
+extern void IntRect_ExpandToContain_m0101C3D2B025AC4F51691FD01565434DCD7FD32F_AdjustorThunk (void);
+extern void IntRect_Expand_m1C793316AD4030CC25DC01024264FF1C18D9A261_AdjustorThunk (void);
+extern void IntRect_ToString_m4ED582D9AF529226579475E49368E28A54E138B3_AdjustorThunk (void);
+extern void IntRect_DebugDraw_m3C211EE0DD7C1D53C8E112EF06770774329D9AAA_AdjustorThunk (void);
+extern void GraphMask__ctor_m209825C360CF751A78CC88246E6DC06423A45320_AdjustorThunk (void);
+extern void GraphMask_Contains_m95162AF8F373AF9C11623439E9B52B3E3F013EE8_AdjustorThunk (void);
+extern void GraphMask_ToString_mC984BD27B0A579765BF882DBCD5347597EBC171A_AdjustorThunk (void);
 extern void BBTreeBox_get_IsLeaf_mDAA24C314542A46EA4CC91C3AB43CB2E13BC4B5F_AdjustorThunk (void);
 extern void BBTreeBox__ctor_mBA684D448E7E9D556FF37A6C3F9255DBFA6D2CEC_AdjustorThunk (void);
 extern void BBTreeBox__ctor_mDCE3E481A7F952310B49B2DBE68F487DBE80B516_AdjustorThunk (void);
@@ -6047,62 +6047,62 @@ extern void Hasher_HashNode_mCB33513725CA63B5C3E8676EFFE8C5E2C9FC378D_AdjustorTh
 extern void Hasher_get_Hash_m22C567786BFFE9C538420DA146D04CC76B8689D4_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[70] = 
 {
-	{ 0x06000163, GraphHitInfo_get_distance_m4226EFCEB6AFCF460E08812DDC99ABC52DFE8432_AdjustorThunk },
-	{ 0x06000164, GraphHitInfo__ctor_m3934969A80A0BB8D52DA5B97D9CAFB89390EA7FB_AdjustorThunk },
-	{ 0x0600016D, NNInfoInternal__ctor_mAF15F2D3925A1F1AF14425DAE40F6FD9168258E1_AdjustorThunk },
-	{ 0x0600016E, NNInfoInternal_UpdateInfo_m38114F55F54AF9A11A4C913F1502C2DAAFD3492B_AdjustorThunk },
-	{ 0x0600016F, NNInfo_get_clampedPosition_m5AAB5398DD2E6AFE18AA575229DD5EC5F90A6A8B_AdjustorThunk },
-	{ 0x06000170, NNInfo__ctor_m79C6D21A9B1C006AFB39E0DA9E5B27F722C346B3_AdjustorThunk },
-	{ 0x06000173, Progress__ctor_m8BC684F39818E3E62C1F46D208B3BA661F15A56A_AdjustorThunk },
-	{ 0x06000174, Progress_MapTo_m455B07D01EC1D98BC1D20633899DEF5497D23AD6_AdjustorThunk },
-	{ 0x06000175, Progress_ToString_m0D2EC8B56BA27E93C38E2704C859F6A6964284EA_AdjustorThunk },
-	{ 0x06000187, IntRect__ctor_mAD05090D8533AE0675F3A432F713EEA629F47276_AdjustorThunk },
-	{ 0x06000188, IntRect_Contains_m5E307C7E3F45B01584E41D0A141A3AF5E5D6549D_AdjustorThunk },
-	{ 0x06000189, IntRect_get_Width_m9EA6709E7015866BC23F2C686A873E772AA1ACA2_AdjustorThunk },
-	{ 0x0600018A, IntRect_get_Height_m8F1FAE617C491964F4C2E4D873F04C27ACE7EDB6_AdjustorThunk },
-	{ 0x0600018B, IntRect_get_Area_m67F56F53086CA064945CC39CB7EC43900054F4EE_AdjustorThunk },
-	{ 0x0600018C, IntRect_IsValid_m30D2815DE068E60D2D00FF0D5704EA49CF6265B6_AdjustorThunk },
-	{ 0x0600018F, IntRect_Equals_mA4600D8A17F056792F5F7A706B81D31A80AE622F_AdjustorThunk },
-	{ 0x06000190, IntRect_GetHashCode_mC8E932403819159E1CF07CAA1253C9947270910A_AdjustorThunk },
-	{ 0x06000194, IntRect_ExpandToContain_m0101C3D2B025AC4F51691FD01565434DCD7FD32F_AdjustorThunk },
-	{ 0x06000195, IntRect_Expand_m1C793316AD4030CC25DC01024264FF1C18D9A261_AdjustorThunk },
-	{ 0x06000196, IntRect_ToString_m4ED582D9AF529226579475E49368E28A54E138B3_AdjustorThunk },
-	{ 0x06000197, IntRect_DebugDraw_m3C211EE0DD7C1D53C8E112EF06770774329D9AAA_AdjustorThunk },
-	{ 0x06000199, GraphMask__ctor_m209825C360CF751A78CC88246E6DC06423A45320_AdjustorThunk },
-	{ 0x0600019F, GraphMask_Contains_m95162AF8F373AF9C11623439E9B52B3E3F013EE8_AdjustorThunk },
-	{ 0x060001A1, GraphMask_ToString_mC984BD27B0A579765BF882DBCD5347597EBC171A_AdjustorThunk },
-	{ 0x06000275, PathTypeDebug__ctor_m58D411C5BAB68015705CCBEA56C0A72AF6A5A80C_AdjustorThunk },
-	{ 0x06000276, PathTypeDebug_Print_mBAFF7D3A48FC5CD467D1EF4331A051993053FC36_AdjustorThunk },
-	{ 0x0600028C, Tuple__ctor_mBBBCDA7F0E29DF7B456055665DB86F69D352A202_AdjustorThunk },
-	{ 0x060002CB, Int3__ctor_mD63C74F44E26012553DF182655E8F86CC01A1B1E_AdjustorThunk },
-	{ 0x060002CC, Int3__ctor_mBEC112E5D6994865BD0D7EA889D8D2A9647DF16F_AdjustorThunk },
-	{ 0x060002D8, Int3_get_Item_m802943AA086EFABB0B7928AC639BD087E7CB6A2F_AdjustorThunk },
-	{ 0x060002D9, Int3_set_Item_m229C7D4C1C6C06A0D7E8843A4FFB0AD586CFF61D_AdjustorThunk },
-	{ 0x060002DD, Int3_Normal2D_m4594B86F09E4C141FAB9B5638802B456646BC091_AdjustorThunk },
-	{ 0x060002DE, Int3_get_magnitude_mC91010F258A993213D989C018A621AB2C6150BAF_AdjustorThunk },
-	{ 0x060002DF, Int3_get_costMagnitude_m6286EB04015DE9C7D4C177B0D006A2E7F71E4250_AdjustorThunk },
-	{ 0x060002E0, Int3_get_sqrMagnitude_mE49C6C2EF3A41769D19AFA9E284526A3B1BEF984_AdjustorThunk },
-	{ 0x060002E1, Int3_get_sqrMagnitudeLong_m8319324D5E2D6785E1C26B09E64E669D8C563482_AdjustorThunk },
-	{ 0x060002E3, Int3_ToString_mE39945C2B248D7AD330B6CE73CCFF9B88B5CAB44_AdjustorThunk },
-	{ 0x060002E4, Int3_Equals_mDF1B60CB7DC37A57A65D3819F8306410F2DDD0B8_AdjustorThunk },
-	{ 0x060002E5, Int3_Equals_m6B8E5A0F29F921D5E0272FAF1E4A2C5D46885B02_AdjustorThunk },
-	{ 0x060002E6, Int3_GetHashCode_m153F4D2AFDE0064AAC312D1EF0712EB8DEB36051_AdjustorThunk },
-	{ 0x060002E7, Int2__ctor_m10E45E61E7A435B387D725D0278EC1FEB97CE284_AdjustorThunk },
-	{ 0x060002E8, Int2_get_sqrMagnitudeLong_mC0B6184B47BE88CEAD76372AAE89956A7BF20546_AdjustorThunk },
-	{ 0x060002EE, Int2_Equals_m27B6A3641243C06AB77E19B8C8773E9F7C6943C3_AdjustorThunk },
-	{ 0x060002EF, Int2_Equals_m832AF4B8862F9390E0135858F2F1C8180F2D46ED_AdjustorThunk },
-	{ 0x060002F0, Int2_GetHashCode_mE2828AE291994477EC8613706748D6D5E1C5C79E_AdjustorThunk },
-	{ 0x060002F5, Int2_ToString_m2066CECC353D9ADB97C47B768B30A9319B61EFB3_AdjustorThunk },
-	{ 0x06000348, GraphUpdateLock__ctor_m72FDD7B09CFA3493907C1181D4E657CB999D3DC8_AdjustorThunk },
-	{ 0x06000349, GraphUpdateLock_get_Held_m1D5503FC3E06005CF7C0B70E0B976F57709C21A0_AdjustorThunk },
-	{ 0x0600034A, GraphUpdateLock_Release_m5DD2E0681ED1C58B742460500AC5FC6EDB4933FB_AdjustorThunk },
-	{ 0x06000366, AstarWorkItem__ctor_m80ECD25182BAE190E36A03B3F4580FEEB2712D10_AdjustorThunk },
-	{ 0x06000367, AstarWorkItem__ctor_mA9A13FF76A946336BBB4500FA3445DAD5796A5F1_AdjustorThunk },
-	{ 0x06000368, AstarWorkItem__ctor_m3D28340F13DC5ADB7DA7F8D6799BFB8E1193E0EF_AdjustorThunk },
-	{ 0x06000369, AstarWorkItem__ctor_mECE98A7AF478834B9D18E594D0ADCC01A65C4183_AdjustorThunk },
-	{ 0x06000380, Connection__ctor_m4A097A70539A4C301535E59D91A09A2D7C52E1D2_AdjustorThunk },
-	{ 0x06000381, Connection_GetHashCode_m1B33710893D1443A103B25749ED833D3830ECCA2_AdjustorThunk },
-	{ 0x06000382, Connection_Equals_m0B5A487BB2AB4F6914AD87DA3D591528704EA702_AdjustorThunk },
+	{ 0x0600021D, PathTypeDebug__ctor_m58D411C5BAB68015705CCBEA56C0A72AF6A5A80C_AdjustorThunk },
+	{ 0x0600021E, PathTypeDebug_Print_mBAFF7D3A48FC5CD467D1EF4331A051993053FC36_AdjustorThunk },
+	{ 0x06000234, Tuple__ctor_mBBBCDA7F0E29DF7B456055665DB86F69D352A202_AdjustorThunk },
+	{ 0x06000273, Int3__ctor_mD63C74F44E26012553DF182655E8F86CC01A1B1E_AdjustorThunk },
+	{ 0x06000274, Int3__ctor_mBEC112E5D6994865BD0D7EA889D8D2A9647DF16F_AdjustorThunk },
+	{ 0x06000280, Int3_get_Item_m802943AA086EFABB0B7928AC639BD087E7CB6A2F_AdjustorThunk },
+	{ 0x06000281, Int3_set_Item_m229C7D4C1C6C06A0D7E8843A4FFB0AD586CFF61D_AdjustorThunk },
+	{ 0x06000285, Int3_Normal2D_m4594B86F09E4C141FAB9B5638802B456646BC091_AdjustorThunk },
+	{ 0x06000286, Int3_get_magnitude_mC91010F258A993213D989C018A621AB2C6150BAF_AdjustorThunk },
+	{ 0x06000287, Int3_get_costMagnitude_m6286EB04015DE9C7D4C177B0D006A2E7F71E4250_AdjustorThunk },
+	{ 0x06000288, Int3_get_sqrMagnitude_mE49C6C2EF3A41769D19AFA9E284526A3B1BEF984_AdjustorThunk },
+	{ 0x06000289, Int3_get_sqrMagnitudeLong_m8319324D5E2D6785E1C26B09E64E669D8C563482_AdjustorThunk },
+	{ 0x0600028B, Int3_ToString_mE39945C2B248D7AD330B6CE73CCFF9B88B5CAB44_AdjustorThunk },
+	{ 0x0600028C, Int3_Equals_mDF1B60CB7DC37A57A65D3819F8306410F2DDD0B8_AdjustorThunk },
+	{ 0x0600028D, Int3_Equals_m6B8E5A0F29F921D5E0272FAF1E4A2C5D46885B02_AdjustorThunk },
+	{ 0x0600028E, Int3_GetHashCode_m153F4D2AFDE0064AAC312D1EF0712EB8DEB36051_AdjustorThunk },
+	{ 0x0600028F, Int2__ctor_m10E45E61E7A435B387D725D0278EC1FEB97CE284_AdjustorThunk },
+	{ 0x06000290, Int2_get_sqrMagnitudeLong_mC0B6184B47BE88CEAD76372AAE89956A7BF20546_AdjustorThunk },
+	{ 0x06000296, Int2_Equals_m27B6A3641243C06AB77E19B8C8773E9F7C6943C3_AdjustorThunk },
+	{ 0x06000297, Int2_Equals_m832AF4B8862F9390E0135858F2F1C8180F2D46ED_AdjustorThunk },
+	{ 0x06000298, Int2_GetHashCode_mE2828AE291994477EC8613706748D6D5E1C5C79E_AdjustorThunk },
+	{ 0x0600029D, Int2_ToString_m2066CECC353D9ADB97C47B768B30A9319B61EFB3_AdjustorThunk },
+	{ 0x060002F0, GraphUpdateLock__ctor_m72FDD7B09CFA3493907C1181D4E657CB999D3DC8_AdjustorThunk },
+	{ 0x060002F1, GraphUpdateLock_get_Held_m1D5503FC3E06005CF7C0B70E0B976F57709C21A0_AdjustorThunk },
+	{ 0x060002F2, GraphUpdateLock_Release_m5DD2E0681ED1C58B742460500AC5FC6EDB4933FB_AdjustorThunk },
+	{ 0x0600030E, AstarWorkItem__ctor_m80ECD25182BAE190E36A03B3F4580FEEB2712D10_AdjustorThunk },
+	{ 0x0600030F, AstarWorkItem__ctor_mA9A13FF76A946336BBB4500FA3445DAD5796A5F1_AdjustorThunk },
+	{ 0x06000310, AstarWorkItem__ctor_m3D28340F13DC5ADB7DA7F8D6799BFB8E1193E0EF_AdjustorThunk },
+	{ 0x06000311, AstarWorkItem__ctor_mECE98A7AF478834B9D18E594D0ADCC01A65C4183_AdjustorThunk },
+	{ 0x06000328, Connection__ctor_m4A097A70539A4C301535E59D91A09A2D7C52E1D2_AdjustorThunk },
+	{ 0x06000329, Connection_GetHashCode_m1B33710893D1443A103B25749ED833D3830ECCA2_AdjustorThunk },
+	{ 0x0600032A, Connection_Equals_m0B5A487BB2AB4F6914AD87DA3D591528704EA702_AdjustorThunk },
+	{ 0x060003DA, GraphHitInfo_get_distance_m4226EFCEB6AFCF460E08812DDC99ABC52DFE8432_AdjustorThunk },
+	{ 0x060003DB, GraphHitInfo__ctor_m3934969A80A0BB8D52DA5B97D9CAFB89390EA7FB_AdjustorThunk },
+	{ 0x060003E4, NNInfoInternal__ctor_mAF15F2D3925A1F1AF14425DAE40F6FD9168258E1_AdjustorThunk },
+	{ 0x060003E5, NNInfoInternal_UpdateInfo_m38114F55F54AF9A11A4C913F1502C2DAAFD3492B_AdjustorThunk },
+	{ 0x060003E6, NNInfo_get_clampedPosition_m5AAB5398DD2E6AFE18AA575229DD5EC5F90A6A8B_AdjustorThunk },
+	{ 0x060003E7, NNInfo__ctor_m79C6D21A9B1C006AFB39E0DA9E5B27F722C346B3_AdjustorThunk },
+	{ 0x060003EA, Progress__ctor_m8BC684F39818E3E62C1F46D208B3BA661F15A56A_AdjustorThunk },
+	{ 0x060003EB, Progress_MapTo_m455B07D01EC1D98BC1D20633899DEF5497D23AD6_AdjustorThunk },
+	{ 0x060003EC, Progress_ToString_m0D2EC8B56BA27E93C38E2704C859F6A6964284EA_AdjustorThunk },
+	{ 0x060003FE, IntRect__ctor_mAD05090D8533AE0675F3A432F713EEA629F47276_AdjustorThunk },
+	{ 0x060003FF, IntRect_Contains_m5E307C7E3F45B01584E41D0A141A3AF5E5D6549D_AdjustorThunk },
+	{ 0x06000400, IntRect_get_Width_m9EA6709E7015866BC23F2C686A873E772AA1ACA2_AdjustorThunk },
+	{ 0x06000401, IntRect_get_Height_m8F1FAE617C491964F4C2E4D873F04C27ACE7EDB6_AdjustorThunk },
+	{ 0x06000402, IntRect_get_Area_m67F56F53086CA064945CC39CB7EC43900054F4EE_AdjustorThunk },
+	{ 0x06000403, IntRect_IsValid_m30D2815DE068E60D2D00FF0D5704EA49CF6265B6_AdjustorThunk },
+	{ 0x06000406, IntRect_Equals_mA4600D8A17F056792F5F7A706B81D31A80AE622F_AdjustorThunk },
+	{ 0x06000407, IntRect_GetHashCode_mC8E932403819159E1CF07CAA1253C9947270910A_AdjustorThunk },
+	{ 0x0600040B, IntRect_ExpandToContain_m0101C3D2B025AC4F51691FD01565434DCD7FD32F_AdjustorThunk },
+	{ 0x0600040C, IntRect_Expand_m1C793316AD4030CC25DC01024264FF1C18D9A261_AdjustorThunk },
+	{ 0x0600040D, IntRect_ToString_m4ED582D9AF529226579475E49368E28A54E138B3_AdjustorThunk },
+	{ 0x0600040E, IntRect_DebugDraw_m3C211EE0DD7C1D53C8E112EF06770774329D9AAA_AdjustorThunk },
+	{ 0x06000410, GraphMask__ctor_m209825C360CF751A78CC88246E6DC06423A45320_AdjustorThunk },
+	{ 0x06000416, GraphMask_Contains_m95162AF8F373AF9C11623439E9B52B3E3F013EE8_AdjustorThunk },
+	{ 0x06000418, GraphMask_ToString_mC984BD27B0A579765BF882DBCD5347597EBC171A_AdjustorThunk },
 	{ 0x060005C6, BBTreeBox_get_IsLeaf_mDAA24C314542A46EA4CC91C3AB43CB2E13BC4B5F_AdjustorThunk },
 	{ 0x060005C7, BBTreeBox__ctor_mBA684D448E7E9D556FF37A6C3F9255DBFA6D2CEC_AdjustorThunk },
 	{ 0x060005C8, BBTreeBox__ctor_mDCE3E481A7F952310B49B2DBE68F487DBE80B516_AdjustorThunk },
@@ -6468,94 +6468,6 @@ static const int32_t s_InvokerIndices[2046] =
 	12059,
 	6724,
 	2211,
-	12009,
-	10723,
-	10723,
-	5404,
-	6724,
-	12059,
-	6654,
-	5517,
-	1928,
-	3918,
-	12016,
-	12016,
-	6724,
-	12016,
-	5404,
-	6724,
-	5404,
-	6724,
-	6714,
-	5402,
-	11187,
-	10927,
-	3145,
-	1453,
-	6594,
-	0,
-	0,
-	0,
-	0,
-	5305,
-	6565,
-	5404,
-	6724,
-	5404,
-	6724,
-	5304,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	1065,
-	1925,
-	6565,
-	6565,
-	6565,
-	6497,
-	9231,
-	9231,
-	3918,
-	6565,
-	9459,
-	9231,
-	9459,
-	2390,
-	4794,
-	6594,
-	3080,
-	12003,
-	5375,
-	10822,
-	10783,
-	9365,
-	9365,
-	10782,
-	3887,
-	10784,
-	6594,
-	10784,
-	6724,
-	3918,
-	3088,
-	5404,
-	1436,
-	5404,
-	3088,
-	5404,
-	1436,
-	5404,
-	3088,
-	5404,
-	1436,
-	5404,
-	3088,
-	5419,
-	1442,
-	5404,
 	12016,
 	6594,
 	5404,
@@ -7187,6 +7099,94 @@ static const int32_t s_InvokerIndices[2046] =
 	4842,
 	4847,
 	6724,
+	12009,
+	10723,
+	10723,
+	5404,
+	6724,
+	12059,
+	6654,
+	5517,
+	1928,
+	3918,
+	12016,
+	12016,
+	6724,
+	12016,
+	5404,
+	6724,
+	5404,
+	6724,
+	6714,
+	5402,
+	11187,
+	10927,
+	3145,
+	1453,
+	6594,
+	0,
+	0,
+	0,
+	0,
+	5305,
+	6565,
+	5404,
+	6724,
+	5404,
+	6724,
+	5304,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	1065,
+	1925,
+	6565,
+	6565,
+	6565,
+	6497,
+	9231,
+	9231,
+	3918,
+	6565,
+	9459,
+	9231,
+	9459,
+	2390,
+	4794,
+	6594,
+	3080,
+	12003,
+	5375,
+	10822,
+	10783,
+	9365,
+	9365,
+	10782,
+	3887,
+	10784,
+	6594,
+	10784,
+	6724,
+	3918,
+	3088,
+	5404,
+	1436,
+	5404,
+	3088,
+	5404,
+	1436,
+	5404,
+	3088,
+	5404,
+	1436,
+	5404,
+	3088,
+	5419,
+	1442,
+	5404,
 	6724,
 	6724,
 	6724,
@@ -7349,6 +7349,31 @@ static const int32_t s_InvokerIndices[2046] =
 	6594,
 	6594,
 	0,
+	6497,
+	6654,
+	6654,
+	6654,
+	6594,
+	4590,
+	5404,
+	5404,
+	5404,
+	9872,
+	5404,
+	6594,
+	5404,
+	6724,
+	6724,
+	5404,
+	5375,
+	6724,
+	6497,
+	6610,
+	6724,
+	6594,
+	6594,
+	6594,
+	0,
 	0,
 	0,
 	6594,
@@ -7408,31 +7433,6 @@ static const int32_t s_InvokerIndices[2046] =
 	4847,
 	4847,
 	4847,
-	0,
-	6497,
-	6654,
-	6654,
-	6654,
-	6594,
-	4590,
-	5404,
-	5404,
-	5404,
-	9872,
-	5404,
-	6594,
-	5404,
-	6724,
-	6724,
-	5404,
-	5375,
-	6724,
-	6497,
-	6610,
-	6724,
-	6594,
-	6594,
-	6594,
 	5404,
 	10941,
 	9802,
@@ -7948,7 +7948,6 @@ static const int32_t s_InvokerIndices[2046] =
 	12059,
 	10928,
 	10928,
-	6724,
 	0,
 	0,
 	0,
@@ -8008,6 +8007,7 @@ static const int32_t s_InvokerIndices[2046] =
 	0,
 	0,
 	0,
+	6724,
 	0,
 	0,
 	0,
@@ -8169,21 +8169,21 @@ static const int32_t s_InvokerIndices[2046] =
 };
 static const Il2CppTokenRangePair s_rgctxIndices[17] = 
 {
-	{ 0x02000068, { 7, 4 } },
-	{ 0x020000DE, { 12, 11 } },
-	{ 0x020000E1, { 33, 21 } },
-	{ 0x020000E4, { 54, 5 } },
-	{ 0x020000E5, { 59, 12 } },
-	{ 0x020000E7, { 71, 14 } },
+	{ 0x02000049, { 7, 4 } },
+	{ 0x020000DD, { 12, 11 } },
+	{ 0x020000E0, { 33, 21 } },
+	{ 0x020000E3, { 54, 5 } },
+	{ 0x020000E4, { 59, 12 } },
+	{ 0x020000E6, { 71, 14 } },
 	{ 0x020000EB, { 85, 23 } },
 	{ 0x020000ED, { 113, 2 } },
 	{ 0x020000F0, { 116, 4 } },
 	{ 0x020000F1, { 120, 8 } },
-	{ 0x0600028E, { 0, 4 } },
-	{ 0x06000332, { 4, 3 } },
+	{ 0x06000236, { 0, 4 } },
+	{ 0x060002DA, { 4, 3 } },
 	{ 0x06000588, { 11, 1 } },
-	{ 0x0600072A, { 23, 5 } },
-	{ 0x0600072B, { 28, 5 } },
+	{ 0x06000729, { 23, 5 } },
+	{ 0x0600072A, { 28, 5 } },
 	{ 0x0600077F, { 108, 5 } },
 	{ 0x06000786, { 115, 1 } },
 };

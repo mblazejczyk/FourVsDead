@@ -153,6 +153,7 @@ public class EnemyController : MonoBehaviour, IDamagable
         PV.RPC("RPC_TakeDamage", RpcTarget.All, damage);
     }
 
+    public GameObject dmgIndicator;
     [PunRPC]
     void RPC_TakeDamage(float damage)
     {
@@ -164,6 +165,9 @@ public class EnemyController : MonoBehaviour, IDamagable
         HpText.GetComponent<TextMesh>().text = MaxHp.ToString();
         damageObj.GetComponent<AudioSource>().clip = dmgSfx[4]; //for now lock for best
         damageObj.GetComponent<AudioSource>().Play();
+        GameObject iObj = Instantiate(dmgIndicator, transform.position, Quaternion.identity);
+        iObj.GetComponent<dmgIndicatorController>().SetDmg((int)damage);
+        iObj.transform.parent = gameObject.transform;
         if (MaxHp <= 0 && PhotonNetwork.IsMasterClient)
         {
             GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().SubstractEnemiesLeft();

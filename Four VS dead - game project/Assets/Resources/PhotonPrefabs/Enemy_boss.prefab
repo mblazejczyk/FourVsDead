@@ -379,6 +379,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 331af3efecc1d924a80b894d21fa3cf1, type: 3}
   - {fileID: 8300000, guid: f7a6c3a52ab168441ab824fd17b51501, type: 3}
   damageObj: {fileID: 2494336671317318966}
+  dmgIndicator: {fileID: 558072153031145750, guid: ffc654b5b1a3bbb46a52a1f80bd67bc9, type: 3}
   firePrefab: {fileID: 1389454684582467334, guid: 7d3972cd393fced4c8f0df22042b3dad, type: 3}
   pointA: {fileID: 1195688001984362506}
   pointB: {fileID: 789643527932604646}

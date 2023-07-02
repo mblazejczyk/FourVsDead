@@ -316,6 +316,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f7a6c3a52ab168441ab824fd17b51501, type: 3}
   damageObj: {fileID: 2494336671317318966}
   ShootLine: {fileID: 1003534288033051855, guid: 25f62b0b2ebadac41ba7ccdddd2b5c12, type: 3}
+  dmgIndicator: {fileID: 558072153031145750, guid: ffc654b5b1a3bbb46a52a1f80bd67bc9, type: 3}
 --- !u!1 &2494336671317318966
 GameObject:
   m_ObjectHideFlags: 0

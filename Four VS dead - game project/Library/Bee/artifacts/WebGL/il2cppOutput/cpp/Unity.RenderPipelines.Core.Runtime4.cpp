@@ -13431,132 +13431,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerUIntField__ctor_mF43B3EE4A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityEngine.Rendering.UI.DebugUIHandlerValue::OnEnable()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerValue_OnEnable_m7038D3F49F5D49DAC0ED5F377D6A15A6EC68D69B (DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* __this, const RuntimeMethod* method) 
-{
-	{
-		// m_Timer = 0f;
-		__this->___m_Timer_13 = (0.0f);
-		// }
-		return;
-	}
-}
-// System.Void UnityEngine.Rendering.UI.DebugUIHandlerValue::SetWidget(UnityEngine.Rendering.DebugUI/Widget)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerValue_SetWidget_mA142AE7CCB143CA40E3E63E03CCED6EF916A445A (DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* __this, Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* ___0_widget, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DebugUIHandlerWidget_CastWidget_TisValue_tD3281A1DB8DBD137422F643A60AE1E5F0C736457_mB96C0AAC0A091F04A2CF543CB2C956F0E7C6560C_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// base.SetWidget(widget);
-		Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_0 = ___0_widget;
-		DebugUIHandlerWidget_SetWidget_mEE5CAA4C4DCDD02ACBF70B35B23F81CF8DE60F5A_inline(__this, L_0, NULL);
-		// m_Field = CastWidget<DebugUI.Value>();
-		Value_tD3281A1DB8DBD137422F643A60AE1E5F0C736457* L_1;
-		L_1 = DebugUIHandlerWidget_CastWidget_TisValue_tD3281A1DB8DBD137422F643A60AE1E5F0C736457_mB96C0AAC0A091F04A2CF543CB2C956F0E7C6560C(__this, DebugUIHandlerWidget_CastWidget_TisValue_tD3281A1DB8DBD137422F643A60AE1E5F0C736457_mB96C0AAC0A091F04A2CF543CB2C956F0E7C6560C_RuntimeMethod_var);
-		__this->___m_Field_12 = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Field_12), (void*)L_1);
-		// nameLabel.text = m_Field.displayName;
-		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___nameLabel_10;
-		Value_tD3281A1DB8DBD137422F643A60AE1E5F0C736457* L_3 = __this->___m_Field_12;
-		String_t* L_4;
-		L_4 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_3, NULL);
-		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_4);
-		// }
-		return;
-	}
-}
-// System.Boolean UnityEngine.Rendering.UI.DebugUIHandlerValue::OnSelection(System.Boolean,UnityEngine.Rendering.UI.DebugUIHandlerWidget)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerValue_OnSelection_mEF84CDA2A38FA0FBC19C8E93B42542223145E36B (DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* __this, bool ___0_fromNext, DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* ___1_previous, const RuntimeMethod* method) 
-{
-	{
-		// nameLabel.color = colorSelected;
-		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
-		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
-		// valueLabel.color = colorSelected;
-		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___valueLabel_11;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
-		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
-		// return true;
-		return (bool)1;
-	}
-}
-// System.Void UnityEngine.Rendering.UI.DebugUIHandlerValue::OnDeselection()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerValue_OnDeselection_m0EA789B780B5D638F66A1DACC0AE45CA94466BC3 (DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* __this, const RuntimeMethod* method) 
-{
-	{
-		// nameLabel.color = colorDefault;
-		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
-		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
-		// valueLabel.color = colorDefault;
-		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___valueLabel_11;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
-		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
-		// }
-		return;
-	}
-}
-// System.Void UnityEngine.Rendering.UI.DebugUIHandlerValue::Update()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerValue_Update_mE41E37D577A414A9EB1FF35937B92F4A3F5B3AFC (DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* __this, const RuntimeMethod* method) 
-{
-	{
-		// if (m_Timer >= m_Field.refreshRate)
-		float L_0 = __this->___m_Timer_13;
-		Value_tD3281A1DB8DBD137422F643A60AE1E5F0C736457* L_1 = __this->___m_Field_12;
-		float L_2 = L_1->___refreshRate_8;
-		if ((!(((float)L_0) >= ((float)L_2))))
-		{
-			goto IL_0046;
-		}
-	}
-	{
-		// valueLabel.text = m_Field.GetValue().ToString();
-		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = __this->___valueLabel_11;
-		Value_tD3281A1DB8DBD137422F643A60AE1E5F0C736457* L_4 = __this->___m_Field_12;
-		RuntimeObject* L_5;
-		L_5 = Value_GetValue_mD32191C4552B9FB57F0C048785854DBF320C9BAF(L_4, NULL);
-		String_t* L_6;
-		L_6 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_5);
-		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_3, L_6);
-		// m_Timer -= m_Field.refreshRate;
-		float L_7 = __this->___m_Timer_13;
-		Value_tD3281A1DB8DBD137422F643A60AE1E5F0C736457* L_8 = __this->___m_Field_12;
-		float L_9 = L_8->___refreshRate_8;
-		__this->___m_Timer_13 = ((float)il2cpp_codegen_subtract(L_7, L_9));
-	}
-
-IL_0046:
-	{
-		// m_Timer += Time.deltaTime;
-		float L_10 = __this->___m_Timer_13;
-		float L_11;
-		L_11 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		__this->___m_Timer_13 = ((float)il2cpp_codegen_add(L_10, L_11));
-		// }
-		return;
-	}
-}
-// System.Void UnityEngine.Rendering.UI.DebugUIHandlerValue::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerValue__ctor_mFAC0D77BD1806745E3234F08069159AA0E89933A (DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* __this, const RuntimeMethod* method) 
-{
-	{
-		DebugUIHandlerWidget__ctor_m2105E00AE3370003AE9303EDDA5ABB544CE420E5(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
 // System.Void UnityEngine.Rendering.UI.DebugUIHandlerVBox::SetWidget(UnityEngine.Rendering.DebugUI/Widget)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVBox_SetWidget_mC00F497831E97C0E451298B026A0E0015C09810D (DebugUIHandlerVBox_t6EAD0C2AECCDB1DB651BA32B821D18AD1B70989B* __this, Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* ___0_widget, const RuntimeMethod* method) 
 {
@@ -13690,6 +13564,132 @@ IL_0031:
 }
 // System.Void UnityEngine.Rendering.UI.DebugUIHandlerVBox::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVBox__ctor_m64FA47D67C1E274862860178B57B7D62028779C8 (DebugUIHandlerVBox_t6EAD0C2AECCDB1DB651BA32B821D18AD1B70989B* __this, const RuntimeMethod* method) 
+{
+	{
+		DebugUIHandlerWidget__ctor_m2105E00AE3370003AE9303EDDA5ABB544CE420E5(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.Rendering.UI.DebugUIHandlerValue::OnEnable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerValue_OnEnable_m7038D3F49F5D49DAC0ED5F377D6A15A6EC68D69B (DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* __this, const RuntimeMethod* method) 
+{
+	{
+		// m_Timer = 0f;
+		__this->___m_Timer_13 = (0.0f);
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.Rendering.UI.DebugUIHandlerValue::SetWidget(UnityEngine.Rendering.DebugUI/Widget)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerValue_SetWidget_mA142AE7CCB143CA40E3E63E03CCED6EF916A445A (DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* __this, Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* ___0_widget, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DebugUIHandlerWidget_CastWidget_TisValue_tD3281A1DB8DBD137422F643A60AE1E5F0C736457_mB96C0AAC0A091F04A2CF543CB2C956F0E7C6560C_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// base.SetWidget(widget);
+		Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_0 = ___0_widget;
+		DebugUIHandlerWidget_SetWidget_mEE5CAA4C4DCDD02ACBF70B35B23F81CF8DE60F5A_inline(__this, L_0, NULL);
+		// m_Field = CastWidget<DebugUI.Value>();
+		Value_tD3281A1DB8DBD137422F643A60AE1E5F0C736457* L_1;
+		L_1 = DebugUIHandlerWidget_CastWidget_TisValue_tD3281A1DB8DBD137422F643A60AE1E5F0C736457_mB96C0AAC0A091F04A2CF543CB2C956F0E7C6560C(__this, DebugUIHandlerWidget_CastWidget_TisValue_tD3281A1DB8DBD137422F643A60AE1E5F0C736457_mB96C0AAC0A091F04A2CF543CB2C956F0E7C6560C_RuntimeMethod_var);
+		__this->___m_Field_12 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Field_12), (void*)L_1);
+		// nameLabel.text = m_Field.displayName;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___nameLabel_10;
+		Value_tD3281A1DB8DBD137422F643A60AE1E5F0C736457* L_3 = __this->___m_Field_12;
+		String_t* L_4;
+		L_4 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_3, NULL);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_4);
+		// }
+		return;
+	}
+}
+// System.Boolean UnityEngine.Rendering.UI.DebugUIHandlerValue::OnSelection(System.Boolean,UnityEngine.Rendering.UI.DebugUIHandlerWidget)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerValue_OnSelection_mEF84CDA2A38FA0FBC19C8E93B42542223145E36B (DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* __this, bool ___0_fromNext, DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* ___1_previous, const RuntimeMethod* method) 
+{
+	{
+		// nameLabel.color = colorSelected;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
+		// valueLabel.color = colorSelected;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___valueLabel_11;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
+		// return true;
+		return (bool)1;
+	}
+}
+// System.Void UnityEngine.Rendering.UI.DebugUIHandlerValue::OnDeselection()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerValue_OnDeselection_m0EA789B780B5D638F66A1DACC0AE45CA94466BC3 (DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* __this, const RuntimeMethod* method) 
+{
+	{
+		// nameLabel.color = colorDefault;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
+		// valueLabel.color = colorDefault;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___valueLabel_11;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.Rendering.UI.DebugUIHandlerValue::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerValue_Update_mE41E37D577A414A9EB1FF35937B92F4A3F5B3AFC (DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* __this, const RuntimeMethod* method) 
+{
+	{
+		// if (m_Timer >= m_Field.refreshRate)
+		float L_0 = __this->___m_Timer_13;
+		Value_tD3281A1DB8DBD137422F643A60AE1E5F0C736457* L_1 = __this->___m_Field_12;
+		float L_2 = L_1->___refreshRate_8;
+		if ((!(((float)L_0) >= ((float)L_2))))
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		// valueLabel.text = m_Field.GetValue().ToString();
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = __this->___valueLabel_11;
+		Value_tD3281A1DB8DBD137422F643A60AE1E5F0C736457* L_4 = __this->___m_Field_12;
+		RuntimeObject* L_5;
+		L_5 = Value_GetValue_mD32191C4552B9FB57F0C048785854DBF320C9BAF(L_4, NULL);
+		String_t* L_6;
+		L_6 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_5);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_3, L_6);
+		// m_Timer -= m_Field.refreshRate;
+		float L_7 = __this->___m_Timer_13;
+		Value_tD3281A1DB8DBD137422F643A60AE1E5F0C736457* L_8 = __this->___m_Field_12;
+		float L_9 = L_8->___refreshRate_8;
+		__this->___m_Timer_13 = ((float)il2cpp_codegen_subtract(L_7, L_9));
+	}
+
+IL_0046:
+	{
+		// m_Timer += Time.deltaTime;
+		float L_10 = __this->___m_Timer_13;
+		float L_11;
+		L_11 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		__this->___m_Timer_13 = ((float)il2cpp_codegen_add(L_10, L_11));
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.Rendering.UI.DebugUIHandlerValue::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerValue__ctor_mFAC0D77BD1806745E3234F08069159AA0E89933A (DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* __this, const RuntimeMethod* method) 
 {
 	{
 		DebugUIHandlerWidget__ctor_m2105E00AE3370003AE9303EDDA5ABB544CE420E5(__this, NULL);
