@@ -306,7 +306,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
         {
             if (isDamaging)
             {
-                if (Random.value > dodgeChance)
+                if (Random.value * 100 > dodgeChance)
                 {
                     hpChanged -= (int)(hpChanged * (dmgReductionProc * 0.01f));
                     Hp -= hpChanged;

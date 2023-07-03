@@ -281,150 +281,150 @@ extern void BurstRuntime_GetUTF8LiteralPointer_mE7EE9D906E3CB558BD38EE757DA5A7E1
 // 0x00000089 System.Void Unity.Burst.BurstRuntime/HashCode64`1::.cctor()
 // 0x0000008A System.Void Unity.Burst.BurstRuntime/PreserveAttribute::.ctor()
 extern void PreserveAttribute__ctor_m73E16FAB2119900D63EE60E6A868357D44E175F5 (void);
-// 0x0000008B System.UInt32 Unity.Burst.BurstString::LogBase2(System.UInt32)
-extern void BurstString_LogBase2_m034E17C8FE477EA2D6D3DDBCDAE5155EE0188F54 (void);
-// 0x0000008C System.Int32 Unity.Burst.BurstString::BigInt_Compare(Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&)
-extern void BurstString_BigInt_Compare_m6815CCBF0899BF17AC14F259C329C715EFB6EBA1 (void);
-// 0x0000008D System.Void Unity.Burst.BurstString::BigInt_Add(Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&)
-extern void BurstString_BigInt_Add_m4E1C5A27B4D6168D2967BF79174DA2A04A07669E (void);
-// 0x0000008E System.Void Unity.Burst.BurstString::BigInt_Add_internal(Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&)
-extern void BurstString_BigInt_Add_internal_m6CF758D9927E3261E88334B90E80ECF6C20E6DEF (void);
-// 0x0000008F System.Void Unity.Burst.BurstString::BigInt_Multiply(Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&)
-extern void BurstString_BigInt_Multiply_m90F6D119D0DD397B1B0FB3C76EEE1126C6DFE8A9 (void);
-// 0x00000090 System.Void Unity.Burst.BurstString::BigInt_Multiply_internal(Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&)
-extern void BurstString_BigInt_Multiply_internal_mEA2BBAA8C72283721474B5EF6F7BEBB426294CB3 (void);
-// 0x00000091 System.Void Unity.Burst.BurstString::BigInt_Multiply(Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&,System.UInt32)
-extern void BurstString_BigInt_Multiply_m80C42811355207D0CD9E4E14BB916F0242D44FDF (void);
-// 0x00000092 System.Void Unity.Burst.BurstString::BigInt_Multiply2(Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&)
-extern void BurstString_BigInt_Multiply2_m2C3E74572DBF8B4600AC3AB75B2CF00A6498105C (void);
-// 0x00000093 System.Void Unity.Burst.BurstString::BigInt_Multiply2(Unity.Burst.BurstString/tBigInt&)
-extern void BurstString_BigInt_Multiply2_m45D9B179615B4A6BAD47C2EAE92AEDE7A2406252 (void);
-// 0x00000094 System.Void Unity.Burst.BurstString::BigInt_Multiply10(Unity.Burst.BurstString/tBigInt&)
-extern void BurstString_BigInt_Multiply10_m82AC5B11EB311D603B1A70235E95CC83D39E701E (void);
-// 0x00000095 Unity.Burst.BurstString/tBigInt Unity.Burst.BurstString::g_PowerOf10_Big(System.Int32)
-extern void BurstString_g_PowerOf10_Big_mD308778BE6E3F6102AA2FEB7F8092DD82B7F6D43 (void);
-// 0x00000096 System.Void Unity.Burst.BurstString::BigInt_Pow10(Unity.Burst.BurstString/tBigInt&,System.UInt32)
-extern void BurstString_BigInt_Pow10_mE53CE39D44AABA6924D6544F12E564EC2DCFE642 (void);
-// 0x00000097 System.Void Unity.Burst.BurstString::BigInt_MultiplyPow10(Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&,System.UInt32)
-extern void BurstString_BigInt_MultiplyPow10_mA62F7C4D0BC220B200E0AF031CEA586C59E1EEBD (void);
-// 0x00000098 System.Void Unity.Burst.BurstString::BigInt_Pow2(Unity.Burst.BurstString/tBigInt&,System.UInt32)
-extern void BurstString_BigInt_Pow2_m7D6C74FD7591BA82DFAD8CFAEB2DC0727427587A (void);
-// 0x00000099 System.UInt32 Unity.Burst.BurstString::BigInt_DivideWithRemainder_MaxQuotient9(Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&)
-extern void BurstString_BigInt_DivideWithRemainder_MaxQuotient9_m88E9DEA846064D23C9C090B9626B66DB52A844E9 (void);
-// 0x0000009A System.Void Unity.Burst.BurstString::BigInt_ShiftLeft(Unity.Burst.BurstString/tBigInt&,System.UInt32)
-extern void BurstString_BigInt_ShiftLeft_m0B99AC393DDF011FAC8F453039F4240C8F2BB583 (void);
-// 0x0000009B System.UInt32 Unity.Burst.BurstString::Dragon4(System.UInt64,System.Int32,System.UInt32,System.Boolean,Unity.Burst.BurstString/CutoffMode,System.UInt32,System.Byte*,System.UInt32,System.Int32&)
-extern void BurstString_Dragon4_mCA09B197DEF9912F76B915FDC179A5EF9A1560EE (void);
-// 0x0000009C System.Int32 Unity.Burst.BurstString::FormatPositional(System.Byte*,System.UInt32,System.UInt64,System.Int32,System.UInt32,System.Boolean,System.Int32)
-extern void BurstString_FormatPositional_m93F93BE923A93BA8C243460BF135496467014171 (void);
-// 0x0000009D System.Int32 Unity.Burst.BurstString::FormatScientific(System.Byte*,System.UInt32,System.UInt64,System.Int32,System.UInt32,System.Boolean,System.Int32)
-extern void BurstString_FormatScientific_m2C36AA972E76F74DDD29FA038B9748E663E747E2 (void);
-// 0x0000009E System.Void Unity.Burst.BurstString::FormatInfinityNaN(System.Byte*,System.Int32&,System.Int32,System.UInt64,System.Boolean,Unity.Burst.BurstString/FormatOptions)
-extern void BurstString_FormatInfinityNaN_mD90B190A044F0940A2F7681A79124103BD177979 (void);
-// 0x0000009F System.Void Unity.Burst.BurstString::ConvertFloatToString(System.Byte*,System.Int32&,System.Int32,System.Single,Unity.Burst.BurstString/FormatOptions)
-extern void BurstString_ConvertFloatToString_m31A31291376EE1C7AA2DFA26573312B25E0DDCDA (void);
-// 0x000000A0 System.Void Unity.Burst.BurstString::ConvertDoubleToString(System.Byte*,System.Int32&,System.Int32,System.Double,Unity.Burst.BurstString/FormatOptions)
-extern void BurstString_ConvertDoubleToString_m5B4644F134166CA236077075A11108590892EDD0 (void);
-// 0x000000A1 System.Void Unity.Burst.BurstString::CopyFixedString(System.Byte*,System.Int32,System.Byte*,System.Int32)
+// 0x0000008B System.Void Unity.Burst.BurstString::CopyFixedString(System.Byte*,System.Int32,System.Byte*,System.Int32)
 extern void BurstString_CopyFixedString_m5C7937A0D221B27A3D5FE9C1021B2210A7E72A16 (void);
-// 0x000000A2 System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.Byte*,System.Int32,System.Int32)
+// 0x0000008C System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.Byte*,System.Int32,System.Int32)
 extern void BurstString_Format_m5B430D57A65E74E0921325EC12E2920FACE2B684 (void);
-// 0x000000A3 System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.Single,System.Int32)
+// 0x0000008D System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.Single,System.Int32)
 extern void BurstString_Format_mEC129A0C1267C5438D13D9B8DA5BE80C9C6D3B8B (void);
-// 0x000000A4 System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.Double,System.Int32)
+// 0x0000008E System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.Double,System.Int32)
 extern void BurstString_Format_m77916B0A75CB28DF9F0BD6F32290D31BB24C7D4C (void);
-// 0x000000A5 System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.Boolean,System.Int32)
+// 0x0000008F System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.Boolean,System.Int32)
 extern void BurstString_Format_m8BCCCB4132CE427768D9A118E49B3F1F6C222102 (void);
-// 0x000000A6 System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.Char,System.Int32)
+// 0x00000090 System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.Char,System.Int32)
 extern void BurstString_Format_m19E81CEC5B4BA84C250AE5BAADC37D414E736730 (void);
-// 0x000000A7 System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.Byte,System.Int32)
+// 0x00000091 System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.Byte,System.Int32)
 extern void BurstString_Format_mF3FC2B176298B24C25FBF6DA92E700174C318000 (void);
-// 0x000000A8 System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.UInt16,System.Int32)
+// 0x00000092 System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.UInt16,System.Int32)
 extern void BurstString_Format_m234EB67007839F6D88BD31306502FB35A9F06FE1 (void);
-// 0x000000A9 System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.UInt32,System.Int32)
+// 0x00000093 System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.UInt32,System.Int32)
 extern void BurstString_Format_m69268960549C3B448843D0EB215B43DE6BFB75CE (void);
-// 0x000000AA System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.UInt64,System.Int32)
+// 0x00000094 System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.UInt64,System.Int32)
 extern void BurstString_Format_m206A288B53D79DF5ACDD39B3F3A9A79AC1CF3844 (void);
-// 0x000000AB System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.SByte,System.Int32)
+// 0x00000095 System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.SByte,System.Int32)
 extern void BurstString_Format_m23EDDB41EF95146DB17FED537050D7AC3A6901B6 (void);
-// 0x000000AC System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.Int16,System.Int32)
+// 0x00000096 System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.Int16,System.Int32)
 extern void BurstString_Format_m4F5213B5469A6BDEEAB4B678F771A6F32CB952E7 (void);
-// 0x000000AD System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.Int32,System.Int32)
+// 0x00000097 System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.Int32,System.Int32)
 extern void BurstString_Format_m2B7D17E527F80FA75BBE1D5B8C58C3B929B6664D (void);
-// 0x000000AE System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.Int64,System.Int32)
+// 0x00000098 System.Void Unity.Burst.BurstString::Format(System.Byte*,System.Int32&,System.Int32,System.Int64,System.Int32)
 extern void BurstString_Format_mEB0F69187C05D4543A5FF23A4E8E7A8DC27745A5 (void);
-// 0x000000AF System.Void Unity.Burst.BurstString::ConvertUnsignedIntegerToString(System.Byte*,System.Int32&,System.Int32,System.UInt64,Unity.Burst.BurstString/FormatOptions)
+// 0x00000099 System.Void Unity.Burst.BurstString::ConvertUnsignedIntegerToString(System.Byte*,System.Int32&,System.Int32,System.UInt64,Unity.Burst.BurstString/FormatOptions)
 extern void BurstString_ConvertUnsignedIntegerToString_mE3D0034223E80A9185BE378CE7E0833972B1CA33 (void);
-// 0x000000B0 System.Int32 Unity.Burst.BurstString::GetLengthIntegerToString(System.Int64,System.Int32,System.Int32)
+// 0x0000009A System.Int32 Unity.Burst.BurstString::GetLengthIntegerToString(System.Int64,System.Int32,System.Int32)
 extern void BurstString_GetLengthIntegerToString_m7C848D6F1F8062C53DDBCF15BC3C48492B1D6772 (void);
-// 0x000000B1 System.Void Unity.Burst.BurstString::ConvertIntegerToString(System.Byte*,System.Int32&,System.Int32,System.Int64,Unity.Burst.BurstString/FormatOptions)
+// 0x0000009B System.Void Unity.Burst.BurstString::ConvertIntegerToString(System.Byte*,System.Int32&,System.Int32,System.Int64,Unity.Burst.BurstString/FormatOptions)
 extern void BurstString_ConvertIntegerToString_mA7D50BDF32DDABA6FC2C6CB1E5FF995C80A1C7F8 (void);
-// 0x000000B2 System.Void Unity.Burst.BurstString::FormatNumber(System.Byte*,System.Int32&,System.Int32,Unity.Burst.BurstString/NumberBuffer&,System.Int32,Unity.Burst.BurstString/FormatOptions)
+// 0x0000009C System.Void Unity.Burst.BurstString::FormatNumber(System.Byte*,System.Int32&,System.Int32,Unity.Burst.BurstString/NumberBuffer&,System.Int32,Unity.Burst.BurstString/FormatOptions)
 extern void BurstString_FormatNumber_m84AA91726082A3F72562B6B579F3D030D6D3C673 (void);
-// 0x000000B3 System.Void Unity.Burst.BurstString::FormatDecimalOrHexadecimal(System.Byte*,System.Int32&,System.Int32,Unity.Burst.BurstString/NumberBuffer&,System.Int32,System.Boolean)
+// 0x0000009D System.Void Unity.Burst.BurstString::FormatDecimalOrHexadecimal(System.Byte*,System.Int32&,System.Int32,Unity.Burst.BurstString/NumberBuffer&,System.Int32,System.Boolean)
 extern void BurstString_FormatDecimalOrHexadecimal_mA06BC7EC5DFAC150C462EBDD98CC067917E468AF (void);
-// 0x000000B4 System.Byte Unity.Burst.BurstString::ValueToIntegerChar(System.Int32,System.Boolean)
+// 0x0000009E System.Byte Unity.Burst.BurstString::ValueToIntegerChar(System.Int32,System.Boolean)
 extern void BurstString_ValueToIntegerChar_mC277F5B4A56CD3A028AB49004C97B878D2AE1313 (void);
-// 0x000000B5 System.Void Unity.Burst.BurstString::OptsSplit(System.String,System.String&,System.String&)
+// 0x0000009F System.Void Unity.Burst.BurstString::OptsSplit(System.String,System.String&,System.String&)
 extern void BurstString_OptsSplit_m10C3788DD163D892F1758F7583A057003DA97CE2 (void);
-// 0x000000B6 Unity.Burst.BurstString/FormatOptions Unity.Burst.BurstString::ParseFormatToFormatOptions(System.String)
+// 0x000000A0 Unity.Burst.BurstString/FormatOptions Unity.Burst.BurstString::ParseFormatToFormatOptions(System.String)
 extern void BurstString_ParseFormatToFormatOptions_m5BEE332FEA4F1193300A62CBAE030383471561D4 (void);
-// 0x000000B7 System.Boolean Unity.Burst.BurstString::AlignRight(System.Byte*,System.Int32&,System.Int32,System.Int32,System.Int32)
+// 0x000000A1 System.Boolean Unity.Burst.BurstString::AlignRight(System.Byte*,System.Int32&,System.Int32,System.Int32,System.Int32)
 extern void BurstString_AlignRight_m42725CF76779C09A0664D895DA590CEB4E1A8A37 (void);
-// 0x000000B8 System.Boolean Unity.Burst.BurstString::AlignLeft(System.Byte*,System.Int32&,System.Int32,System.Int32,System.Int32)
+// 0x000000A2 System.Boolean Unity.Burst.BurstString::AlignLeft(System.Byte*,System.Int32&,System.Int32,System.Int32,System.Int32)
 extern void BurstString_AlignLeft_mE09478055A126F1675FF9C15B6572186785585D0 (void);
-// 0x000000B9 System.Int32 Unity.Burst.BurstString::GetLengthForFormatGeneral(Unity.Burst.BurstString/NumberBuffer&,System.Int32)
+// 0x000000A3 System.Int32 Unity.Burst.BurstString::GetLengthForFormatGeneral(Unity.Burst.BurstString/NumberBuffer&,System.Int32)
 extern void BurstString_GetLengthForFormatGeneral_m8C803B634ACAA22001B49BEFBB5AB9CE7BD69766 (void);
-// 0x000000BA System.Void Unity.Burst.BurstString::FormatGeneral(System.Byte*,System.Int32&,System.Int32,Unity.Burst.BurstString/NumberBuffer&,System.Int32,System.Byte)
+// 0x000000A4 System.Void Unity.Burst.BurstString::FormatGeneral(System.Byte*,System.Int32&,System.Int32,Unity.Burst.BurstString/NumberBuffer&,System.Int32,System.Byte)
 extern void BurstString_FormatGeneral_m6BD2A28E369BBBF4444ED8D8A71EA6641A7DBCD1 (void);
-// 0x000000BB System.Void Unity.Burst.BurstString::RoundNumber(Unity.Burst.BurstString/NumberBuffer&,System.Int32,System.Boolean)
+// 0x000000A5 System.Void Unity.Burst.BurstString::RoundNumber(Unity.Burst.BurstString/NumberBuffer&,System.Int32,System.Boolean)
 extern void BurstString_RoundNumber_m524D9772E74FA38A0C43453F17AB2C7BAAB004E4 (void);
-// 0x000000BC System.Boolean Unity.Burst.BurstString::ShouldRoundUp(System.Byte*,System.Int32,System.Boolean)
+// 0x000000A6 System.Boolean Unity.Burst.BurstString::ShouldRoundUp(System.Byte*,System.Int32,System.Boolean)
 extern void BurstString_ShouldRoundUp_m409E5BBC77EF196F3CCAC9B2AFF01225E2119464 (void);
+// 0x000000A7 System.UInt32 Unity.Burst.BurstString::LogBase2(System.UInt32)
+extern void BurstString_LogBase2_m034E17C8FE477EA2D6D3DDBCDAE5155EE0188F54 (void);
+// 0x000000A8 System.Int32 Unity.Burst.BurstString::BigInt_Compare(Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&)
+extern void BurstString_BigInt_Compare_m6815CCBF0899BF17AC14F259C329C715EFB6EBA1 (void);
+// 0x000000A9 System.Void Unity.Burst.BurstString::BigInt_Add(Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&)
+extern void BurstString_BigInt_Add_m4E1C5A27B4D6168D2967BF79174DA2A04A07669E (void);
+// 0x000000AA System.Void Unity.Burst.BurstString::BigInt_Add_internal(Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&)
+extern void BurstString_BigInt_Add_internal_m6CF758D9927E3261E88334B90E80ECF6C20E6DEF (void);
+// 0x000000AB System.Void Unity.Burst.BurstString::BigInt_Multiply(Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&)
+extern void BurstString_BigInt_Multiply_m90F6D119D0DD397B1B0FB3C76EEE1126C6DFE8A9 (void);
+// 0x000000AC System.Void Unity.Burst.BurstString::BigInt_Multiply_internal(Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&)
+extern void BurstString_BigInt_Multiply_internal_mEA2BBAA8C72283721474B5EF6F7BEBB426294CB3 (void);
+// 0x000000AD System.Void Unity.Burst.BurstString::BigInt_Multiply(Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&,System.UInt32)
+extern void BurstString_BigInt_Multiply_m80C42811355207D0CD9E4E14BB916F0242D44FDF (void);
+// 0x000000AE System.Void Unity.Burst.BurstString::BigInt_Multiply2(Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&)
+extern void BurstString_BigInt_Multiply2_m2C3E74572DBF8B4600AC3AB75B2CF00A6498105C (void);
+// 0x000000AF System.Void Unity.Burst.BurstString::BigInt_Multiply2(Unity.Burst.BurstString/tBigInt&)
+extern void BurstString_BigInt_Multiply2_m45D9B179615B4A6BAD47C2EAE92AEDE7A2406252 (void);
+// 0x000000B0 System.Void Unity.Burst.BurstString::BigInt_Multiply10(Unity.Burst.BurstString/tBigInt&)
+extern void BurstString_BigInt_Multiply10_m82AC5B11EB311D603B1A70235E95CC83D39E701E (void);
+// 0x000000B1 Unity.Burst.BurstString/tBigInt Unity.Burst.BurstString::g_PowerOf10_Big(System.Int32)
+extern void BurstString_g_PowerOf10_Big_mD308778BE6E3F6102AA2FEB7F8092DD82B7F6D43 (void);
+// 0x000000B2 System.Void Unity.Burst.BurstString::BigInt_Pow10(Unity.Burst.BurstString/tBigInt&,System.UInt32)
+extern void BurstString_BigInt_Pow10_mE53CE39D44AABA6924D6544F12E564EC2DCFE642 (void);
+// 0x000000B3 System.Void Unity.Burst.BurstString::BigInt_MultiplyPow10(Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&,System.UInt32)
+extern void BurstString_BigInt_MultiplyPow10_mA62F7C4D0BC220B200E0AF031CEA586C59E1EEBD (void);
+// 0x000000B4 System.Void Unity.Burst.BurstString::BigInt_Pow2(Unity.Burst.BurstString/tBigInt&,System.UInt32)
+extern void BurstString_BigInt_Pow2_m7D6C74FD7591BA82DFAD8CFAEB2DC0727427587A (void);
+// 0x000000B5 System.UInt32 Unity.Burst.BurstString::BigInt_DivideWithRemainder_MaxQuotient9(Unity.Burst.BurstString/tBigInt&,Unity.Burst.BurstString/tBigInt&)
+extern void BurstString_BigInt_DivideWithRemainder_MaxQuotient9_m88E9DEA846064D23C9C090B9626B66DB52A844E9 (void);
+// 0x000000B6 System.Void Unity.Burst.BurstString::BigInt_ShiftLeft(Unity.Burst.BurstString/tBigInt&,System.UInt32)
+extern void BurstString_BigInt_ShiftLeft_m0B99AC393DDF011FAC8F453039F4240C8F2BB583 (void);
+// 0x000000B7 System.UInt32 Unity.Burst.BurstString::Dragon4(System.UInt64,System.Int32,System.UInt32,System.Boolean,Unity.Burst.BurstString/CutoffMode,System.UInt32,System.Byte*,System.UInt32,System.Int32&)
+extern void BurstString_Dragon4_mCA09B197DEF9912F76B915FDC179A5EF9A1560EE (void);
+// 0x000000B8 System.Int32 Unity.Burst.BurstString::FormatPositional(System.Byte*,System.UInt32,System.UInt64,System.Int32,System.UInt32,System.Boolean,System.Int32)
+extern void BurstString_FormatPositional_m93F93BE923A93BA8C243460BF135496467014171 (void);
+// 0x000000B9 System.Int32 Unity.Burst.BurstString::FormatScientific(System.Byte*,System.UInt32,System.UInt64,System.Int32,System.UInt32,System.Boolean,System.Int32)
+extern void BurstString_FormatScientific_m2C36AA972E76F74DDD29FA038B9748E663E747E2 (void);
+// 0x000000BA System.Void Unity.Burst.BurstString::FormatInfinityNaN(System.Byte*,System.Int32&,System.Int32,System.UInt64,System.Boolean,Unity.Burst.BurstString/FormatOptions)
+extern void BurstString_FormatInfinityNaN_mD90B190A044F0940A2F7681A79124103BD177979 (void);
+// 0x000000BB System.Void Unity.Burst.BurstString::ConvertFloatToString(System.Byte*,System.Int32&,System.Int32,System.Single,Unity.Burst.BurstString/FormatOptions)
+extern void BurstString_ConvertFloatToString_m31A31291376EE1C7AA2DFA26573312B25E0DDCDA (void);
+// 0x000000BC System.Void Unity.Burst.BurstString::ConvertDoubleToString(System.Byte*,System.Int32&,System.Int32,System.Double,Unity.Burst.BurstString/FormatOptions)
+extern void BurstString_ConvertDoubleToString_m5B4644F134166CA236077075A11108590892EDD0 (void);
 // 0x000000BD System.Void Unity.Burst.BurstString::.cctor()
 extern void BurstString__cctor_m7DAF55C23F1F9D98FC9F78D057E3730166E28B78 (void);
-// 0x000000BE System.Int32 Unity.Burst.BurstString/tBigInt::GetLength()
-extern void tBigInt_GetLength_m223AD69D6DB118C879FC58EF544D50C4A2E978E7 (void);
-// 0x000000BF System.UInt32 Unity.Burst.BurstString/tBigInt::GetBlock(System.Int32)
-extern void tBigInt_GetBlock_m6E4E377A7A4591B136D20D711B06CB1D145FC9D2 (void);
-// 0x000000C0 System.Void Unity.Burst.BurstString/tBigInt::SetZero()
-extern void tBigInt_SetZero_m54E84DE30DFAA84CF9B9CE82100A631204728A55 (void);
-// 0x000000C1 System.Boolean Unity.Burst.BurstString/tBigInt::IsZero()
-extern void tBigInt_IsZero_mE0C94B9A59A09BFCE51C418F4C8C05EC253D68C8 (void);
-// 0x000000C2 System.Void Unity.Burst.BurstString/tBigInt::SetU64(System.UInt64)
-extern void tBigInt_SetU64_m72EE55FD3169036C517DAF7392CE0A133DD50C14 (void);
-// 0x000000C3 System.Void Unity.Burst.BurstString/tBigInt::SetU32(System.UInt32)
-extern void tBigInt_SetU32_m9EF2E1018CDA89AED4F0FA625E91878BF1772233 (void);
-// 0x000000C4 System.UInt32 Unity.Burst.BurstString/tBigInt::GetU32()
-extern void tBigInt_GetU32_m16EF52ED57B4FCFAA6FDC8D1F4C659DAEBAEE9A9 (void);
-// 0x000000C5 System.Boolean Unity.Burst.BurstString/tFloatUnion32::IsNegative()
-extern void tFloatUnion32_IsNegative_m75BC8B54D468278FCBA4535D6118346B3C8F9388 (void);
-// 0x000000C6 System.UInt32 Unity.Burst.BurstString/tFloatUnion32::GetExponent()
-extern void tFloatUnion32_GetExponent_m83ED8E199331F83BC7AE3E48DCCCA8E6212CA6A6 (void);
-// 0x000000C7 System.UInt32 Unity.Burst.BurstString/tFloatUnion32::GetMantissa()
-extern void tFloatUnion32_GetMantissa_mAB906EE8DD2E27CFB6D98FF99CC2D764FF44F0EF (void);
-// 0x000000C8 System.Boolean Unity.Burst.BurstString/tFloatUnion64::IsNegative()
-extern void tFloatUnion64_IsNegative_m5427680D1918AB7410EDC266B0524E42313F171B (void);
-// 0x000000C9 System.UInt32 Unity.Burst.BurstString/tFloatUnion64::GetExponent()
-extern void tFloatUnion64_GetExponent_m85B0BB29969C376B7FF866A1793C1997645D1D60 (void);
-// 0x000000CA System.UInt64 Unity.Burst.BurstString/tFloatUnion64::GetMantissa()
-extern void tFloatUnion64_GetMantissa_m6EAD50CE3D1BFDABD12A308F2FF83F586F61328C (void);
-// 0x000000CB System.Void Unity.Burst.BurstString/PreserveAttribute::.ctor()
+// 0x000000BE System.Void Unity.Burst.BurstString/PreserveAttribute::.ctor()
 extern void PreserveAttribute__ctor_mBA1653B32D31972033C043A55588458B03F262B1 (void);
-// 0x000000CC System.Void Unity.Burst.BurstString/NumberBuffer::.ctor(Unity.Burst.BurstString/NumberBufferKind,System.Byte*,System.Int32,System.Int32,System.Boolean)
+// 0x000000BF System.Void Unity.Burst.BurstString/NumberBuffer::.ctor(Unity.Burst.BurstString/NumberBufferKind,System.Byte*,System.Int32,System.Int32,System.Boolean)
 extern void NumberBuffer__ctor_m1A0D288DFB6432947BB55759502F97BA25348141 (void);
-// 0x000000CD System.Byte* Unity.Burst.BurstString/NumberBuffer::GetDigitsPointer()
+// 0x000000C0 System.Byte* Unity.Burst.BurstString/NumberBuffer::GetDigitsPointer()
 extern void NumberBuffer_GetDigitsPointer_m877C617CEE264BE12DE38D7289D741ED39B99846 (void);
-// 0x000000CE System.Void Unity.Burst.BurstString/FormatOptions::.ctor(Unity.Burst.BurstString/NumberFormatKind,System.SByte,System.Byte,System.Boolean)
+// 0x000000C1 System.Void Unity.Burst.BurstString/FormatOptions::.ctor(Unity.Burst.BurstString/NumberFormatKind,System.SByte,System.Byte,System.Boolean)
 extern void FormatOptions__ctor_mCF1FCAD2F6EE383DC6A602CA1F82BD16852CC055 (void);
-// 0x000000CF System.Boolean Unity.Burst.BurstString/FormatOptions::get_Uppercase()
+// 0x000000C2 System.Boolean Unity.Burst.BurstString/FormatOptions::get_Uppercase()
 extern void FormatOptions_get_Uppercase_mE85E979D733EB67187AC1BCEB045508A0EF005C3 (void);
-// 0x000000D0 System.Int32 Unity.Burst.BurstString/FormatOptions::EncodeToRaw()
+// 0x000000C3 System.Int32 Unity.Burst.BurstString/FormatOptions::EncodeToRaw()
 extern void FormatOptions_EncodeToRaw_m966A50F0B106A1E90283F715303AB55E64A29D60 (void);
-// 0x000000D1 System.Int32 Unity.Burst.BurstString/FormatOptions::GetBase()
+// 0x000000C4 System.Int32 Unity.Burst.BurstString/FormatOptions::GetBase()
 extern void FormatOptions_GetBase_m0466B18B4E020F258E2402BE194FB8D670B2C789 (void);
-// 0x000000D2 System.String Unity.Burst.BurstString/FormatOptions::ToString()
+// 0x000000C5 System.String Unity.Burst.BurstString/FormatOptions::ToString()
 extern void FormatOptions_ToString_m96B89E42F1553D5D3B78D7238443ACC628EFB488 (void);
+// 0x000000C6 System.Int32 Unity.Burst.BurstString/tBigInt::GetLength()
+extern void tBigInt_GetLength_m223AD69D6DB118C879FC58EF544D50C4A2E978E7 (void);
+// 0x000000C7 System.UInt32 Unity.Burst.BurstString/tBigInt::GetBlock(System.Int32)
+extern void tBigInt_GetBlock_m6E4E377A7A4591B136D20D711B06CB1D145FC9D2 (void);
+// 0x000000C8 System.Void Unity.Burst.BurstString/tBigInt::SetZero()
+extern void tBigInt_SetZero_m54E84DE30DFAA84CF9B9CE82100A631204728A55 (void);
+// 0x000000C9 System.Boolean Unity.Burst.BurstString/tBigInt::IsZero()
+extern void tBigInt_IsZero_mE0C94B9A59A09BFCE51C418F4C8C05EC253D68C8 (void);
+// 0x000000CA System.Void Unity.Burst.BurstString/tBigInt::SetU64(System.UInt64)
+extern void tBigInt_SetU64_m72EE55FD3169036C517DAF7392CE0A133DD50C14 (void);
+// 0x000000CB System.Void Unity.Burst.BurstString/tBigInt::SetU32(System.UInt32)
+extern void tBigInt_SetU32_m9EF2E1018CDA89AED4F0FA625E91878BF1772233 (void);
+// 0x000000CC System.UInt32 Unity.Burst.BurstString/tBigInt::GetU32()
+extern void tBigInt_GetU32_m16EF52ED57B4FCFAA6FDC8D1F4C659DAEBAEE9A9 (void);
+// 0x000000CD System.Boolean Unity.Burst.BurstString/tFloatUnion32::IsNegative()
+extern void tFloatUnion32_IsNegative_m75BC8B54D468278FCBA4535D6118346B3C8F9388 (void);
+// 0x000000CE System.UInt32 Unity.Burst.BurstString/tFloatUnion32::GetExponent()
+extern void tFloatUnion32_GetExponent_m83ED8E199331F83BC7AE3E48DCCCA8E6212CA6A6 (void);
+// 0x000000CF System.UInt32 Unity.Burst.BurstString/tFloatUnion32::GetMantissa()
+extern void tFloatUnion32_GetMantissa_mAB906EE8DD2E27CFB6D98FF99CC2D764FF44F0EF (void);
+// 0x000000D0 System.Boolean Unity.Burst.BurstString/tFloatUnion64::IsNegative()
+extern void tFloatUnion64_IsNegative_m5427680D1918AB7410EDC266B0524E42313F171B (void);
+// 0x000000D1 System.UInt32 Unity.Burst.BurstString/tFloatUnion64::GetExponent()
+extern void tFloatUnion64_GetExponent_m85B0BB29969C376B7FF866A1793C1997645D1D60 (void);
+// 0x000000D2 System.UInt64 Unity.Burst.BurstString/tFloatUnion64::GetMantissa()
+extern void tFloatUnion64_GetMantissa_m6EAD50CE3D1BFDABD12A308F2FF83F586F61328C (void);
 // 0x000000D3 Unity.Burst.IFunctionPointer Unity.Burst.IFunctionPointer::FromIntPtr(System.IntPtr)
 // 0x000000D4 System.Void Unity.Burst.FunctionPointer`1::.ctor(System.IntPtr)
 // 0x000000D5 System.IntPtr Unity.Burst.FunctionPointer`1::get_Value()
@@ -7391,28 +7391,6 @@ static Il2CppMethodPointer s_methodPointers[3640] =
 	NULL,
 	NULL,
 	PreserveAttribute__ctor_m73E16FAB2119900D63EE60E6A868357D44E175F5,
-	BurstString_LogBase2_m034E17C8FE477EA2D6D3DDBCDAE5155EE0188F54,
-	BurstString_BigInt_Compare_m6815CCBF0899BF17AC14F259C329C715EFB6EBA1,
-	BurstString_BigInt_Add_m4E1C5A27B4D6168D2967BF79174DA2A04A07669E,
-	BurstString_BigInt_Add_internal_m6CF758D9927E3261E88334B90E80ECF6C20E6DEF,
-	BurstString_BigInt_Multiply_m90F6D119D0DD397B1B0FB3C76EEE1126C6DFE8A9,
-	BurstString_BigInt_Multiply_internal_mEA2BBAA8C72283721474B5EF6F7BEBB426294CB3,
-	BurstString_BigInt_Multiply_m80C42811355207D0CD9E4E14BB916F0242D44FDF,
-	BurstString_BigInt_Multiply2_m2C3E74572DBF8B4600AC3AB75B2CF00A6498105C,
-	BurstString_BigInt_Multiply2_m45D9B179615B4A6BAD47C2EAE92AEDE7A2406252,
-	BurstString_BigInt_Multiply10_m82AC5B11EB311D603B1A70235E95CC83D39E701E,
-	BurstString_g_PowerOf10_Big_mD308778BE6E3F6102AA2FEB7F8092DD82B7F6D43,
-	BurstString_BigInt_Pow10_mE53CE39D44AABA6924D6544F12E564EC2DCFE642,
-	BurstString_BigInt_MultiplyPow10_mA62F7C4D0BC220B200E0AF031CEA586C59E1EEBD,
-	BurstString_BigInt_Pow2_m7D6C74FD7591BA82DFAD8CFAEB2DC0727427587A,
-	BurstString_BigInt_DivideWithRemainder_MaxQuotient9_m88E9DEA846064D23C9C090B9626B66DB52A844E9,
-	BurstString_BigInt_ShiftLeft_m0B99AC393DDF011FAC8F453039F4240C8F2BB583,
-	BurstString_Dragon4_mCA09B197DEF9912F76B915FDC179A5EF9A1560EE,
-	BurstString_FormatPositional_m93F93BE923A93BA8C243460BF135496467014171,
-	BurstString_FormatScientific_m2C36AA972E76F74DDD29FA038B9748E663E747E2,
-	BurstString_FormatInfinityNaN_mD90B190A044F0940A2F7681A79124103BD177979,
-	BurstString_ConvertFloatToString_m31A31291376EE1C7AA2DFA26573312B25E0DDCDA,
-	BurstString_ConvertDoubleToString_m5B4644F134166CA236077075A11108590892EDD0,
 	BurstString_CopyFixedString_m5C7937A0D221B27A3D5FE9C1021B2210A7E72A16,
 	BurstString_Format_m5B430D57A65E74E0921325EC12E2920FACE2B684,
 	BurstString_Format_mEC129A0C1267C5438D13D9B8DA5BE80C9C6D3B8B,
@@ -7441,7 +7419,37 @@ static Il2CppMethodPointer s_methodPointers[3640] =
 	BurstString_FormatGeneral_m6BD2A28E369BBBF4444ED8D8A71EA6641A7DBCD1,
 	BurstString_RoundNumber_m524D9772E74FA38A0C43453F17AB2C7BAAB004E4,
 	BurstString_ShouldRoundUp_m409E5BBC77EF196F3CCAC9B2AFF01225E2119464,
+	BurstString_LogBase2_m034E17C8FE477EA2D6D3DDBCDAE5155EE0188F54,
+	BurstString_BigInt_Compare_m6815CCBF0899BF17AC14F259C329C715EFB6EBA1,
+	BurstString_BigInt_Add_m4E1C5A27B4D6168D2967BF79174DA2A04A07669E,
+	BurstString_BigInt_Add_internal_m6CF758D9927E3261E88334B90E80ECF6C20E6DEF,
+	BurstString_BigInt_Multiply_m90F6D119D0DD397B1B0FB3C76EEE1126C6DFE8A9,
+	BurstString_BigInt_Multiply_internal_mEA2BBAA8C72283721474B5EF6F7BEBB426294CB3,
+	BurstString_BigInt_Multiply_m80C42811355207D0CD9E4E14BB916F0242D44FDF,
+	BurstString_BigInt_Multiply2_m2C3E74572DBF8B4600AC3AB75B2CF00A6498105C,
+	BurstString_BigInt_Multiply2_m45D9B179615B4A6BAD47C2EAE92AEDE7A2406252,
+	BurstString_BigInt_Multiply10_m82AC5B11EB311D603B1A70235E95CC83D39E701E,
+	BurstString_g_PowerOf10_Big_mD308778BE6E3F6102AA2FEB7F8092DD82B7F6D43,
+	BurstString_BigInt_Pow10_mE53CE39D44AABA6924D6544F12E564EC2DCFE642,
+	BurstString_BigInt_MultiplyPow10_mA62F7C4D0BC220B200E0AF031CEA586C59E1EEBD,
+	BurstString_BigInt_Pow2_m7D6C74FD7591BA82DFAD8CFAEB2DC0727427587A,
+	BurstString_BigInt_DivideWithRemainder_MaxQuotient9_m88E9DEA846064D23C9C090B9626B66DB52A844E9,
+	BurstString_BigInt_ShiftLeft_m0B99AC393DDF011FAC8F453039F4240C8F2BB583,
+	BurstString_Dragon4_mCA09B197DEF9912F76B915FDC179A5EF9A1560EE,
+	BurstString_FormatPositional_m93F93BE923A93BA8C243460BF135496467014171,
+	BurstString_FormatScientific_m2C36AA972E76F74DDD29FA038B9748E663E747E2,
+	BurstString_FormatInfinityNaN_mD90B190A044F0940A2F7681A79124103BD177979,
+	BurstString_ConvertFloatToString_m31A31291376EE1C7AA2DFA26573312B25E0DDCDA,
+	BurstString_ConvertDoubleToString_m5B4644F134166CA236077075A11108590892EDD0,
 	BurstString__cctor_m7DAF55C23F1F9D98FC9F78D057E3730166E28B78,
+	PreserveAttribute__ctor_mBA1653B32D31972033C043A55588458B03F262B1,
+	NumberBuffer__ctor_m1A0D288DFB6432947BB55759502F97BA25348141,
+	NumberBuffer_GetDigitsPointer_m877C617CEE264BE12DE38D7289D741ED39B99846,
+	FormatOptions__ctor_mCF1FCAD2F6EE383DC6A602CA1F82BD16852CC055,
+	FormatOptions_get_Uppercase_mE85E979D733EB67187AC1BCEB045508A0EF005C3,
+	FormatOptions_EncodeToRaw_m966A50F0B106A1E90283F715303AB55E64A29D60,
+	FormatOptions_GetBase_m0466B18B4E020F258E2402BE194FB8D670B2C789,
+	FormatOptions_ToString_m96B89E42F1553D5D3B78D7238443ACC628EFB488,
 	tBigInt_GetLength_m223AD69D6DB118C879FC58EF544D50C4A2E978E7,
 	tBigInt_GetBlock_m6E4E377A7A4591B136D20D711B06CB1D145FC9D2,
 	tBigInt_SetZero_m54E84DE30DFAA84CF9B9CE82100A631204728A55,
@@ -7455,14 +7463,6 @@ static Il2CppMethodPointer s_methodPointers[3640] =
 	tFloatUnion64_IsNegative_m5427680D1918AB7410EDC266B0524E42313F171B,
 	tFloatUnion64_GetExponent_m85B0BB29969C376B7FF866A1793C1997645D1D60,
 	tFloatUnion64_GetMantissa_m6EAD50CE3D1BFDABD12A308F2FF83F586F61328C,
-	PreserveAttribute__ctor_mBA1653B32D31972033C043A55588458B03F262B1,
-	NumberBuffer__ctor_m1A0D288DFB6432947BB55759502F97BA25348141,
-	NumberBuffer_GetDigitsPointer_m877C617CEE264BE12DE38D7289D741ED39B99846,
-	FormatOptions__ctor_mCF1FCAD2F6EE383DC6A602CA1F82BD16852CC055,
-	FormatOptions_get_Uppercase_mE85E979D733EB67187AC1BCEB045508A0EF005C3,
-	FormatOptions_EncodeToRaw_m966A50F0B106A1E90283F715303AB55E64A29D60,
-	FormatOptions_GetBase_m0466B18B4E020F258E2402BE194FB8D670B2C789,
-	FormatOptions_ToString_m96B89E42F1553D5D3B78D7238443ACC628EFB488,
 	NULL,
 	NULL,
 	NULL,
@@ -10894,6 +10894,13 @@ static Il2CppMethodPointer s_methodPointers[3640] =
 	IgnoreWarningAttribute__ctor_m1C6CA1B6C6272E76F5AA1C9955A0D6D26CB03CB3,
 	SkipLocalsInitAttribute__ctor_m375F500C468A753DCA94330FB8D4FB1E1D13A5B1,
 };
+extern void NumberBuffer__ctor_m1A0D288DFB6432947BB55759502F97BA25348141_AdjustorThunk (void);
+extern void NumberBuffer_GetDigitsPointer_m877C617CEE264BE12DE38D7289D741ED39B99846_AdjustorThunk (void);
+extern void FormatOptions__ctor_mCF1FCAD2F6EE383DC6A602CA1F82BD16852CC055_AdjustorThunk (void);
+extern void FormatOptions_get_Uppercase_mE85E979D733EB67187AC1BCEB045508A0EF005C3_AdjustorThunk (void);
+extern void FormatOptions_EncodeToRaw_m966A50F0B106A1E90283F715303AB55E64A29D60_AdjustorThunk (void);
+extern void FormatOptions_GetBase_m0466B18B4E020F258E2402BE194FB8D670B2C789_AdjustorThunk (void);
+extern void FormatOptions_ToString_m96B89E42F1553D5D3B78D7238443ACC628EFB488_AdjustorThunk (void);
 extern void tBigInt_GetLength_m223AD69D6DB118C879FC58EF544D50C4A2E978E7_AdjustorThunk (void);
 extern void tBigInt_GetBlock_m6E4E377A7A4591B136D20D711B06CB1D145FC9D2_AdjustorThunk (void);
 extern void tBigInt_SetZero_m54E84DE30DFAA84CF9B9CE82100A631204728A55_AdjustorThunk (void);
@@ -10907,13 +10914,6 @@ extern void tFloatUnion32_GetMantissa_mAB906EE8DD2E27CFB6D98FF99CC2D764FF44F0EF_
 extern void tFloatUnion64_IsNegative_m5427680D1918AB7410EDC266B0524E42313F171B_AdjustorThunk (void);
 extern void tFloatUnion64_GetExponent_m85B0BB29969C376B7FF866A1793C1997645D1D60_AdjustorThunk (void);
 extern void tFloatUnion64_GetMantissa_m6EAD50CE3D1BFDABD12A308F2FF83F586F61328C_AdjustorThunk (void);
-extern void NumberBuffer__ctor_m1A0D288DFB6432947BB55759502F97BA25348141_AdjustorThunk (void);
-extern void NumberBuffer_GetDigitsPointer_m877C617CEE264BE12DE38D7289D741ED39B99846_AdjustorThunk (void);
-extern void FormatOptions__ctor_mCF1FCAD2F6EE383DC6A602CA1F82BD16852CC055_AdjustorThunk (void);
-extern void FormatOptions_get_Uppercase_mE85E979D733EB67187AC1BCEB045508A0EF005C3_AdjustorThunk (void);
-extern void FormatOptions_EncodeToRaw_m966A50F0B106A1E90283F715303AB55E64A29D60_AdjustorThunk (void);
-extern void FormatOptions_GetBase_m0466B18B4E020F258E2402BE194FB8D670B2C789_AdjustorThunk (void);
-extern void FormatOptions_ToString_m96B89E42F1553D5D3B78D7238443ACC628EFB488_AdjustorThunk (void);
 extern void v128__ctor_m1AE72BAC845E230D3AD71549A5EAB7F5F46BED08_AdjustorThunk (void);
 extern void v128__ctor_m0D6973600FF20309F897314591B3485D676A2040_AdjustorThunk (void);
 extern void v128__ctor_m1BBF4AE259F31EE7BA93AE271E48C3D8F67E6B6F_AdjustorThunk (void);
@@ -10979,26 +10979,26 @@ extern void StrBoolArray_SetBit_m212C6D1A8A4C422AF979D6B3BC7CD5B9BD0F3F01_Adjust
 extern void StrBoolArray_GetBit_mCA50A9F3A3FA5C552305C9B762264A6058F33E78_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[83] = 
 {
-	{ 0x060000BE, tBigInt_GetLength_m223AD69D6DB118C879FC58EF544D50C4A2E978E7_AdjustorThunk },
-	{ 0x060000BF, tBigInt_GetBlock_m6E4E377A7A4591B136D20D711B06CB1D145FC9D2_AdjustorThunk },
-	{ 0x060000C0, tBigInt_SetZero_m54E84DE30DFAA84CF9B9CE82100A631204728A55_AdjustorThunk },
-	{ 0x060000C1, tBigInt_IsZero_mE0C94B9A59A09BFCE51C418F4C8C05EC253D68C8_AdjustorThunk },
-	{ 0x060000C2, tBigInt_SetU64_m72EE55FD3169036C517DAF7392CE0A133DD50C14_AdjustorThunk },
-	{ 0x060000C3, tBigInt_SetU32_m9EF2E1018CDA89AED4F0FA625E91878BF1772233_AdjustorThunk },
-	{ 0x060000C4, tBigInt_GetU32_m16EF52ED57B4FCFAA6FDC8D1F4C659DAEBAEE9A9_AdjustorThunk },
-	{ 0x060000C5, tFloatUnion32_IsNegative_m75BC8B54D468278FCBA4535D6118346B3C8F9388_AdjustorThunk },
-	{ 0x060000C6, tFloatUnion32_GetExponent_m83ED8E199331F83BC7AE3E48DCCCA8E6212CA6A6_AdjustorThunk },
-	{ 0x060000C7, tFloatUnion32_GetMantissa_mAB906EE8DD2E27CFB6D98FF99CC2D764FF44F0EF_AdjustorThunk },
-	{ 0x060000C8, tFloatUnion64_IsNegative_m5427680D1918AB7410EDC266B0524E42313F171B_AdjustorThunk },
-	{ 0x060000C9, tFloatUnion64_GetExponent_m85B0BB29969C376B7FF866A1793C1997645D1D60_AdjustorThunk },
-	{ 0x060000CA, tFloatUnion64_GetMantissa_m6EAD50CE3D1BFDABD12A308F2FF83F586F61328C_AdjustorThunk },
-	{ 0x060000CC, NumberBuffer__ctor_m1A0D288DFB6432947BB55759502F97BA25348141_AdjustorThunk },
-	{ 0x060000CD, NumberBuffer_GetDigitsPointer_m877C617CEE264BE12DE38D7289D741ED39B99846_AdjustorThunk },
-	{ 0x060000CE, FormatOptions__ctor_mCF1FCAD2F6EE383DC6A602CA1F82BD16852CC055_AdjustorThunk },
-	{ 0x060000CF, FormatOptions_get_Uppercase_mE85E979D733EB67187AC1BCEB045508A0EF005C3_AdjustorThunk },
-	{ 0x060000D0, FormatOptions_EncodeToRaw_m966A50F0B106A1E90283F715303AB55E64A29D60_AdjustorThunk },
-	{ 0x060000D1, FormatOptions_GetBase_m0466B18B4E020F258E2402BE194FB8D670B2C789_AdjustorThunk },
-	{ 0x060000D2, FormatOptions_ToString_m96B89E42F1553D5D3B78D7238443ACC628EFB488_AdjustorThunk },
+	{ 0x060000BF, NumberBuffer__ctor_m1A0D288DFB6432947BB55759502F97BA25348141_AdjustorThunk },
+	{ 0x060000C0, NumberBuffer_GetDigitsPointer_m877C617CEE264BE12DE38D7289D741ED39B99846_AdjustorThunk },
+	{ 0x060000C1, FormatOptions__ctor_mCF1FCAD2F6EE383DC6A602CA1F82BD16852CC055_AdjustorThunk },
+	{ 0x060000C2, FormatOptions_get_Uppercase_mE85E979D733EB67187AC1BCEB045508A0EF005C3_AdjustorThunk },
+	{ 0x060000C3, FormatOptions_EncodeToRaw_m966A50F0B106A1E90283F715303AB55E64A29D60_AdjustorThunk },
+	{ 0x060000C4, FormatOptions_GetBase_m0466B18B4E020F258E2402BE194FB8D670B2C789_AdjustorThunk },
+	{ 0x060000C5, FormatOptions_ToString_m96B89E42F1553D5D3B78D7238443ACC628EFB488_AdjustorThunk },
+	{ 0x060000C6, tBigInt_GetLength_m223AD69D6DB118C879FC58EF544D50C4A2E978E7_AdjustorThunk },
+	{ 0x060000C7, tBigInt_GetBlock_m6E4E377A7A4591B136D20D711B06CB1D145FC9D2_AdjustorThunk },
+	{ 0x060000C8, tBigInt_SetZero_m54E84DE30DFAA84CF9B9CE82100A631204728A55_AdjustorThunk },
+	{ 0x060000C9, tBigInt_IsZero_mE0C94B9A59A09BFCE51C418F4C8C05EC253D68C8_AdjustorThunk },
+	{ 0x060000CA, tBigInt_SetU64_m72EE55FD3169036C517DAF7392CE0A133DD50C14_AdjustorThunk },
+	{ 0x060000CB, tBigInt_SetU32_m9EF2E1018CDA89AED4F0FA625E91878BF1772233_AdjustorThunk },
+	{ 0x060000CC, tBigInt_GetU32_m16EF52ED57B4FCFAA6FDC8D1F4C659DAEBAEE9A9_AdjustorThunk },
+	{ 0x060000CD, tFloatUnion32_IsNegative_m75BC8B54D468278FCBA4535D6118346B3C8F9388_AdjustorThunk },
+	{ 0x060000CE, tFloatUnion32_GetExponent_m83ED8E199331F83BC7AE3E48DCCCA8E6212CA6A6_AdjustorThunk },
+	{ 0x060000CF, tFloatUnion32_GetMantissa_mAB906EE8DD2E27CFB6D98FF99CC2D764FF44F0EF_AdjustorThunk },
+	{ 0x060000D0, tFloatUnion64_IsNegative_m5427680D1918AB7410EDC266B0524E42313F171B_AdjustorThunk },
+	{ 0x060000D1, tFloatUnion64_GetExponent_m85B0BB29969C376B7FF866A1793C1997645D1D60_AdjustorThunk },
+	{ 0x060000D2, tFloatUnion64_GetMantissa_m6EAD50CE3D1BFDABD12A308F2FF83F586F61328C_AdjustorThunk },
 	{ 0x06000A75, v128__ctor_m1AE72BAC845E230D3AD71549A5EAB7F5F46BED08_AdjustorThunk },
 	{ 0x06000A76, v128__ctor_m0D6973600FF20309F897314591B3485D676A2040_AdjustorThunk },
 	{ 0x06000A77, v128__ctor_m1BBF4AE259F31EE7BA93AE271E48C3D8F67E6B6F_AdjustorThunk },
@@ -11203,28 +11203,6 @@ static const int32_t s_InvokerIndices[3640] =
 	0,
 	0,
 	6724,
-	11093,
-	9393,
-	8783,
-	8783,
-	8783,
-	8783,
-	8790,
-	9775,
-	11204,
-	11204,
-	11917,
-	9783,
-	8790,
-	9783,
-	9648,
-	9783,
-	6940,
-	7035,
-	7035,
-	7174,
-	7582,
-	7574,
 	8085,
 	7171,
 	7581,
@@ -11253,7 +11231,37 @@ static const int32_t s_InvokerIndices[3640] =
 	7170,
 	8800,
 	8352,
+	11093,
+	9393,
+	8783,
+	8783,
+	8783,
+	8783,
+	8790,
+	9775,
+	11204,
+	11204,
+	11917,
+	9783,
+	8790,
+	9783,
+	9648,
+	9783,
+	6940,
+	7035,
+	7035,
+	7174,
+	7582,
+	7574,
 	12059,
+	6724,
+	525,
+	6487,
+	1046,
+	6497,
+	6565,
+	6565,
+	6594,
 	6565,
 	5024,
 	6724,
@@ -11267,14 +11275,6 @@ static const int32_t s_InvokerIndices[3640] =
 	6497,
 	6708,
 	6709,
-	6724,
-	525,
-	6487,
-	1046,
-	6497,
-	6565,
-	6565,
-	6594,
 	0,
 	0,
 	0,

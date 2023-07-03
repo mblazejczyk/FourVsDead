@@ -6476,8 +6476,6 @@ inline void List_1_Add_mA64C78E04914B90132CF6D68721DAA94372A9FC9_inline (List_1_
 {
 	((  void (*) (List_1_t70114F63D98416DFBC85070704AB213FA087F64F*, PlayableBinding_tB68B3BAC47F4F4C559640472174D5BEF93CB6AB4, const RuntimeMethod*))List_1_Add_mA64C78E04914B90132CF6D68721DAA94372A9FC9_gshared_inline)(__this, ___0_item, method);
 }
-// System.Void UnityEngine.Timeline.MarkerTrack::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerTrack__ctor_mAF73693D259F16A0F2DBF71313BA854F5C71A1E8 (MarkerTrack_tE18594CE52CCC412606B1B5A147DD3A4F7D056C2* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.PropertyAttribute::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PropertyAttribute__ctor_m19247686E165101F140615C7306DC2DA3953D97D (PropertyAttribute_t5E0CB5A6CDA6E24CBD4FF26DE3B0C29D8BB54BF0* __this, const RuntimeMethod* method) ;
 // System.Void System.Action`1<UnityEngine.Timeline.SignalAsset>::Invoke(T)
@@ -6585,6 +6583,8 @@ inline void List_1__ctor_mAF642341E1AAB54142F727134B05004DE3A187A5 (List_1_t1F66
 {
 	((  void (*) (List_1_t1F66D85D40A4A6882E6F434BFB9DAC00C51F0EAA*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
+// System.Void UnityEngine.Timeline.MarkerTrack::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerTrack__ctor_mAF73693D259F16A0F2DBF71313BA854F5C71A1E8 (MarkerTrack_tE18594CE52CCC412606B1B5A147DD3A4F7D056C2* __this, const RuntimeMethod* method) ;
 // UnityEngine.Playables.ScriptPlayable`1<T> UnityEngine.Playables.ScriptPlayable`1<UnityEngine.Timeline.ActivationControlPlayable>::get_Null()
 inline ScriptPlayable_1_tDFB2CA9817AE03C1887D733A1B405A50B4C0180B ScriptPlayable_1_get_Null_mE1B10FAD315A5CBA4F343B829378533802A24B1A (const RuntimeMethod* method)
 {
@@ -31552,22 +31552,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerTrack__ctor_mAF73693D259F16A0F2DBF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityEngine.Timeline.SignalTrack::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SignalTrack__ctor_m92CAC598FA9027691117E52EB8247D2D79D0FBA1 (SignalTrack_t81B95E0A225E195B0D647987306C3E241B034241* __this, const RuntimeMethod* method) 
-{
-	{
-		MarkerTrack__ctor_mAF73693D259F16A0F2DBF71313BA854F5C71A1E8(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
 // System.Void UnityEngine.Timeline.CustomSignalEventDrawer::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CustomSignalEventDrawer__ctor_m6E78EBC2A826450A4F05E0127A6672F07D84CC0A (CustomSignalEventDrawer_tD873249F366F9BDA937F594E59C930CB4CD75C97* __this, const RuntimeMethod* method) 
 {
@@ -32714,6 +32698,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventKeyValue__ctor_m7AE5F9F6453AA2F9DB8
 		__this->___m_Events_1 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Events_1), (void*)L_1);
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.Timeline.SignalTrack::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SignalTrack__ctor_m92CAC598FA9027691117E52EB8247D2D79D0FBA1 (SignalTrack_t81B95E0A225E195B0D647987306C3E241B034241* __this, const RuntimeMethod* method) 
+{
+	{
+		MarkerTrack__ctor_mAF73693D259F16A0F2DBF71313BA854F5C71A1E8(__this, NULL);
 		return;
 	}
 }

@@ -78,7 +78,7 @@ public class BarycadeSystem : MonoBehaviour, IBarycadeDmg
         if (isDestroing != true && Hp < 6 && isRepairing == true)
         {
             ChangeHp(false, 1);
-            player.GetComponent<PlayerController>().ModifyCoins(1, 15);
+            player.GetComponent<PlayerController>().ModifyCoins(1, 3);
         }
         StartCoroutine(RepairTimer(player));
     }

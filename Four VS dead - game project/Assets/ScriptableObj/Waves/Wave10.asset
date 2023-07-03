@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Wave10
   m_EditorClassIdentifier: 
   WaveOrder: 10
-  TimeBetweenSpawns: 30
+  TimeBetweenSpawns: 20
   HowManyEnemies: 1
-  Hp: 450
+  Hp: 4500
   Dmg: 40
   Dodge: 0
   Speed: 0

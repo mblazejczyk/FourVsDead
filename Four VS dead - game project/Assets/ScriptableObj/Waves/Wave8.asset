@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wave8
   m_EditorClassIdentifier: 
   WaveOrder: 8
-  TimeBetweenSpawns: 3
+  TimeBetweenSpawns: 2
   HowManyEnemies: 20
   Hp: 44
   Dmg: 20

@@ -14,6 +14,10 @@ public class BuyZone : MonoBehaviour
     private Collider2D c2d;
     [Space(20)]
     public bool ShouldUpgradeBeDestroyed = false;
+
+    [TextAreaAttribute]
+    public string Description;
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.tag != "Player" || !collision.GetComponent<PhotonView>().IsMine)
@@ -22,6 +26,9 @@ public class BuyZone : MonoBehaviour
         }
         GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetBool("isOpen", true);
         GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Referencer>().Reference.GetComponent<TMP_Text>().text = "Press E to buy";
+
+        GameObject.Find("ShopInfo").GetComponent<Animator>().SetBool("ShouldBeOpen", true);
+        GameObject.Find("ShopInfo").GetComponent<Referencer>().Reference.GetComponent<TMP_Text>().text = Description;
 
         isOnTrigger = true;
         c2d = collision;
@@ -36,6 +43,7 @@ public class BuyZone : MonoBehaviour
         isOnTrigger = false;
         c2d = null;
         GameObject.FindGameObjectWithTag("InfoBox").GetComponent<Animator>().SetBool("isOpen", false);
+        GameObject.Find("ShopInfo").GetComponent<Animator>().SetBool("ShouldBeOpen", false);
     }
 
     private void Update()

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Wave9
   m_EditorClassIdentifier: 
   WaveOrder: 9
-  TimeBetweenSpawns: 6
-  HowManyEnemies: 26
-  Hp: 45
-  Dmg: 35
-  Dodge: 30
+  TimeBetweenSpawns: 1
+  HowManyEnemies: 30
+  Hp: 65
+  Dmg: 65
+  Dodge: 45
   Speed: 250

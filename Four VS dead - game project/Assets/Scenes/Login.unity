@@ -2100,7 +2100,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Version: Pre-beta 0.3.2a
+  m_text: 'Version: Pre-beta 0.3.3a
 
     <color=yellow>Yellow</color>Sink 2023'
   m_isRightToLeft: 0

@@ -54,12 +54,13 @@ public class EnemyController_boss : MonoBehaviour, IDamagable
 
     public void SetUp()
     {
-        MaxHp = 1;
-        dodge = 1;
+        MaxHp = GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().wave[
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().WaveNow - 1].Hp;
+        dodge = GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().wave[
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().WaveNow - 1].Dodge;
         damage = GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().wave[
             GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().WaveNow-1].Dmg;
-        speed = GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().wave[
-            GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().WaveNow-1].Speed*2;
+        speed = 0;
 
         PV.RPC("RPC_Setup", RpcTarget.All, MaxHp, damage, dodge, speed);
         StartCoroutine(setFire());

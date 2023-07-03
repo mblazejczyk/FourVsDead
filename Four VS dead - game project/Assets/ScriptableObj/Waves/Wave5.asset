@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wave5
   m_EditorClassIdentifier: 
   WaveOrder: 5
-  TimeBetweenSpawns: 5
+  TimeBetweenSpawns: 3
   HowManyEnemies: 18
   Hp: 33
   Dmg: 10

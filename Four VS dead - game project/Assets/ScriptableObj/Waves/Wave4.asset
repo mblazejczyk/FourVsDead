@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wave4
   m_EditorClassIdentifier: 
   WaveOrder: 4
-  TimeBetweenSpawns: 5
+  TimeBetweenSpawns: 3
   HowManyEnemies: 14
   Hp: 25
   Dmg: 9

@@ -42,7 +42,19 @@ public class GameUpgradesController : MonoBehaviourPunCallbacks
                 freezingAmm = true;
                 foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Enemy"))
                 {
-                    obj.GetComponent<EnemyController>().speed *= 0.6f;
+                    if (obj.GetComponent<EnemyController>() != null)
+                    {
+                        obj.GetComponent<EnemyController>().speed *= 0.6f;
+                    }
+                    else if (obj.GetComponent<EnemyController_archer>() != null)
+                    {
+                        obj.GetComponent<EnemyController_archer>().speed *= 0.6f;
+
+                    }
+                    else if (obj.GetComponent<EnemyController_firerunner>() != null)
+                    {
+                        obj.GetComponent<EnemyController_firerunner>().speed *= 0.6f;
+                    }
                 }
                 break;
             case 3:
@@ -66,7 +78,18 @@ public class GameUpgradesController : MonoBehaviourPunCallbacks
             case 5:
                 foreach(GameObject obj in GameObject.FindGameObjectsWithTag("Enemy"))
                 {
-                    obj.GetComponent<EnemyController>().TakeDamage(9999999);
+                    if(obj.GetComponent<EnemyController>() != null)
+                    {
+                        obj.GetComponent<EnemyController>().TakeDamage(9999999);
+                    }else if(obj.GetComponent<EnemyController_archer>() != null)
+                    {
+                        obj.GetComponent<EnemyController_archer>().TakeDamage(9999999);
+
+                    }
+                    else if(obj.GetComponent<EnemyController_firerunner>() != null)
+                    {
+                        obj.GetComponent<EnemyController_firerunner>().TakeDamage(9999999);
+                    }
                 }
                 break;
         }
@@ -75,9 +98,7 @@ public class GameUpgradesController : MonoBehaviourPunCallbacks
         if (hpRegain) { upgradesBought++; }
         if (freezingAmm) { upgradesBought++; }
         if (zombieTrack) { upgradesBought++; }
-
-
-        GameObject.FindGameObjectWithTag("UpgradeUi").GetComponent<UpgradeUiController>().BuyUpgrade(upgradeId);
+        if (fasterRate || hpRegain || freezingAmm || zombieTrack) { GameObject.FindGameObjectWithTag("UpgradeUi").GetComponent<UpgradeUiController>().BuyUpgrade(upgradeId); }
 
         Debug.Log(upgradesBought);
         if (upgradesBought >= 2)
