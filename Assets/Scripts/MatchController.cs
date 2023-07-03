@@ -12,6 +12,7 @@ public class MatchController : MonoBehaviourPunCallbacks
 {
     public GameObject[] SpawnPoints;
     public Waves[] wave;
+    public Waves[] tutorialWaves;
 
     public float TimeBetweenSpawns;
     public int WaveNow = 0;
@@ -28,19 +29,46 @@ public class MatchController : MonoBehaviourPunCallbacks
         if (PhotonNetwork.IsMasterClient)
         {
             SpawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint");
-            StartNewWave();
+            if (SceneManager.GetActiveScene().name != "Tutorial")
+            {
+                StartNewWave();
+            }
         }
     }
 
-    void StartNewWave()
+    public void StartNewWave()
     {
         WaveNow++;
+        if(SceneManager.GetActiveScene().name == "Tutorial")
+        {
+            StartNewWaveTut();
+            return;
+        }
         if(wave.Length >= WaveNow)
         {
             EnemiesLeft = wave[WaveNow-1].HowManyEnemies;
             EnemiesToSpawn = EnemiesLeft;
             waveText.text = "Wave " + WaveNow;
             TimeBetweenSpawns = wave[WaveNow - 1].TimeBetweenSpawns;
+            UpdateText(WaveNow, EnemiesLeft, true);
+            StartCoroutine(SpawnNew());
+        }
+        else
+        {
+            waveText.text = "Game ended";
+            UpdateText(WaveNow, EnemiesLeft, false);
+            Debug.Log("GameEnded");
+        }
+    }
+
+    public void StartNewWaveTut()
+    {
+        if (tutorialWaves.Length >= WaveNow)
+        {
+            EnemiesLeft = tutorialWaves[WaveNow - 1].HowManyEnemies;
+            EnemiesToSpawn = EnemiesLeft;
+            waveText.text = "Wave " + WaveNow;
+            TimeBetweenSpawns = tutorialWaves[WaveNow - 1].TimeBetweenSpawns;
             UpdateText(WaveNow, EnemiesLeft, true);
             StartCoroutine(SpawnNew());
         }
@@ -85,7 +113,7 @@ public class MatchController : MonoBehaviourPunCallbacks
             }
         }
 
-        if (CurrentWave > wave.Length)
+        if (CurrentWave > wave.Length || (CurrentWave > tutorialWaves.Length && SceneManager.GetActiveScene().name == "Tutorial"))
         {
             waveText.text = "Game ended";
             GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted += 
@@ -113,6 +141,18 @@ public class MatchController : MonoBehaviourPunCallbacks
             }
         }
     }
+
+    public void TutorialEnd()
+    {
+        Debug.Log("Tutorial finished");
+        waveText.text = "Game ended";
+        GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted +=
+            (int)((float)GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().xpGranted *
+            ((float)GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().XpForWin / 100));
+        StartCoroutine(spawnFirework());
+        StartCoroutine(GameEnding());
+    }
+
     public GameObject Firework;
     IEnumerator spawnFirework()
     {
@@ -174,7 +214,7 @@ public class MatchController : MonoBehaviourPunCallbacks
 
         if (PhotonNetwork.IsMasterClient)
         {
-            if (EnemiesToSpawn == 0 && EnemiesLeft == 0)
+            if (EnemiesToSpawn == 0 && EnemiesLeft == 0 && SceneManager.GetActiveScene().name != "Tutorial")
             {
                 StartNewWave();
             }

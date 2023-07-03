@@ -37,12 +37,14 @@ public class LoginProfileManager : MonoBehaviour
         gameObject.GetComponent<SqlController>().Send(sql, "save_res");
     }
 
+    public GameObject TutorialPrompt;
     public void UpdateProfileDetails(string res)
     {
         string[] saved = res.Split(';');
         if(saved[saved.Length -1] == "0000-00-00")
         {
-            saved[saved.Length - 1] = "never played yet";
+            saved[saved.Length - 1] = "never played before";
+            TutorialPrompt.SetActive(true);
         }
         for (int i = 0; i < saved.Length; i++)
         {

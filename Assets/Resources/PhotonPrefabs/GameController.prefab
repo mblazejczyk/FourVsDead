@@ -58,6 +58,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b7af7c40372df0d4a9872320b882a87f, type: 2}
   - {fileID: 11400000, guid: c5f5098590c583c4480503adc5afc067, type: 2}
   - {fileID: 11400000, guid: 0c12201c02b54f846a73f5811987c27f, type: 2}
+  tutorialWaves:
+  - {fileID: 11400000, guid: 7c015a0096002754db8a991bdfea9a46, type: 2}
+  - {fileID: 11400000, guid: b72a77baac950c74cbc5c8df648a9253, type: 2}
   TimeBetweenSpawns: 0
   WaveNow: 0
   waveText: {fileID: 0}

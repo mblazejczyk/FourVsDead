@@ -9,6 +9,7 @@ public class DoorSystem : MonoBehaviour
     PhotonView PV;
     public GameObject doors;
     public GameObject[] spawnersToActive;
+    public bool shouldStartWave = false;
 
     private void Awake()
     {
@@ -27,6 +28,10 @@ public class DoorSystem : MonoBehaviour
                 if (collision.GetComponent<PlayerController>().Coins >= 100)
                 {
                     Debug.Log("Bought");
+                    if (shouldStartWave)
+                    {
+                        GameObject.FindGameObjectWithTag("GameController").GetComponent<MatchController>().StartNewWave();
+                    }
                     collision.GetComponent<PlayerController>().ModifyCoins(0, 100);
                     GameObject.FindGameObjectWithTag("UiInfoBg").GetComponent<Animator>().SetTrigger("buy");
                     DestroyDoors();

@@ -12,6 +12,7 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     [SerializeField] TMP_InputField roomNameIF;
     [SerializeField] TMP_InputField roomSpaceIF;
+    [SerializeField] TMP_Dropdown map;
     [SerializeField] TMP_Text errorText;
     [SerializeField] TMP_Text roomNameText;
     [SerializeField] TMP_InputField roomPassword;
@@ -94,6 +95,11 @@ public class Launcher : MonoBehaviourPunCallbacks
                 roomSpaceIF.text = "1";
             }
         }
+
+        if(map.options[map.value].text == "Tutorial")
+        {
+            roomSpaceIF.text = "1";
+        }
         byte mxp = byte.Parse(roomSpaceIF.text);
         Debug.Log(mxp);
         roomOptions.MaxPlayers = mxp;
@@ -122,6 +128,11 @@ public class Launcher : MonoBehaviourPunCallbacks
         else
         {
             roomNameText.text = PhotonNetwork.CurrentRoom.Name;
+        }
+
+        if (PhotonNetwork.IsMasterClient && map.options[map.value].text == "Tutorial")
+        {
+            PhotonNetwork.CurrentRoom.IsVisible = false;
         }
 
         foreach (Transform child in PlayerlistContent)
@@ -228,7 +239,14 @@ public class Launcher : MonoBehaviourPunCallbacks
         }
         DontDestroyOnLoad(GameObject.Find("LPM"));
         chat.SendSystemMessage("Game starts now...");
-        PhotonNetwork.LoadLevel(2);
+        if(map.options[map.value].text == "Tutorial")
+        {
+            PhotonNetwork.LoadLevel(3);
+        }
+        else
+        {
+            PhotonNetwork.LoadLevel(2);
+        }
     }
 
     public GameObject passwordPrompt;

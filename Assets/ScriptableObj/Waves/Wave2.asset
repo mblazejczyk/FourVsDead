@@ -16,6 +16,6 @@ MonoBehaviour:
   TimeBetweenSpawns: 5
   HowManyEnemies: 5
   Hp: 25
-  Dmg: 5
+  Dmg: 10
   Dodge: 0
   Speed: 200
