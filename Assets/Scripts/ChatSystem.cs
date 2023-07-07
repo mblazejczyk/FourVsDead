@@ -9,6 +9,7 @@ public class ChatSystem : MonoBehaviourPunCallbacks
 {
     public TMP_Text chat;
     public TMP_InputField input;
+    public TMP_Dropdown input_dp;
     public GameObject content;
     public PhotonView PV;
     public GameObject[] toActive;
@@ -72,24 +73,19 @@ public class ChatSystem : MonoBehaviourPunCallbacks
     }
     public void Send()
     {
-        if(input.text == "") { return; }
+        string textInp = input_dp.options[input_dp.value].text;
         string s = "";
-        if (input.text.Contains("<color="))
-        {
-            input.text = "***";
-        }
         if(GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().goldenNick == 1)
         {
             s = "<color=yellow>" + 
-                GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login + "</color>: " + input.text;
+                GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login + "</color>: " + textInp;
         }
         else
         {
-            s = GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login + ": " + input.text;
+            s = GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login + ": " + textInp;
         }
         PV.RPC("RPC_SendChat", RpcTarget.All, s);
         Debug.Log("Sent");
-        input.text = "";
     }
 
     public void SendSystemMessage(string msg)
