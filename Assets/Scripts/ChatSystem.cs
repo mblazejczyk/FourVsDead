@@ -29,6 +29,7 @@ public class ChatSystem : MonoBehaviourPunCallbacks
             {
                 isChatOpen = false;
                 Cursor.visible = false;
+                Send();
                 foreach (GameObject pl in GameObject.FindGameObjectsWithTag("Player"))
                 {
                     if (pl.GetComponent<PhotonView>().IsMine)
@@ -59,11 +60,6 @@ public class ChatSystem : MonoBehaviourPunCallbacks
                     obj.SetActive(true);
                 }
             }
-        }
-
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            Send();
         }
     }
 
