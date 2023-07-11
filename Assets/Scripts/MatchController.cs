@@ -109,7 +109,7 @@ public class MatchController : MonoBehaviourPunCallbacks
             GameObject.FindGameObjectWithTag("GameSoundSource").GetComponent<MatchAudioController>().PlaySound(0);
             if(WaveNow == 10)
             {
-                GameObject.FindGameObjectWithTag("MidScreenText").GetComponent<TMP_Text>().text = "BOSS!!! <color=red>GET TO GARDER!</color>";
+                GameObject.FindGameObjectWithTag("MidScreenText").GetComponent<TMP_Text>().text = "BOSS!!! <color=red>GET TO GARDEN!</color>";
             }
         }
 

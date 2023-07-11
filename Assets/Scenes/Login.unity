@@ -2101,7 +2101,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Version: Pre-beta 0.4.1a
+  m_text: 'Version: Demo v1.0
 
     <color=yellow>Yellow</color>Sink 2023'
   m_isRightToLeft: 0
@@ -4029,7 +4029,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: build:75
+  m_text: build:76
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d0dd1f37ceab4414b84091ea3d766396, type: 2}
   m_sharedMaterial: {fileID: 3986674201043348841, guid: d0dd1f37ceab4414b84091ea3d766396, type: 2}

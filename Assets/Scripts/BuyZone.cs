@@ -93,6 +93,11 @@ public class BuyZone : MonoBehaviour
                     GameObject.FindGameObjectWithTag("RewardSaver").GetComponent<RewardSaver>().buys += 1;
                     GameObject.FindGameObjectWithTag("UiInfoBg").GetComponent<Animator>().SetTrigger("buy");
                     gameObject.GetComponent<AudioSource>().Play();
+                    if (ShouldUpgradeBeDestroyed)
+                    {
+                        PhotonView PV = gameObject.GetComponent<PhotonView>();
+                        PhotonNetwork.Destroy(gameObject);
+                    }
                 }
             }
         }
