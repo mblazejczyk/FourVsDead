@@ -15,7 +15,7 @@ MonoBehaviour:
   WaveOrder: 10
   TimeBetweenSpawns: 20
   HowManyEnemies: 1
-  Hp: 4500
+  Hp: 2000
   Dmg: 40
   Dodge: 0
   Speed: 0

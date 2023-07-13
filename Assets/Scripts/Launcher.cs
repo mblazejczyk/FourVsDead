@@ -285,6 +285,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         }
         else
         {
+            Debug.Log("changing server");
             PhotonNetwork.ConnectToRegion(server);
         }
     }
