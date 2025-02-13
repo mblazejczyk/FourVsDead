@@ -19,7 +19,9 @@ public class SqlController : MonoBehaviour
         WWWForm form = new WWWForm();
         form.AddField("sqlPos", sql);
         form.AddField("toPrint", toPrint);
-        using (UnityWebRequest www = UnityWebRequest.Post("https://fourvsdead.yellowsink.pl/sqlImport.php", form))
+        print(sql);
+        print(toPrint);
+        using (UnityWebRequest www = UnityWebRequest.Post("https://blazejczyk.net/4vd/sqlmanager.php", form))
         {
             yield return www.SendWebRequest();
 
@@ -58,6 +60,7 @@ public class SqlController : MonoBehaviour
                         gameObject.GetComponent<EqSystem>().AddItemToEq(int.Parse(x));
                     }
                 }
+                print(restults);
             }
         }
     }

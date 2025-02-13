@@ -58,7 +58,7 @@ public class loginSystem : MonoBehaviour
         WWWForm form = new WWWForm();
         form.AddField("login", login.text);
         form.AddField("password", password.text);
-        using (UnityWebRequest www = UnityWebRequest.Post("https://fourvsdead.yellowsink.pl/sql.php", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("https://blazejczyk.net/4vd/sqlmanager.php", form))
         {
             yield return www.SendWebRequest();
 
@@ -86,6 +86,7 @@ public class loginSystem : MonoBehaviour
                     }
                     else
                     {
+                        print(www.downloadHandler.text);
                         GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().loginId = www.downloadHandler.text.Split('|')[0];
                         GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().SetSave(www.downloadHandler.text.Split('|')[1]);
                         GameObject.FindGameObjectWithTag("LoginHandler").GetComponent<loginHandler>().login = login.text;
