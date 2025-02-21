@@ -1,6 +1,7 @@
 # Four vs dead
 [[Four vs dead - Youtube trailer]](https://youtu.be/igZApZTHf7M?si=SjgN8WUt6aOJuzP5) <br>
 [[Four vs dead - Normal map raw gameplay]](https://youtu.be/ADGE6MVDMK8?si=fP0QzAMaTWYsrGps) <br>
+[[Four vs dead - Tutorial and overview]](https://youtu.be/2_3nZSEwhEI) <br>
 [[GameJolt game page]](https://gamejolt.com/games/fourvsdeadDevLog/843805)
 ## Description
 Four vs Dead is an advanced multiplayer co-op game. Alone or with up to three additional players, you must defeat enemies coming in waves. The game offers:
