@@ -121,7 +121,7 @@ The game was developed before learning proper security systems and may be vulner
 11. In the Unity project, in the `sqlController.cs` file at line `24` and in `loginSystem.cs` at line `61`, change the URL to match your `sqlmanager.php` file on your server
 12. At this point, the project should work correctly.
 
-Due to GDPR regulations, user creation has been removed; you must create such a system yourself or manually add players to the database. The `password` column contains a standard PHP hash, and `UpgradesSave` should contain 25 zeros.
+Due to GDPR regulations, user creation has been removed; you must create such a system yourself or manually add players to the database. The `password` column contains a standard PHP hash,  `UpgradesSave` should contain 25 zeros and empty save in `saves` table should be created for user in order for stats to count.
 
 ## Requirements
 - Unity 2021 or newer
